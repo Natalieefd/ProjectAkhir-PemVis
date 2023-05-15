@@ -1,4 +1,7 @@
 ﻿Public Class formCustomer
+
+    'pas klik menuStrip pesanan(lihat, tamabah, ubah, hapus) menuju ke form Customer-Katalog
+
     Private Sub formCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
@@ -8,10 +11,6 @@
     End Sub
 
     Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub PesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PesananToolStripMenuItem.Click
 
     End Sub
 
