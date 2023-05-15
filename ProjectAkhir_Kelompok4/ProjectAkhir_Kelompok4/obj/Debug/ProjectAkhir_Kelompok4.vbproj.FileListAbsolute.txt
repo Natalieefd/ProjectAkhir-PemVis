@@ -16,3 +16,21 @@ C:\Users\Acer\source\repos\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Deb
 C:\Users\Acer\source\repos\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formAdmin.resources
 C:\Users\Acer\source\repos\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formStaff.resources
 C:\Users\Acer\source\repos\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formCustomer.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.exe.config
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.exe
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.pdb
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.xml
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.AssemblyReference.cache
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.SuggestedBindingRedirects.cache
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.Form1.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formLogin.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formRegist.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formAdmin.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formStaff.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formCustomer.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.Resources.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.GenerateResource.cache
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CoreCompileInputs.cache
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.exe
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.xml
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.pdb
