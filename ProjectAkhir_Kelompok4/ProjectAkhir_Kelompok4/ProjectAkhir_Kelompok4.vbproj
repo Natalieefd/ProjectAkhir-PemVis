@@ -203,5 +203,26 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\control icon\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\control icon\close15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\control icon\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\control icon\maximize15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\control icon\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\control icon\minimize15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\Logo Kpop Store.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
