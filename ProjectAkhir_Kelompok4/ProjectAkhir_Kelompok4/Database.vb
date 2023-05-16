@@ -1,5 +1,5 @@
-﻿Imports System.Data.SqlClient
-Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient
+
 Module Database
     Public CONN As MySqlConnection
     Public CMD As MySqlCommand
@@ -19,5 +19,13 @@ Module Database
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
+    Sub dbq(query As String)
+        CMD = New MySqlCommand(query, CONN)
+        RD = CMD.ExecuteReader
+        RD.Read()
+    End Sub
+
+
 End Module
 

@@ -52,7 +52,7 @@ Partial Class formRegist
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.btnSubmit)
         Me.GroupBox1.Controls.Add(Me.txtUsername)
-        Me.GroupBox1.Font = New System.Drawing.Font("Vela Sans GX", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(215, 86)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(359, 326)
@@ -64,7 +64,7 @@ Partial Class formRegist
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(42, 223)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 17)
+        Me.Label6.Size = New System.Drawing.Size(51, 17)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Alamat"
         '
@@ -72,7 +72,7 @@ Partial Class formRegist
         '
         Me.txtAlamat.Location = New System.Drawing.Point(126, 220)
         Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(173, 24)
+        Me.txtAlamat.Size = New System.Drawing.Size(173, 23)
         Me.txtAlamat.TabIndex = 10
         '
         'Label5
@@ -80,7 +80,7 @@ Partial Class formRegist
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(42, 178)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 17)
+        Me.Label5.Size = New System.Drawing.Size(58, 17)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "No Telp"
         '
@@ -88,7 +88,7 @@ Partial Class formRegist
         '
         Me.txtNoTelp.Location = New System.Drawing.Point(126, 175)
         Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(173, 24)
+        Me.txtNoTelp.Size = New System.Drawing.Size(173, 23)
         Me.txtNoTelp.TabIndex = 8
         '
         'Label4
@@ -96,7 +96,7 @@ Partial Class formRegist
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(42, 37)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 17)
+        Me.Label4.Size = New System.Drawing.Size(45, 17)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Nama"
         '
@@ -104,7 +104,7 @@ Partial Class formRegist
         '
         Me.txtNama.Location = New System.Drawing.Point(126, 34)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(173, 24)
+        Me.txtNama.Size = New System.Drawing.Size(173, 23)
         Me.txtNama.TabIndex = 6
         '
         'Label3
@@ -112,7 +112,7 @@ Partial Class formRegist
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(42, 132)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 17)
+        Me.Label3.Size = New System.Drawing.Size(69, 17)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Password"
         '
@@ -120,7 +120,7 @@ Partial Class formRegist
         '
         Me.txtPassword.Location = New System.Drawing.Point(126, 129)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(173, 24)
+        Me.txtPassword.Size = New System.Drawing.Size(173, 23)
         Me.txtPassword.TabIndex = 4
         '
         'Label2
@@ -128,7 +128,7 @@ Partial Class formRegist
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(42, 85)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 17)
+        Me.Label2.Size = New System.Drawing.Size(73, 17)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Username"
         '
@@ -145,22 +145,22 @@ Partial Class formRegist
         '
         Me.txtUsername.Location = New System.Drawing.Point(126, 82)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(173, 24)
+        Me.txtUsername.Size = New System.Drawing.Size(173, 23)
         Me.txtUsername.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Vela Sans GX", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(332, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(130, 44)
+        Me.Label1.Size = New System.Drawing.Size(162, 42)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "REGIST"
         '
         'btnBack
         '
-        Me.btnBack.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.Location = New System.Drawing.Point(700, 400)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(75, 29)

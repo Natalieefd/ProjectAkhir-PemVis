@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mysql.data">
-      <HintPath>..\..\..\..\..\..\..\..\..\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+      <HintPath>D:\College Life (2021)\College-based APK\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -94,6 +94,7 @@
     <Compile Include="Admin-ManajemenToko.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Database.vb" />
     <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +172,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Utility.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Admin- ManajemenProduk.resx">

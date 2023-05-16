@@ -1,6 +1,56 @@
 ﻿Public Class formLogin
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Home.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
+
+    Private Sub formLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        koneksi()
+    End Sub
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+        If EmptyTB() Then
+            Exit Sub
+        End If
+
+        Dim stats() As String = {"admin", "staff", "customer"}
+        Dim loginMode = ""
+
+        For Each mode In stats
+            If loginMode <> "" Then
+                Exit For
+            End If
+
+            dbq("Select * from tb" & mode & " where username='" & txtUsername.Text & "'")
+
+            If RD.HasRows Then
+                If txtPassword.Text = If(mode = "admin", RD(1), RD(3)) Then
+                    loginMode = mode
+                End If
+            End If
+
+            RD.Close()
+        Next
+
+        If loginMode = "" Then
+            MsgBox("Username atau Password Salah", MsgBoxStyle.Information, "Perhatian")
+            Exit Sub
+        End If
+
+        Select Case loginMode
+            Case "admin"
+                formAdmin.Show()
+            Case "staff"
+                formStaff.Show()
+            Case "customer"
+                formCustomer.Show()
+        End Select
+
+        Me.Close()
+    End Sub
+
+    Private Sub formLogin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        CloseForm(sender, btnBack)
+    End Sub
+
 End Class
