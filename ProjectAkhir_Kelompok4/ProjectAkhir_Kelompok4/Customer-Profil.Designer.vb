@@ -38,48 +38,55 @@ Partial Class formPesanan
         Me.UbahProfilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlFormUbah = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnUbahForm = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.txtUbahAlamat = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtUbahNoTelp = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtUbahPass = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtUbahUsn = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.txtUbahNama = New System.Windows.Forms.TextBox()
+        Me.pnlSpace = New System.Windows.Forms.Panel()
+        Me.btnUbah = New System.Windows.Forms.Button()
+        Me.pnlProfil = New System.Windows.Forms.Panel()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
+        Me.pnlPass = New System.Windows.Forms.Panel()
+        Me.btnSubmit = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtKonfirmPass = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.txtNama = New System.Windows.Forms.TextBox()
+        Me.txtUsn = New System.Windows.Forms.TextBox()
+        Me.txtPass = New System.Windows.Forms.TextBox()
+        Me.txtNoTelp = New System.Windows.Forms.TextBox()
+        Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel4.SuspendLayout()
+        Me.pnlFormUbah.SuspendLayout()
+        Me.pnlProfil.SuspendLayout()
+        Me.pnlPass.SuspendLayout()
         Me.SuspendLayout()
         '
         'StatusStrip1
         '
         Me.StatusStrip1.Font = New System.Drawing.Font("Vela Sans GX", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 769)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 953)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(766, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(783, 22)
         Me.StatusStrip1.TabIndex = 9
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -102,7 +109,7 @@ Partial Class formPesanan
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KatalogToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ProfilToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(766, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(783, 25)
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -171,56 +178,56 @@ Partial Class formPesanan
         'Timer1
         '
         '
-        'Panel1
+        'pnlFormUbah
         '
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.TextBox7)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Location = New System.Drawing.Point(57, 443)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(686, 294)
-        Me.Panel1.TabIndex = 11
+        Me.pnlFormUbah.Controls.Add(Me.Label1)
+        Me.pnlFormUbah.Controls.Add(Me.btnClear)
+        Me.pnlFormUbah.Controls.Add(Me.btnUbahForm)
+        Me.pnlFormUbah.Controls.Add(Me.Label10)
+        Me.pnlFormUbah.Controls.Add(Me.txtUbahAlamat)
+        Me.pnlFormUbah.Controls.Add(Me.Label7)
+        Me.pnlFormUbah.Controls.Add(Me.txtUbahNoTelp)
+        Me.pnlFormUbah.Controls.Add(Me.Label6)
+        Me.pnlFormUbah.Controls.Add(Me.Label5)
+        Me.pnlFormUbah.Controls.Add(Me.txtUbahPass)
+        Me.pnlFormUbah.Controls.Add(Me.Label3)
+        Me.pnlFormUbah.Controls.Add(Me.txtUbahUsn)
+        Me.pnlFormUbah.Controls.Add(Me.Label2)
+        Me.pnlFormUbah.Controls.Add(Me.txtUbahNama)
+        Me.pnlFormUbah.Location = New System.Drawing.Point(48, 443)
+        Me.pnlFormUbah.Name = "pnlFormUbah"
+        Me.pnlFormUbah.Size = New System.Drawing.Size(686, 294)
+        Me.pnlFormUbah.TabIndex = 11
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Vela Sans GX", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(302, 20)
+        Me.Label1.Location = New System.Drawing.Point(274, 20)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 28)
+        Me.Label1.Size = New System.Drawing.Size(144, 28)
         Me.Label1.TabIndex = 24
-        Me.Label1.Text = "PROFIL"
+        Me.Label1.Text = "UBAH PROFIL"
         '
-        'Button3
+        'btnClear
         '
-        Me.Button3.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(380, 240)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 27)
-        Me.Button3.TabIndex = 21
-        Me.Button3.Text = "Clear"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnClear.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(380, 240)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 27)
+        Me.btnClear.TabIndex = 21
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnUbahForm
         '
-        Me.Button2.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(241, 240)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 27)
-        Me.Button2.TabIndex = 20
-        Me.Button2.Text = "Ubah"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnUbahForm.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUbahForm.Location = New System.Drawing.Point(235, 240)
+        Me.btnUbahForm.Name = "btnUbahForm"
+        Me.btnUbahForm.Size = New System.Drawing.Size(75, 27)
+        Me.btnUbahForm.TabIndex = 20
+        Me.btnUbahForm.Text = "Ubah"
+        Me.btnUbahForm.UseVisualStyleBackColor = True
         '
         'Label10
         '
@@ -232,14 +239,14 @@ Partial Class formPesanan
         Me.Label10.TabIndex = 17
         Me.Label10.Text = "Alamat"
         '
-        'TextBox7
+        'txtUbahAlamat
         '
-        Me.TextBox7.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(485, 122)
-        Me.TextBox7.Multiline = True
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(152, 78)
-        Me.TextBox7.TabIndex = 16
+        Me.txtUbahAlamat.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUbahAlamat.Location = New System.Drawing.Point(485, 122)
+        Me.txtUbahAlamat.Multiline = True
+        Me.txtUbahAlamat.Name = "txtUbahAlamat"
+        Me.txtUbahAlamat.Size = New System.Drawing.Size(152, 78)
+        Me.txtUbahAlamat.TabIndex = 16
         '
         'Label7
         '
@@ -251,13 +258,13 @@ Partial Class formPesanan
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "No Telp"
         '
-        'TextBox4
+        'txtUbahNoTelp
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(485, 73)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(152, 23)
-        Me.TextBox4.TabIndex = 10
+        Me.txtUbahNoTelp.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUbahNoTelp.Location = New System.Drawing.Point(485, 73)
+        Me.txtUbahNoTelp.Name = "txtUbahNoTelp"
+        Me.txtUbahNoTelp.Size = New System.Drawing.Size(152, 23)
+        Me.txtUbahNoTelp.TabIndex = 10
         '
         'Label6
         '
@@ -278,13 +285,13 @@ Partial Class formPesanan
         Me.Label5.Size = New System.Drawing.Size(0, 17)
         Me.Label5.TabIndex = 8
         '
-        'TextBox3
+        'txtUbahPass
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(137, 177)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(152, 23)
-        Me.TextBox3.TabIndex = 7
+        Me.txtUbahPass.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUbahPass.Location = New System.Drawing.Point(137, 177)
+        Me.txtUbahPass.Name = "txtUbahPass"
+        Me.txtUbahPass.Size = New System.Drawing.Size(152, 23)
+        Me.txtUbahPass.TabIndex = 7
         '
         'Label3
         '
@@ -296,13 +303,13 @@ Partial Class formPesanan
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Username"
         '
-        'TextBox2
+        'txtUbahUsn
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(137, 124)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(152, 23)
-        Me.TextBox2.TabIndex = 5
+        Me.txtUbahUsn.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUbahUsn.Location = New System.Drawing.Point(137, 124)
+        Me.txtUbahUsn.Name = "txtUbahUsn"
+        Me.txtUbahUsn.Size = New System.Drawing.Size(152, 23)
+        Me.txtUbahUsn.TabIndex = 5
         '
         'Label2
         '
@@ -314,48 +321,48 @@ Partial Class formPesanan
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nama"
         '
-        'TextBox1
+        'txtUbahNama
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(137, 73)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(152, 23)
-        Me.TextBox1.TabIndex = 0
+        Me.txtUbahNama.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUbahNama.Location = New System.Drawing.Point(137, 73)
+        Me.txtUbahNama.Name = "txtUbahNama"
+        Me.txtUbahNama.Size = New System.Drawing.Size(152, 23)
+        Me.txtUbahNama.TabIndex = 0
         '
-        'Panel2
+        'pnlSpace
         '
-        Me.Panel2.Location = New System.Drawing.Point(57, 745)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(686, 24)
-        Me.Panel2.TabIndex = 13
+        Me.pnlSpace.Location = New System.Drawing.Point(48, 929)
+        Me.pnlSpace.Name = "pnlSpace"
+        Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
+        Me.pnlSpace.TabIndex = 13
         '
-        'Button4
+        'btnUbah
         '
-        Me.Button4.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(354, 384)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 27)
-        Me.Button4.TabIndex = 32
-        Me.Button4.Text = "Ubah"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnUbah.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUbah.Location = New System.Drawing.Point(354, 384)
+        Me.btnUbah.Name = "btnUbah"
+        Me.btnUbah.Size = New System.Drawing.Size(75, 27)
+        Me.btnUbah.TabIndex = 32
+        Me.btnUbah.Text = "Ubah"
+        Me.btnUbah.UseVisualStyleBackColor = True
         '
-        'Panel4
+        'pnlProfil
         '
-        Me.Panel4.Controls.Add(Me.Label14)
-        Me.Panel4.Controls.Add(Me.Label15)
-        Me.Panel4.Controls.Add(Me.Label16)
-        Me.Panel4.Controls.Add(Me.Label17)
-        Me.Panel4.Controls.Add(Me.Label18)
-        Me.Panel4.Controls.Add(Me.Label19)
-        Me.Panel4.Controls.Add(Me.Label20)
-        Me.Panel4.Controls.Add(Me.Label21)
-        Me.Panel4.Controls.Add(Me.Label22)
-        Me.Panel4.Controls.Add(Me.Label23)
-        Me.Panel4.Controls.Add(Me.Label24)
-        Me.Panel4.Location = New System.Drawing.Point(183, 53)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(417, 313)
-        Me.Panel4.TabIndex = 33
+        Me.pnlProfil.Controls.Add(Me.txtAlamat)
+        Me.pnlProfil.Controls.Add(Me.txtNoTelp)
+        Me.pnlProfil.Controls.Add(Me.txtPass)
+        Me.pnlProfil.Controls.Add(Me.txtUsn)
+        Me.pnlProfil.Controls.Add(Me.txtNama)
+        Me.pnlProfil.Controls.Add(Me.Label14)
+        Me.pnlProfil.Controls.Add(Me.Label16)
+        Me.pnlProfil.Controls.Add(Me.Label18)
+        Me.pnlProfil.Controls.Add(Me.Label20)
+        Me.pnlProfil.Controls.Add(Me.Label22)
+        Me.pnlProfil.Controls.Add(Me.Label24)
+        Me.pnlProfil.Location = New System.Drawing.Point(183, 53)
+        Me.pnlProfil.Name = "pnlProfil"
+        Me.pnlProfil.Size = New System.Drawing.Size(417, 313)
+        Me.pnlProfil.TabIndex = 33
         '
         'Label14
         '
@@ -367,105 +374,156 @@ Partial Class formPesanan
         Me.Label14.TabIndex = 25
         Me.Label14.Text = "PROFIL"
         '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(180, 225)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(48, 17)
-        Me.Label15.TabIndex = 26
-        Me.Label15.Text = "Alamat"
-        '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(60, 113)
+        Me.Label16.Location = New System.Drawing.Point(60, 110)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(64, 17)
         Me.Label16.TabIndex = 25
         Me.Label16.Text = "Username"
         '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(180, 186)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(48, 17)
-        Me.Label17.TabIndex = 27
-        Me.Label17.Text = "No Telp"
-        '
         'Label18
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(60, 78)
+        Me.Label18.Location = New System.Drawing.Point(60, 75)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(40, 17)
         Me.Label18.TabIndex = 25
         Me.Label18.Text = "Nama"
         '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(180, 149)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(61, 17)
-        Me.Label19.TabIndex = 28
-        Me.Label19.Text = "Password"
-        '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(60, 149)
+        Me.Label20.Location = New System.Drawing.Point(60, 146)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(61, 17)
         Me.Label20.TabIndex = 25
         Me.Label20.Text = "Password"
         '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(180, 78)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(40, 17)
-        Me.Label21.TabIndex = 29
-        Me.Label21.Text = "Nama"
-        '
         'Label22
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(60, 186)
+        Me.Label22.Location = New System.Drawing.Point(60, 183)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(48, 17)
         Me.Label22.TabIndex = 25
         Me.Label22.Text = "No Telp"
         '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(180, 113)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(64, 17)
-        Me.Label23.TabIndex = 30
-        Me.Label23.Text = "Username"
-        '
         'Label24
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(60, 225)
+        Me.Label24.Location = New System.Drawing.Point(60, 222)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(48, 17)
         Me.Label24.TabIndex = 25
         Me.Label24.Text = "Alamat"
+        '
+        'pnlPass
+        '
+        Me.pnlPass.Controls.Add(Me.btnBatal)
+        Me.pnlPass.Controls.Add(Me.Label8)
+        Me.pnlPass.Controls.Add(Me.btnSubmit)
+        Me.pnlPass.Controls.Add(Me.Label4)
+        Me.pnlPass.Controls.Add(Me.txtKonfirmPass)
+        Me.pnlPass.Location = New System.Drawing.Point(241, 743)
+        Me.pnlPass.Name = "pnlPass"
+        Me.pnlPass.Size = New System.Drawing.Size(306, 180)
+        Me.pnlPass.TabIndex = 36
+        '
+        'btnSubmit
+        '
+        Me.btnSubmit.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Location = New System.Drawing.Point(55, 137)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 27)
+        Me.btnSubmit.TabIndex = 27
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(27, 86)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(61, 17)
+        Me.Label4.TabIndex = 26
+        Me.Label4.Text = "Password"
+        '
+        'txtKonfirmPass
+        '
+        Me.txtKonfirmPass.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtKonfirmPass.Location = New System.Drawing.Point(124, 83)
+        Me.txtKonfirmPass.Name = "txtKonfirmPass"
+        Me.txtKonfirmPass.Size = New System.Drawing.Size(152, 23)
+        Me.txtKonfirmPass.TabIndex = 25
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Vela Sans GX SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(54, 19)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(201, 26)
+        Me.Label8.TabIndex = 28
+        Me.Label8.Text = "Konfirmasi Password"
+        '
+        'btnBatal
+        '
+        Me.btnBatal.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatal.Location = New System.Drawing.Point(171, 137)
+        Me.btnBatal.Name = "btnBatal"
+        Me.btnBatal.Size = New System.Drawing.Size(75, 27)
+        Me.btnBatal.TabIndex = 29
+        Me.btnBatal.Text = "Batal"
+        Me.btnBatal.UseVisualStyleBackColor = True
+        '
+        'txtNama
+        '
+        Me.txtNama.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNama.Location = New System.Drawing.Point(171, 73)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.Size = New System.Drawing.Size(181, 23)
+        Me.txtNama.TabIndex = 25
+        '
+        'txtUsn
+        '
+        Me.txtUsn.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsn.Location = New System.Drawing.Point(171, 108)
+        Me.txtUsn.Name = "txtUsn"
+        Me.txtUsn.Size = New System.Drawing.Size(181, 23)
+        Me.txtUsn.TabIndex = 26
+        '
+        'txtPass
+        '
+        Me.txtPass.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.Location = New System.Drawing.Point(171, 144)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(181, 23)
+        Me.txtPass.TabIndex = 27
+        '
+        'txtNoTelp
+        '
+        Me.txtNoTelp.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNoTelp.Location = New System.Drawing.Point(171, 181)
+        Me.txtNoTelp.Name = "txtNoTelp"
+        Me.txtNoTelp.Size = New System.Drawing.Size(181, 23)
+        Me.txtNoTelp.TabIndex = 28
+        '
+        'txtAlamat
+        '
+        Me.txtAlamat.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAlamat.Location = New System.Drawing.Point(171, 220)
+        Me.txtAlamat.Multiline = True
+        Me.txtAlamat.Name = "txtAlamat"
+        Me.txtAlamat.Size = New System.Drawing.Size(181, 65)
+        Me.txtAlamat.TabIndex = 29
         '
         'formPesanan
         '
@@ -473,10 +531,11 @@ Partial Class formPesanan
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlPass)
+        Me.Controls.Add(Me.pnlProfil)
+        Me.Controls.Add(Me.btnUbah)
+        Me.Controls.Add(Me.pnlSpace)
+        Me.Controls.Add(Me.pnlFormUbah)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
@@ -489,10 +548,12 @@ Partial Class formPesanan
         Me.StatusStrip1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
+        Me.pnlFormUbah.ResumeLayout(False)
+        Me.pnlFormUbah.PerformLayout()
+        Me.pnlProfil.ResumeLayout(False)
+        Me.pnlProfil.PerformLayout()
+        Me.pnlPass.ResumeLayout(False)
+        Me.pnlPass.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -512,33 +573,39 @@ Partial Class formPesanan
     Friend WithEvents UbahProfilToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlFormUbah As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnUbahForm As Button
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtUbahAlamat As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtUbahNoTelp As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtUbahPass As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtUbahUsn As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents txtUbahNama As TextBox
+    Friend WithEvents pnlSpace As Panel
+    Friend WithEvents btnUbah As Button
+    Friend WithEvents pnlProfil As Panel
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents Label21 As Label
     Friend WithEvents Label22 As Label
-    Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
+    Friend WithEvents pnlPass As Panel
+    Friend WithEvents btnBatal As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents btnSubmit As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txtKonfirmPass As TextBox
+    Friend WithEvents txtAlamat As TextBox
+    Friend WithEvents txtNoTelp As TextBox
+    Friend WithEvents txtPass As TextBox
+    Friend WithEvents txtUsn As TextBox
+    Friend WithEvents txtNama As TextBox
 End Class
