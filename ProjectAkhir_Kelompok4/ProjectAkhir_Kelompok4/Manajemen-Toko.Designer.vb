@@ -59,13 +59,17 @@ Partial Class ManajemenToko
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUbahNama = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ManajemenTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManajemenStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LihatAkunStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TambahAkunStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UbahAkunStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteAkunStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LihatBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TambahBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HapusBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ManajemenPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LihatDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TambahDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UbahDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HapusDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlProfil.SuspendLayout()
         Me.pnlPass.SuspendLayout()
@@ -407,60 +411,85 @@ Partial Class ManajemenToko
         'MenuStrip1
         '
         Me.MenuStrip1.Font = New System.Drawing.Font("Vela Sans GX", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManajemenTokoToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.ManajemenPesananToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManajemenStaffToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(783, 25)
         Me.MenuStrip1.TabIndex = 44
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'ManajemenTokoToolStripMenuItem
+        'ManajemenStaffToolStripMenuItem
         '
-        Me.ManajemenTokoToolStripMenuItem.Name = "ManajemenTokoToolStripMenuItem"
-        Me.ManajemenTokoToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
-        Me.ManajemenTokoToolStripMenuItem.Text = "ProfilToko"
+        Me.ManajemenStaffToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatAkunStaffToolStripMenuItem, Me.TambahAkunStaffToolStripMenuItem, Me.UbahAkunStaffToolStripMenuItem, Me.DeleteAkunStaffToolStripMenuItem})
+        Me.ManajemenStaffToolStripMenuItem.Name = "ManajemenStaffToolStripMenuItem"
+        Me.ManajemenStaffToolStripMenuItem.Size = New System.Drawing.Size(114, 21)
+        Me.ManajemenStaffToolStripMenuItem.Text = "Manajemen Staff"
+        '
+        'LihatAkunStaffToolStripMenuItem
+        '
+        Me.LihatAkunStaffToolStripMenuItem.Name = "LihatAkunStaffToolStripMenuItem"
+        Me.LihatAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.LihatAkunStaffToolStripMenuItem.Text = "Lihat Akun Staff"
+        '
+        'TambahAkunStaffToolStripMenuItem
+        '
+        Me.TambahAkunStaffToolStripMenuItem.Name = "TambahAkunStaffToolStripMenuItem"
+        Me.TambahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.TambahAkunStaffToolStripMenuItem.Text = "Tambah Akun Staff"
+        '
+        'UbahAkunStaffToolStripMenuItem
+        '
+        Me.UbahAkunStaffToolStripMenuItem.Name = "UbahAkunStaffToolStripMenuItem"
+        Me.UbahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.UbahAkunStaffToolStripMenuItem.Text = "Ubah Akun Staff"
+        '
+        'DeleteAkunStaffToolStripMenuItem
+        '
+        Me.DeleteAkunStaffToolStripMenuItem.Name = "DeleteAkunStaffToolStripMenuItem"
+        Me.DeleteAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.DeleteAkunStaffToolStripMenuItem.Text = "Hapus Akun Staff"
         '
         'ManajemenBarangToolStripMenuItem
         '
-        Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatBarangToolStripMenuItem, Me.TambahBarangToolStripMenuItem, Me.UbahBarangToolStripMenuItem, Me.HapusBarangToolStripMenuItem})
+        Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatDataBarangToolStripMenuItem, Me.TambahDataBarangToolStripMenuItem, Me.UbahDataBarangToolStripMenuItem, Me.HapusDataBarangToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(122, 20)
-        Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Barang"
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(125, 21)
+        Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
-        'LihatBarangToolStripMenuItem
+        'LihatDataBarangToolStripMenuItem
         '
-        Me.LihatBarangToolStripMenuItem.Name = "LihatBarangToolStripMenuItem"
-        Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.LihatBarangToolStripMenuItem.Text = "Lihat Data Barang"
+        Me.LihatDataBarangToolStripMenuItem.Name = "LihatDataBarangToolStripMenuItem"
+        Me.LihatDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.LihatDataBarangToolStripMenuItem.Text = "Lihat Data Produk"
         '
-        'TambahBarangToolStripMenuItem
+        'TambahDataBarangToolStripMenuItem
         '
-        Me.TambahBarangToolStripMenuItem.Name = "TambahBarangToolStripMenuItem"
-        Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.TambahBarangToolStripMenuItem.Text = "Tambah Data Barang"
+        Me.TambahDataBarangToolStripMenuItem.Name = "TambahDataBarangToolStripMenuItem"
+        Me.TambahDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.TambahDataBarangToolStripMenuItem.Text = "Tambah Data Produk"
         '
-        'UbahBarangToolStripMenuItem
+        'UbahDataBarangToolStripMenuItem
         '
-        Me.UbahBarangToolStripMenuItem.Name = "UbahBarangToolStripMenuItem"
-        Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.UbahBarangToolStripMenuItem.Text = "Ubah Data Barang"
+        Me.UbahDataBarangToolStripMenuItem.Name = "UbahDataBarangToolStripMenuItem"
+        Me.UbahDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.UbahDataBarangToolStripMenuItem.Text = "Ubah Data Produk"
         '
-        'HapusBarangToolStripMenuItem
+        'HapusDataBarangToolStripMenuItem
         '
-        Me.HapusBarangToolStripMenuItem.Name = "HapusBarangToolStripMenuItem"
-        Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.HapusBarangToolStripMenuItem.Text = "Hapus Data Barang"
+        Me.HapusDataBarangToolStripMenuItem.Name = "HapusDataBarangToolStripMenuItem"
+        Me.HapusDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.HapusDataBarangToolStripMenuItem.Text = "Hapus Data Produk"
         '
-        'ManajemenPesananToolStripMenuItem
+        'PesananToolStripMenuItem
         '
-        Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
-        Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
+        Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(68, 21)
+        Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(41, 21)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ManajemenToko
@@ -533,12 +562,16 @@ Partial Class ManajemenToko
     Friend WithEvents Label2 As Label
     Friend WithEvents txtUbahNama As TextBox
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ManajemenTokoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManajemenStaffToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LihatAkunStaffToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TambahAkunStaffToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UbahAkunStaffToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteAkunStaffToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TambahBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UbahBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HapusBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ManajemenPesananToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LihatDataBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TambahDataBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UbahDataBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HapusDataBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class
