@@ -1,5 +1,5 @@
-﻿Public Class ManajemenProduk
-    Private Sub ManajemenProduk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class ManajemenToko
+    Private Sub ManajemenToko_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
 

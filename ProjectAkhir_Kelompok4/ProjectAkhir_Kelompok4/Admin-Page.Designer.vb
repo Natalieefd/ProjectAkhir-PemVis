@@ -42,6 +42,7 @@ Partial Class formAdmin
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -73,7 +74,7 @@ Partial Class formAdmin
         'MenuStrip1
         '
         Me.MenuStrip1.Font = New System.Drawing.Font("Vela Sans GX", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManajemenStaffToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfilTokoToolStripMenuItem, Me.ManajemenStaffToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
@@ -179,6 +180,12 @@ Partial Class formAdmin
         'Timer1
         '
         '
+        'ProfilTokoToolStripMenuItem
+        '
+        Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(75, 21)
+        Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
+        '
         'formAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -223,4 +230,5 @@ Partial Class formAdmin
     Friend WithEvents SlabelJam As ToolStripStatusLabel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProfilTokoToolStripMenuItem As ToolStripMenuItem
 End Class

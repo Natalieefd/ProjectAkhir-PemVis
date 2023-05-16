@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ManajemenProduk
+Partial Class ManajemenProdukStaf
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -376,7 +376,7 @@ Partial Class ManajemenProduk
         Me.DataGridView1.Size = New System.Drawing.Size(686, 271)
         Me.DataGridView1.TabIndex = 48
         '
-        'ManajemenProduk
+        'ManajemenProdukStaf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -391,7 +391,7 @@ Partial Class ManajemenProduk
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "ManajemenProduk"
+        Me.Name = "ManajemenProdukStaf"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "KPOP Store"
         Me.MenuStrip1.ResumeLayout(False)

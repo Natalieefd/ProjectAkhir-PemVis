@@ -56,6 +56,11 @@ Partial Class formPesanan
         Me.pnlSpace = New System.Windows.Forms.Panel()
         Me.btnUbah = New System.Windows.Forms.Button()
         Me.pnlProfil = New System.Windows.Forms.Panel()
+        Me.txtAlamat = New System.Windows.Forms.TextBox()
+        Me.txtNoTelp = New System.Windows.Forms.TextBox()
+        Me.txtPass = New System.Windows.Forms.TextBox()
+        Me.txtUsn = New System.Windows.Forms.TextBox()
+        Me.txtNama = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -63,16 +68,12 @@ Partial Class formPesanan
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.pnlPass = New System.Windows.Forms.Panel()
+        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtKonfirmPass = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.btnBatal = New System.Windows.Forms.Button()
-        Me.txtNama = New System.Windows.Forms.TextBox()
-        Me.txtUsn = New System.Windows.Forms.TextBox()
-        Me.txtPass = New System.Windows.Forms.TextBox()
-        Me.txtNoTelp = New System.Windows.Forms.TextBox()
-        Me.txtAlamat = New System.Windows.Forms.TextBox()
+        Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.pnlFormUbah.SuspendLayout()
@@ -106,7 +107,7 @@ Partial Class formPesanan
         'MenuStrip1
         '
         Me.MenuStrip1.Font = New System.Drawing.Font("Vela Sans GX", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KatalogToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ProfilToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfilTokoToolStripMenuItem, Me.KatalogToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ProfilToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(783, 25)
@@ -364,6 +365,47 @@ Partial Class formPesanan
         Me.pnlProfil.Size = New System.Drawing.Size(417, 313)
         Me.pnlProfil.TabIndex = 33
         '
+        'txtAlamat
+        '
+        Me.txtAlamat.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAlamat.Location = New System.Drawing.Point(171, 220)
+        Me.txtAlamat.Multiline = True
+        Me.txtAlamat.Name = "txtAlamat"
+        Me.txtAlamat.Size = New System.Drawing.Size(181, 65)
+        Me.txtAlamat.TabIndex = 29
+        '
+        'txtNoTelp
+        '
+        Me.txtNoTelp.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNoTelp.Location = New System.Drawing.Point(171, 181)
+        Me.txtNoTelp.Name = "txtNoTelp"
+        Me.txtNoTelp.Size = New System.Drawing.Size(181, 23)
+        Me.txtNoTelp.TabIndex = 28
+        '
+        'txtPass
+        '
+        Me.txtPass.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.Location = New System.Drawing.Point(171, 144)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.Size = New System.Drawing.Size(181, 23)
+        Me.txtPass.TabIndex = 27
+        '
+        'txtUsn
+        '
+        Me.txtUsn.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsn.Location = New System.Drawing.Point(171, 108)
+        Me.txtUsn.Name = "txtUsn"
+        Me.txtUsn.Size = New System.Drawing.Size(181, 23)
+        Me.txtUsn.TabIndex = 26
+        '
+        'txtNama
+        '
+        Me.txtNama.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNama.Location = New System.Drawing.Point(171, 73)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.Size = New System.Drawing.Size(181, 23)
+        Me.txtNama.TabIndex = 25
+        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -436,6 +478,26 @@ Partial Class formPesanan
         Me.pnlPass.Size = New System.Drawing.Size(306, 180)
         Me.pnlPass.TabIndex = 36
         '
+        'btnBatal
+        '
+        Me.btnBatal.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatal.Location = New System.Drawing.Point(171, 137)
+        Me.btnBatal.Name = "btnBatal"
+        Me.btnBatal.Size = New System.Drawing.Size(75, 27)
+        Me.btnBatal.TabIndex = 29
+        Me.btnBatal.Text = "Batal"
+        Me.btnBatal.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Vela Sans GX SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(54, 19)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(201, 26)
+        Me.Label8.TabIndex = 28
+        Me.Label8.Text = "Konfirmasi Password"
+        '
         'btnSubmit
         '
         Me.btnSubmit.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -464,66 +526,11 @@ Partial Class formPesanan
         Me.txtKonfirmPass.Size = New System.Drawing.Size(152, 23)
         Me.txtKonfirmPass.TabIndex = 25
         '
-        'Label8
+        'ProfilTokoToolStripMenuItem
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Vela Sans GX SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(54, 19)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(201, 26)
-        Me.Label8.TabIndex = 28
-        Me.Label8.Text = "Konfirmasi Password"
-        '
-        'btnBatal
-        '
-        Me.btnBatal.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBatal.Location = New System.Drawing.Point(171, 137)
-        Me.btnBatal.Name = "btnBatal"
-        Me.btnBatal.Size = New System.Drawing.Size(75, 27)
-        Me.btnBatal.TabIndex = 29
-        Me.btnBatal.Text = "Batal"
-        Me.btnBatal.UseVisualStyleBackColor = True
-        '
-        'txtNama
-        '
-        Me.txtNama.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNama.Location = New System.Drawing.Point(171, 73)
-        Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(181, 23)
-        Me.txtNama.TabIndex = 25
-        '
-        'txtUsn
-        '
-        Me.txtUsn.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsn.Location = New System.Drawing.Point(171, 108)
-        Me.txtUsn.Name = "txtUsn"
-        Me.txtUsn.Size = New System.Drawing.Size(181, 23)
-        Me.txtUsn.TabIndex = 26
-        '
-        'txtPass
-        '
-        Me.txtPass.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(171, 144)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(181, 23)
-        Me.txtPass.TabIndex = 27
-        '
-        'txtNoTelp
-        '
-        Me.txtNoTelp.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNoTelp.Location = New System.Drawing.Point(171, 181)
-        Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(181, 23)
-        Me.txtNoTelp.TabIndex = 28
-        '
-        'txtAlamat
-        '
-        Me.txtAlamat.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAlamat.Location = New System.Drawing.Point(171, 220)
-        Me.txtAlamat.Multiline = True
-        Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(181, 65)
-        Me.txtAlamat.TabIndex = 29
+        Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(75, 21)
+        Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'formPesanan
         '
@@ -608,4 +615,5 @@ Partial Class formPesanan
     Friend WithEvents txtPass As TextBox
     Friend WithEvents txtUsn As TextBox
     Friend WithEvents txtNama As TextBox
+    Friend WithEvents ProfilTokoToolStripMenuItem As ToolStripMenuItem
 End Class

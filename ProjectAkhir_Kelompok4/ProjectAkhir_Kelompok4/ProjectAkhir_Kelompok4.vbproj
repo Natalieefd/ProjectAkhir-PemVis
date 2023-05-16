@@ -48,6 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\..\..\..\..\..\..\..\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -79,10 +82,10 @@
     <Compile Include="Manajemen-Produk.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manajemen-Toko.Designer.vb">
-      <DependentUpon>Manajemen-Toko.vb</DependentUpon>
+    <Compile Include="Admin-ManajemenToko.Designer.vb">
+      <DependentUpon>Admin-ManajemenToko.vb</DependentUpon>
     </Compile>
-    <Compile Include="Manajemen-Toko.vb">
+    <Compile Include="Admin-ManajemenToko.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.vb">
@@ -154,8 +157,8 @@
     <EmbeddedResource Include="Manajemen-Produk.resx">
       <DependentUpon>Manajemen-Produk.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manajemen-Toko.resx">
-      <DependentUpon>Manajemen-Toko.vb</DependentUpon>
+    <EmbeddedResource Include="Admin-ManajemenToko.resx">
+      <DependentUpon>Admin-ManajemenToko.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
