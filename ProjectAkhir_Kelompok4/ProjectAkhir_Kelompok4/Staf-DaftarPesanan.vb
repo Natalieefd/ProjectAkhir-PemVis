@@ -1,8 +1,5 @@
-﻿Public Class formAdmin
-
-    'lblUsn buat nampilin usn akun
-
-    Private Sub formAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class DaftarPesanan
+    Private Sub DaftarPesanan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
 
