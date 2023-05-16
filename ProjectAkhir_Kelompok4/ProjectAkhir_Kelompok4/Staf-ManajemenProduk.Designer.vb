@@ -42,28 +42,28 @@ Partial Class ManajemenProdukStaf
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlFormProduk = New System.Windows.Forms.Panel()
+        Me.cmbKategori = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnHapus = New System.Windows.Forms.Button()
         Me.btnUbah = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.txtDecs = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtHarga = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtStok = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtNama = New System.Windows.Forms.TextBox()
         Me.btnTambah = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvDaftarProduk = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlFormProduk.SuspendLayout()
+        CType(Me.dgvDaftarProduk, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -72,7 +72,7 @@ Partial Class ManajemenProdukStaf
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManajemenTokoToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.ManajemenPesananToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(817, 25)
         Me.MenuStrip1.TabIndex = 45
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -138,7 +138,7 @@ Partial Class ManajemenProdukStaf
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 755)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(817, 22)
         Me.StatusStrip1.TabIndex = 46
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -168,28 +168,37 @@ Partial Class ManajemenProdukStaf
         Me.Label4.TabIndex = 50
         Me.Label4.Text = "MANAJEMEN PRODUK"
         '
-        'Panel1
+        'pnlFormProduk
         '
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.btnClear)
-        Me.Panel1.Controls.Add(Me.btnHapus)
-        Me.Panel1.Controls.Add(Me.btnUbah)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.TextBox6)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.txtHarga)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.txtStok)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.btnTambah)
-        Me.Panel1.Location = New System.Drawing.Point(57, 425)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(686, 300)
-        Me.Panel1.TabIndex = 49
+        Me.pnlFormProduk.Controls.Add(Me.cmbKategori)
+        Me.pnlFormProduk.Controls.Add(Me.Label12)
+        Me.pnlFormProduk.Controls.Add(Me.btnClear)
+        Me.pnlFormProduk.Controls.Add(Me.btnHapus)
+        Me.pnlFormProduk.Controls.Add(Me.btnUbah)
+        Me.pnlFormProduk.Controls.Add(Me.Label9)
+        Me.pnlFormProduk.Controls.Add(Me.txtDecs)
+        Me.pnlFormProduk.Controls.Add(Me.Label8)
+        Me.pnlFormProduk.Controls.Add(Me.txtHarga)
+        Me.pnlFormProduk.Controls.Add(Me.Label7)
+        Me.pnlFormProduk.Controls.Add(Me.txtStok)
+        Me.pnlFormProduk.Controls.Add(Me.Label6)
+        Me.pnlFormProduk.Controls.Add(Me.Label5)
+        Me.pnlFormProduk.Controls.Add(Me.Label3)
+        Me.pnlFormProduk.Controls.Add(Me.txtNama)
+        Me.pnlFormProduk.Controls.Add(Me.btnTambah)
+        Me.pnlFormProduk.Location = New System.Drawing.Point(57, 425)
+        Me.pnlFormProduk.Name = "pnlFormProduk"
+        Me.pnlFormProduk.Size = New System.Drawing.Size(686, 300)
+        Me.pnlFormProduk.TabIndex = 49
+        '
+        'cmbKategori
+        '
+        Me.cmbKategori.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbKategori.FormattingEnabled = True
+        Me.cmbKategori.Location = New System.Drawing.Point(139, 135)
+        Me.cmbKategori.Name = "cmbKategori"
+        Me.cmbKategori.Size = New System.Drawing.Size(152, 23)
+        Me.cmbKategori.TabIndex = 24
         '
         'Label12
         '
@@ -241,14 +250,14 @@ Partial Class ManajemenProdukStaf
         Me.Label9.TabIndex = 15
         Me.Label9.Text = "Deskripsi Produk"
         '
-        'TextBox6
+        'txtDecs
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(482, 131)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(152, 77)
-        Me.TextBox6.TabIndex = 14
+        Me.txtDecs.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDecs.Location = New System.Drawing.Point(482, 131)
+        Me.txtDecs.Multiline = True
+        Me.txtDecs.Name = "txtDecs"
+        Me.txtDecs.Size = New System.Drawing.Size(152, 77)
+        Me.txtDecs.TabIndex = 14
         '
         'Label8
         '
@@ -305,14 +314,6 @@ Partial Class ManajemenProdukStaf
         Me.Label5.Size = New System.Drawing.Size(0, 17)
         Me.Label5.TabIndex = 8
         '
-        'TextBox3
-        '
-        Me.TextBox3.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(139, 134)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(152, 23)
-        Me.TextBox3.TabIndex = 7
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -323,13 +324,13 @@ Partial Class ManajemenProdukStaf
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Nama Produk"
         '
-        'TextBox2
+        'txtNama
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(139, 81)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(152, 23)
-        Me.TextBox2.TabIndex = 5
+        Me.txtNama.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNama.Location = New System.Drawing.Point(139, 81)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.Size = New System.Drawing.Size(152, 23)
+        Me.txtNama.TabIndex = 5
         '
         'btnTambah
         '
@@ -341,9 +342,9 @@ Partial Class ManajemenProdukStaf
         Me.btnTambah.Text = "Tambah"
         Me.btnTambah.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dgvDaftarProduk
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
+        Me.dgvDaftarProduk.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -351,8 +352,8 @@ Partial Class ManajemenProdukStaf
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDaftarProduk.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvDaftarProduk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -360,9 +361,9 @@ Partial Class ManajemenProdukStaf
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView1.Location = New System.Drawing.Point(57, 117)
-        Me.DataGridView1.Name = "DataGridView1"
+        Me.dgvDaftarProduk.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvDaftarProduk.Location = New System.Drawing.Point(57, 117)
+        Me.dgvDaftarProduk.Name = "dgvDaftarProduk"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -370,21 +371,21 @@ Partial Class ManajemenProdukStaf
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvDaftarProduk.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.DataGridView1.Size = New System.Drawing.Size(686, 271)
-        Me.DataGridView1.TabIndex = 48
+        Me.dgvDaftarProduk.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.dgvDaftarProduk.Size = New System.Drawing.Size(686, 271)
+        Me.dgvDaftarProduk.TabIndex = 48
         '
         'ManajemenProdukStaf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.ClientSize = New System.Drawing.Size(817, 450)
+        Me.ClientSize = New System.Drawing.Size(834, 450)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.pnlFormProduk)
+        Me.Controls.Add(Me.dgvDaftarProduk)
         Me.Controls.Add(Me.pnlSpace)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -398,9 +399,9 @@ Partial Class ManajemenProdukStaf
         Me.MenuStrip1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlFormProduk.ResumeLayout(False)
+        Me.pnlFormProduk.PerformLayout()
+        CType(Me.dgvDaftarProduk, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -420,22 +421,22 @@ Partial Class ManajemenProdukStaf
     Friend WithEvents SlabelJam As ToolStripStatusLabel
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label4 As Label
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlFormProduk As Panel
     Friend WithEvents Label12 As Label
     Friend WithEvents btnClear As Button
     Friend WithEvents btnHapus As Button
     Friend WithEvents btnUbah As Button
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txtDecs As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents txtHarga As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents txtStok As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtNama As TextBox
     Friend WithEvents btnTambah As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvDaftarProduk As DataGridView
+    Friend WithEvents cmbKategori As ComboBox
 End Class

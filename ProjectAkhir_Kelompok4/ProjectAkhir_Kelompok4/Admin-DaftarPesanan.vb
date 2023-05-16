@@ -1,5 +1,5 @@
 ﻿Public Class DaftarPesananAdmin
-    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub DaftarPesananAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
 

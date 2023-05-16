@@ -22,7 +22,6 @@ D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\Pro
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.xml
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.AssemblyReference.cache
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.SuggestedBindingRedirects.cache
-D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.Form1.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formLogin.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formRegist.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formAdmin.resources
@@ -34,8 +33,6 @@ D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\Pro
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.exe
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.xml
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.pdb
-D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProduk.resources
-D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenToko.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.Home.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formKatalog.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formPesanan.resources
@@ -44,3 +41,10 @@ C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectA
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.exe
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.xml
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.pdb
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenTokoAdmin.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProdukStaf.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProdukAdmin.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananAdmin.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesanan.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\mysql.data.dll
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CopyComplete

@@ -1,5 +1,5 @@
-﻿Public Class ManajemenProdulAdmin
-    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class ManajemenProdukAdmin
+    Private Sub ManajemenProdukAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
 

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class ManajemenToko
+Partial Class ManajemenTokoAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -59,6 +59,7 @@ Partial Class ManajemenToko
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUbahNama = New System.Windows.Forms.TextBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LihatAkunStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahAkunStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -71,7 +72,6 @@ Partial Class ManajemenToko
         Me.HapusDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlProfil.SuspendLayout()
         Me.pnlPass.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -422,6 +422,12 @@ Partial Class ManajemenToko
         Me.MenuStrip1.TabIndex = 44
         Me.MenuStrip1.Text = "MenuStrip1"
         '
+        'ProfilTokoToolStripMenuItem
+        '
+        Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(75, 21)
+        Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
+        '
         'ManajemenStaffToolStripMenuItem
         '
         Me.ManajemenStaffToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatAkunStaffToolStripMenuItem, Me.TambahAkunStaffToolStripMenuItem, Me.UbahAkunStaffToolStripMenuItem, Me.DeleteAkunStaffToolStripMenuItem})
@@ -496,13 +502,7 @@ Partial Class ManajemenToko
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(41, 21)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'ProfilTokoToolStripMenuItem
-        '
-        Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(75, 21)
-        Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
-        '
-        'ManajemenToko
+        'ManajemenTokoAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -518,7 +518,7 @@ Partial Class ManajemenToko
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "ManajemenToko"
+        Me.Name = "ManajemenTokoAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "KPOP Store"
         Me.pnlProfil.ResumeLayout(False)

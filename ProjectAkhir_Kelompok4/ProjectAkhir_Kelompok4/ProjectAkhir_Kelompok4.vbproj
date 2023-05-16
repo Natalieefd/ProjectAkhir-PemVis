@@ -76,10 +76,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manajemen-Produk.Designer.vb">
-      <DependentUpon>Manajemen-Produk.vb</DependentUpon>
+    <Compile Include="Admin- ManajemenProduk.Designer.vb">
+      <DependentUpon>Admin- ManajemenProduk.vb</DependentUpon>
     </Compile>
-    <Compile Include="Manajemen-Produk.vb">
+    <Compile Include="Admin- ManajemenProduk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin-DaftarPesanan.Designer.vb">
+      <DependentUpon>Admin-DaftarPesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin-DaftarPesanan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin-ManajemenToko.Designer.vb">
@@ -113,10 +119,22 @@
     <Compile Include="Admin-Page.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff-Page.Designer.vb">
-      <DependentUpon>Staff-Page.vb</DependentUpon>
+    <Compile Include="Staf-DaftarPesanan.Designer.vb">
+      <DependentUpon>Staf-DaftarPesanan.vb</DependentUpon>
     </Compile>
-    <Compile Include="Staff-Page.vb">
+    <Compile Include="Staf-DaftarPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staf-ManajemenProduk.Designer.vb">
+      <DependentUpon>Staf-ManajemenProduk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staf-ManajemenProduk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staf-Page.Designer.vb">
+      <DependentUpon>Staf-Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staf-Page.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer-Page.Designer.vb">
@@ -141,6 +159,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -154,8 +173,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Manajemen-Produk.resx">
-      <DependentUpon>Manajemen-Produk.vb</DependentUpon>
+    <EmbeddedResource Include="Admin- ManajemenProduk.resx">
+      <DependentUpon>Admin- ManajemenProduk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin-DaftarPesanan.resx">
+      <DependentUpon>Admin-DaftarPesanan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin-ManajemenToko.resx">
       <DependentUpon>Admin-ManajemenToko.vb</DependentUpon>
@@ -172,8 +194,14 @@
     <EmbeddedResource Include="Admin-Page.resx">
       <DependentUpon>Admin-Page.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staff-Page.resx">
-      <DependentUpon>Staff-Page.vb</DependentUpon>
+    <EmbeddedResource Include="Staf-DaftarPesanan.resx">
+      <DependentUpon>Staf-DaftarPesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staf-ManajemenProduk.resx">
+      <DependentUpon>Staf-ManajemenProduk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staf-Page.resx">
+      <DependentUpon>Staf-Page.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer-Page.resx">
       <DependentUpon>Customer-Page.vb</DependentUpon>

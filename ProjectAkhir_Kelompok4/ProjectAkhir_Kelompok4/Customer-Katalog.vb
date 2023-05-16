@@ -2,7 +2,7 @@
 
     'pas klik menuStrip pesanan(lihat, tamabah, ubah, hapus) menuju ke form Customer-Katalog
 
-    Private Sub Form7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub formKatalog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
 

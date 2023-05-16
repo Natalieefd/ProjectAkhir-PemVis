@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ManajemenProdulAdmin
+Partial Class ManajemenProdukAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,6 +29,7 @@ Partial Class ManajemenProdulAdmin
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.pnlFomProduk = New System.Windows.Forms.Panel()
+        Me.cmbKategori = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnHapus = New System.Windows.Forms.Button()
@@ -41,7 +42,6 @@ Partial Class ManajemenProdulAdmin
         Me.txtStok = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtKategori = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtNama = New System.Windows.Forms.TextBox()
         Me.btnTambah = New System.Windows.Forms.Button()
@@ -75,7 +75,7 @@ Partial Class ManajemenProdulAdmin
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Vela Sans GX", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(265, 56)
+        Me.Label4.Location = New System.Drawing.Point(282, 56)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(231, 28)
         Me.Label4.TabIndex = 54
@@ -83,6 +83,7 @@ Partial Class ManajemenProdulAdmin
         '
         'pnlFomProduk
         '
+        Me.pnlFomProduk.Controls.Add(Me.cmbKategori)
         Me.pnlFomProduk.Controls.Add(Me.Label12)
         Me.pnlFomProduk.Controls.Add(Me.btnClear)
         Me.pnlFomProduk.Controls.Add(Me.btnHapus)
@@ -95,14 +96,22 @@ Partial Class ManajemenProdulAdmin
         Me.pnlFomProduk.Controls.Add(Me.txtStok)
         Me.pnlFomProduk.Controls.Add(Me.Label6)
         Me.pnlFomProduk.Controls.Add(Me.Label5)
-        Me.pnlFomProduk.Controls.Add(Me.txtKategori)
         Me.pnlFomProduk.Controls.Add(Me.Label3)
         Me.pnlFomProduk.Controls.Add(Me.txtNama)
         Me.pnlFomProduk.Controls.Add(Me.btnTambah)
-        Me.pnlFomProduk.Location = New System.Drawing.Point(41, 425)
+        Me.pnlFomProduk.Location = New System.Drawing.Point(58, 425)
         Me.pnlFomProduk.Name = "pnlFomProduk"
         Me.pnlFomProduk.Size = New System.Drawing.Size(686, 300)
         Me.pnlFomProduk.TabIndex = 53
+        '
+        'cmbKategori
+        '
+        Me.cmbKategori.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbKategori.FormattingEnabled = True
+        Me.cmbKategori.Location = New System.Drawing.Point(139, 135)
+        Me.cmbKategori.Name = "cmbKategori"
+        Me.cmbKategori.Size = New System.Drawing.Size(152, 23)
+        Me.cmbKategori.TabIndex = 25
         '
         'Label12
         '
@@ -218,14 +227,6 @@ Partial Class ManajemenProdulAdmin
         Me.Label5.Size = New System.Drawing.Size(0, 17)
         Me.Label5.TabIndex = 8
         '
-        'txtKategori
-        '
-        Me.txtKategori.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtKategori.Location = New System.Drawing.Point(139, 134)
-        Me.txtKategori.Name = "txtKategori"
-        Me.txtKategori.Size = New System.Drawing.Size(152, 23)
-        Me.txtKategori.TabIndex = 7
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -274,7 +275,7 @@ Partial Class ManajemenProdulAdmin
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvProduk.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvProduk.Location = New System.Drawing.Point(41, 117)
+        Me.dgvProduk.Location = New System.Drawing.Point(58, 117)
         Me.dgvProduk.Name = "dgvProduk"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -291,7 +292,7 @@ Partial Class ManajemenProdulAdmin
         '
         'pnlSpace
         '
-        Me.pnlSpace.Location = New System.Drawing.Point(41, 731)
+        Me.pnlSpace.Location = New System.Drawing.Point(58, 731)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
         Me.pnlSpace.TabIndex = 51
@@ -411,7 +412,7 @@ Partial Class ManajemenProdulAdmin
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(41, 21)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'ManajemenProdulAdmin
+        'ManajemenProdukAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -426,7 +427,7 @@ Partial Class ManajemenProdulAdmin
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "ManajemenProdulAdmin"
+        Me.Name = "ManajemenProdukAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "KPOP Store"
         Me.pnlFomProduk.ResumeLayout(False)
@@ -455,7 +456,6 @@ Partial Class ManajemenProdulAdmin
     Friend WithEvents txtStok As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents txtKategori As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txtNama As TextBox
     Friend WithEvents btnTambah As Button
@@ -479,4 +479,5 @@ Partial Class ManajemenProdulAdmin
     Friend WithEvents HapusDataBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents cmbKategori As ComboBox
 End Class
