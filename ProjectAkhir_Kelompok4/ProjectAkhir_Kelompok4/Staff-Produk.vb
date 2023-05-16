@@ -1,5 +1,5 @@
-﻿Public Class formStaff
-    Private Sub formStaff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class ManajemenProdukStaff
+    Private Sub ManajemenProduk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
 

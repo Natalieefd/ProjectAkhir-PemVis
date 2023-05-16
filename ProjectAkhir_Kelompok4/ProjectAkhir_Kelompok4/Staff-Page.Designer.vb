@@ -24,7 +24,6 @@ Partial Class formStaff
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ManajemenTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LihatBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,49 +44,43 @@ Partial Class formStaff
         'MenuStrip1
         '
         Me.MenuStrip1.Font = New System.Drawing.Font("Vela Sans GX", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManajemenTokoToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.ManajemenPesananToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManajemenBarangToolStripMenuItem, Me.ManajemenPesananToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
         Me.MenuStrip1.TabIndex = 8
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'ManajemenTokoToolStripMenuItem
-        '
-        Me.ManajemenTokoToolStripMenuItem.Name = "ManajemenTokoToolStripMenuItem"
-        Me.ManajemenTokoToolStripMenuItem.Size = New System.Drawing.Size(75, 21)
-        Me.ManajemenTokoToolStripMenuItem.Text = "Profil Toko"
-        '
         'ManajemenBarangToolStripMenuItem
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatBarangToolStripMenuItem, Me.TambahBarangToolStripMenuItem, Me.UbahBarangToolStripMenuItem, Me.HapusBarangToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(126, 21)
-        Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Barang"
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(125, 21)
+        Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatBarangToolStripMenuItem
         '
         Me.LihatBarangToolStripMenuItem.Name = "LihatBarangToolStripMenuItem"
-        Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.LihatBarangToolStripMenuItem.Text = "Lihat Data Barang"
+        Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.LihatBarangToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahBarangToolStripMenuItem
         '
         Me.TambahBarangToolStripMenuItem.Name = "TambahBarangToolStripMenuItem"
-        Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.TambahBarangToolStripMenuItem.Text = "Tambah Data Barang"
+        Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.TambahBarangToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahBarangToolStripMenuItem
         '
         Me.UbahBarangToolStripMenuItem.Name = "UbahBarangToolStripMenuItem"
-        Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.UbahBarangToolStripMenuItem.Text = "Ubah Data Barang"
+        Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.UbahBarangToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusBarangToolStripMenuItem
         '
         Me.HapusBarangToolStripMenuItem.Name = "HapusBarangToolStripMenuItem"
-        Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.HapusBarangToolStripMenuItem.Text = "Hapus Data Barang"
+        Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.HapusBarangToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'ManajemenPesananToolStripMenuItem
         '
@@ -175,7 +168,6 @@ Partial Class formStaff
 
     End Sub
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ManajemenTokoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LihatBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TambahBarangToolStripMenuItem As ToolStripMenuItem
