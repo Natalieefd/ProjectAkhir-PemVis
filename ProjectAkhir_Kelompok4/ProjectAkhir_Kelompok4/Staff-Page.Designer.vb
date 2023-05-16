@@ -25,24 +25,19 @@ Partial Class formStaff
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ManajemenTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LihatTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LihatBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UbahBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HapusBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LihatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BatalkanPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lblUsn = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -58,22 +53,9 @@ Partial Class formStaff
         '
         'ManajemenTokoToolStripMenuItem
         '
-        Me.ManajemenTokoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatTokoToolStripMenuItem, Me.UbahTokoToolStripMenuItem})
         Me.ManajemenTokoToolStripMenuItem.Name = "ManajemenTokoToolStripMenuItem"
-        Me.ManajemenTokoToolStripMenuItem.Size = New System.Drawing.Size(110, 20)
-        Me.ManajemenTokoToolStripMenuItem.Text = "Manajemen Toko"
-        '
-        'LihatTokoToolStripMenuItem
-        '
-        Me.LihatTokoToolStripMenuItem.Name = "LihatTokoToolStripMenuItem"
-        Me.LihatTokoToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
-        Me.LihatTokoToolStripMenuItem.Text = "Lihat Toko"
-        '
-        'UbahTokoToolStripMenuItem
-        '
-        Me.UbahTokoToolStripMenuItem.Name = "UbahTokoToolStripMenuItem"
-        Me.UbahTokoToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
-        Me.UbahTokoToolStripMenuItem.Text = "Ubah Toko"
+        Me.ManajemenTokoToolStripMenuItem.Size = New System.Drawing.Size(75, 20)
+        Me.ManajemenTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenBarangToolStripMenuItem
         '
@@ -108,28 +90,15 @@ Partial Class formStaff
         '
         'ManajemenPesananToolStripMenuItem
         '
-        Me.ManajemenPesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(129, 20)
-        Me.ManajemenPesananToolStripMenuItem.Text = "Manajemen Pesanan"
+        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
+        Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
         '
-        'LihatPesananToolStripMenuItem
+        'ExitToolStripMenuItem
         '
-        Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
-        Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
-        '
-        'UbahPesananToolStripMenuItem
-        '
-        Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
-        Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
-        '
-        'BatalkanPesananToolStripMenuItem
-        '
-        Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
-        Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
+        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'StatusStrip1
         '
@@ -180,12 +149,6 @@ Partial Class formStaff
         Me.Label1.Text = "Selamat Datang di" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Halaman Staff"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
         'formStaff
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -212,17 +175,12 @@ Partial Class formStaff
     End Sub
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ManajemenTokoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatTokoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UbahTokoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LihatBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TambahBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UbahBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HapusBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UbahPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BatalkanPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
     Friend WithEvents SlabelJam As ToolStripStatusLabel

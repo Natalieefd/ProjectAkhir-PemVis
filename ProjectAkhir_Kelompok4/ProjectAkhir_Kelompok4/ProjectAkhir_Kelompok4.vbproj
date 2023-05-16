@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manajemen-Produk.Designer.vb">
+      <DependentUpon>Manajemen-Produk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manajemen-Produk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manajemen-Toko.Designer.vb">
+      <DependentUpon>Manajemen-Toko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manajemen-Toko.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Home.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Manajemen-Produk.resx">
+      <DependentUpon>Manajemen-Produk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manajemen-Toko.resx">
+      <DependentUpon>Manajemen-Toko.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>

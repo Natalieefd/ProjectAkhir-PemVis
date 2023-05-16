@@ -37,11 +37,11 @@ Partial Class formAdmin
         Me.UbahDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HapusDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -115,38 +115,44 @@ Partial Class formAdmin
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatDataBarangToolStripMenuItem, Me.TambahDataBarangToolStripMenuItem, Me.UbahDataBarangToolStripMenuItem, Me.HapusDataBarangToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(126, 21)
-        Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Barang"
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(125, 21)
+        Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatDataBarangToolStripMenuItem
         '
         Me.LihatDataBarangToolStripMenuItem.Name = "LihatDataBarangToolStripMenuItem"
-        Me.LihatDataBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.LihatDataBarangToolStripMenuItem.Text = "Lihat Data Barang"
+        Me.LihatDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.LihatDataBarangToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahDataBarangToolStripMenuItem
         '
         Me.TambahDataBarangToolStripMenuItem.Name = "TambahDataBarangToolStripMenuItem"
-        Me.TambahDataBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.TambahDataBarangToolStripMenuItem.Text = "Tambah Data Barang"
+        Me.TambahDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.TambahDataBarangToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahDataBarangToolStripMenuItem
         '
         Me.UbahDataBarangToolStripMenuItem.Name = "UbahDataBarangToolStripMenuItem"
-        Me.UbahDataBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.UbahDataBarangToolStripMenuItem.Text = "Ubah Data Barang"
+        Me.UbahDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.UbahDataBarangToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusDataBarangToolStripMenuItem
         '
         Me.HapusDataBarangToolStripMenuItem.Name = "HapusDataBarangToolStripMenuItem"
-        Me.HapusDataBarangToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
-        Me.HapusDataBarangToolStripMenuItem.Text = "Hapus Data Barang"
+        Me.HapusDataBarangToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
+        Me.HapusDataBarangToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'PesananToolStripMenuItem
         '
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
         Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(68, 21)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(41, 21)
+        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'StatusStrip1
         '
@@ -172,12 +178,6 @@ Partial Class formAdmin
         '
         'Timer1
         '
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(41, 21)
-        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'formAdmin
         '

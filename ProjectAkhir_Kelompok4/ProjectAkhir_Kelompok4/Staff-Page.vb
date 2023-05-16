@@ -8,11 +8,11 @@
     End Sub
 
     'Menu Strip Manajemen Toko
-    Private Sub LihatTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatTokoToolStripMenuItem.Click
+    Private Sub LihatTokoToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub UbahTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahTokoToolStripMenuItem.Click
+    Private Sub UbahTokoToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -34,15 +34,15 @@
     End Sub
 
     'Menu Strip Manajemen Pesanan
-    Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+    Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+    Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
+    Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
