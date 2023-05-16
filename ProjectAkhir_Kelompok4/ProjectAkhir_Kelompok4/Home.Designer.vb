@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Home
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Home
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.btnLogin = New System.Windows.Forms.Button()
@@ -38,22 +38,23 @@ Partial Class Home
         Me.btnMaximize = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.pnlContent1 = New System.Windows.Forms.Panel()
-        Me.pctureLogo = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlLeft.SuspendLayout()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.pnlContent1.SuspendLayout()
-        CType(Me.pctureLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnLogin
         '
         Me.btnLogin.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnLogin.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(81, 233)
+        Me.btnLogin.Location = New System.Drawing.Point(0, 313)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(75, 29)
+        Me.btnLogin.Size = New System.Drawing.Size(608, 36)
         Me.btnLogin.TabIndex = 1
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
@@ -61,10 +62,12 @@ Partial Class Home
         'btnRegist
         '
         Me.btnRegist.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnRegist.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btnRegist.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRegist.Location = New System.Drawing.Point(295, 233)
+        Me.btnRegist.Location = New System.Drawing.Point(0, 349)
+        Me.btnRegist.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRegist.Name = "btnRegist"
-        Me.btnRegist.Size = New System.Drawing.Size(75, 29)
+        Me.btnRegist.Size = New System.Drawing.Size(608, 36)
         Me.btnRegist.TabIndex = 2
         Me.btnRegist.Text = "Register"
         Me.btnRegist.UseVisualStyleBackColor = False
@@ -72,38 +75,37 @@ Partial Class Home
         'btnExit
         '
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(713, 388)
+        Me.btnExit.Location = New System.Drawing.Point(951, 478)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 29)
+        Me.btnExit.Size = New System.Drawing.Size(100, 36)
         Me.btnExit.TabIndex = 3
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'Timer1
-        '
         '
         'StatusStrip1
         '
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 346)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 429)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(699, 22)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(932, 24)
         Me.StatusStrip1.TabIndex = 45
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 18)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(49, 18)
         Me.SlabelJam.Text = "Jam : "
         '
         'pnlLeft
@@ -112,20 +114,22 @@ Partial Class Home
         Me.pnlLeft.Controls.Add(Me.Label1)
         Me.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.pnlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.pnlLeft.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlLeft.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlLeft.Name = "pnlLeft"
-        Me.pnlLeft.Size = New System.Drawing.Size(271, 346)
+        Me.pnlLeft.Size = New System.Drawing.Size(324, 429)
         Me.pnlLeft.TabIndex = 46
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(10, 98)
+        Me.Label1.Font = New System.Drawing.Font("MS Gothic", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(40, 150)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(256, 111)
-        Me.Label1.TabIndex = 1
+        Me.Label1.Size = New System.Drawing.Size(237, 111)
+        Me.Label1.TabIndex = 2
         Me.Label1.Text = "WELCOME TO " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "K-POP STORE"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -134,10 +138,10 @@ Partial Class Home
         Me.pnlTop.BackColor = System.Drawing.SystemColors.ControlDark
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlTop.Location = New System.Drawing.Point(271, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlTop.Location = New System.Drawing.Point(324, 0)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(428, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(608, 44)
         Me.pnlTop.TabIndex = 47
         '
         'pnlControl
@@ -146,10 +150,10 @@ Partial Class Home
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(347, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlControl.Location = New System.Drawing.Point(500, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(81, 36)
+        Me.pnlControl.Size = New System.Drawing.Size(108, 44)
         Me.pnlControl.TabIndex = 48
         '
         'btnMinimize
@@ -157,10 +161,10 @@ Partial Class Home
         Me.btnMinimize.FlatAppearance.BorderSize = 0
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMinimize.Location = New System.Drawing.Point(12, 14)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
+        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
         Me.btnMinimize.TabIndex = 2
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
@@ -169,10 +173,10 @@ Partial Class Home
         Me.btnMaximize.FlatAppearance.BorderSize = 0
         Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMaximize.Location = New System.Drawing.Point(45, 14)
+        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
+        Me.btnMaximize.Size = New System.Drawing.Size(19, 18)
         Me.btnMaximize.TabIndex = 1
         Me.btnMaximize.UseVisualStyleBackColor = True
         '
@@ -181,48 +185,47 @@ Partial Class Home
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(58, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnClose.Location = New System.Drawing.Point(77, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(14, 15)
+        Me.btnClose.Size = New System.Drawing.Size(19, 18)
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'pnlContent1
         '
-        Me.pnlContent1.Controls.Add(Me.pctureLogo)
+        Me.pnlContent1.Controls.Add(Me.Panel1)
         Me.pnlContent1.Controls.Add(Me.btnLogin)
         Me.pnlContent1.Controls.Add(Me.btnRegist)
         Me.pnlContent1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlContent1.Location = New System.Drawing.Point(271, 36)
-        Me.pnlContent1.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlContent1.Location = New System.Drawing.Point(324, 44)
+        Me.pnlContent1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlContent1.Name = "pnlContent1"
-        Me.pnlContent1.Size = New System.Drawing.Size(428, 310)
+        Me.pnlContent1.Size = New System.Drawing.Size(608, 385)
         Me.pnlContent1.TabIndex = 48
         '
-        'pctureLogo
+        'Panel1
         '
-        Me.pctureLogo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pctureLogo.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.Logo_Kpop_Store
-        Me.pctureLogo.Location = New System.Drawing.Point(0, 0)
-        Me.pctureLogo.Margin = New System.Windows.Forms.Padding(2)
-        Me.pctureLogo.Name = "pctureLogo"
-        Me.pctureLogo.Size = New System.Drawing.Size(428, 191)
-        Me.pctureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pctureLogo.TabIndex = 3
-        Me.pctureLogo.TabStop = False
+        Me.Panel1.BackgroundImage = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.Logo_Kpop_Store
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(608, 313)
+        Me.Panel1.TabIndex = 3
         '
         'Home
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(699, 368)
+        Me.ClientSize = New System.Drawing.Size(932, 453)
         Me.Controls.Add(Me.pnlContent1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlLeft)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.btnExit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Home"
@@ -235,7 +238,6 @@ Partial Class Home
         Me.pnlTop.ResumeLayout(False)
         Me.pnlControl.ResumeLayout(False)
         Me.pnlContent1.ResumeLayout(False)
-        CType(Me.pctureLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -248,12 +250,12 @@ Partial Class Home
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
     Friend WithEvents SlabelJam As ToolStripStatusLabel
     Friend WithEvents pnlLeft As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents pnlTop As Panel
     Friend WithEvents pnlControl As Panel
     Friend WithEvents btnMinimize As Button
     Friend WithEvents btnMaximize As Button
     Friend WithEvents btnClose As Button
     Friend WithEvents pnlContent1 As Panel
-    Friend WithEvents pctureLogo As PictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
 End Class
