@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 15, 2023 at 06:23 AM
+-- Generation Time: May 16, 2023 at 05:01 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -58,7 +58,6 @@ CREATE TABLE `tbpesanan` (
   `tanggal_pesanan` datetime NOT NULL,
   `id_customer` int(10) NOT NULL,
   `id_produk` int(10) NOT NULL,
-  `nama_produk` varchar(50) NOT NULL,
   `harga_total` int(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -88,6 +87,19 @@ CREATE TABLE `tbstaff` (
   `nama` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbtoko`
+--
+
+CREATE TABLE `tbtoko` (
+  `nama` varchar(20) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `no_telp` int(12) NOT NULL,
+  `alamat` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -123,6 +135,12 @@ ALTER TABLE `tbproduk`
 --
 ALTER TABLE `tbstaff`
   ADD PRIMARY KEY (`id_staff`);
+
+--
+-- Indexes for table `tbtoko`
+--
+ALTER TABLE `tbtoko`
+  ADD PRIMARY KEY (`nama`);
 
 --
 -- AUTO_INCREMENT for dumped tables
