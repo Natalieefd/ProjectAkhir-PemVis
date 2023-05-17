@@ -35,7 +35,6 @@ D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\Pro
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.pdb
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.Home.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formKatalog.resources
-D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formPesanan.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.AssemblyReference.cache
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.SuggestedBindingRedirects.cache
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.exe
@@ -46,7 +45,6 @@ D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\Pro
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProdukAdmin.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananAdmin.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesanan.resources
-D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\mysql.data.dll
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CopyComplete
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.exe.config
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.exe
@@ -96,3 +94,4 @@ C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\mysql.data.dll
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CopyComplete
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CopyComplete
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfil.resources

@@ -79,7 +79,7 @@ Partial Class formLogin
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(38, 112)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 17)
+        Me.Label3.Size = New System.Drawing.Size(61, 15)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Password"
         '
@@ -88,7 +88,7 @@ Partial Class formLogin
         Me.txtPassword.Location = New System.Drawing.Point(122, 109)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(192, 23)
+        Me.txtPassword.Size = New System.Drawing.Size(192, 21)
         Me.txtPassword.TabIndex = 4
         '
         'Label2
@@ -96,7 +96,7 @@ Partial Class formLogin
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(38, 54)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 17)
+        Me.Label2.Size = New System.Drawing.Size(65, 15)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Username"
         '
@@ -114,7 +114,7 @@ Partial Class formLogin
         '
         Me.txtUsername.Location = New System.Drawing.Point(122, 51)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(192, 23)
+        Me.txtUsername.Size = New System.Drawing.Size(192, 21)
         Me.txtUsername.TabIndex = 1
         '
         'StatusStrip1
@@ -131,14 +131,14 @@ Partial Class formLogin
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'Panel1
@@ -147,7 +147,7 @@ Partial Class formLogin
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(243, 392)
         Me.Panel1.TabIndex = 50
@@ -160,7 +160,7 @@ Partial Class formLogin
         Me.Label1.Location = New System.Drawing.Point(48, 165)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(169, 55)
+        Me.Label1.Size = New System.Drawing.Size(145, 48)
         Me.Label1.TabIndex = 51
         Me.Label1.Text = "LOGIN"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -171,7 +171,7 @@ Partial Class formLogin
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(243, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
         Me.pnlTop.Size = New System.Drawing.Size(521, 36)
         Me.pnlTop.TabIndex = 51
@@ -183,7 +183,7 @@ Partial Class formLogin
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
         Me.pnlControl.Location = New System.Drawing.Point(440, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(81, 36)
         Me.pnlControl.TabIndex = 48
@@ -194,7 +194,7 @@ Partial Class formLogin
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
         Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
@@ -206,7 +206,7 @@ Partial Class formLogin
         Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
         Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
         Me.btnMaximize.TabIndex = 1
@@ -218,7 +218,7 @@ Partial Class formLogin
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
         Me.btnClose.Location = New System.Drawing.Point(58, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
