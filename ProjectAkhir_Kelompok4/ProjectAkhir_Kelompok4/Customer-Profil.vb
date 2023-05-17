@@ -45,7 +45,8 @@ Public Class formProfil
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
-
+        formProfilTokoC.Show()
+        Me.Hide()
     End Sub
 
     Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click

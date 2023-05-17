@@ -58,6 +58,9 @@ Partial Class formProfil
         Me.Label24 = New System.Windows.Forms.Label()
         Me.pnlTop = New System.Windows.Forms.Panel()
         Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnMaximize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KatalogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -76,9 +79,6 @@ Partial Class formProfil
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btnBatal = New System.Windows.Forms.Button()
         Me.pnlPass = New System.Windows.Forms.Panel()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnMaximize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlFormUbah.SuspendLayout()
         Me.pnlProfil.SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class formProfil
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 937)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(781, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(798, 22)
         Me.StatusStrip1.TabIndex = 9
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -409,7 +409,7 @@ Partial Class formProfil
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(781, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(798, 36)
         Me.pnlTop.TabIndex = 50
         '
         'pnlControl
@@ -418,11 +418,47 @@ Partial Class formProfil
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(700, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(717, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(81, 36)
         Me.pnlControl.TabIndex = 48
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnMaximize
+        '
+        Me.btnMaximize.FlatAppearance.BorderSize = 0
+        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
+        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMaximize.Name = "btnMaximize"
+        Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
+        Me.btnMaximize.TabIndex = 1
+        Me.btnMaximize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(58, 10)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(14, 15)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -433,7 +469,7 @@ Partial Class formProfil
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(781, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(798, 24)
         Me.MenuStrip1.TabIndex = 51
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -566,49 +602,13 @@ Partial Class formProfil
         Me.pnlPass.Size = New System.Drawing.Size(306, 180)
         Me.pnlPass.TabIndex = 36
         '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnMaximize
-        '
-        Me.btnMaximize.FlatAppearance.BorderSize = 0
-        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMaximize.TabIndex = 1
-        Me.btnMaximize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(58, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
         'formProfil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.DarkOrange
-        Me.ClientSize = New System.Drawing.Size(798, 450)
+        Me.ClientSize = New System.Drawing.Size(815, 450)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlPass)
