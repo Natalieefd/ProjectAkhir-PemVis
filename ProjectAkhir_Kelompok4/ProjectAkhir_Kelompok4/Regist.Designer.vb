@@ -218,7 +218,7 @@ Partial Class formRegist
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(635, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(646, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(108, 44)
@@ -244,7 +244,7 @@ Partial Class formRegist
         Me.pnlTop.Location = New System.Drawing.Point(324, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(743, 44)
+        Me.pnlTop.Size = New System.Drawing.Size(754, 44)
         Me.pnlTop.TabIndex = 56
         '
         'Label7
@@ -252,7 +252,7 @@ Partial Class formRegist
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("MS Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(22, 226)
+        Me.Label7.Location = New System.Drawing.Point(22, 225)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -268,7 +268,7 @@ Partial Class formRegist
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(324, 530)
+        Me.Panel1.Size = New System.Drawing.Size(324, 528)
         Me.Panel1.TabIndex = 55
         '
         'SlabelJam
@@ -289,10 +289,10 @@ Partial Class formRegist
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 530)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 528)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1067, 24)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1078, 24)
         Me.StatusStrip1.TabIndex = 54
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -302,7 +302,7 @@ Partial Class formRegist
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.ClientSize = New System.Drawing.Size(1078, 552)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.StatusStrip1)
