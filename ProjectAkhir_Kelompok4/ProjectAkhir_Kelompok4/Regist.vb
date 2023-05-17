@@ -18,6 +18,10 @@
             Exit Sub
         End If
 
+        For Each c As Char In txtNoTelp.Text
+
+        Next
+
         Dim stats() As String = {"admin", "staff", "customer"}
         Dim dup = False
 

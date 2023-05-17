@@ -87,6 +87,7 @@ Partial Class formRegist
         'txtAlamat
         '
         Me.txtAlamat.Location = New System.Drawing.Point(126, 220)
+        Me.txtAlamat.MaxLength = 50
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(173, 23)
         Me.txtAlamat.TabIndex = 10
@@ -103,6 +104,7 @@ Partial Class formRegist
         'txtNoTelp
         '
         Me.txtNoTelp.Location = New System.Drawing.Point(126, 175)
+        Me.txtNoTelp.MaxLength = 15
         Me.txtNoTelp.Name = "txtNoTelp"
         Me.txtNoTelp.Size = New System.Drawing.Size(173, 23)
         Me.txtNoTelp.TabIndex = 8
@@ -119,6 +121,7 @@ Partial Class formRegist
         'txtNama
         '
         Me.txtNama.Location = New System.Drawing.Point(126, 34)
+        Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(173, 23)
         Me.txtNama.TabIndex = 6
@@ -135,6 +138,7 @@ Partial Class formRegist
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(126, 129)
+        Me.txtPassword.MaxLength = 50
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(173, 23)
         Me.txtPassword.TabIndex = 4
@@ -161,6 +165,7 @@ Partial Class formRegist
         'txtUsername
         '
         Me.txtUsername.Location = New System.Drawing.Point(126, 82)
+        Me.txtUsername.MaxLength = 50
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(173, 23)
         Me.txtUsername.TabIndex = 1

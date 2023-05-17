@@ -173,7 +173,7 @@ Partial Class formAdmin
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(764, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(764, 26)
         Me.MenuStrip1.TabIndex = 51
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -193,7 +193,7 @@ Partial Class formAdmin
         'LihatAkunStaffToolStripMenuItem
         '
         Me.LihatAkunStaffToolStripMenuItem.Name = "LihatAkunStaffToolStripMenuItem"
-        Me.LihatAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(205, 24)
+        Me.LihatAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(206, 24)
         Me.LihatAkunStaffToolStripMenuItem.Text = "Lihat Akun Staff"
         '
         'TambahAkunStaffToolStripMenuItem
