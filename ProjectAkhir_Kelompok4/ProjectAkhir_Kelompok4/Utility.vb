@@ -1,4 +1,6 @@
-﻿Module Utility
+﻿Imports System.Data.SqlTypes
+
+Module Utility
 
     Public ActiveID As Integer
     Public ActiveUsername As String
@@ -49,38 +51,31 @@
     End Sub
 
     Sub CloseForm(sender As Object, btnExit As Object)
-        If Not sender.ActiveControl Is btnExit Then
+        If sender.ActiveControl IsNot btnExit Then
             End
         End If
     End Sub
 
-    Function Integering(Sender As TextBox, eChar As Char) As Boolean
+    Function Numbering(e As KeyPressEventArgs) As Boolean
+        Dim eChar As Char = e.KeyChar
 
-        'Anti titik di awal
-        If Asc(eChar) = 46 And String.IsNullOrEmpty(Sender.Text) Then
+        'Numeric Only
+        If Asc(eChar) <> 8 And Not eChar Like "[0-9]" Then
             Return True
-
-            'Anti titik lebih dari 1
-        ElseIf Asc(eChar) = 46 And Val(Sender.Text) - Int(Val(Sender.Text)) <> 0 Then
-            Return True
-
-            'Anti titik double
-        ElseIf String.IsNullOrEmpty(Sender.Text) = False And Asc(eChar) = 46 Then
-            If (Sender.Text).Last() = "." Then
-                Return True
-            End If
-
-            'Numeric Only
-        ElseIf Asc(eChar) <> 8 Then
-            If Asc(eChar) < 48 Or Asc(eChar) > 57 Then
-                Return True
-
-                'unZero Di Awal kecuali solo
-            ElseIf Sender.Text = "0" Then
-                Sender.Text = ""
-            End If
         End If
+
         Return False
+
+    End Function
+
+    Function CheckNum(TextControl As TextBox) As Boolean
+        For Each c As Char In TextControl.Text
+            If Not c Like "[0-9]" Then
+                Return False
+            End If
+        Next
+
+        Return True
     End Function
 
 

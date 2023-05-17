@@ -1,6 +1,6 @@
-﻿Public Class formAdmin
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
-    'lblUsn buat nampilin usn akun
+Public Class formAdmin
 
     Private Sub formAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
@@ -20,10 +20,12 @@
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        Home.Show()
         Me.Close()
     End Sub
 
     Private Sub formAdmin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem)
+        CloseForm(sender, MenuStrip1)
     End Sub
 End Class

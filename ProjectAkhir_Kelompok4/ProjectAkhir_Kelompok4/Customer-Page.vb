@@ -23,11 +23,6 @@
         Me.Hide()
     End Sub
 
-    Private Sub PesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PesananToolStripMenuItem.Click
-        formPesananCust.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub ProfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilToolStripMenuItem.Click
         formProfilTokoC.Show()
         Me.Hide()

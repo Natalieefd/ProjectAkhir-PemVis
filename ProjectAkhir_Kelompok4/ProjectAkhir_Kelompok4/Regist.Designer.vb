@@ -24,6 +24,7 @@ Partial Class formRegist
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Warn = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -57,6 +58,7 @@ Partial Class formRegist
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.GroupBox1.Controls.Add(Me.Warn)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.txtAlamat)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -74,6 +76,19 @@ Partial Class formRegist
         Me.GroupBox1.Size = New System.Drawing.Size(359, 326)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
+        '
+        'Warn
+        '
+        Me.Warn.AutoSize = True
+        Me.Warn.BackColor = System.Drawing.Color.Red
+        Me.Warn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Warn.ForeColor = System.Drawing.SystemColors.Control
+        Me.Warn.Location = New System.Drawing.Point(305, 178)
+        Me.Warn.Name = "Warn"
+        Me.Warn.Size = New System.Drawing.Size(37, 19)
+        Me.Warn.TabIndex = 12
+        Me.Warn.Text = "< ! >"
+        Me.Warn.Visible = False
         '
         'Label6
         '
@@ -187,7 +202,7 @@ Partial Class formRegist
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
         Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
@@ -199,7 +214,7 @@ Partial Class formRegist
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
         Me.btnClose.Location = New System.Drawing.Point(58, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
@@ -211,8 +226,8 @@ Partial Class formRegist
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(467, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlControl.Location = New System.Drawing.Point(484, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(81, 36)
         Me.pnlControl.TabIndex = 48
@@ -223,7 +238,7 @@ Partial Class formRegist
         Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
         Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
         Me.btnMaximize.TabIndex = 1
@@ -235,9 +250,9 @@ Partial Class formRegist
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(243, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(548, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(565, 36)
         Me.pnlTop.TabIndex = 56
         '
         'Label7
@@ -259,9 +274,9 @@ Partial Class formRegist
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(243, 427)
+        Me.Panel1.Size = New System.Drawing.Size(243, 426)
         Me.Panel1.TabIndex = 55
         '
         'SlabelJam
@@ -283,9 +298,9 @@ Partial Class formRegist
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 427)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 426)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(791, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(808, 22)
         Me.StatusStrip1.TabIndex = 54
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -347,4 +362,5 @@ Partial Class formRegist
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Warn As Label
 End Class

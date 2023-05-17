@@ -18,9 +18,10 @@
             Exit Sub
         End If
 
-        For Each c As Char In txtNoTelp.Text
-
-        Next
+        If Not CheckNum(txtNoTelp) Then
+            Warn.Visible = True
+            Exit Sub
+        End If
 
         Dim stats() As String = {"admin", "staff", "customer"}
         Dim dup = False
@@ -63,4 +64,9 @@
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
+    Private Sub txtNoTelp_TextChanged(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress, txtNoTelp.KeyPress
+        e.Handled = Numbering(e)
+    End Sub
+
 End Class

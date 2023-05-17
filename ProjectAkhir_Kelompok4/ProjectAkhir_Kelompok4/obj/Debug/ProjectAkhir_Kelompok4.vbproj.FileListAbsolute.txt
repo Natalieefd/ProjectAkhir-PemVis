@@ -78,12 +78,10 @@ C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formLogin.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formRegist.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formAdmin.resources
-C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesanan.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProdukStaf.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formStaff.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formCustomer.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formKatalog.resources
-C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formPesanan.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.Resources.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.GenerateResource.cache
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CoreCompileInputs.cache
@@ -98,3 +96,8 @@ D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\Pro
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoS.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananStaf.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formPesananCust.resources
+C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoC.resources
+C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formPesananCust.resources
+C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoS.resources
+C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananStaf.resources
+C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfil.resources
