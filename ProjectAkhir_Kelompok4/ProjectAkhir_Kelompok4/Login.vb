@@ -1,4 +1,9 @@
 ﻿Public Class formLogin
+    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SlabelTanggal.Text = Today
+        SlabelJam.Text = TimeOfDay
+    End Sub
+
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Home.Show()
         Me.Close()
@@ -8,7 +13,7 @@
         koneksi()
     End Sub
 
-    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs)
         If EmptyTB() Then
             Exit Sub
         End If
@@ -53,4 +58,11 @@
         CloseForm(sender, {btnBack, btnSubmit})
     End Sub
 
+    Private Sub txtPassword_MouseClick(sender As Object, e As MouseEventArgs) Handles txtPassword.MouseClick
+        txtPassword.PasswordChar = "'"
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs)
+        Me.Close()
+    End Sub
 End Class

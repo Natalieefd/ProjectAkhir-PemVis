@@ -1,4 +1,9 @@
 ﻿Public Class formRegist
+    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SlabelTanggal.Text = Today
+        SlabelJam.Text = TimeOfDay
+    End Sub
+
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Home.Show()
         Me.Hide()
@@ -41,5 +46,17 @@
 
     Private Sub formRegist_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, {btnBack, btnSubmit})
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub txtPassword_MouseClick(sender As Object, e As MouseEventArgs) Handles txtPassword.MouseClick
+        txtPassword.PasswordChar = "'"
     End Sub
 End Class
