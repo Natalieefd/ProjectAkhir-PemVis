@@ -22,6 +22,7 @@ Partial Class formRegist
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtAlamat = New System.Windows.Forms.TextBox()
@@ -45,6 +46,7 @@ Partial Class formRegist
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.pnlTop.SuspendLayout()
@@ -352,4 +354,5 @@ Partial Class formRegist
     Friend WithEvents SlabelJam As ToolStripStatusLabel
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
     Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents Timer1 As Timer
 End Class

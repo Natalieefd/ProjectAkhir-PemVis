@@ -22,6 +22,7 @@ Partial Class formLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -39,6 +40,7 @@ Partial Class formLogin
         Me.btnMinimize = New System.Windows.Forms.Button()
         Me.btnMaximize = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -278,4 +280,5 @@ Partial Class formLogin
     Friend WithEvents btnMinimize As Button
     Friend WithEvents btnMaximize As Button
     Friend WithEvents btnClose As Button
+    Friend WithEvents Timer1 As Timer
 End Class
