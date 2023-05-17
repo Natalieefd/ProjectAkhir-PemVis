@@ -67,57 +67,57 @@ Partial Class formProfilTokoS
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 26)
         Me.MenuStrip1.TabIndex = 52
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 22)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenBarangToolStripMenuItem
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatBarangToolStripMenuItem, Me.TambahBarangToolStripMenuItem, Me.UbahBarangToolStripMenuItem, Me.HapusBarangToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(128, 20)
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatBarangToolStripMenuItem
         '
         Me.LihatBarangToolStripMenuItem.Name = "LihatBarangToolStripMenuItem"
-        Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.LihatBarangToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahBarangToolStripMenuItem
         '
         Me.TambahBarangToolStripMenuItem.Name = "TambahBarangToolStripMenuItem"
-        Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.TambahBarangToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahBarangToolStripMenuItem
         '
         Me.UbahBarangToolStripMenuItem.Name = "UbahBarangToolStripMenuItem"
-        Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.UbahBarangToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusBarangToolStripMenuItem
         '
         Me.HapusBarangToolStripMenuItem.Name = "HapusBarangToolStripMenuItem"
-        Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.HapusBarangToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'ManajemenPesananToolStripMenuItem
         '
         Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
+        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(78, 22)
         Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'pnlTop
@@ -194,13 +194,13 @@ Partial Class formProfilTokoS
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
-        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'pnlProfil
@@ -222,7 +222,7 @@ Partial Class formProfilTokoS
         '
         'txtAlamat
         '
-        Me.txtAlamat.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlamat.Location = New System.Drawing.Point(171, 188)
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
@@ -231,75 +231,75 @@ Partial Class formProfilTokoS
         '
         'txtNoTelp
         '
-        Me.txtNoTelp.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNoTelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoTelp.Location = New System.Drawing.Point(171, 149)
         Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(181, 23)
+        Me.txtNoTelp.Size = New System.Drawing.Size(181, 22)
         Me.txtNoTelp.TabIndex = 28
         '
         'txtEmail
         '
-        Me.txtEmail.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(171, 112)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(181, 23)
+        Me.txtEmail.Size = New System.Drawing.Size(181, 22)
         Me.txtEmail.TabIndex = 27
         '
         'txtNama
         '
-        Me.txtNama.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(171, 73)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(181, 23)
+        Me.txtNama.Size = New System.Drawing.Size(181, 22)
         Me.txtNama.TabIndex = 25
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Vela Sans GX", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(144, 18)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(144, 28)
+        Me.Label14.Size = New System.Drawing.Size(190, 29)
         Me.Label14.TabIndex = 25
         Me.Label14.Text = "PROFIL TOKO"
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.Location = New System.Drawing.Point(60, 75)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(40, 17)
+        Me.Label18.Size = New System.Drawing.Size(49, 17)
         Me.Label18.TabIndex = 25
         Me.Label18.Text = "Nama"
         '
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.Location = New System.Drawing.Point(60, 114)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(38, 17)
+        Me.Label20.Size = New System.Drawing.Size(47, 17)
         Me.Label20.TabIndex = 25
         Me.Label20.Text = "Email"
         '
         'Label22
         '
         Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.Location = New System.Drawing.Point(60, 151)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(48, 17)
+        Me.Label22.Size = New System.Drawing.Size(65, 17)
         Me.Label22.TabIndex = 25
         Me.Label22.Text = "No Telp"
         '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Vela Sans GX Medium", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.Location = New System.Drawing.Point(60, 190)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(48, 17)
+        Me.Label24.Size = New System.Drawing.Size(57, 17)
         Me.Label24.TabIndex = 25
         Me.Label24.Text = "Alamat"
         '

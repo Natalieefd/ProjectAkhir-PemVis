@@ -17,7 +17,10 @@
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        If EmptyTB() Then
+        Dim Con = EmptyTB()
+
+        If Con IsNot Nothing Then
+            Me.ActiveControl = Con
             Exit Sub
         End If
 

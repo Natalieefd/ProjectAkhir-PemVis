@@ -1,7 +1,8 @@
 ﻿Public Class formRegist
-    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Regist_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+        Me.ActiveControl = txtNama
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -10,15 +11,19 @@
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Home.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        If EmptyTB() Then
+        Dim Con = EmptyTB()
+
+        If Con IsNot Nothing Then
+            Me.ActiveControl = Con
             Exit Sub
         End If
 
         If Not CheckNum(txtNoTelp) Then
+            Me.ActiveControl = txtNoTelp
             Warn.Visible = True
             Exit Sub
         End If
@@ -65,8 +70,8 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub txtNoTelp_TextChanged(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress, txtNoTelp.KeyPress
+    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress
         e.Handled = Numbering(e)
+        Warn.Visible = False
     End Sub
-
 End Class

@@ -2,6 +2,7 @@
     Private Sub formStaff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+        lblUsn.Text = ActiveUsername
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -28,6 +29,12 @@
     End Sub
 
     Private Sub formStaff_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem)
+        CloseForm(sender, ExitToolStripMenuItem.Owner)
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.ActiveControl = sender.Owner
+        Home.Show()
+        Me.Close()
     End Sub
 End Class

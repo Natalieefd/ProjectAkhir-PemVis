@@ -5,7 +5,7 @@ Module Utility
     Public ActiveID As Integer
     Public ActiveUsername As String
 
-    Function EmptyTB(Optional sender As Object = Nothing) As Boolean
+    Function EmptyTB(Optional sender As Object = Nothing) As Control
         'Misal gamau form, maunya groupbox gitu OwO
         'Isi parameternya pakai nama groupbox
 
@@ -17,20 +17,20 @@ Module Utility
 
             If control.GetType Is GetType(TextBox) Then
                 If control.Text = Nothing Then
-                    Return True
+                    Return control
                 End If
 
             ElseIf control.GetType Is GetType(GroupBox) Then
                 For Each control2 In control.Controls
                     If control2.Text = Nothing Then
-                        Return True
+                        Return control2
                     End If
                 Next
             End If
 
         Next
 
-        Return False
+        Return Nothing
     End Function
 
     Sub CloseForm(sender As Object, btnExit() As Object)
