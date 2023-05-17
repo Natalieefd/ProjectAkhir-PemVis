@@ -44,7 +44,6 @@ D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\Pro
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProdukStaf.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProdukAdmin.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananAdmin.resources
-D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesanan.resources
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CopyComplete
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.exe.config
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\ProjectAkhir_Kelompok4.exe
@@ -95,3 +94,6 @@ C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CopyComplete
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CopyComplete
 D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfil.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoC.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoS.resources
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananStaf.resources

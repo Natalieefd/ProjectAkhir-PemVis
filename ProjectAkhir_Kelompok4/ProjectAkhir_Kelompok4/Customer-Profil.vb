@@ -1,8 +1,13 @@
 ﻿Imports MySql.Data.MySqlClient
 
-'   FYI
-'-- sisa clear txtbox buat ubah profil di pnlFormUbah
+'-- INI DIBACA, KLO DAH DIKERJAIN APUS LISTNYA --
+
+'   (yg blom)
+'-------------------------------------------------
+'-- clear txtbox buat ubah profil di pnlFormUbah
 '-- nampilin data akun user ke masing" textbox pnlProfil
+'-- tombol exit bagian hadie
+'-- SISANYA BISA CEK" LAGI MASING" KLI AJA AKU ADA YG KETINGGALAN NGE-CEK 🙏
 
 Public Class formProfil
     Private Sub formPesanan_Load(sender As Object, e As EventArgs) Handles MyBase.Load

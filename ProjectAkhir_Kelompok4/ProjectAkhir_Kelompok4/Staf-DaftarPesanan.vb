@@ -1,4 +1,4 @@
-﻿Public Class DaftarPesanan
+﻿Public Class DaftarPesananStaf
     Private Sub DaftarPesanan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
     End Sub
