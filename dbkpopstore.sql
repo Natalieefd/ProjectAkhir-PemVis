@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 16, 2023 at 09:17 AM
+-- Generation Time: May 17, 2023 at 09:32 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -31,7 +31,7 @@ CREATE TABLE `tbadmin` (
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `nama_toko` varchar(20) NOT NULL,
-  `no_telp` int(12) NOT NULL,
+  `no_telp` varchar(15) NOT NULL,
   `email` varchar(50) NOT NULL,
   `alamat` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -47,7 +47,7 @@ CREATE TABLE `tbcustomer` (
   `nama` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `no_telp` int(12) NOT NULL,
+  `no_telp` varchar(15) NOT NULL,
   `alamat` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
