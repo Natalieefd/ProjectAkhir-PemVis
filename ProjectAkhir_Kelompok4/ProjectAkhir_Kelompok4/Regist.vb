@@ -40,6 +40,6 @@
     End Sub
 
     Private Sub formRegist_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, btnBack)
+        CloseForm(sender, {btnBack, btnSubmit})
     End Sub
 End Class
