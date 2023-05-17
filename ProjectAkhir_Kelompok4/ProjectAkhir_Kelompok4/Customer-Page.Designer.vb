@@ -58,36 +58,34 @@ Partial Class formCustomer
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 486)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 392)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1018, 24)
+        Me.StatusStrip1.Size = New System.Drawing.Size(764, 22)
         Me.StatusStrip1.TabIndex = 6
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 18)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(49, 18)
+        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'lblUsn
         '
-        Me.lblUsn.AutoSize = True
         Me.lblUsn.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsn.Location = New System.Drawing.Point(439, 282)
-        Me.lblUsn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblUsn.Location = New System.Drawing.Point(277, 229)
         Me.lblUsn.Name = "lblUsn"
-        Me.lblUsn.Size = New System.Drawing.Size(153, 36)
+        Me.lblUsn.Size = New System.Drawing.Size(237, 34)
         Me.lblUsn.TabIndex = 13
         Me.lblUsn.Text = "username"
+        Me.lblUsn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
         '
@@ -96,10 +94,9 @@ Partial Class formCustomer
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(356, 213)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(267, 173)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(319, 46)
+        Me.Label2.Size = New System.Drawing.Size(261, 37)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Selamat Datang"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -113,9 +110,9 @@ Partial Class formCustomer
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1018, 44)
+        Me.pnlTop.Size = New System.Drawing.Size(764, 36)
         Me.pnlTop.TabIndex = 49
         '
         'pnlControl
@@ -124,10 +121,10 @@ Partial Class formCustomer
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(910, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlControl.Location = New System.Drawing.Point(683, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(108, 44)
+        Me.pnlControl.Size = New System.Drawing.Size(81, 36)
         Me.pnlControl.TabIndex = 48
         '
         'btnMinimize
@@ -135,10 +132,10 @@ Partial Class formCustomer
         Me.btnMinimize.FlatAppearance.BorderSize = 0
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(12, 14)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
@@ -147,10 +144,10 @@ Partial Class formCustomer
         Me.btnMaximize.FlatAppearance.BorderSize = 0
         Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(45, 14)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
+        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
         Me.btnMaximize.TabIndex = 1
         Me.btnMaximize.UseVisualStyleBackColor = True
         '
@@ -159,10 +156,10 @@ Partial Class formCustomer
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(77, 12)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClose.Location = New System.Drawing.Point(58, 10)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(19, 18)
+        Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
@@ -172,94 +169,94 @@ Partial Class formCustomer
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfilTokoToolStripMenuItem, Me.KatalogToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ProfilToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 44)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1018, 26)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(764, 24)
         Me.MenuStrip1.TabIndex = 50
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(95, 22)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'KatalogToolStripMenuItem
         '
         Me.KatalogToolStripMenuItem.Name = "KatalogToolStripMenuItem"
-        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(72, 22)
+        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.KatalogToolStripMenuItem.Text = "Katalog"
         '
         'PesananToolStripMenuItem
         '
         Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.BuatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.HapusPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
-        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(80, 22)
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'HapusPesananToolStripMenuItem
         '
         Me.HapusPesananToolStripMenuItem.Name = "HapusPesananToolStripMenuItem"
-        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(195, 26)
+        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.HapusPesananToolStripMenuItem.Text = "Hapus Pesanan"
         '
         'ProfilToolStripMenuItem
         '
         Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem1, Me.UbahPesananToolStripMenuItem1})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
-        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(56, 22)
+        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
         Me.ProfilToolStripMenuItem.Text = "Profil"
         '
         'LihatPesananToolStripMenuItem1
         '
         Me.LihatPesananToolStripMenuItem1.Name = "LihatPesananToolStripMenuItem1"
-        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(187, 26)
+        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
         Me.LihatPesananToolStripMenuItem1.Text = "Lihat Pesanan"
         '
         'UbahPesananToolStripMenuItem1
         '
         Me.UbahPesananToolStripMenuItem1.Name = "UbahPesananToolStripMenuItem1"
-        Me.UbahPesananToolStripMenuItem1.Size = New System.Drawing.Size(187, 26)
+        Me.UbahPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
         Me.UbahPesananToolStripMenuItem1.Text = "Ubah Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'formCustomer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.DarkOrange
-        Me.ClientSize = New System.Drawing.Size(1018, 510)
+        Me.ClientSize = New System.Drawing.Size(764, 414)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblUsn)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "formCustomer"

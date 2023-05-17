@@ -1,9 +1,6 @@
 ﻿Public Class formStaff
     Private Sub formStaff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
-    End Sub
-
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         SlabelJam.Text = TimeOfDay
     End Sub
 
@@ -13,5 +10,24 @@
 
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
+        formProfilTokoS.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ManajemenBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManajemenBarangToolStripMenuItem.Click
+        ManajemenProdukStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ManajemenPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManajemenPesananToolStripMenuItem.Click
+        DaftarPesananStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub formStaff_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        CloseForm(sender, ExitToolStripMenuItem)
     End Sub
 End Class

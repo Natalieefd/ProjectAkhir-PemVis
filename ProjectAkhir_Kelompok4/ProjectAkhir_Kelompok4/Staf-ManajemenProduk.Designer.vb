@@ -127,7 +127,7 @@ Partial Class ManajemenProdukStaf
         '
         'pnlSpace
         '
-        Me.pnlSpace.Location = New System.Drawing.Point(57, 731)
+        Me.pnlSpace.Location = New System.Drawing.Point(67, 731)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
         Me.pnlSpace.TabIndex = 47
@@ -162,7 +162,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Vela Sans GX", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(281, 56)
+        Me.Label4.Location = New System.Drawing.Point(296, 56)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(231, 28)
         Me.Label4.TabIndex = 50
@@ -186,7 +186,7 @@ Partial Class ManajemenProdukStaf
         Me.pnlFormProduk.Controls.Add(Me.Label3)
         Me.pnlFormProduk.Controls.Add(Me.txtNama)
         Me.pnlFormProduk.Controls.Add(Me.btnTambah)
-        Me.pnlFormProduk.Location = New System.Drawing.Point(57, 425)
+        Me.pnlFormProduk.Location = New System.Drawing.Point(67, 425)
         Me.pnlFormProduk.Name = "pnlFormProduk"
         Me.pnlFormProduk.Size = New System.Drawing.Size(686, 300)
         Me.pnlFormProduk.TabIndex = 49
@@ -362,7 +362,7 @@ Partial Class ManajemenProdukStaf
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDaftarProduk.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvDaftarProduk.Location = New System.Drawing.Point(57, 117)
+        Me.dgvDaftarProduk.Location = New System.Drawing.Point(67, 117)
         Me.dgvDaftarProduk.Name = "dgvDaftarProduk"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
