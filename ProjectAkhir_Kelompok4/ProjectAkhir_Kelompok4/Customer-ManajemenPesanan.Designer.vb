@@ -23,10 +23,10 @@ Partial Class formPesananCust
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,7 +38,7 @@ Partial Class formPesananCust
         Me.HapusPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LihatPesananToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahPesananToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UbahProfilToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlTop = New System.Windows.Forms.Panel()
         Me.pnlControl = New System.Windows.Forms.Panel()
@@ -49,8 +49,9 @@ Partial Class formPesananCust
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.lblHeader = New System.Windows.Forms.Label()
-        Me.dgvKatalog = New System.Windows.Forms.DataGridView()
+        Me.dgvPesanan = New System.Windows.Forms.DataGridView()
         Me.pnlFormPesanan = New System.Windows.Forms.Panel()
+        Me.btnBatal = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnHapus = New System.Windows.Forms.Button()
@@ -73,11 +74,12 @@ Partial Class formPesananCust
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNama = New System.Windows.Forms.TextBox()
         Me.pnlSpace = New System.Windows.Forms.Panel()
+        Me.lblPS = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
-        CType(Me.dgvKatalog, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPesanan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlFormPesanan.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -90,7 +92,7 @@ Partial Class formPesananCust
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(851, 24)
         Me.MenuStrip1.TabIndex = 53
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -116,30 +118,30 @@ Partial Class formPesananCust
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'HapusPesananToolStripMenuItem
         '
         Me.HapusPesananToolStripMenuItem.Name = "HapusPesananToolStripMenuItem"
-        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HapusPesananToolStripMenuItem.Text = "Hapus Pesanan"
         '
         'ProfilToolStripMenuItem
         '
-        Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem1, Me.UbahPesananToolStripMenuItem1})
+        Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem1, Me.UbahProfilToolStripMenuItem1})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
         Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
         Me.ProfilToolStripMenuItem.Text = "Profil"
@@ -147,14 +149,14 @@ Partial Class formPesananCust
         'LihatPesananToolStripMenuItem1
         '
         Me.LihatPesananToolStripMenuItem1.Name = "LihatPesananToolStripMenuItem1"
-        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
-        Me.LihatPesananToolStripMenuItem1.Text = "Lihat Pesanan"
+        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.LihatPesananToolStripMenuItem1.Text = "Lihat Profil"
         '
-        'UbahPesananToolStripMenuItem1
+        'UbahProfilToolStripMenuItem1
         '
-        Me.UbahPesananToolStripMenuItem1.Name = "UbahPesananToolStripMenuItem1"
-        Me.UbahPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
-        Me.UbahPesananToolStripMenuItem1.Text = "Ubah Pesanan"
+        Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
         '
@@ -170,7 +172,7 @@ Partial Class formPesananCust
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(800, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(851, 36)
         Me.pnlTop.TabIndex = 52
         '
         'pnlControl
@@ -179,7 +181,7 @@ Partial Class formPesananCust
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(719, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(770, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(81, 36)
@@ -227,9 +229,9 @@ Partial Class formPesananCust
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 809)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 827)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(851, 22)
         Me.StatusStrip1.TabIndex = 51
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -256,44 +258,45 @@ Partial Class formPesananCust
         Me.lblHeader.TabIndex = 55
         Me.lblHeader.Text = "KATALOG KPOP STORE"
         '
-        'dgvKatalog
+        'dgvPesanan
         '
-        Me.dgvKatalog.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvKatalog.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvKatalog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvKatalog.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvKatalog.Location = New System.Drawing.Point(57, 145)
-        Me.dgvKatalog.Name = "dgvKatalog"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvKatalog.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.dgvKatalog.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvKatalog.Size = New System.Drawing.Size(686, 230)
-        Me.dgvKatalog.TabIndex = 54
+        Me.dgvPesanan.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPesanan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvPesanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPesanan.DefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvPesanan.Location = New System.Drawing.Point(57, 145)
+        Me.dgvPesanan.Name = "dgvPesanan"
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPesanan.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.dgvPesanan.RowsDefaultCellStyle = DataGridViewCellStyle8
+        Me.dgvPesanan.Size = New System.Drawing.Size(686, 230)
+        Me.dgvPesanan.TabIndex = 54
         '
         'pnlFormPesanan
         '
         Me.pnlFormPesanan.BackColor = System.Drawing.Color.Bisque
+        Me.pnlFormPesanan.Controls.Add(Me.btnBatal)
         Me.pnlFormPesanan.Controls.Add(Me.Label12)
         Me.pnlFormPesanan.Controls.Add(Me.btnClear)
         Me.pnlFormPesanan.Controls.Add(Me.btnHapus)
@@ -315,10 +318,20 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Controls.Add(Me.txtNamaProduk)
         Me.pnlFormPesanan.Controls.Add(Me.Label2)
         Me.pnlFormPesanan.Controls.Add(Me.txtNama)
-        Me.pnlFormPesanan.Location = New System.Drawing.Point(57, 395)
+        Me.pnlFormPesanan.Location = New System.Drawing.Point(57, 413)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
         Me.pnlFormPesanan.Size = New System.Drawing.Size(686, 384)
         Me.pnlFormPesanan.TabIndex = 56
+        '
+        'btnBatal
+        '
+        Me.btnBatal.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatal.Location = New System.Drawing.Point(515, 336)
+        Me.btnBatal.Name = "btnBatal"
+        Me.btnBatal.Size = New System.Drawing.Size(75, 27)
+        Me.btnBatal.TabIndex = 24
+        Me.btnBatal.Text = "Batal"
+        Me.btnBatal.UseVisualStyleBackColor = True
         '
         'Label12
         '
@@ -333,7 +346,7 @@ Partial Class formPesananCust
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(445, 338)
+        Me.btnClear.Location = New System.Drawing.Point(382, 336)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 27)
         Me.btnClear.TabIndex = 22
@@ -343,7 +356,7 @@ Partial Class formPesananCust
         'btnHapus
         '
         Me.btnHapus.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHapus.Location = New System.Drawing.Point(306, 338)
+        Me.btnHapus.Location = New System.Drawing.Point(243, 336)
         Me.btnHapus.Name = "btnHapus"
         Me.btnHapus.Size = New System.Drawing.Size(75, 27)
         Me.btnHapus.TabIndex = 21
@@ -353,7 +366,7 @@ Partial Class formPesananCust
         'btnUbah
         '
         Me.btnUbah.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUbah.Location = New System.Drawing.Point(167, 338)
+        Me.btnUbah.Location = New System.Drawing.Point(104, 336)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(75, 27)
         Me.btnUbah.TabIndex = 20
@@ -517,10 +530,20 @@ Partial Class formPesananCust
         '
         'pnlSpace
         '
-        Me.pnlSpace.Location = New System.Drawing.Point(57, 785)
+        Me.pnlSpace.Location = New System.Drawing.Point(57, 803)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
         Me.pnlSpace.TabIndex = 57
+        '
+        'lblPS
+        '
+        Me.lblPS.AutoSize = True
+        Me.lblPS.Font = New System.Drawing.Font("Vela Sans GX SemiBold", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPS.Location = New System.Drawing.Point(63, 383)
+        Me.lblPS.Name = "lblPS"
+        Me.lblPS.Size = New System.Drawing.Size(365, 18)
+        Me.lblPS.TabIndex = 58
+        Me.lblPS.Text = "* Silahkan klik daftar katalog untuk melakukan pemesanan "
         '
         'formPesananCust
         '
@@ -528,11 +551,12 @@ Partial Class formPesananCust
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.DarkOrange
-        Me.ClientSize = New System.Drawing.Size(817, 450)
+        Me.ClientSize = New System.Drawing.Size(868, 450)
+        Me.Controls.Add(Me.lblPS)
         Me.Controls.Add(Me.pnlFormPesanan)
         Me.Controls.Add(Me.pnlSpace)
         Me.Controls.Add(Me.lblHeader)
-        Me.Controls.Add(Me.dgvKatalog)
+        Me.Controls.Add(Me.dgvPesanan)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.StatusStrip1)
@@ -548,7 +572,7 @@ Partial Class formPesananCust
         Me.pnlControl.ResumeLayout(False)
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
-        CType(Me.dgvKatalog, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPesanan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlFormPesanan.ResumeLayout(False)
         Me.pnlFormPesanan.PerformLayout()
         Me.ResumeLayout(False)
@@ -567,7 +591,7 @@ Partial Class formPesananCust
     Friend WithEvents HapusPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProfilToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LihatPesananToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents UbahPesananToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents UbahProfilToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents pnlTop As Panel
     Friend WithEvents pnlControl As Panel
@@ -578,7 +602,7 @@ Partial Class formPesananCust
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
     Friend WithEvents SlabelJam As ToolStripStatusLabel
     Friend WithEvents lblHeader As Label
-    Friend WithEvents dgvKatalog As DataGridView
+    Friend WithEvents dgvPesanan As DataGridView
     Friend WithEvents pnlFormPesanan As Panel
     Friend WithEvents Label12 As Label
     Friend WithEvents btnClear As Button
@@ -602,4 +626,6 @@ Partial Class formPesananCust
     Friend WithEvents Label2 As Label
     Friend WithEvents txtNama As TextBox
     Friend WithEvents pnlSpace As Panel
+    Friend WithEvents lblPS As Label
+    Friend WithEvents btnBatal As Button
 End Class

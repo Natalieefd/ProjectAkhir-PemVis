@@ -101,6 +101,12 @@
     <Compile Include="Customer-ProfilToko.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Customer-ManajemenPesanan.Designer.vb">
+      <DependentUpon>Customer-ManajemenPesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer-ManajemenPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Staf-ProfilToko.Designer.vb">
       <DependentUpon>Staf-ProfilToko.vb</DependentUpon>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer-ProfilToko.resx">
       <DependentUpon>Customer-ProfilToko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer-ManajemenPesanan.resx">
+      <DependentUpon>Customer-ManajemenPesanan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staf-ProfilToko.resx">
       <DependentUpon>Staf-ProfilToko.vb</DependentUpon>

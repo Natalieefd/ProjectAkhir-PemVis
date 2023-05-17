@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formKatalog
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class formKatalog
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -46,9 +46,8 @@ Partial Class formKatalog
         Me.dgvKatalog = New System.Windows.Forms.DataGridView()
         Me.pnlFormPesanan = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.btnHapus = New System.Windows.Forms.Button()
-        Me.btnUbah = New System.Windows.Forms.Button()
+        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.btnPesan = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtHargaTotal = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -64,11 +63,12 @@ Partial Class formKatalog
         Me.txtKategori = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtNamaProduk = New System.Windows.Forms.TextBox()
-        Me.btnPesan = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNama = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblHeader = New System.Windows.Forms.Label()
         Me.pnlSpace = New System.Windows.Forms.Panel()
+        Me.lblPS = New System.Windows.Forms.Label()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.dgvKatalog, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,9 +97,6 @@ Partial Class formKatalog
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.SlabelJam.Size = New System.Drawing.Size(39, 17)
         Me.SlabelJam.Text = "Jam : "
-        '
-        'Timer1
-        '
         '
         'MenuStrip1
         '
@@ -133,25 +130,25 @@ Partial Class formKatalog
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'HapusPesananToolStripMenuItem
         '
         Me.HapusPesananToolStripMenuItem.Name = "HapusPesananToolStripMenuItem"
-        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HapusPesananToolStripMenuItem.Text = "Hapus Pesanan"
         '
         'ProfilToolStripMenuItem
@@ -164,13 +161,13 @@ Partial Class formKatalog
         'LihatProfilToolStripMenuItem
         '
         Me.LihatProfilToolStripMenuItem.Name = "LihatProfilToolStripMenuItem"
-        Me.LihatProfilToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.LihatProfilToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LihatProfilToolStripMenuItem.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem
         '
         Me.UbahProfilToolStripMenuItem.Name = "UbahProfilToolStripMenuItem"
-        Me.UbahProfilToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.UbahProfilToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UbahProfilToolStripMenuItem.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
@@ -181,7 +178,7 @@ Partial Class formKatalog
         '
         'dgvKatalog
         '
-        Me.dgvKatalog.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
+        Me.dgvKatalog.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -216,10 +213,10 @@ Partial Class formKatalog
         '
         'pnlFormPesanan
         '
-        Me.pnlFormPesanan.Controls.Add(Me.Label12)
         Me.pnlFormPesanan.Controls.Add(Me.btnClear)
-        Me.pnlFormPesanan.Controls.Add(Me.btnHapus)
-        Me.pnlFormPesanan.Controls.Add(Me.btnUbah)
+        Me.pnlFormPesanan.Controls.Add(Me.Label12)
+        Me.pnlFormPesanan.Controls.Add(Me.btnBatal)
+        Me.pnlFormPesanan.Controls.Add(Me.btnPesan)
         Me.pnlFormPesanan.Controls.Add(Me.Label11)
         Me.pnlFormPesanan.Controls.Add(Me.txtHargaTotal)
         Me.pnlFormPesanan.Controls.Add(Me.Label10)
@@ -235,7 +232,6 @@ Partial Class formKatalog
         Me.pnlFormPesanan.Controls.Add(Me.txtKategori)
         Me.pnlFormPesanan.Controls.Add(Me.Label3)
         Me.pnlFormPesanan.Controls.Add(Me.txtNamaProduk)
-        Me.pnlFormPesanan.Controls.Add(Me.btnPesan)
         Me.pnlFormPesanan.Controls.Add(Me.Label2)
         Me.pnlFormPesanan.Controls.Add(Me.txtNama)
         Me.pnlFormPesanan.Location = New System.Drawing.Point(57, 443)
@@ -253,35 +249,25 @@ Partial Class formKatalog
         Me.Label12.TabIndex = 23
         Me.Label12.Text = "PESANAN"
         '
-        'btnClear
+        'btnBatal
         '
-        Me.btnClear.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(519, 338)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 27)
-        Me.btnClear.TabIndex = 22
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnBatal.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatal.Location = New System.Drawing.Point(443, 338)
+        Me.btnBatal.Name = "btnBatal"
+        Me.btnBatal.Size = New System.Drawing.Size(75, 27)
+        Me.btnBatal.TabIndex = 21
+        Me.btnBatal.Text = "Batal"
+        Me.btnBatal.UseVisualStyleBackColor = True
         '
-        'btnHapus
+        'btnPesan
         '
-        Me.btnHapus.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHapus.Location = New System.Drawing.Point(380, 338)
-        Me.btnHapus.Name = "btnHapus"
-        Me.btnHapus.Size = New System.Drawing.Size(75, 27)
-        Me.btnHapus.TabIndex = 21
-        Me.btnHapus.Text = "Hapus"
-        Me.btnHapus.UseVisualStyleBackColor = True
-        '
-        'btnUbah
-        '
-        Me.btnUbah.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUbah.Location = New System.Drawing.Point(241, 338)
-        Me.btnUbah.Name = "btnUbah"
-        Me.btnUbah.Size = New System.Drawing.Size(75, 27)
-        Me.btnUbah.TabIndex = 20
-        Me.btnUbah.Text = "Ubah"
-        Me.btnUbah.UseVisualStyleBackColor = True
+        Me.btnPesan.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPesan.Location = New System.Drawing.Point(161, 338)
+        Me.btnPesan.Name = "btnPesan"
+        Me.btnPesan.Size = New System.Drawing.Size(75, 27)
+        Me.btnPesan.TabIndex = 20
+        Me.btnPesan.Text = "Pesan"
+        Me.btnPesan.UseVisualStyleBackColor = True
         '
         'Label11
         '
@@ -420,16 +406,6 @@ Partial Class formKatalog
         Me.txtNamaProduk.Size = New System.Drawing.Size(152, 23)
         Me.txtNamaProduk.TabIndex = 5
         '
-        'btnPesan
-        '
-        Me.btnPesan.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnPesan.Location = New System.Drawing.Point(99, 338)
-        Me.btnPesan.Name = "btnPesan"
-        Me.btnPesan.Size = New System.Drawing.Size(75, 27)
-        Me.btnPesan.TabIndex = 2
-        Me.btnPesan.Text = "Pesan"
-        Me.btnPesan.UseVisualStyleBackColor = True
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -448,15 +424,15 @@ Partial Class formKatalog
         Me.txtNama.Size = New System.Drawing.Size(152, 23)
         Me.txtNama.TabIndex = 0
         '
-        'Label4
+        'lblHeader
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Vela Sans GX", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(281, 65)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(239, 28)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "KATALOG KPOP STORE"
+        Me.lblHeader.AutoSize = True
+        Me.lblHeader.Font = New System.Drawing.Font("Vela Sans GX", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeader.Location = New System.Drawing.Point(281, 65)
+        Me.lblHeader.Name = "lblHeader"
+        Me.lblHeader.Size = New System.Drawing.Size(239, 28)
+        Me.lblHeader.TabIndex = 11
+        Me.lblHeader.Text = "KATALOG KPOP STORE"
         '
         'pnlSpace
         '
@@ -465,18 +441,39 @@ Partial Class formKatalog
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
         Me.pnlSpace.TabIndex = 12
         '
+        'lblPS
+        '
+        Me.lblPS.AutoSize = True
+        Me.lblPS.Font = New System.Drawing.Font("Vela Sans GX SemiBold", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPS.Location = New System.Drawing.Point(63, 371)
+        Me.lblPS.Name = "lblPS"
+        Me.lblPS.Size = New System.Drawing.Size(365, 18)
+        Me.lblPS.TabIndex = 13
+        Me.lblPS.Text = "* Silahkan klik daftar katalog untuk melakukan pemesanan "
+        '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Vela Sans GX", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(306, 338)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 27)
+        Me.btnClear.TabIndex = 24
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'formKatalog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(817, 450)
-        Me.Controls.Add(Me.pnlSpace)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblPS)
+        Me.Controls.Add(Me.lblHeader)
         Me.Controls.Add(Me.pnlFormPesanan)
         Me.Controls.Add(Me.dgvKatalog)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.pnlSpace)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
@@ -511,12 +508,10 @@ Partial Class formKatalog
     Friend WithEvents txtKategori As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents txtNamaProduk As TextBox
-    Friend WithEvents btnPesan As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents txtNama As TextBox
-    Friend WithEvents btnClear As Button
-    Friend WithEvents btnHapus As Button
-    Friend WithEvents btnUbah As Button
+    Friend WithEvents btnBatal As Button
+    Friend WithEvents btnPesan As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents txtHargaTotal As TextBox
     Friend WithEvents Label10 As Label
@@ -529,7 +524,7 @@ Partial Class formKatalog
     Friend WithEvents txtJumlah As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblHeader As Label
     Friend WithEvents pnlSpace As Panel
     Friend WithEvents PesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LihatPesananToolStripMenuItem As ToolStripMenuItem
@@ -537,4 +532,6 @@ Partial Class formKatalog
     Friend WithEvents UbahPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HapusPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProfilTokoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lblPS As Label
+    Friend WithEvents btnClear As Button
 End Class
