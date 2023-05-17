@@ -16,7 +16,7 @@
         koneksi()
     End Sub
 
-    Private Sub btnSubmit_Click(sender As Object, e As EventArgs)
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         If EmptyTB() Then
             Exit Sub
         End If
@@ -33,6 +33,8 @@
 
             If RD.HasRows Then
                 If txtPassword.Text = If(mode = "admin", RD(1), RD(3)) Then
+                    ActiveID = If(mode = "admin", 0, RD(0))
+                    ActiveUsername = If(mode = "admin", RD(0), RD(2))
                     loginMode = mode
                 End If
             End If
@@ -61,11 +63,12 @@
         CloseForm(sender, {btnBack, btnSubmit})
     End Sub
 
-    Private Sub txtPassword_MouseClick(sender As Object, e As MouseEventArgs) Handles txtPassword.MouseClick
-        txtPassword.PasswordChar = "'"
-    End Sub
-
-    Private Sub btnClose_Click(sender As Object, e As EventArgs)
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
+
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
 End Class

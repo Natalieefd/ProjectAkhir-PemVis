@@ -1,5 +1,8 @@
 ﻿Module Utility
 
+    Public ActiveID As Integer
+    Public ActiveUsername As String
+
     Function EmptyTB(Optional sender As Object = Nothing) As Boolean
         'Misal gamau form, maunya groupbox gitu OwO
         'Isi parameternya pakai nama groupbox
@@ -28,7 +31,7 @@
         Return False
     End Function
 
-    Sub CloseForm(sender As Object, btnExit() As Button)
+    Sub CloseForm(sender As Object, btnExit() As Object)
 
         Dim Force = True
 
@@ -45,7 +48,7 @@
 
     End Sub
 
-    Sub CloseForm(sender As Object, btnExit As Button)
+    Sub CloseForm(sender As Object, btnExit As Object)
         If Not sender.ActiveControl Is btnExit Then
             End
         End If
