@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Waktu pembuatan: 18 Bulan Mei 2023 pada 02.30
--- Versi server: 10.4.24-MariaDB
--- Versi PHP: 8.1.6
+-- Host: 127.0.0.1:3306
+-- Generation Time: May 18, 2023 at 09:20 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbadmin`
+-- Table structure for table `tbadmin`
 --
 
 CREATE TABLE `tbadmin` (
@@ -37,7 +37,7 @@ CREATE TABLE `tbadmin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbadmin`
+-- Dumping data for table `tbadmin`
 --
 
 INSERT INTO `tbadmin` (`username`, `password`, `nama_toko`, `no_telp`, `email`, `alamat`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `tbadmin` (`username`, `password`, `nama_toko`, `no_telp`, `email`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbcustomer`
+-- Table structure for table `tbcustomer`
 --
 
 CREATE TABLE `tbcustomer` (
@@ -59,7 +59,7 @@ CREATE TABLE `tbcustomer` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbcustomer`
+-- Dumping data for table `tbcustomer`
 --
 
 INSERT INTO `tbcustomer` (`id_cust`, `nama`, `username`, `password`, `no_telp`, `alamat`) VALUES
@@ -68,7 +68,22 @@ INSERT INTO `tbcustomer` (`id_cust`, `nama`, `username`, `password`, `no_telp`, 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbpesanan`
+-- Table structure for table `tbkeranjang`
+--
+
+CREATE TABLE `tbkeranjang` (
+  `id_keranjang` int(10) NOT NULL,
+  `id_cust` int(10) NOT NULL,
+  `id_produk` int(10) NOT NULL,
+  `stok` int(4) NOT NULL,
+  `status` varchar(20) NOT NULL,
+  `harga_total` int(9) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbpesanan`
 --
 
 CREATE TABLE `tbpesanan` (
@@ -76,13 +91,15 @@ CREATE TABLE `tbpesanan` (
   `tanggal_pesanan` datetime NOT NULL,
   `id_customer` int(10) NOT NULL,
   `id_produk` int(10) NOT NULL,
+  `stok` int(4) NOT NULL,
+  `status` varchar(20) NOT NULL,
   `harga_total` int(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbproduk`
+-- Table structure for table `tbproduk`
 --
 
 CREATE TABLE `tbproduk` (
@@ -95,17 +112,21 @@ CREATE TABLE `tbproduk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbproduk`
+-- Dumping data for table `tbproduk`
 --
 
 INSERT INTO `tbproduk` (`id_produk`, `nama_produk`, `kategori`, `deskripsi_produk`, `stok`, `harga`) VALUES
 (1, 'FML', 'Album', '10th Mini Album of Seventeen', 50, 900000),
-(2, 'Face The Sun', 'Album', '4th Full Album of Seventeen', 82, 990000);
+(2, 'Face The Sun', 'Album', '4th Full Album of Seventeen', 82, 990000),
+(3, 'Hello', 'Album', 'Special Album of Joy Red Velvet', 17, 350000),
+(4, 'MY WORLD', 'Poster', '3rd Mini Album of Aespa (Ningning ver)', 28, 227000),
+(5, 'FOREVER 1', 'Poster', 'GIRLS\' GENERATION 7th Album ', 34, 315000),
+(6, 'Attacca', 'Photocard', 'Seventeen Attacca 9th Mini Album (Wonwoo Ver)', 11, 152000);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbstaff`
+-- Table structure for table `tbstaff`
 --
 
 CREATE TABLE `tbstaff` (
@@ -116,7 +137,7 @@ CREATE TABLE `tbstaff` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tbstaff`
+-- Dumping data for table `tbstaff`
 --
 
 INSERT INTO `tbstaff` (`id_staff`, `nama`, `username`, `password`) VALUES
@@ -128,53 +149,65 @@ INSERT INTO `tbstaff` (`id_staff`, `nama`, `username`, `password`) VALUES
 --
 
 --
--- Indeks untuk tabel `tbadmin`
+-- Indexes for table `tbadmin`
 --
 ALTER TABLE `tbadmin`
   ADD PRIMARY KEY (`username`);
 
 --
--- Indeks untuk tabel `tbcustomer`
+-- Indexes for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
   ADD PRIMARY KEY (`id_cust`);
 
 --
--- Indeks untuk tabel `tbpesanan`
+-- Indexes for table `tbkeranjang`
+--
+ALTER TABLE `tbkeranjang`
+  ADD PRIMARY KEY (`id_keranjang`);
+
+--
+-- Indexes for table `tbpesanan`
 --
 ALTER TABLE `tbpesanan`
   ADD PRIMARY KEY (`id_pesanan`);
 
 --
--- Indeks untuk tabel `tbproduk`
+-- Indexes for table `tbproduk`
 --
 ALTER TABLE `tbproduk`
   ADD PRIMARY KEY (`id_produk`);
 
 --
--- Indeks untuk tabel `tbstaff`
+-- Indexes for table `tbstaff`
 --
 ALTER TABLE `tbstaff`
   ADD PRIMARY KEY (`id_staff`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tbcustomer`
+-- AUTO_INCREMENT for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
   MODIFY `id_cust` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `tbproduk`
+-- AUTO_INCREMENT for table `tbkeranjang`
 --
-ALTER TABLE `tbproduk`
-  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `tbkeranjang`
+  MODIFY `id_keranjang` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbstaff`
+-- AUTO_INCREMENT for table `tbproduk`
+--
+ALTER TABLE `tbproduk`
+  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `tbstaff`
 --
 ALTER TABLE `tbstaff`
   MODIFY `id_staff` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
