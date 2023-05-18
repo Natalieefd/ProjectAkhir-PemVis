@@ -17,16 +17,24 @@
 
         'enabled semua txtbox kecuali txtJumlah
         'harga total otomatis kehitung klo jumlahnya berubah
+        'btnClear buat clear txtJumlah ama txtHargaTotal
 
     End Sub
 
     Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+        Call batal()
+
         lblHeader.Hide()
         dgvPesanan.Hide()
         lblPS.Hide()
 
         pnlFormPesanan.Show()
         pnlFormPesanan.Location = New Point(57, 33)
+    End Sub
+
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        formCustomer.Show()
+        Me.Hide()
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
@@ -52,7 +60,7 @@
         Me.Show()
     End Sub
 
-    Private Sub HapusPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusPesananToolStripMenuItem.Click
+    Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
         Me.Show()
     End Sub
 
@@ -68,5 +76,16 @@
 
     Private Sub formPesananCust_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, ExitToolStripMenuItem)
+    End Sub
+
+    Sub batal()
+        txtNama.Clear()
+        txtNamaProduk.Clear()
+        txtKategori.Clear()
+        txtJumlah.Clear()
+        txtHargaSatuan.Clear()
+        txtDesc.Clear()
+        txtAlamat.Clear()
+        txtHargaTotal.Clear()
     End Sub
 End Class

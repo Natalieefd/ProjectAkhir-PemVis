@@ -41,10 +41,10 @@ Partial Class formCustomer
         Me.LihatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UbahPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HapusPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BatalkanPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LihatPesananToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahPesananToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LihatProfilToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UbahProfilToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlTop.SuspendLayout()
@@ -101,16 +101,13 @@ Partial Class formCustomer
         Me.Label2.Text = "Selamat Datang"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Timer1
-        '
-        '
         'pnlTop
         '
         Me.pnlTop.BackColor = System.Drawing.SystemColors.ControlDark
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
         Me.pnlTop.Size = New System.Drawing.Size(764, 36)
         Me.pnlTop.TabIndex = 49
@@ -122,7 +119,7 @@ Partial Class formCustomer
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
         Me.pnlControl.Location = New System.Drawing.Point(683, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(81, 36)
         Me.pnlControl.TabIndex = 48
@@ -133,7 +130,7 @@ Partial Class formCustomer
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
         Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
@@ -145,7 +142,7 @@ Partial Class formCustomer
         Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
         Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
         Me.btnMaximize.TabIndex = 1
@@ -157,7 +154,7 @@ Partial Class formCustomer
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
         Me.btnClose.Location = New System.Drawing.Point(58, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
@@ -190,7 +187,7 @@ Partial Class formCustomer
         '
         'PesananToolStripMenuItem
         '
-        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.BuatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.HapusPesananToolStripMenuItem})
+        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.BuatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
         Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
@@ -198,45 +195,45 @@ Partial Class formCustomer
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
-        'HapusPesananToolStripMenuItem
+        'BatalkanPesananToolStripMenuItem
         '
-        Me.HapusPesananToolStripMenuItem.Name = "HapusPesananToolStripMenuItem"
-        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
-        Me.HapusPesananToolStripMenuItem.Text = "Hapus Pesanan"
+        Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
         '
-        Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem1, Me.UbahPesananToolStripMenuItem1})
+        Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProfilToolStripMenuItem1, Me.UbahProfilToolStripMenuItem1})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
         Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
         Me.ProfilToolStripMenuItem.Text = "Profil"
         '
-        'LihatPesananToolStripMenuItem1
+        'LihatProfilToolStripMenuItem1
         '
-        Me.LihatPesananToolStripMenuItem1.Name = "LihatPesananToolStripMenuItem1"
-        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
-        Me.LihatPesananToolStripMenuItem1.Text = "Lihat Pesanan"
+        Me.LihatProfilToolStripMenuItem1.Name = "LihatProfilToolStripMenuItem1"
+        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LihatProfilToolStripMenuItem1.Text = "Lihat Profil"
         '
-        'UbahPesananToolStripMenuItem1
+        'UbahProfilToolStripMenuItem1
         '
-        Me.UbahPesananToolStripMenuItem1.Name = "UbahPesananToolStripMenuItem1"
-        Me.UbahPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
-        Me.UbahPesananToolStripMenuItem1.Text = "Ubah Pesanan"
+        Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
         '
@@ -290,9 +287,9 @@ Partial Class formCustomer
     Friend WithEvents LihatPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BuatPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UbahPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HapusPesananToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BatalkanPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProfilToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatPesananToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents UbahPesananToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents LihatProfilToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents UbahProfilToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class

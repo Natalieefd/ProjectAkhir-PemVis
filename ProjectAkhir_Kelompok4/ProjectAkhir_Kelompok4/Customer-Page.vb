@@ -3,6 +3,8 @@
     Private Sub formCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+
+        'query ngambil usn cust buat nampilin di lblUsn
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -22,9 +24,33 @@
         formKatalog.Show()
         Me.Hide()
     End Sub
+    Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+        formPesananCust.Show()
+        Me.Hide()
+    End Sub
 
-    Private Sub ProfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilToolStripMenuItem.Click
-        formProfilTokoC.Show()
+    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
+        formKatalog.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+        formPesananCust.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
+        formPesananCust.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem1.Click
+        formProfil.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub UbahProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem1.Click
+        formProfil.Show()
         Me.Hide()
     End Sub
 

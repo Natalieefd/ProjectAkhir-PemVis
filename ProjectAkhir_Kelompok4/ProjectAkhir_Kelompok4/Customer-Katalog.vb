@@ -31,6 +31,11 @@
         pnlSpace.Location = New Point(56, 398)
     End Sub
 
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        formCustomer.Show()
+        Me.Hide()
+    End Sub
+
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
         formProfilTokoC.Show()
         Me.Hide()
@@ -40,7 +45,21 @@
         Me.Show()
     End Sub
 
-    Private Sub PesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PesananToolStripMenuItem.Click
+    Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+        formPesananCust.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
+        Me.Show()
+    End Sub
+
+    Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+        formPesananCust.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub HapusPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusPesananToolStripMenuItem.Click
         formPesananCust.Show()
         Me.Hide()
     End Sub
