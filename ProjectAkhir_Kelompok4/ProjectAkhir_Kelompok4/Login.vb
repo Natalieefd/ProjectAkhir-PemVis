@@ -1,6 +1,8 @@
 ﻿Public Class formLogin
-    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub formlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
+        koneksi()
+        Me.ActiveControl = txtUsername
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -10,10 +12,6 @@
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Home.Show()
         Me.Close()
-    End Sub
-
-    Private Sub formLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        koneksi()
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
@@ -32,14 +30,13 @@
                 Exit For
             End If
 
-            dbq("Select * from tb" & mode & " where username='" & txtUsername.Text & "'")
+            dbq("Select * from tb" & mode & " where username='" & txtUsername.Text +
+                "' and password='" & txtPassword.Text & "'")
 
             If RD.HasRows Then
-                If txtPassword.Text = If(mode = "admin", RD(1), RD(3)) Then
-                    ActiveID = If(mode = "admin", 0, RD(0))
-                    ActiveUsername = If(mode = "admin", RD(0), RD(2))
-                    loginMode = mode
-                End If
+                ActiveID = If(mode = "admin", 0, RD(0))
+                ActiveUsername = If(mode = "admin", RD(0), RD(2))
+                loginMode = mode
             End If
 
             RD.Close()
@@ -47,6 +44,7 @@
 
         If loginMode = "" Then
             MsgBox("Username atau Password Salah", MsgBoxStyle.Information, "Perhatian")
+            txtPassword.Focus()
             Exit Sub
         End If
 
@@ -73,4 +71,16 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    Private Sub txtUsername_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsername.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            txtPassword.Focus()
+        End If
+    End Sub
+
+    Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            btnSubmit.Focus()
+            btnSubmit_Click(sender, Nothing)
+        End If
+    End Sub
 End Class

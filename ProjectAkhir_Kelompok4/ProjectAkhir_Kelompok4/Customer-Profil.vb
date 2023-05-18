@@ -1,6 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
-
-'-- INI DIBACA, KLO DAH DIKERJAIN APUS LISTNYA --
+﻿'-- INI DIBACA, KLO DAH DIKERJAIN APUS LISTNYA --
 
 '   (yg blom)
 '-------------------------------------------------
@@ -10,114 +8,127 @@
 '-- SISANYA BISA CEK" LAGI MASING" KLI AJA AKU ADA YG KETINGGALAN NGE-CEK 🙏
 
 Public Class formProfil
-    Private Sub formPesanan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Public Shared Mode As String = ""
+
+    Private Sub formProfil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
+
+        ActiveID = 1
 
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+        pnlProfil.Show()
         pnlFormUbah.Hide()
         pnlPass.Hide()
 
-        pnlSpace.Location = New Point(36, 380)
-        StatusStrip1.Location = New Point(0, 428)
+        'dbq("") 'query untuk ambil data customer satu ini'
 
-        txtNama.Enabled = False
-        txtUsn.Enabled = False
-        txtPass.Enabled = False
-        txtNoTelp.Enabled = False
-        txtAlamat.Enabled = False
+        'txtNama.Text = RD(1)
+        'txtUsn.Text = RD(2)
+        'txtPass.Text = RD(3)
+        'txtNoTelp.Text = RD(4)
+        'txtAlamat.Text = RD(5)
+
+
+        StatusStrip1.Location = New Point(0, 428)
+        Me.Size = New Point(Me.Size.Width, 410)
+
+        If Mode = "Ubah" Then
+            ModeUbah()
+        End If
     End Sub
 
-    Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
+    Private Sub ModeUbah()
         pnlProfil.Hide()
-        btnUbah.Hide()
         pnlFormUbah.Hide()
+        Me.Size = New Point(Me.Size.Width, 341)
 
+        txtKonfirmPass.Clear()
         pnlPass.Show()
-        pnlPass.Location = New Point(238, 160)
+        pnlPass.Location = New Point(239, 80)
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Call checkPass()
     End Sub
 
-    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs)
         pnlProfil.Show()
-        btnUbah.Show()
         pnlPass.Hide()
         pnlFormUbah.Hide()
     End Sub
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         formCustomer.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
         formProfilTokoC.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click
         formKatalog.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
         formPesananCust.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
         formKatalog.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
         formPesananCust.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
         formPesananCust.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem1.Click
-        Me.Show()
+        Mode = ""
+        Me.formProfil_Load(sender, e)
     End Sub
 
     Private Sub UbahProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem1.Click
-        Me.Show()
+        Mode = "Ubah"
+        Me.formProfil_Load(sender, e)
     End Sub
 
     Sub checkPass()
         Dim warn As String
 
-        If txtPass.Text = "" Then
-            warn = MessageBox.Show("Mohon isi password terlebih dahulu!", "Konfirmasi",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            txtPass.Focus()
-            Exit Sub
+        EmptyTB(pnlPass)
+
+        dbq("SELECT * From tbcustomer where id_cust='" & ActiveID & "' AND password='" & txtKonfirmPass.Text & "'")
+
+        If RD.HasRows Then
+            pnlProfil.Hide()
+            pnlPass.Hide()
+
+            pnlFormUbah.Show()
+            pnlFormUbah.Location = New Point(40, 98)
+            Me.Size = New Point(Me.Size.Width, 490)
+
+            txtUbahNama.Text = RD(1)
+            txtUbahUsn.Text = RD(2)
+            txtUbahPass.Text = "(Password Lama)"
+            txtUbahNoTelp.Text = RD(4)
+            txtUbahAlamat.Text = RD(5)
         Else
-            CMD = New MySqlCommand("SELECT * From tbcustomer where password='" & txtPass.Text & "'", CONN)
-            RD = CMD.ExecuteReader
-            RD.Read()
-            RD.Close()
-
-            If Not RD.HasRows Then
-                pnlProfil.Hide()
-                btnUbah.Hide()
-                pnlPass.Hide()
-
-                pnlFormUbah.Show()
-                pnlFormUbah.Location = New Point(40, 98)
-
-            Else
-                warn = MessageBox.Show("Password yang anda masukkan salah!", "Konfirmasi",
+            warn = MessageBox.Show("Password yang anda masukkan salah!", "Konfirmasi",
                                         MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            End If
         End If
+        RD.Close()
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
@@ -135,5 +146,64 @@ Public Class formProfil
 
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtUbahNama.Clear()
+        txtUbahUsn.Clear()
+        txtUbahPass.Text = "(Password Lama)"
+        txtUbahNoTelp.Clear()
+        txtUbahAlamat.Clear()
+    End Sub
+
+    Private Sub btnUbahForm_Click(sender As Object, e As EventArgs) Handles btnUbahForm.Click
+        Dim Con = EmptyTB(pnlFormUbah)
+
+        If Con IsNot Nothing Then
+            Con.Focus()
+            Exit Sub
+        End If
+
+        If Not CheckNum(txtUbahNoTelp) Then
+            txtUbahNoTelp.Focus()
+            Exit Sub
+        End If
+
+        If txtUsn.Text <> txtUbahUsn.Text Then
+            Dim stats() As String = {"admin", "staff", "customer"}
+            Dim dup = False
+
+            For Each Mode In stats
+                If dup Then
+                    Exit For
+                End If
+
+                dbq("Select * from tb" & Mode & " where username='" & txtUbahUsn.Text & "'")
+
+                If RD.HasRows Then
+                    dup = True
+                End If
+
+                RD.Close()
+            Next
+
+            If dup Then
+                MsgBox("Username sudah dipakai", MsgBoxStyle.Information, "Perhatian")
+                txtUbahUsn.Focus()
+                Exit Sub
+            End If
+        End If
+
+        If txtUbahPass.Text <> "(Password Lama)" Then
+            txtKonfirmPass.Text = txtUbahPass.Text
+        End If
+
+        dbq("") 'query ubah data customer satu ini  *nb: untuk Pass gunakan txtKonfirmPass
+        RD.Close()
+        MsgBox("Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
+    End Sub
+
+    Private Sub txtUbahNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUbahNoTelp.KeyPress
+        e.Handled = Numbering(e)
     End Sub
 End Class

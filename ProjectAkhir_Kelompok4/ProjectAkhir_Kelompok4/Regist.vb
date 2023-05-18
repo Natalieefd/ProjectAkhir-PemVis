@@ -47,7 +47,8 @@
         Next
 
         If dup Then
-            MsgBox("Username atau Password Salah", MsgBoxStyle.Information, "Perhatian")
+            MsgBox("Username sudah dipakai", MsgBoxStyle.Information, "Perhatian")
+            txtUsername.Focus()
             Exit Sub
         End If
 
@@ -72,8 +73,37 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    Private Sub txtNama_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNama.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            txtUsername.Focus()
+        End If
+    End Sub
+
+    Private Sub txtUsername_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsername.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            txtPassword.Focus()
+        End If
+    End Sub
+
+    Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            txtNoTelp.Focus()
+        End If
+    End Sub
+
     Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            txtAlamat.Focus()
+        End If
+
         e.Handled = Numbering(e)
         Warn.Visible = False
+    End Sub
+
+    Private Sub txtAlamat_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAlamat.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            btnSubmit.Focus()
+            btnSubmit_Click(sender, Nothing)
+        End If
     End Sub
 End Class

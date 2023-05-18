@@ -46,12 +46,14 @@
 
     Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem1.Click
         Me.ActiveControl = MenuStrip1
+        formProfil.Mode = ""
         formProfil.Show()
         Me.Close()
     End Sub
 
     Private Sub UbahProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem1.Click
         Me.ActiveControl = MenuStrip1
+        formProfil.Mode = "Ubah"
         formProfil.Show()
         Me.Close()
     End Sub
@@ -65,5 +67,4 @@
     Private Sub formCustomer_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, MenuStrip1)
     End Sub
-
 End Class
