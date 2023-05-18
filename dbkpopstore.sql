@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: May 17, 2023 at 09:32 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 18 Bulan Mei 2023 pada 02.30
+-- Versi server: 10.4.24-MariaDB
+-- Versi PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbadmin`
+-- Struktur dari tabel `tbadmin`
 --
 
 CREATE TABLE `tbadmin` (
@@ -36,10 +36,17 @@ CREATE TABLE `tbadmin` (
   `alamat` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `tbadmin`
+--
+
+INSERT INTO `tbadmin` (`username`, `password`, `nama_toko`, `no_telp`, `email`, `alamat`) VALUES
+('Sharkbite', '123', 'Toko Suka Maju', '081244613442', 'hadiepratamatulili@gmail.com', 'Jalan Dimana Saja');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbcustomer`
+-- Struktur dari tabel `tbcustomer`
 --
 
 CREATE TABLE `tbcustomer` (
@@ -51,10 +58,17 @@ CREATE TABLE `tbcustomer` (
   `alamat` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `tbcustomer`
+--
+
+INSERT INTO `tbcustomer` (`id_cust`, `nama`, `username`, `password`, `no_telp`, `alamat`) VALUES
+(1, 'Yafi', 'Viabel', '123', '081234567890', 'Jalan Kah Kita');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbpesanan`
+-- Struktur dari tabel `tbpesanan`
 --
 
 CREATE TABLE `tbpesanan` (
@@ -68,7 +82,7 @@ CREATE TABLE `tbpesanan` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbproduk`
+-- Struktur dari tabel `tbproduk`
 --
 
 CREATE TABLE `tbproduk` (
@@ -80,10 +94,18 @@ CREATE TABLE `tbproduk` (
   `harga` int(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `tbproduk`
+--
+
+INSERT INTO `tbproduk` (`id_produk`, `nama_produk`, `kategori`, `deskripsi_produk`, `stok`, `harga`) VALUES
+(1, 'FML', 'Album', '10th Mini Album of Seventeen', 50, 900000),
+(2, 'Face The Sun', 'Album', '4th Full Album of Seventeen', 82, 990000);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbstaff`
+-- Struktur dari tabel `tbstaff`
 --
 
 CREATE TABLE `tbstaff` (
@@ -94,60 +116,68 @@ CREATE TABLE `tbstaff` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data untuk tabel `tbstaff`
+--
+
+INSERT INTO `tbstaff` (`id_staff`, `nama`, `username`, `password`) VALUES
+(1, 'Natalie', 'NTLee', '123'),
+(2, 'Agustina', 'Sun1004', '123');
+
+--
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbadmin`
+-- Indeks untuk tabel `tbadmin`
 --
 ALTER TABLE `tbadmin`
   ADD PRIMARY KEY (`username`);
 
 --
--- Indexes for table `tbcustomer`
+-- Indeks untuk tabel `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
   ADD PRIMARY KEY (`id_cust`);
 
 --
--- Indexes for table `tbpesanan`
+-- Indeks untuk tabel `tbpesanan`
 --
 ALTER TABLE `tbpesanan`
   ADD PRIMARY KEY (`id_pesanan`);
 
 --
--- Indexes for table `tbproduk`
+-- Indeks untuk tabel `tbproduk`
 --
 ALTER TABLE `tbproduk`
   ADD PRIMARY KEY (`id_produk`);
 
 --
--- Indexes for table `tbstaff`
+-- Indeks untuk tabel `tbstaff`
 --
 ALTER TABLE `tbstaff`
   ADD PRIMARY KEY (`id_staff`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbcustomer`
+-- AUTO_INCREMENT untuk tabel `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
-  MODIFY `id_cust` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_cust` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tbproduk`
+-- AUTO_INCREMENT untuk tabel `tbproduk`
 --
 ALTER TABLE `tbproduk`
-  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produk` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `tbstaff`
+-- AUTO_INCREMENT untuk tabel `tbstaff`
 --
 ALTER TABLE `tbstaff`
-  MODIFY `id_staff` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_staff` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

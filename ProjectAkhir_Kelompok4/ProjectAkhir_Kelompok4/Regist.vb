@@ -70,7 +70,7 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress
+    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) 
         e.Handled = Numbering(e)
         Warn.Visible = False
     End Sub

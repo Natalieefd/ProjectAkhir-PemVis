@@ -32,6 +32,41 @@ ProjectAkhir_Kelompok4
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_add_new_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_create_64">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_remove_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_trash_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.Logo_Kpop_Store">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

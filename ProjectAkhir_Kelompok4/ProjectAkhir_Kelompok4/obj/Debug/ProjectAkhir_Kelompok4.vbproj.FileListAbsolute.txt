@@ -56,12 +56,10 @@ C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectA
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formLogin.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formRegist.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formAdmin.resources
-C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesanan.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenProdukStaf.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formStaff.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formCustomer.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formKatalog.resources
-C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formPesanan.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.Resources.resources
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.GenerateResource.cache
 C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.vbproj.CoreCompileInputs.cache
@@ -101,3 +99,9 @@ C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoS.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananStaf.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfil.resources
+C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoC.resources
+C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formPesananCust.resources
+C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfilTokoS.resources
+C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.DaftarPesananStaf.resources
+C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.formProfil.resources
+C:\Users\LENOVO\source\repos\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\mysql.data.dll
