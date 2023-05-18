@@ -14,44 +14,47 @@
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formProfilTokoC.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click
         formKatalog.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Lihat"
         formPesananCust.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
-        formKatalog.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Ubah"
         formPesananCust.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Hapus"
         formPesananCust.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem1.Click
+        Me.ActiveControl = MenuStrip1
         formProfil.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub UbahProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem1.Click
+        Me.ActiveControl = MenuStrip1
         formProfil.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
-
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
