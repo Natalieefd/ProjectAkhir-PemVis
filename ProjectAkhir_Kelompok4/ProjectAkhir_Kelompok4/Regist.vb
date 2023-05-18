@@ -61,7 +61,6 @@
     Private Sub formRegist_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, {btnBack, btnSubmit})
     End Sub
-
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
@@ -70,7 +69,7 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) 
+    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs)
         e.Handled = Numbering(e)
         Warn.Visible = False
     End Sub
