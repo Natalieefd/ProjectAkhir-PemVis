@@ -34,10 +34,6 @@ Partial Class DaftarPesananAdmin
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dgvDaftarPesanan = New System.Windows.Forms.DataGridView()
         Me.pnlTop = New System.Windows.Forms.Panel()
-        Me.pnlControl = New System.Windows.Forms.Panel()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnMaximize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -52,11 +48,14 @@ Partial Class DaftarPesananAdmin
         Me.HapusDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.dgvDaftarPesanan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTop.SuspendLayout()
-        Me.pnlControl.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.pnlControl.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -119,7 +118,7 @@ Partial Class DaftarPesananAdmin
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDaftarPesanan.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvDaftarPesanan.Location = New System.Drawing.Point(76, 166)
-        Me.dgvDaftarPesanan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvDaftarPesanan.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvDaftarPesanan.Name = "dgvDaftarPesanan"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -145,54 +144,6 @@ Partial Class DaftarPesananAdmin
         Me.pnlTop.Name = "pnlTop"
         Me.pnlTop.Size = New System.Drawing.Size(1067, 44)
         Me.pnlTop.TabIndex = 58
-        '
-        'pnlControl
-        '
-        Me.pnlControl.Controls.Add(Me.btnMinimize)
-        Me.pnlControl.Controls.Add(Me.btnMaximize)
-        Me.pnlControl.Controls.Add(Me.btnClose)
-        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(959, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(108, 44)
-        Me.pnlControl.TabIndex = 48
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(12, 14)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnMaximize
-        '
-        Me.btnMaximize.FlatAppearance.BorderSize = 0
-        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(45, 14)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMaximize.TabIndex = 1
-        Me.btnMaximize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(77, 12)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(19, 18)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -286,6 +237,41 @@ Partial Class DaftarPesananAdmin
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
+        'pnlControl
+        '
+        Me.pnlControl.Controls.Add(Me.btnMinimize)
+        Me.pnlControl.Controls.Add(Me.btnClose)
+        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlControl.Location = New System.Drawing.Point(995, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlControl.Name = "pnlControl"
+        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
+        Me.pnlControl.TabIndex = 49
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(43, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(19, 18)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
         'DaftarPesananAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -298,7 +284,7 @@ Partial Class DaftarPesananAdmin
         Me.Controls.Add(Me.dgvDaftarPesanan)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "DaftarPesananAdmin"
@@ -308,9 +294,9 @@ Partial Class DaftarPesananAdmin
         Me.StatusStrip1.PerformLayout()
         CType(Me.dgvDaftarPesanan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTop.ResumeLayout(False)
-        Me.pnlControl.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.pnlControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -323,10 +309,6 @@ Partial Class DaftarPesananAdmin
     Friend WithEvents Label4 As Label
     Friend WithEvents dgvDaftarPesanan As DataGridView
     Friend WithEvents pnlTop As Panel
-    Friend WithEvents pnlControl As Panel
-    Friend WithEvents btnMinimize As Button
-    Friend WithEvents btnMaximize As Button
-    Friend WithEvents btnClose As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ProfilTokoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenStaffToolStripMenuItem As ToolStripMenuItem
@@ -341,4 +323,7 @@ Partial Class DaftarPesananAdmin
     Friend WithEvents HapusDataBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents pnlControl As Panel
+    Friend WithEvents btnMinimize As Button
+    Friend WithEvents btnClose As Button
 End Class

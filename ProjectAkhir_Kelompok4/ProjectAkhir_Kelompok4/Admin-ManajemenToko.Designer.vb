@@ -59,10 +59,6 @@ Partial Class ManajemenTokoAdmin
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUbahNama = New System.Windows.Forms.TextBox()
         Me.pnlTop = New System.Windows.Forms.Panel()
-        Me.pnlControl = New System.Windows.Forms.Panel()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnMaximize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -77,13 +73,16 @@ Partial Class ManajemenTokoAdmin
         Me.HapusDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.pnlProfil.SuspendLayout()
         Me.pnlPass.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlFormUbah.SuspendLayout()
         Me.pnlTop.SuspendLayout()
-        Me.pnlControl.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.pnlControl.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlProfil
@@ -478,54 +477,6 @@ Partial Class ManajemenTokoAdmin
         Me.pnlTop.Size = New System.Drawing.Size(1034, 44)
         Me.pnlTop.TabIndex = 58
         '
-        'pnlControl
-        '
-        Me.pnlControl.Controls.Add(Me.btnMinimize)
-        Me.pnlControl.Controls.Add(Me.btnMaximize)
-        Me.pnlControl.Controls.Add(Me.btnClose)
-        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(926, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(108, 44)
-        Me.pnlControl.TabIndex = 48
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(12, 14)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnMaximize
-        '
-        Me.btnMaximize.FlatAppearance.BorderSize = 0
-        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(45, 14)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMaximize.TabIndex = 1
-        Me.btnMaximize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(77, 12)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(19, 18)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Cornsilk
@@ -618,6 +569,41 @@ Partial Class ManajemenTokoAdmin
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
+        'pnlControl
+        '
+        Me.pnlControl.Controls.Add(Me.btnMinimize)
+        Me.pnlControl.Controls.Add(Me.btnClose)
+        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlControl.Location = New System.Drawing.Point(962, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlControl.Name = "pnlControl"
+        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
+        Me.pnlControl.TabIndex = 49
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(43, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(19, 18)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
         'ManajemenTokoAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -648,9 +634,9 @@ Partial Class ManajemenTokoAdmin
         Me.pnlFormUbah.ResumeLayout(False)
         Me.pnlFormUbah.PerformLayout()
         Me.pnlTop.ResumeLayout(False)
-        Me.pnlControl.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.pnlControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -692,10 +678,6 @@ Partial Class ManajemenTokoAdmin
     Friend WithEvents Label2 As Label
     Friend WithEvents txtUbahNama As TextBox
     Friend WithEvents pnlTop As Panel
-    Friend WithEvents pnlControl As Panel
-    Friend WithEvents btnMinimize As Button
-    Friend WithEvents btnMaximize As Button
-    Friend WithEvents btnClose As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ProfilTokoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenStaffToolStripMenuItem As ToolStripMenuItem
@@ -710,4 +692,7 @@ Partial Class ManajemenTokoAdmin
     Friend WithEvents HapusDataBarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents pnlControl As Panel
+    Friend WithEvents btnMinimize As Button
+    Friend WithEvents btnClose As Button
 End Class

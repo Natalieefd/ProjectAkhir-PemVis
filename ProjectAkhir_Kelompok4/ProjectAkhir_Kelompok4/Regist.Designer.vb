@@ -24,6 +24,11 @@ Partial Class formRegist
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtAlamat = New System.Windows.Forms.TextBox()
+        Me.txtNoTelp = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtNama = New System.Windows.Forms.TextBox()
         Me.Warn = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -32,7 +37,6 @@ Partial Class formRegist
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.pnlControl = New System.Windows.Forms.Panel()
         Me.pnlTop = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -40,19 +44,14 @@ Partial Class formRegist
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.pnlControl = New System.Windows.Forms.Panel()
         Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnMaximize = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.txtNama = New System.Windows.Forms.TextBox()
-        Me.txtUsername = New System.Windows.Forms.TextBox()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.txtNoTelp = New System.Windows.Forms.TextBox()
-        Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
-        Me.pnlControl.SuspendLayout()
         Me.pnlTop.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
+        Me.pnlControl.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -72,12 +71,47 @@ Partial Class formRegist
         Me.GroupBox1.Controls.Add(Me.btnSubmit)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(453, 74)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(479, 401)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
+        '
+        'txtAlamat
+        '
+        Me.txtAlamat.Location = New System.Drawing.Point(168, 271)
+        Me.txtAlamat.Name = "txtAlamat"
+        Me.txtAlamat.Size = New System.Drawing.Size(229, 24)
+        Me.txtAlamat.TabIndex = 17
+        '
+        'txtNoTelp
+        '
+        Me.txtNoTelp.Location = New System.Drawing.Point(168, 213)
+        Me.txtNoTelp.Name = "txtNoTelp"
+        Me.txtNoTelp.Size = New System.Drawing.Size(229, 24)
+        Me.txtNoTelp.TabIndex = 16
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Location = New System.Drawing.Point(168, 162)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(229, 24)
+        Me.txtPassword.TabIndex = 15
+        '
+        'txtUsername
+        '
+        Me.txtUsername.Location = New System.Drawing.Point(168, 105)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(229, 24)
+        Me.txtUsername.TabIndex = 14
+        '
+        'txtNama
+        '
+        Me.txtNama.Location = New System.Drawing.Point(168, 46)
+        Me.txtNama.Name = "txtNama"
+        Me.txtNama.Size = New System.Drawing.Size(229, 24)
+        Me.txtNama.TabIndex = 13
         '
         'Warn
         '
@@ -147,7 +181,7 @@ Partial Class formRegist
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.DarkCyan
         Me.btnSubmit.Location = New System.Drawing.Point(31, 336)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(413, 36)
         Me.btnSubmit.TabIndex = 0
@@ -159,24 +193,12 @@ Partial Class formRegist
         Me.btnBack.BackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.Location = New System.Drawing.Point(955, 490)
-        Me.btnBack.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(100, 36)
         Me.btnBack.TabIndex = 6
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
-        '
-        'pnlControl
-        '
-        Me.pnlControl.Controls.Add(Me.btnMinimize)
-        Me.pnlControl.Controls.Add(Me.btnMaximize)
-        Me.pnlControl.Controls.Add(Me.btnClose)
-        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(645, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(108, 44)
-        Me.pnlControl.TabIndex = 48
         '
         'pnlTop
         '
@@ -243,76 +265,40 @@ Partial Class formRegist
         'Timer1
         '
         '
+        'pnlControl
+        '
+        Me.pnlControl.Controls.Add(Me.btnMinimize)
+        Me.pnlControl.Controls.Add(Me.btnClose)
+        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlControl.Location = New System.Drawing.Point(681, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlControl.Name = "pnlControl"
+        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
+        Me.pnlControl.TabIndex = 49
+        '
         'btnMinimize
         '
         Me.btnMinimize.FlatAppearance.BorderSize = 0
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(12, 14)
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
         Me.btnMinimize.TabIndex = 2
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
-        'btnMaximize
-        '
-        Me.btnMaximize.FlatAppearance.BorderSize = 0
-        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(45, 14)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMaximize.TabIndex = 1
-        Me.btnMaximize.UseVisualStyleBackColor = True
-        '
         'btnClose
         '
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(77, 12)
+        Me.btnClose.Location = New System.Drawing.Point(43, 12)
         Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(19, 18)
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
-        '
-        'txtNama
-        '
-        Me.txtNama.Location = New System.Drawing.Point(168, 46)
-        Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(229, 24)
-        Me.txtNama.TabIndex = 13
-        '
-        'txtUsername
-        '
-        Me.txtUsername.Location = New System.Drawing.Point(168, 105)
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(229, 24)
-        Me.txtUsername.TabIndex = 14
-        '
-        'txtPassword
-        '
-        Me.txtPassword.Location = New System.Drawing.Point(168, 162)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(229, 24)
-        Me.txtPassword.TabIndex = 15
-        '
-        'txtNoTelp
-        '
-        Me.txtNoTelp.Location = New System.Drawing.Point(168, 213)
-        Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(229, 24)
-        Me.txtNoTelp.TabIndex = 16
-        '
-        'txtAlamat
-        '
-        Me.txtAlamat.Location = New System.Drawing.Point(168, 271)
-        Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(229, 24)
-        Me.txtAlamat.TabIndex = 17
         '
         'formRegist
         '
@@ -327,7 +313,7 @@ Partial Class formRegist
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "formRegist"
@@ -335,12 +321,12 @@ Partial Class formRegist
         Me.Text = "K-Pop Store"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.pnlControl.ResumeLayout(False)
         Me.pnlTop.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        Me.pnlControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -354,10 +340,6 @@ Partial Class formRegist
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents btnBack As Button
-    Friend WithEvents btnMinimize As Button
-    Friend WithEvents btnClose As Button
-    Friend WithEvents pnlControl As Panel
-    Friend WithEvents btnMaximize As Button
     Friend WithEvents pnlTop As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents Panel1 As Panel
@@ -371,4 +353,7 @@ Partial Class formRegist
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtNama As TextBox
+    Friend WithEvents pnlControl As Panel
+    Friend WithEvents btnMinimize As Button
+    Friend WithEvents btnClose As Button
 End Class

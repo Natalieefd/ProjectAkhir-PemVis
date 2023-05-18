@@ -5,11 +5,11 @@
         lblUsn.Text = ActiveUsername
     End Sub
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) 
         Me.Close()
     End Sub
 
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) 
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
