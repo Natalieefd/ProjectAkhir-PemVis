@@ -44,6 +44,7 @@ Partial Class ManajemenProdukAdmin
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtNama = New System.Windows.Forms.TextBox()
+        Me.btnTambah = New System.Windows.Forms.Button()
         Me.dgvProduk = New System.Windows.Forms.DataGridView()
         Me.pnlSpace = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -52,6 +53,9 @@ Partial Class ManajemenProdukAdmin
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.pnlTop = New System.Windows.Forms.Panel()
         Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnMaximize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -66,10 +70,6 @@ Partial Class ManajemenProdukAdmin
         Me.HapusDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnMaximize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnTambah = New System.Windows.Forms.Button()
         Me.pnlFomProduk.SuspendLayout()
         CType(Me.dgvProduk, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
@@ -109,7 +109,7 @@ Partial Class ManajemenProdukAdmin
         Me.pnlFomProduk.Controls.Add(Me.txtNama)
         Me.pnlFomProduk.Controls.Add(Me.btnTambah)
         Me.pnlFomProduk.Location = New System.Drawing.Point(93, 564)
-        Me.pnlFomProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlFomProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFomProduk.Name = "pnlFomProduk"
         Me.pnlFomProduk.Size = New System.Drawing.Size(915, 463)
         Me.pnlFomProduk.TabIndex = 53
@@ -119,7 +119,7 @@ Partial Class ManajemenProdukAdmin
         Me.cmbKategori.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbKategori.FormattingEnabled = True
         Me.cmbKategori.Location = New System.Drawing.Point(185, 166)
-        Me.cmbKategori.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbKategori.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbKategori.Name = "cmbKategori"
         Me.cmbKategori.Size = New System.Drawing.Size(201, 25)
         Me.cmbKategori.TabIndex = 25
@@ -140,7 +140,7 @@ Partial Class ManajemenProdukAdmin
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
         Me.btnClear.Location = New System.Drawing.Point(692, 309)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(100, 79)
         Me.btnClear.TabIndex = 22
@@ -153,7 +153,7 @@ Partial Class ManajemenProdukAdmin
         Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHapus.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_trash_50
         Me.btnHapus.Location = New System.Drawing.Point(507, 309)
-        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHapus.Name = "btnHapus"
         Me.btnHapus.Size = New System.Drawing.Size(100, 79)
         Me.btnHapus.TabIndex = 21
@@ -166,7 +166,7 @@ Partial Class ManajemenProdukAdmin
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
         Me.btnUbah.Location = New System.Drawing.Point(321, 309)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(100, 79)
         Me.btnUbah.TabIndex = 20
@@ -189,7 +189,7 @@ Partial Class ManajemenProdukAdmin
         '
         Me.txtDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDesc.Location = New System.Drawing.Point(643, 161)
-        Me.txtDesc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDesc.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(201, 94)
@@ -210,7 +210,7 @@ Partial Class ManajemenProdukAdmin
         '
         Me.txtHarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHarga.Location = New System.Drawing.Point(643, 100)
-        Me.txtHarga.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHarga.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHarga.Name = "txtHarga"
         Me.txtHarga.Size = New System.Drawing.Size(201, 23)
         Me.txtHarga.TabIndex = 12
@@ -230,7 +230,7 @@ Partial Class ManajemenProdukAdmin
         '
         Me.txtStok.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtStok.Location = New System.Drawing.Point(185, 228)
-        Me.txtStok.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtStok.Margin = New System.Windows.Forms.Padding(4)
         Me.txtStok.Name = "txtStok"
         Me.txtStok.Size = New System.Drawing.Size(201, 23)
         Me.txtStok.TabIndex = 10
@@ -271,10 +271,23 @@ Partial Class ManajemenProdukAdmin
         '
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(185, 100)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(201, 23)
         Me.txtNama.TabIndex = 5
+        '
+        'btnTambah
+        '
+        Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTambah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_add_new_50
+        Me.btnTambah.Location = New System.Drawing.Point(132, 309)
+        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTambah.Name = "btnTambah"
+        Me.btnTambah.Size = New System.Drawing.Size(100, 79)
+        Me.btnTambah.TabIndex = 2
+        Me.btnTambah.Text = "Tambah"
+        Me.btnTambah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnTambah.UseVisualStyleBackColor = True
         '
         'dgvProduk
         '
@@ -297,7 +310,7 @@ Partial Class ManajemenProdukAdmin
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvProduk.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvProduk.Location = New System.Drawing.Point(93, 158)
-        Me.dgvProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvProduk.Name = "dgvProduk"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -316,7 +329,7 @@ Partial Class ManajemenProdukAdmin
         'pnlSpace
         '
         Me.pnlSpace.Location = New System.Drawing.Point(93, 1074)
-        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(917, 30)
         Me.pnlSpace.TabIndex = 51
@@ -370,6 +383,42 @@ Partial Class ManajemenProdukAdmin
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(108, 44)
         Me.pnlControl.TabIndex = 48
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(12, 14)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnMaximize
+        '
+        Me.btnMaximize.FlatAppearance.BorderSize = 0
+        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMaximize.Location = New System.Drawing.Point(45, 14)
+        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMaximize.Name = "btnMaximize"
+        Me.btnMaximize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMaximize.TabIndex = 1
+        Me.btnMaximize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(77, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(19, 18)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -463,55 +512,6 @@ Partial Class ManajemenProdukAdmin
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(12, 14)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnMaximize
-        '
-        Me.btnMaximize.FlatAppearance.BorderSize = 0
-        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(45, 14)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMaximize.TabIndex = 1
-        Me.btnMaximize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(77, 12)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(19, 18)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
-        'btnTambah
-        '
-        Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTambah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_add_new_50
-        Me.btnTambah.Location = New System.Drawing.Point(132, 309)
-        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnTambah.Name = "btnTambah"
-        Me.btnTambah.Size = New System.Drawing.Size(100, 79)
-        Me.btnTambah.TabIndex = 2
-        Me.btnTambah.Text = "Tambah"
-        Me.btnTambah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnTambah.UseVisualStyleBackColor = True
-        '
         'ManajemenProdukAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -527,7 +527,7 @@ Partial Class ManajemenProdukAdmin
         Me.Controls.Add(Me.dgvProduk)
         Me.Controls.Add(Me.pnlSpace)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ManajemenProdukAdmin"
