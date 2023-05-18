@@ -3,8 +3,7 @@
     Private Sub formCustomer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
-
-        'query ngambil usn cust buat nampilin di lblUsn
+        lblUsn.Text = ActiveUsername
     End Sub
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
