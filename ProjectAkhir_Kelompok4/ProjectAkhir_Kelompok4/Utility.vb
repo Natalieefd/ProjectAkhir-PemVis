@@ -59,7 +59,6 @@ Module Utility
     Function Numbering(e As KeyPressEventArgs) As Boolean
         Dim eChar As Char = e.KeyChar
 
-        'Numeric Only
         If Asc(eChar) <> 8 And Not eChar Like "[0-9]" Then
             Return True
         End If

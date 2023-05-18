@@ -2,6 +2,7 @@
     Private Sub Regist_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+        koneksi()
         Me.ActiveControl = txtNama
     End Sub
 
@@ -71,7 +72,7 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs)
+    Private Sub txtNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNoTelp.KeyPress
         e.Handled = Numbering(e)
         Warn.Visible = False
     End Sub
