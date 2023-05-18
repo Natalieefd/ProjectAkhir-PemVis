@@ -17,11 +17,11 @@
         Me.Hide()
     End Sub
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) 
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
     End Sub
 
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) 
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

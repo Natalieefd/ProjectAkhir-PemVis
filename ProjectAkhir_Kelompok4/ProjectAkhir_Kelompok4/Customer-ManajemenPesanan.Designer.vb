@@ -42,6 +42,9 @@ Partial Class formPesananCust
         Me.UbahProfilToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlTop = New System.Windows.Forms.Panel()
+        Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
@@ -72,15 +75,12 @@ Partial Class formPesananCust
         Me.txtNama = New System.Windows.Forms.TextBox()
         Me.pnlSpace = New System.Windows.Forms.Panel()
         Me.lblPS = New System.Windows.Forms.Label()
-        Me.pnlControl = New System.Windows.Forms.Panel()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.pnlTop.SuspendLayout()
+        Me.pnlControl.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.dgvPesanan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlFormPesanan.SuspendLayout()
-        Me.pnlControl.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -92,7 +92,7 @@ Partial Class formPesananCust
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 44)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(998, 26)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1019, 26)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -178,8 +178,43 @@ Partial Class formPesananCust
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(998, 44)
+        Me.pnlTop.Size = New System.Drawing.Size(1019, 44)
         Me.pnlTop.TabIndex = 52
+        '
+        'pnlControl
+        '
+        Me.pnlControl.Controls.Add(Me.btnMinimize)
+        Me.pnlControl.Controls.Add(Me.btnClose)
+        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlControl.Location = New System.Drawing.Point(947, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlControl.Name = "pnlControl"
+        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
+        Me.pnlControl.TabIndex = 49
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(43, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(19, 18)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'StatusStrip1
         '
@@ -190,7 +225,7 @@ Partial Class formPesananCust
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 1018)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(998, 24)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1019, 24)
         Me.StatusStrip1.TabIndex = 51
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -239,7 +274,7 @@ Partial Class formPesananCust
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvPesanan.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvPesanan.Location = New System.Drawing.Point(60, 160)
-        Me.dgvPesanan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvPesanan.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvPesanan.Name = "dgvPesanan"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -281,7 +316,7 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Controls.Add(Me.Label2)
         Me.pnlFormPesanan.Controls.Add(Me.txtNama)
         Me.pnlFormPesanan.Location = New System.Drawing.Point(60, 508)
-        Me.pnlFormPesanan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlFormPesanan.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
         Me.pnlFormPesanan.Size = New System.Drawing.Size(915, 473)
         Me.pnlFormPesanan.TabIndex = 4
@@ -290,7 +325,7 @@ Partial Class formPesananCust
         '
         Me.btnBatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatal.Location = New System.Drawing.Point(687, 414)
-        Me.btnBatal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBatal.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(100, 33)
         Me.btnBatal.TabIndex = 17
@@ -312,7 +347,7 @@ Partial Class formPesananCust
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(509, 414)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(100, 33)
         Me.btnClear.TabIndex = 16
@@ -323,7 +358,7 @@ Partial Class formPesananCust
         '
         Me.btnBatalkan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatalkan.Location = New System.Drawing.Point(324, 414)
-        Me.btnBatalkan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBatalkan.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatalkan.Name = "btnBatalkan"
         Me.btnBatalkan.Size = New System.Drawing.Size(100, 33)
         Me.btnBatalkan.TabIndex = 15
@@ -334,7 +369,7 @@ Partial Class formPesananCust
         '
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbah.Location = New System.Drawing.Point(139, 414)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(100, 33)
         Me.btnUbah.TabIndex = 14
@@ -356,7 +391,7 @@ Partial Class formPesananCust
         '
         Me.txtHargaTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaTotal.Location = New System.Drawing.Point(647, 342)
-        Me.txtHargaTotal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHargaTotal.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.Size = New System.Drawing.Size(201, 23)
         Me.txtHargaTotal.TabIndex = 13
@@ -376,7 +411,7 @@ Partial Class formPesananCust
         '
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlamat.Location = New System.Drawing.Point(647, 213)
-        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(201, 95)
@@ -397,7 +432,7 @@ Partial Class formPesananCust
         '
         Me.txtDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDesc.Location = New System.Drawing.Point(647, 86)
-        Me.txtDesc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDesc.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(201, 94)
@@ -418,7 +453,7 @@ Partial Class formPesananCust
         '
         Me.txtHargaSatuan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaSatuan.Location = New System.Drawing.Point(213, 342)
-        Me.txtHargaSatuan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHargaSatuan.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHargaSatuan.Name = "txtHargaSatuan"
         Me.txtHargaSatuan.Size = New System.Drawing.Size(201, 23)
         Me.txtHargaSatuan.TabIndex = 10
@@ -438,7 +473,7 @@ Partial Class formPesananCust
         '
         Me.txtJumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtJumlah.Location = New System.Drawing.Point(213, 281)
-        Me.txtJumlah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtJumlah.Margin = New System.Windows.Forms.Padding(4)
         Me.txtJumlah.Name = "txtJumlah"
         Me.txtJumlah.Size = New System.Drawing.Size(201, 23)
         Me.txtJumlah.TabIndex = 9
@@ -468,7 +503,7 @@ Partial Class formPesananCust
         '
         Me.txtKategori.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKategori.Location = New System.Drawing.Point(213, 218)
-        Me.txtKategori.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtKategori.Margin = New System.Windows.Forms.Padding(4)
         Me.txtKategori.Name = "txtKategori"
         Me.txtKategori.Size = New System.Drawing.Size(201, 23)
         Me.txtKategori.TabIndex = 8
@@ -488,7 +523,7 @@ Partial Class formPesananCust
         '
         Me.txtNamaProduk.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNamaProduk.Location = New System.Drawing.Point(213, 153)
-        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNamaProduk.Name = "txtNamaProduk"
         Me.txtNamaProduk.Size = New System.Drawing.Size(201, 23)
         Me.txtNamaProduk.TabIndex = 7
@@ -508,7 +543,7 @@ Partial Class formPesananCust
         '
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(213, 90)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(201, 23)
         Me.txtNama.TabIndex = 6
@@ -516,7 +551,7 @@ Partial Class formPesananCust
         'pnlSpace
         '
         Me.pnlSpace.Location = New System.Drawing.Point(60, 988)
-        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(915, 30)
         Me.pnlSpace.TabIndex = 18
@@ -532,48 +567,13 @@ Partial Class formPesananCust
         Me.lblPS.TabIndex = 3
         Me.lblPS.Text = "* Silahkan klik daftar pesanan untuk melakukan perubahan "
         '
-        'pnlControl
-        '
-        Me.pnlControl.Controls.Add(Me.btnMinimize)
-        Me.pnlControl.Controls.Add(Me.btnClose)
-        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(926, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
-        Me.pnlControl.TabIndex = 49
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(43, 12)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(19, 18)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
         'formPesananCust
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(1019, 510)
+        Me.ClientSize = New System.Drawing.Size(1040, 510)
         Me.Controls.Add(Me.lblPS)
         Me.Controls.Add(Me.pnlFormPesanan)
         Me.Controls.Add(Me.pnlSpace)
@@ -583,7 +583,7 @@ Partial Class formPesananCust
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "formPesananCust"
@@ -592,12 +592,12 @@ Partial Class formPesananCust
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.pnlTop.ResumeLayout(False)
+        Me.pnlControl.ResumeLayout(False)
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         CType(Me.dgvPesanan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlFormPesanan.ResumeLayout(False)
         Me.pnlFormPesanan.PerformLayout()
-        Me.pnlControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

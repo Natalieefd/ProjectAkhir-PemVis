@@ -75,7 +75,7 @@ Partial Class ManajemenProdukStaf
         'pnlSpace
         '
         Me.pnlSpace.Location = New System.Drawing.Point(89, 900)
-        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(915, 30)
         Me.pnlSpace.TabIndex = 47
@@ -139,7 +139,7 @@ Partial Class ManajemenProdukStaf
         Me.pnlFormProduk.Controls.Add(Me.txtNama)
         Me.pnlFormProduk.Controls.Add(Me.btnTambah)
         Me.pnlFormProduk.Location = New System.Drawing.Point(89, 523)
-        Me.pnlFormProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlFormProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormProduk.Name = "pnlFormProduk"
         Me.pnlFormProduk.Size = New System.Drawing.Size(915, 369)
         Me.pnlFormProduk.TabIndex = 49
@@ -150,7 +150,7 @@ Partial Class ManajemenProdukStaf
         Me.cmbKategori.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbKategori.FormattingEnabled = True
         Me.cmbKategori.Location = New System.Drawing.Point(185, 166)
-        Me.cmbKategori.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbKategori.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbKategori.Name = "cmbKategori"
         Me.cmbKategori.Size = New System.Drawing.Size(201, 25)
         Me.cmbKategori.TabIndex = 24
@@ -170,7 +170,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(692, 309)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(100, 33)
         Me.btnClear.TabIndex = 22
@@ -181,7 +181,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHapus.Location = New System.Drawing.Point(507, 309)
-        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHapus.Name = "btnHapus"
         Me.btnHapus.Size = New System.Drawing.Size(100, 33)
         Me.btnHapus.TabIndex = 21
@@ -192,7 +192,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbah.Location = New System.Drawing.Point(321, 309)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(100, 33)
         Me.btnUbah.TabIndex = 20
@@ -214,7 +214,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.txtDecs.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDecs.Location = New System.Drawing.Point(643, 161)
-        Me.txtDecs.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDecs.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDecs.Multiline = True
         Me.txtDecs.Name = "txtDecs"
         Me.txtDecs.Size = New System.Drawing.Size(201, 94)
@@ -235,7 +235,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.txtHarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHarga.Location = New System.Drawing.Point(643, 100)
-        Me.txtHarga.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHarga.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHarga.Name = "txtHarga"
         Me.txtHarga.Size = New System.Drawing.Size(201, 23)
         Me.txtHarga.TabIndex = 12
@@ -255,7 +255,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.txtStok.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtStok.Location = New System.Drawing.Point(185, 228)
-        Me.txtStok.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtStok.Margin = New System.Windows.Forms.Padding(4)
         Me.txtStok.Name = "txtStok"
         Me.txtStok.Size = New System.Drawing.Size(201, 23)
         Me.txtStok.TabIndex = 10
@@ -296,7 +296,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(185, 100)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(201, 23)
         Me.txtNama.TabIndex = 5
@@ -305,7 +305,7 @@ Partial Class ManajemenProdukStaf
         '
         Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTambah.Location = New System.Drawing.Point(132, 309)
-        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(100, 33)
         Me.btnTambah.TabIndex = 2
@@ -333,7 +333,7 @@ Partial Class ManajemenProdukStaf
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDaftarProduk.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvDaftarProduk.Location = New System.Drawing.Point(89, 144)
-        Me.dgvDaftarProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvDaftarProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvDaftarProduk.Name = "dgvDaftarProduk"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -471,7 +471,7 @@ Partial Class ManajemenProdukStaf
         Me.Controls.Add(Me.pnlSpace)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ManajemenProdukStaf"
