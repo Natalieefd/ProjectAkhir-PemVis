@@ -92,7 +92,7 @@ Partial Class formPesananCust
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 44)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1019, 26)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1022, 26)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -178,7 +178,7 @@ Partial Class formPesananCust
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1019, 44)
+        Me.pnlTop.Size = New System.Drawing.Size(1022, 44)
         Me.pnlTop.TabIndex = 52
         '
         'pnlControl
@@ -186,7 +186,7 @@ Partial Class formPesananCust
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(947, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(950, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(72, 44)
@@ -222,10 +222,10 @@ Partial Class formPesananCust
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1018)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1038)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1019, 24)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1022, 24)
         Me.StatusStrip1.TabIndex = 51
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -255,7 +255,7 @@ Partial Class formPesananCust
         '
         'dgvPesanan
         '
-        Me.dgvPesanan.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.dgvPesanan.BackgroundColor = System.Drawing.Color.CadetBlue
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -292,7 +292,7 @@ Partial Class formPesananCust
         '
         'pnlFormPesanan
         '
-        Me.pnlFormPesanan.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pnlFormPesanan.BackColor = System.Drawing.Color.CornflowerBlue
         Me.pnlFormPesanan.Controls.Add(Me.btnBatal)
         Me.pnlFormPesanan.Controls.Add(Me.Label12)
         Me.pnlFormPesanan.Controls.Add(Me.btnClear)
@@ -318,18 +318,20 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Location = New System.Drawing.Point(60, 508)
         Me.pnlFormPesanan.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
-        Me.pnlFormPesanan.Size = New System.Drawing.Size(915, 473)
+        Me.pnlFormPesanan.Size = New System.Drawing.Size(915, 492)
         Me.pnlFormPesanan.TabIndex = 4
         '
         'btnBatal
         '
         Me.btnBatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBatal.Location = New System.Drawing.Point(687, 414)
+        Me.btnBatal.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_cancel_50
+        Me.btnBatal.Location = New System.Drawing.Point(687, 390)
         Me.btnBatal.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatal.Name = "btnBatal"
-        Me.btnBatal.Size = New System.Drawing.Size(100, 33)
+        Me.btnBatal.Size = New System.Drawing.Size(100, 79)
         Me.btnBatal.TabIndex = 17
         Me.btnBatal.Text = "Batal"
+        Me.btnBatal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnBatal.UseVisualStyleBackColor = True
         '
         'Label12
@@ -346,34 +348,40 @@ Partial Class formPesananCust
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(509, 414)
+        Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
+        Me.btnClear.Location = New System.Drawing.Point(509, 390)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(100, 33)
+        Me.btnClear.Size = New System.Drawing.Size(100, 79)
         Me.btnClear.TabIndex = 16
         Me.btnClear.Text = "Clear"
+        Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'btnBatalkan
         '
         Me.btnBatalkan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBatalkan.Location = New System.Drawing.Point(324, 414)
+        Me.btnBatalkan.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
+        Me.btnBatalkan.Location = New System.Drawing.Point(324, 390)
         Me.btnBatalkan.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatalkan.Name = "btnBatalkan"
-        Me.btnBatalkan.Size = New System.Drawing.Size(100, 33)
+        Me.btnBatalkan.Size = New System.Drawing.Size(100, 79)
         Me.btnBatalkan.TabIndex = 15
         Me.btnBatalkan.Text = "Batalkan"
+        Me.btnBatalkan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnBatalkan.UseVisualStyleBackColor = True
         '
         'btnUbah
         '
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUbah.Location = New System.Drawing.Point(139, 414)
+        Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
+        Me.btnUbah.Location = New System.Drawing.Point(147, 390)
         Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbah.Name = "btnUbah"
-        Me.btnUbah.Size = New System.Drawing.Size(100, 33)
+        Me.btnUbah.Size = New System.Drawing.Size(100, 79)
         Me.btnUbah.TabIndex = 14
         Me.btnUbah.Text = "Ubah"
+        Me.btnUbah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnUbah.UseVisualStyleBackColor = True
         '
         'Label11
@@ -550,7 +558,7 @@ Partial Class formPesananCust
         '
         'pnlSpace
         '
-        Me.pnlSpace.Location = New System.Drawing.Point(60, 988)
+        Me.pnlSpace.Location = New System.Drawing.Point(60, 1008)
         Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(915, 30)
@@ -572,8 +580,8 @@ Partial Class formPesananCust
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(1040, 510)
+        Me.BackColor = System.Drawing.Color.Coral
+        Me.ClientSize = New System.Drawing.Size(1043, 890)
         Me.Controls.Add(Me.lblPS)
         Me.Controls.Add(Me.pnlFormPesanan)
         Me.Controls.Add(Me.pnlSpace)

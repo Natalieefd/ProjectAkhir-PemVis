@@ -94,7 +94,7 @@ Partial Class formProfil
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!)
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1154)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1319)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
         Me.StatusStrip1.Size = New System.Drawing.Size(1019, 24)
@@ -116,7 +116,7 @@ Partial Class formProfil
         '
         'pnlFormUbah
         '
-        Me.pnlFormUbah.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pnlFormUbah.BackColor = System.Drawing.Color.CornflowerBlue
         Me.pnlFormUbah.Controls.Add(Me.Label1)
         Me.pnlFormUbah.Controls.Add(Me.btnClear)
         Me.pnlFormUbah.Controls.Add(Me.btnUbahForm)
@@ -131,10 +131,10 @@ Partial Class formProfil
         Me.pnlFormUbah.Controls.Add(Me.txtUbahUsn)
         Me.pnlFormUbah.Controls.Add(Me.Label2)
         Me.pnlFormUbah.Controls.Add(Me.txtUbahNama)
-        Me.pnlFormUbah.Location = New System.Drawing.Point(48, 532)
+        Me.pnlFormUbah.Location = New System.Drawing.Point(54, 568)
         Me.pnlFormUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormUbah.Name = "pnlFormUbah"
-        Me.pnlFormUbah.Size = New System.Drawing.Size(915, 362)
+        Me.pnlFormUbah.Size = New System.Drawing.Size(915, 402)
         Me.pnlFormUbah.TabIndex = 9
         '
         'Label1
@@ -151,23 +151,27 @@ Partial Class formProfil
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
         Me.btnClear.Location = New System.Drawing.Point(507, 299)
         Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(100, 33)
+        Me.btnClear.Size = New System.Drawing.Size(100, 86)
         Me.btnClear.TabIndex = 17
         Me.btnClear.Text = "Clear"
+        Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'btnUbahForm
         '
         Me.btnUbahForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUbahForm.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
         Me.btnUbahForm.Location = New System.Drawing.Point(313, 299)
         Me.btnUbahForm.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbahForm.Name = "btnUbahForm"
-        Me.btnUbahForm.Size = New System.Drawing.Size(100, 33)
+        Me.btnUbahForm.Size = New System.Drawing.Size(100, 86)
         Me.btnUbahForm.TabIndex = 16
         Me.btnUbahForm.Text = "Ubah"
+        Me.btnUbahForm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnUbahForm.UseVisualStyleBackColor = True
         '
         'Label10
@@ -283,7 +287,7 @@ Partial Class formProfil
         '
         'pnlSpace
         '
-        Me.pnlSpace.Location = New System.Drawing.Point(48, 1124)
+        Me.pnlSpace.Location = New System.Drawing.Point(54, 1289)
         Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(915, 30)
@@ -292,17 +296,19 @@ Partial Class formProfil
         'btnUbah
         '
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUbah.Location = New System.Drawing.Point(456, 476)
+        Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_enter_50
+        Me.btnUbah.Location = New System.Drawing.Point(465, 476)
         Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbah.Name = "btnUbah"
-        Me.btnUbah.Size = New System.Drawing.Size(100, 33)
+        Me.btnUbah.Size = New System.Drawing.Size(100, 84)
         Me.btnUbah.TabIndex = 3
         Me.btnUbah.Text = "Ubah"
+        Me.btnUbah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnUbah.UseVisualStyleBackColor = True
         '
         'pnlProfil
         '
-        Me.pnlProfil.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pnlProfil.BackColor = System.Drawing.Color.CadetBlue
         Me.pnlProfil.Controls.Add(Me.txtAlamat)
         Me.pnlProfil.Controls.Add(Me.txtNoTelp)
         Me.pnlProfil.Controls.Add(Me.txtPass)
@@ -588,12 +594,14 @@ Partial Class formProfil
         'btnSubmit
         '
         Me.btnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
         Me.btnSubmit.Location = New System.Drawing.Point(73, 169)
         Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(100, 33)
+        Me.btnSubmit.Size = New System.Drawing.Size(100, 81)
         Me.btnSubmit.TabIndex = 7
         Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
         'Label8
@@ -610,26 +618,28 @@ Partial Class formProfil
         'btnBatal
         '
         Me.btnBatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatal.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
         Me.btnBatal.Location = New System.Drawing.Point(228, 169)
         Me.btnBatal.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatal.Name = "btnBatal"
-        Me.btnBatal.Size = New System.Drawing.Size(100, 33)
+        Me.btnBatal.Size = New System.Drawing.Size(100, 81)
         Me.btnBatal.TabIndex = 8
         Me.btnBatal.Text = "Batal"
+        Me.btnBatal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnBatal.UseVisualStyleBackColor = True
         '
         'pnlPass
         '
-        Me.pnlPass.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pnlPass.BackColor = System.Drawing.Color.DarkCyan
         Me.pnlPass.Controls.Add(Me.btnBatal)
         Me.pnlPass.Controls.Add(Me.Label8)
         Me.pnlPass.Controls.Add(Me.btnSubmit)
         Me.pnlPass.Controls.Add(Me.Label4)
         Me.pnlPass.Controls.Add(Me.txtKonfirmPass)
-        Me.pnlPass.Location = New System.Drawing.Point(305, 902)
+        Me.pnlPass.Location = New System.Drawing.Point(311, 1004)
         Me.pnlPass.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlPass.Name = "pnlPass"
-        Me.pnlPass.Size = New System.Drawing.Size(408, 222)
+        Me.pnlPass.Size = New System.Drawing.Size(408, 266)
         Me.pnlPass.TabIndex = 4
         '
         'formProfil
@@ -637,8 +647,8 @@ Partial Class formProfil
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.ClientSize = New System.Drawing.Size(1040, 554)
+        Me.BackColor = System.Drawing.Color.Coral
+        Me.ClientSize = New System.Drawing.Size(1040, 650)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlPass)

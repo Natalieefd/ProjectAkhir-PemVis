@@ -84,10 +84,11 @@ Partial Class formKatalog
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.BackColor = System.Drawing.Color.Cornsilk
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1173)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1157)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
         Me.StatusStrip1.Size = New System.Drawing.Size(1007, 24)
@@ -159,7 +160,7 @@ Partial Class formKatalog
         '
         Me.lblPS.AutoSize = True
         Me.lblPS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPS.Location = New System.Drawing.Point(65, 480)
+        Me.lblPS.Location = New System.Drawing.Point(52, 486)
         Me.lblPS.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPS.Name = "lblPS"
         Me.lblPS.Size = New System.Drawing.Size(500, 20)
@@ -300,7 +301,7 @@ Partial Class formKatalog
         '
         'pnlFormPesanan
         '
-        Me.pnlFormPesanan.BackColor = System.Drawing.Color.Coral
+        Me.pnlFormPesanan.BackColor = System.Drawing.Color.CornflowerBlue
         Me.pnlFormPesanan.Controls.Add(Me.btnClear)
         Me.pnlFormPesanan.Controls.Add(Me.Label12)
         Me.pnlFormPesanan.Controls.Add(Me.btnBatal)
@@ -552,7 +553,7 @@ Partial Class formKatalog
         '
         'pnlSpace
         '
-        Me.pnlSpace.Location = New System.Drawing.Point(44, 1143)
+        Me.pnlSpace.Location = New System.Drawing.Point(44, 1127)
         Me.pnlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(915, 30)
@@ -563,7 +564,7 @@ Partial Class formKatalog
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(1028, 554)
         Me.Controls.Add(Me.pnlFormPesanan)
         Me.Controls.Add(Me.MenuStrip1)
