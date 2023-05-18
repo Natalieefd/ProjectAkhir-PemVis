@@ -306,5 +306,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-create-64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-enter-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-send-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

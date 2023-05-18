@@ -28,6 +28,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtNoTelp = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtNama = New System.Windows.Forms.TextBox()
+        Me.btnUbah = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -42,7 +43,6 @@ Partial Class ManajemenTokoAdmin
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtUbahNoTelp = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.btnUbah = New System.Windows.Forms.Button()
         Me.pnlPass = New System.Windows.Forms.Panel()
         Me.btnBatal = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -141,6 +141,19 @@ Partial Class ManajemenTokoAdmin
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(240, 23)
         Me.txtNama.TabIndex = 25
+        '
+        'btnUbah
+        '
+        Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
+        Me.btnUbah.Location = New System.Drawing.Point(228, 336)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUbah.Name = "btnUbah"
+        Me.btnUbah.Size = New System.Drawing.Size(100, 79)
+        Me.btnUbah.TabIndex = 41
+        Me.btnUbah.Text = "Ubah"
+        Me.btnUbah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnUbah.UseVisualStyleBackColor = True
         '
         'Label14
         '
@@ -293,19 +306,6 @@ Partial Class ManajemenTokoAdmin
         Me.Label6.Size = New System.Drawing.Size(50, 18)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Email"
-        '
-        'btnUbah
-        '
-        Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
-        Me.btnUbah.Location = New System.Drawing.Point(228, 336)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnUbah.Name = "btnUbah"
-        Me.btnUbah.Size = New System.Drawing.Size(100, 79)
-        Me.btnUbah.TabIndex = 41
-        Me.btnUbah.Text = "Ubah"
-        Me.btnUbah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnUbah.UseVisualStyleBackColor = True
         '
         'pnlPass
         '

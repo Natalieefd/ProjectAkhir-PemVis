@@ -22,7 +22,7 @@
 
     End Sub
 
-    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs) 
         lblHeader.Show()
         dgvKatalog.Show()
         lblPS.Show()
@@ -31,40 +31,40 @@
         pnlSpace.Location = New Point(56, 398)
     End Sub
 
-    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs)
         formCustomer.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
+    Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs)
         formProfilTokoC.Show()
         Me.Hide()
     End Sub
 
-    Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click
+    Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Me.Show()
     End Sub
 
-    Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+    Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs)
         formPesananCust.Show()
         Me.Hide()
     End Sub
 
-    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
+    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Me.Show()
     End Sub
 
-    Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+    Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs)
         formPesananCust.Show()
         Me.Hide()
     End Sub
 
-    Private Sub HapusPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusPesananToolStripMenuItem.Click
+    Private Sub HapusPesananToolStripMenuItem_Click(sender As Object, e As EventArgs)
         formPesananCust.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ProfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilToolStripMenuItem.Click
+    Private Sub ProfilToolStripMenuItem_Click(sender As Object, e As EventArgs)
         formProfil.Show()
         Me.Hide()
     End Sub
