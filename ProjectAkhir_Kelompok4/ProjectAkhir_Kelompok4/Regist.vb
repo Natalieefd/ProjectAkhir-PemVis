@@ -50,7 +50,9 @@
             Exit Sub
         End If
 
-        dbq("") 'query tambah akun customer
+        dbq("INSERT INTO tbcustomer(nama, username, password, no_telp, alamat)values
+           ('" & txtNama.Text & "','" & txtUsername.Text & "','" & txtPassword.Text & "',
+           '" & txtNoTelp.Text & "','" & txtAlamat.Text & "')")
         RD.Close()
         MsgBox("Registrasi Berhasil!", MsgBoxStyle.Information, "Perhatian")
 
