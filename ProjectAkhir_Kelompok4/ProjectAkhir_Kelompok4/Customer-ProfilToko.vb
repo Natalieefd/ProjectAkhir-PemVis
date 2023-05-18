@@ -58,11 +58,13 @@
         Me.Hide()
     End Sub
 
-    Private Sub formProfilTokoC_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem)
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        Home.Show()
+        Me.Close()
     End Sub
 
-    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
-        formProfilTokoC_FormClosing(sender, e)
+    Private Sub formProfilTokoC_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        CloseForm(sender, MenuStrip1)
     End Sub
 End Class

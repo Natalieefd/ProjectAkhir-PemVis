@@ -76,10 +76,6 @@
         Me.Hide()
     End Sub
 
-    Private Sub formPesananCust_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem)
-    End Sub
-
     Sub batal()
         txtNama.Clear()
         txtNamaProduk.Clear()
@@ -89,5 +85,15 @@
         txtDesc.Clear()
         txtAlamat.Clear()
         txtHargaTotal.Clear()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        Home.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub formPesananCust_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        CloseForm(sender, MenuStrip1)
     End Sub
 End Class

@@ -226,13 +226,13 @@ Partial Class formCustomer
         'LihatProfilToolStripMenuItem1
         '
         Me.LihatProfilToolStripMenuItem1.Name = "LihatProfilToolStripMenuItem1"
-        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.LihatProfilToolStripMenuItem1.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem1
         '
         Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
-        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem

@@ -54,7 +54,14 @@
         Me.Hide()
     End Sub
 
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        Home.Show()
+        Me.Close()
+    End Sub
+
     Private Sub formCustomer_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem)
+        CloseForm(sender, MenuStrip1)
     End Sub
 End Class

@@ -125,25 +125,25 @@ Partial Class formPesananCust
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'BatalkanPesananToolStripMenuItem
         '
         Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
@@ -303,7 +303,7 @@ Partial Class formPesananCust
         '
         'pnlFormPesanan
         '
-        Me.pnlFormPesanan.BackColor = System.Drawing.Color.Bisque
+        Me.pnlFormPesanan.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.pnlFormPesanan.Controls.Add(Me.btnBatal)
         Me.pnlFormPesanan.Controls.Add(Me.Label12)
         Me.pnlFormPesanan.Controls.Add(Me.btnClear)
@@ -558,7 +558,7 @@ Partial Class formPesananCust
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.Color.DarkOrange
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(764, 414)
         Me.Controls.Add(Me.lblPS)
         Me.Controls.Add(Me.pnlFormPesanan)
