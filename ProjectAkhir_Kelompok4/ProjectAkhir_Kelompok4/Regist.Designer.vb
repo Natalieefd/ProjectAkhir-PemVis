@@ -208,7 +208,7 @@ Partial Class formRegist
         Me.pnlTop.Location = New System.Drawing.Point(243, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(565, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(548, 36)
         Me.pnlTop.TabIndex = 56
         '
         'pnlControl
@@ -216,7 +216,7 @@ Partial Class formRegist
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(511, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(494, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -267,7 +267,7 @@ Partial Class formRegist
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(243, 426)
+        Me.Panel1.Size = New System.Drawing.Size(243, 427)
         Me.Panel1.TabIndex = 55
         '
         'SlabelJam
@@ -289,9 +289,9 @@ Partial Class formRegist
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 426)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 427)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(808, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(791, 22)
         Me.StatusStrip1.TabIndex = 54
         Me.StatusStrip1.Text = "StatusStrip1"
         '
