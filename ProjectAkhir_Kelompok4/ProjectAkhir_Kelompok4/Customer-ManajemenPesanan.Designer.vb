@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formPesananCust
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class formPesananCust
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -93,7 +93,7 @@ Partial Class formPesananCust
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(868, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(747, 24)
         Me.MenuStrip1.TabIndex = 53
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -179,7 +179,7 @@ Partial Class formPesananCust
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(868, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(747, 36)
         Me.pnlTop.TabIndex = 52
         '
         'pnlControl
@@ -188,7 +188,7 @@ Partial Class formPesananCust
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(787, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(666, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(81, 36)
@@ -238,7 +238,7 @@ Partial Class formPesananCust
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 827)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(868, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(747, 22)
         Me.StatusStrip1.TabIndex = 51
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -259,7 +259,7 @@ Partial Class formPesananCust
         '
         Me.lblHeader.AutoSize = True
         Me.lblHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeader.Location = New System.Drawing.Point(281, 85)
+        Me.lblHeader.Location = New System.Drawing.Point(276, 82)
         Me.lblHeader.Name = "lblHeader"
         Me.lblHeader.Size = New System.Drawing.Size(216, 25)
         Me.lblHeader.TabIndex = 55
@@ -285,7 +285,7 @@ Partial Class formPesananCust
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvPesanan.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvPesanan.Location = New System.Drawing.Point(57, 145)
+        Me.dgvPesanan.Location = New System.Drawing.Point(45, 130)
         Me.dgvPesanan.Name = "dgvPesanan"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -326,7 +326,7 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Controls.Add(Me.txtNamaProduk)
         Me.pnlFormPesanan.Controls.Add(Me.Label2)
         Me.pnlFormPesanan.Controls.Add(Me.txtNama)
-        Me.pnlFormPesanan.Location = New System.Drawing.Point(57, 413)
+        Me.pnlFormPesanan.Location = New System.Drawing.Point(45, 413)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
         Me.pnlFormPesanan.Size = New System.Drawing.Size(686, 384)
         Me.pnlFormPesanan.TabIndex = 56
@@ -538,7 +538,7 @@ Partial Class formPesananCust
         '
         'pnlSpace
         '
-        Me.pnlSpace.Location = New System.Drawing.Point(57, 803)
+        Me.pnlSpace.Location = New System.Drawing.Point(45, 803)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
         Me.pnlSpace.TabIndex = 57
@@ -547,7 +547,7 @@ Partial Class formPesananCust
         '
         Me.lblPS.AutoSize = True
         Me.lblPS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPS.Location = New System.Drawing.Point(63, 383)
+        Me.lblPS.Location = New System.Drawing.Point(51, 368)
         Me.lblPS.Name = "lblPS"
         Me.lblPS.Size = New System.Drawing.Size(414, 16)
         Me.lblPS.TabIndex = 58
@@ -559,7 +559,7 @@ Partial Class formPesananCust
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.DarkOrange
-        Me.ClientSize = New System.Drawing.Size(885, 450)
+        Me.ClientSize = New System.Drawing.Size(764, 414)
         Me.Controls.Add(Me.lblPS)
         Me.Controls.Add(Me.pnlFormPesanan)
         Me.Controls.Add(Me.pnlSpace)

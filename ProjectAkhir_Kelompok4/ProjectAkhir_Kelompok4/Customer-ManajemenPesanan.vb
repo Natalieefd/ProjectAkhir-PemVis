@@ -3,8 +3,9 @@
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
+        pnlSpace.Hide()
         pnlFormPesanan.Hide()
-        pnlSpace.Location = New Point(56, 398)
+
     End Sub
 
     Private Sub dgvPesanan_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentClick
@@ -13,7 +14,8 @@
         lblPS.Hide()
 
         pnlFormPesanan.Show()
-        pnlFormPesanan.Location = New Point(57, 33)
+        pnlFormPesanan.Location = New Point(31, 88)
+        pnlSpace.Location = New Point(31, 473)
 
         'enabled semua txtbox kecuali txtJumlah
         'harga total otomatis kehitung klo jumlahnya berubah
