@@ -18,7 +18,22 @@
         Me.Hide()
     End Sub
 
-    Private Sub ManajemenBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManajemenBarangToolStripMenuItem.Click
+    Private Sub LihatBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatBarangToolStripMenuItem.Click
+        ManajemenProdukStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub TambahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahBarangToolStripMenuItem.Click
+        ManajemenProdukStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub UbahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahBarangToolStripMenuItem.Click
+        ManajemenProdukStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub HapusBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusBarangToolStripMenuItem.Click
         ManajemenProdukStaf.Show()
         Me.Hide()
     End Sub

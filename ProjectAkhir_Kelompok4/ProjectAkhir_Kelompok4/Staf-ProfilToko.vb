@@ -4,7 +4,7 @@
 
     '   (yg blom)
     '-------------------------------------------------
-    '-- menuStrip crud produk
+    '-- 
     '-- SISANYA BISA CEK" LAGI MASING" KLI AJA AKU ADA YG KETINGGALAN NGE-CEK 🙏
 
     Private Sub formProfilTokoS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -20,6 +20,11 @@
         'RD.Close()
     End Sub
 
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        formStaff.Show()
+        Me.Hide()
+    End Sub
+
     Private Sub formProfilTokoS_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, ExitToolStripMenuItem.Owner)
     End Sub
@@ -28,7 +33,22 @@
         Me.Show()
     End Sub
 
-    Private Sub ManajemenBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManajemenBarangToolStripMenuItem.Click
+    Private Sub LihatBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatBarangToolStripMenuItem.Click
+        ManajemenProdukStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub TambahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahBarangToolStripMenuItem.Click
+        ManajemenProdukStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub UbahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahBarangToolStripMenuItem.Click
+        ManajemenProdukStaf.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub HapusBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusBarangToolStripMenuItem.Click
         ManajemenProdukStaf.Show()
         Me.Hide()
     End Sub
