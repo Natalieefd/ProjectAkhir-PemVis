@@ -89,6 +89,12 @@
     <Compile Include="Admin-DaftarPesanan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin-ManajemenStaf.Designer.vb">
+      <DependentUpon>Admin-ManajemenStaf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin-ManajemenStaf.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin-ManajemenToko.Designer.vb">
       <DependentUpon>Admin-ManajemenToko.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin-DaftarPesanan.resx">
       <DependentUpon>Admin-DaftarPesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin-ManajemenStaf.resx">
+      <DependentUpon>Admin-ManajemenStaf.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin-ManajemenToko.resx">
       <DependentUpon>Admin-ManajemenToko.vb</DependentUpon>

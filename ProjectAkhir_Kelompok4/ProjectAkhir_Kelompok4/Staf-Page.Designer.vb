@@ -56,34 +56,20 @@ Partial Class formStaff
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 486)
         Me.StatusStrip1.Name = "StatusStrip1"
-<<<<<<< HEAD
         Me.StatusStrip1.Size = New System.Drawing.Size(764, 22)
         Me.StatusStrip1.TabIndex = 6
-=======
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1019, 24)
-        Me.StatusStrip1.TabIndex = 9
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-<<<<<<< HEAD
         Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
-=======
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 18)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
-<<<<<<< HEAD
         Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
-=======
-        Me.SlabelJam.Size = New System.Drawing.Size(49, 18)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.SlabelJam.Text = "Jam : "
         '
         'lblUsn
@@ -92,13 +78,8 @@ Partial Class formStaff
         Me.lblUsn.Location = New System.Drawing.Point(328, 320)
         Me.lblUsn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblUsn.Name = "lblUsn"
-<<<<<<< HEAD
         Me.lblUsn.Size = New System.Drawing.Size(289, 29)
         Me.lblUsn.TabIndex = 5
-=======
-        Me.lblUsn.Size = New System.Drawing.Size(385, 36)
-        Me.lblUsn.TabIndex = 11
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.lblUsn.Text = "username"
         Me.lblUsn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -112,13 +93,8 @@ Partial Class formStaff
         Me.Label1.Location = New System.Drawing.Point(339, 194)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-<<<<<<< HEAD
         Me.Label1.Size = New System.Drawing.Size(274, 68)
         Me.Label1.TabIndex = 4
-=======
-        Me.Label1.Size = New System.Drawing.Size(335, 82)
-        Me.Label1.TabIndex = 10
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.Label1.Text = "Selamat Datang di" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Halaman Staff"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -176,96 +152,58 @@ Partial Class formStaff
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfilTokoToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.ManajemenPesananToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 44)
         Me.MenuStrip1.Name = "MenuStrip1"
-<<<<<<< HEAD
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(764, 24)
         Me.MenuStrip1.TabIndex = 3
-=======
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1019, 26)
-        Me.MenuStrip1.TabIndex = 49
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-<<<<<<< HEAD
         Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
-=======
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(95, 22)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenBarangToolStripMenuItem
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatBarangToolStripMenuItem, Me.TambahBarangToolStripMenuItem, Me.UbahBarangToolStripMenuItem, Me.HapusBarangToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-<<<<<<< HEAD
         Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(128, 20)
-=======
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatBarangToolStripMenuItem
         '
         Me.LihatBarangToolStripMenuItem.Name = "LihatBarangToolStripMenuItem"
-<<<<<<< HEAD
         Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
-=======
-        Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.LihatBarangToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahBarangToolStripMenuItem
         '
         Me.TambahBarangToolStripMenuItem.Name = "TambahBarangToolStripMenuItem"
-<<<<<<< HEAD
         Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
-=======
-        Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.TambahBarangToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahBarangToolStripMenuItem
         '
         Me.UbahBarangToolStripMenuItem.Name = "UbahBarangToolStripMenuItem"
-<<<<<<< HEAD
         Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
-=======
-        Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.UbahBarangToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusBarangToolStripMenuItem
         '
         Me.HapusBarangToolStripMenuItem.Name = "HapusBarangToolStripMenuItem"
-<<<<<<< HEAD
         Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
-=======
-        Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.HapusBarangToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'ManajemenPesananToolStripMenuItem
         '
         Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-<<<<<<< HEAD
         Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
-=======
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(80, 22)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-<<<<<<< HEAD
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
-=======
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
->>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'formStaff
