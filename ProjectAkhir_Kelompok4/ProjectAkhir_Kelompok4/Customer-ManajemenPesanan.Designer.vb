@@ -23,10 +23,10 @@ Partial Class formPesananCust
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -34,7 +34,6 @@ Partial Class formPesananCust
         Me.KatalogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LihatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UbahPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BatalkanPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,6 +50,7 @@ Partial Class formPesananCust
         Me.lblHeader = New System.Windows.Forms.Label()
         Me.dgvPesanan = New System.Windows.Forms.DataGridView()
         Me.pnlFormPesanan = New System.Windows.Forms.Panel()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnBatalkan = New System.Windows.Forms.Button()
@@ -73,7 +73,6 @@ Partial Class formPesananCust
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNama = New System.Windows.Forms.TextBox()
         Me.lblPS = New System.Windows.Forms.Label()
-        Me.btnCancel = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
@@ -115,7 +114,7 @@ Partial Class formPesananCust
         '
         'PesananToolStripMenuItem
         '
-        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.BuatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
+        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
         Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
@@ -125,12 +124,6 @@ Partial Class formPesananCust
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
         Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
-        '
-        'BuatPesananToolStripMenuItem
-        '
-        Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
-        Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
@@ -253,36 +246,36 @@ Partial Class formPesananCust
         'dgvPesanan
         '
         Me.dgvPesanan.BackgroundColor = System.Drawing.Color.CadetBlue
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPesanan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPesanan.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
         Me.dgvPesanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvPesanan.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvPesanan.DefaultCellStyle = DataGridViewCellStyle14
         Me.dgvPesanan.Location = New System.Drawing.Point(45, 130)
         Me.dgvPesanan.Name = "dgvPesanan"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPesanan.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPesanan.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
         Me.dgvPesanan.RowHeadersWidth = 47
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.dgvPesanan.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.dgvPesanan.RowsDefaultCellStyle = DataGridViewCellStyle16
         Me.dgvPesanan.Size = New System.Drawing.Size(686, 230)
         Me.dgvPesanan.TabIndex = 2
         '
@@ -315,6 +308,19 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
         Me.pnlFormPesanan.Size = New System.Drawing.Size(686, 400)
         Me.pnlFormPesanan.TabIndex = 4
+        '
+        'btnCancel
+        '
+        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnCancel.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
+        Me.btnCancel.Location = New System.Drawing.Point(634, 17)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(40, 43)
+        Me.btnCancel.TabIndex = 17
+        Me.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnCancel.UseVisualStyleBackColor = True
         '
         'Label12
         '
@@ -452,6 +458,7 @@ Partial Class formPesananCust
         '
         Me.txtJumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtJumlah.Location = New System.Drawing.Point(160, 228)
+        Me.txtJumlah.MaxLength = 4
         Me.txtJumlah.Name = "txtJumlah"
         Me.txtJumlah.Size = New System.Drawing.Size(152, 22)
         Me.txtJumlah.TabIndex = 9
@@ -529,19 +536,6 @@ Partial Class formPesananCust
         Me.lblPS.TabIndex = 3
         Me.lblPS.Text = "* Silahkan klik daftar pesanan untuk melakukan perubahan "
         '
-        'btnCancel
-        '
-        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnCancel.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
-        Me.btnCancel.Location = New System.Drawing.Point(634, 17)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(40, 43)
-        Me.btnCancel.TabIndex = 17
-        Me.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnCancel.UseVisualStyleBackColor = True
-        '
         'formPesananCust
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -582,7 +576,6 @@ Partial Class formPesananCust
     Friend WithEvents KatalogToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LihatPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BuatPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UbahPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BatalkanPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProfilToolStripMenuItem As ToolStripMenuItem

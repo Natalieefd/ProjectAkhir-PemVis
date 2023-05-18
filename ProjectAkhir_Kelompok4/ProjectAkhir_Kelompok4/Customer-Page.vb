@@ -13,6 +13,10 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        formCustomer_Load(sender, Nothing)
+    End Sub
+
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
         formProfilTokoC.Show()
@@ -20,6 +24,7 @@
     End Sub
 
     Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formKatalog.Show()
         Me.Close()
     End Sub
@@ -44,14 +49,14 @@
         Me.Close()
     End Sub
 
-    Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem1.Click
+    Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
         formProfil.Mode = ""
         formProfil.Show()
         Me.Close()
     End Sub
 
-    Private Sub UbahProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem1.Click
+    Private Sub UbahProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
         formProfil.Mode = "Ubah"
         formProfil.Show()

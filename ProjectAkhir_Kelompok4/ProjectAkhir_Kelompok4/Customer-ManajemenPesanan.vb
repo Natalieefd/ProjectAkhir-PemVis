@@ -85,11 +85,6 @@
         Me.formPesananCust_Load(sender, e)
     End Sub
 
-    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
-        formKatalog.Show()
-        Me.Close()
-    End Sub
-
     Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem1.Click
         Me.ActiveControl = MenuStrip1
         formProfil.Show()
@@ -132,5 +127,40 @@
 
     Private Sub lblPS_Click(sender As Object, e As EventArgs) Handles lblPS.Click 'Hapus Nanti
         HideData()
+    End Sub
+
+    Private Sub txtJumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtJumlah.KeyPress
+        e.Handled = Numbering(e)
+
+        txtHargaTotal.Text = Val(txtJumlah.Text) * Val(txtHargaSatuan)
+    End Sub
+
+    Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
+        Dim Con = EmptyTB(pnlFormPesanan)
+
+        If Con IsNot Nothing Then
+            Con.Focus()
+            Exit Sub
+        End If
+
+        If Not CheckNum(txtJumlah) Then
+            txtJumlah.Focus()
+            Exit Sub
+        End If
+
+        dbq("") 'Query ubah pesanan terkait
+        RD.Close()
+
+        MsgBox("Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
+        formPesananCust_Load(sender, Nothing)
+
+    End Sub
+
+    Private Sub btnBatalkan_Click(sender As Object, e As EventArgs) Handles btnBatalkan.Click
+        dbq("") 'query hapus pesanan terkait
+        RD.Close()
+
+        MsgBox("Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
+        formPesananCust_Load(sender, Nothing)
     End Sub
 End Class

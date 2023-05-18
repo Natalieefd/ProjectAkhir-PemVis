@@ -4,74 +4,65 @@
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
-        pnlFormPesanan.Hide()
-        pnlSpace.Location = New Point(56, 398)
-
+        HideForm()
     End Sub
 
     Private Sub dgvKatalog_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKatalog.CellContentClick
-        lblHeader.Hide()
-        dgvKatalog.Hide()
-        lblPS.Hide()
 
-        pnlFormPesanan.Show()
-        pnlFormPesanan.Location = New Point(57, 33)
 
-        'enabled semua txtbox kecuali txtJumlah
         'harga total otomatis kehitung klo jumlahnya berubah
 
     End Sub
 
-    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
-        lblHeader.Show()
-        dgvKatalog.Show()
-        lblPS.Show()
-
-        pnlFormPesanan.Hide()
-        pnlSpace.Location = New Point(56, 398)
-    End Sub
-
-    Private Sub HomeToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formCustomer.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formProfilTokoC.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click
-        Me.Show()
+        formKatalog_Load(sender, Nothing)
     End Sub
 
     Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Lihat"
         formPesananCust.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
-        Me.Show()
+        Me.Close()
     End Sub
 
     Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Ubah"
         formPesananCust.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub HapusPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusPesananToolStripMenuItem.Click
+    Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Hapus"
         formPesananCust.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub LihatProfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem.Click
+    Private Sub LihatProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LihatProfilToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formProfil.Mode = ""
         formProfil.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub UbahProfilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem.Click
+    Private Sub UbahProfilToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles UbahProfilToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formProfil.Mode = "Ubah"
         formProfil.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
@@ -89,5 +80,41 @@
 
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub lblPS_Click(sender As Object, e As EventArgs) Handles lblPS.Click
+        'hapus nanti
+        ShowForm()
+    End Sub
+
+    Sub ShowForm()
+        lblHeader.Hide()
+        dgvKatalog.Hide()
+        lblPS.Hide()
+
+        Me.Size = New Point(Me.Size.Width, 573)
+        pnlFormPesanan.Show()
+        pnlFormPesanan.Location = New Point(pnlFormPesanan.Location.X, 80)
+    End Sub
+
+    Sub HideForm()
+        lblHeader.Show()
+        dgvKatalog.Show()
+        lblPS.Show()
+
+        Me.Size = New Point(Me.Size.Width, 477)
+
+        pnlFormPesanan.Hide()
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtNama.Clear()
+        txtJumlah.Clear()
+        txtHargaTotal.Clear()
+        txtAlamat.Clear()
+    End Sub
+
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+        HideForm()
     End Sub
 End Class

@@ -2,9 +2,6 @@
 
 '   (yg blom)
 '-------------------------------------------------
-'-- clear txtbox buat ubah profil di pnlFormUbah
-'-- nampilin data akun user ke masing" textbox pnlProfil
-'-- tombol exit bagian hadie
 '-- SISANYA BISA CEK" LAGI MASING" KLI AJA AKU ADA YG KETINGGALAN NGE-CEK 🙏
 
 Public Class formProfil
@@ -14,21 +11,19 @@ Public Class formProfil
     Private Sub formProfil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call koneksi()
 
-        ActiveID = 1
-
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         pnlProfil.Show()
         pnlFormUbah.Hide()
         pnlPass.Hide()
 
-        'dbq("") 'query untuk ambil data customer satu ini'
+        dbq("") 'query untuk ambil data customer satu ini'
 
-        'txtNama.Text = RD(1)
-        'txtUsn.Text = RD(2)
-        'txtPass.Text = RD(3)
-        'txtNoTelp.Text = RD(4)
-        'txtAlamat.Text = RD(5)
+        txtNama.Text = RD(1)
+        txtUsn.Text = RD(2)
+        txtPass.Text = RD(3)
+        txtNoTelp.Text = RD(4)
+        txtAlamat.Text = RD(5)
 
 
         StatusStrip1.Location = New Point(0, 428)
