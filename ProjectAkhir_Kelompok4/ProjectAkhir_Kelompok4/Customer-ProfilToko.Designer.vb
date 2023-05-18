@@ -35,10 +35,10 @@ Partial Class formProfilTokoC
         Me.LihatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UbahPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HapusPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BatalkanPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LihatPesananToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahPesananToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LihatProfilToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UbahProfilToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
@@ -54,6 +54,7 @@ Partial Class formProfilTokoC
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -69,7 +70,7 @@ Partial Class formProfilTokoC
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(800, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(764, 36)
         Me.pnlTop.TabIndex = 51
         '
         'pnlControl
@@ -78,7 +79,7 @@ Partial Class formProfilTokoC
         Me.pnlControl.Controls.Add(Me.btnMaximize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(719, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(683, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(81, 36)
@@ -125,11 +126,11 @@ Partial Class formProfilTokoC
         Me.MenuStrip1.BackColor = System.Drawing.Color.Cornsilk
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfilTokoToolStripMenuItem, Me.KatalogToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ProfilToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ProfilTokoToolStripMenuItem, Me.KatalogToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ProfilToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(764, 24)
         Me.MenuStrip1.TabIndex = 53
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -147,7 +148,7 @@ Partial Class formProfilTokoC
         '
         'PesananToolStripMenuItem
         '
-        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.BuatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.HapusPesananToolStripMenuItem})
+        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.BuatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
         Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
@@ -155,45 +156,45 @@ Partial Class formProfilTokoC
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
-        'HapusPesananToolStripMenuItem
+        'BatalkanPesananToolStripMenuItem
         '
-        Me.HapusPesananToolStripMenuItem.Name = "HapusPesananToolStripMenuItem"
-        Me.HapusPesananToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
-        Me.HapusPesananToolStripMenuItem.Text = "Hapus Pesanan"
+        Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
         '
-        Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem1, Me.UbahPesananToolStripMenuItem1})
+        Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProfilToolStripMenuItem1, Me.UbahProfilToolStripMenuItem1})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
         Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
         Me.ProfilToolStripMenuItem.Text = "Profil"
         '
-        'LihatPesananToolStripMenuItem1
+        'LihatProfilToolStripMenuItem1
         '
-        Me.LihatPesananToolStripMenuItem1.Name = "LihatPesananToolStripMenuItem1"
-        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
-        Me.LihatPesananToolStripMenuItem1.Text = "Lihat Pesanan"
+        Me.LihatProfilToolStripMenuItem1.Name = "LihatProfilToolStripMenuItem1"
+        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LihatProfilToolStripMenuItem1.Text = "Lihat Profil"
         '
-        'UbahPesananToolStripMenuItem1
+        'UbahProfilToolStripMenuItem1
         '
-        Me.UbahPesananToolStripMenuItem1.Name = "UbahPesananToolStripMenuItem1"
-        Me.UbahPesananToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
-        Me.UbahPesananToolStripMenuItem1.Text = "Ubah Pesanan"
+        Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
         '
@@ -206,9 +207,9 @@ Partial Class formProfilTokoC
         Me.StatusStrip1.BackColor = System.Drawing.Color.Cornsilk
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 428)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 392)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(764, 22)
         Me.StatusStrip1.TabIndex = 52
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -237,7 +238,7 @@ Partial Class formProfilTokoC
         Me.pnlProfil.Controls.Add(Me.Label20)
         Me.pnlProfil.Controls.Add(Me.Label22)
         Me.pnlProfil.Controls.Add(Me.Label24)
-        Me.pnlProfil.Location = New System.Drawing.Point(192, 100)
+        Me.pnlProfil.Location = New System.Drawing.Point(165, 85)
         Me.pnlProfil.Name = "pnlProfil"
         Me.pnlProfil.Size = New System.Drawing.Size(417, 282)
         Me.pnlProfil.TabIndex = 54
@@ -325,12 +326,18 @@ Partial Class formProfilTokoC
         Me.Label24.TabIndex = 25
         Me.Label24.Text = "Alamat"
         '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.HomeToolStripMenuItem.Text = "Home"
+        '
         'formProfilTokoC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkOrange
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(764, 414)
         Me.Controls.Add(Me.pnlProfil)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.StatusStrip1)
@@ -366,10 +373,10 @@ Partial Class formProfilTokoC
     Friend WithEvents LihatPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BuatPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UbahPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HapusPesananToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BatalkanPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProfilToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatPesananToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents UbahPesananToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents LihatProfilToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents UbahProfilToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
@@ -385,4 +392,5 @@ Partial Class formProfilTokoC
     Friend WithEvents Label20 As Label
     Friend WithEvents Label22 As Label
     Friend WithEvents Label24 As Label
+    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
 End Class
