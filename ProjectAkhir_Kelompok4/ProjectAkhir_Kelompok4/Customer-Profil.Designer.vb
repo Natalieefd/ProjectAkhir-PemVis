@@ -502,25 +502,25 @@ Partial Class formProfil
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'BatalkanPesananToolStripMenuItem
         '
         Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
@@ -533,13 +533,13 @@ Partial Class formProfil
         'LihatProfilToolStripMenuItem1
         '
         Me.LihatProfilToolStripMenuItem1.Name = "LihatProfilToolStripMenuItem1"
-        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.LihatProfilToolStripMenuItem1.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem1
         '
         Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
-        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem

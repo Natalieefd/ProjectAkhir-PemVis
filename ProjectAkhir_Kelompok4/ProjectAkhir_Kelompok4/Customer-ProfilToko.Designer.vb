@@ -29,6 +29,7 @@ Partial Class formProfilTokoC
         Me.btnMaximize = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KatalogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -54,7 +55,6 @@ Partial Class formProfilTokoC
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -134,6 +134,12 @@ Partial Class formProfilTokoC
         Me.MenuStrip1.TabIndex = 53
         Me.MenuStrip1.Text = "MenuStrip1"
         '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.HomeToolStripMenuItem.Text = "Home"
+        '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
@@ -156,25 +162,25 @@ Partial Class formProfilTokoC
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'BatalkanPesananToolStripMenuItem
         '
         Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
         Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
@@ -187,13 +193,13 @@ Partial Class formProfilTokoC
         'LihatProfilToolStripMenuItem1
         '
         Me.LihatProfilToolStripMenuItem1.Name = "LihatProfilToolStripMenuItem1"
-        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.LihatProfilToolStripMenuItem1.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem1
         '
         Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
-        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
@@ -228,7 +234,7 @@ Partial Class formProfilTokoC
         '
         'pnlProfil
         '
-        Me.pnlProfil.BackColor = System.Drawing.Color.Bisque
+        Me.pnlProfil.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.pnlProfil.Controls.Add(Me.txtAlamat)
         Me.pnlProfil.Controls.Add(Me.txtNoTelp)
         Me.pnlProfil.Controls.Add(Me.txtEmail)
@@ -326,17 +332,11 @@ Partial Class formProfilTokoC
         Me.Label24.TabIndex = 25
         Me.Label24.Text = "Alamat"
         '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.HomeToolStripMenuItem.Text = "Home"
-        '
         'formProfilTokoC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkOrange
+        Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.ClientSize = New System.Drawing.Size(764, 414)
         Me.Controls.Add(Me.pnlProfil)
         Me.Controls.Add(Me.MenuStrip1)
