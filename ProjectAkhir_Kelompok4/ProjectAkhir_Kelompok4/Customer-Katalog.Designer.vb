@@ -141,7 +141,7 @@ Partial Class formKatalog
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.dgvKatalog.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvKatalog.Size = New System.Drawing.Size(686, 230)
-        Me.dgvKatalog.TabIndex = 9
+        Me.dgvKatalog.TabIndex = 2
         '
         'lblHeader
         '
@@ -150,7 +150,7 @@ Partial Class formKatalog
         Me.lblHeader.Location = New System.Drawing.Point(247, 89)
         Me.lblHeader.Name = "lblHeader"
         Me.lblHeader.Size = New System.Drawing.Size(271, 25)
-        Me.lblHeader.TabIndex = 11
+        Me.lblHeader.TabIndex = 1
         Me.lblHeader.Text = "KATALOG KPOP STORE"
         '
         'lblPS
@@ -160,7 +160,7 @@ Partial Class formKatalog
         Me.lblPS.Location = New System.Drawing.Point(49, 390)
         Me.lblPS.Name = "lblPS"
         Me.lblPS.Size = New System.Drawing.Size(413, 16)
-        Me.lblPS.TabIndex = 13
+        Me.lblPS.TabIndex = 1
         Me.lblPS.Text = "* Silahkan klik daftar katalog untuk melakukan pemesanan "
         '
         'pnlTop
@@ -195,7 +195,7 @@ Partial Class formKatalog
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.TabIndex = 19
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
         'btnMaximize
@@ -207,7 +207,7 @@ Partial Class formKatalog
         Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMaximize.TabIndex = 1
+        Me.btnMaximize.TabIndex = 18
         Me.btnMaximize.UseVisualStyleBackColor = True
         '
         'btnClose
@@ -219,7 +219,7 @@ Partial Class formKatalog
         Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
+        Me.btnClose.TabIndex = 17
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
@@ -231,7 +231,7 @@ Partial Class formKatalog
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(747, 24)
-        Me.MenuStrip1.TabIndex = 60
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
@@ -335,7 +335,7 @@ Partial Class formKatalog
         Me.pnlFormPesanan.Location = New System.Drawing.Point(33, 456)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
         Me.pnlFormPesanan.Size = New System.Drawing.Size(686, 453)
-        Me.pnlFormPesanan.TabIndex = 61
+        Me.pnlFormPesanan.TabIndex = 3
         '
         'btnClear
         '
@@ -344,7 +344,7 @@ Partial Class formKatalog
         Me.btnClear.Location = New System.Drawing.Point(306, 338)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 76)
-        Me.btnClear.TabIndex = 24
+        Me.btnClear.TabIndex = 14
         Me.btnClear.Text = "Clear"
         Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnClear.UseVisualStyleBackColor = True
@@ -356,7 +356,7 @@ Partial Class formKatalog
         Me.Label12.Location = New System.Drawing.Point(289, 20)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(119, 25)
-        Me.Label12.TabIndex = 23
+        Me.Label12.TabIndex = 4
         Me.Label12.Text = "PESANAN"
         '
         'btnBatal
@@ -366,7 +366,7 @@ Partial Class formKatalog
         Me.btnBatal.Location = New System.Drawing.Point(443, 338)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(75, 76)
-        Me.btnBatal.TabIndex = 21
+        Me.btnBatal.TabIndex = 15
         Me.btnBatal.Text = "Batal"
         Me.btnBatal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnBatal.UseVisualStyleBackColor = True
@@ -378,7 +378,7 @@ Partial Class formKatalog
         Me.btnPesan.Location = New System.Drawing.Point(161, 338)
         Me.btnPesan.Name = "btnPesan"
         Me.btnPesan.Size = New System.Drawing.Size(75, 76)
-        Me.btnPesan.TabIndex = 20
+        Me.btnPesan.TabIndex = 13
         Me.btnPesan.Text = "Pesan"
         Me.btnPesan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnPesan.UseVisualStyleBackColor = True
@@ -390,7 +390,7 @@ Partial Class formKatalog
         Me.Label11.Location = New System.Drawing.Point(379, 282)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(82, 15)
-        Me.Label11.TabIndex = 19
+        Me.Label11.TabIndex = 4
         Me.Label11.Text = "Harga Total"
         '
         'txtHargaTotal
@@ -399,7 +399,7 @@ Partial Class formKatalog
         Me.txtHargaTotal.Location = New System.Drawing.Point(485, 278)
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.Size = New System.Drawing.Size(152, 20)
-        Me.txtHargaTotal.TabIndex = 18
+        Me.txtHargaTotal.TabIndex = 12
         '
         'Label10
         '
@@ -408,7 +408,7 @@ Partial Class formKatalog
         Me.Label10.Location = New System.Drawing.Point(379, 179)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(51, 15)
-        Me.Label10.TabIndex = 17
+        Me.Label10.TabIndex = 4
         Me.Label10.Text = "Alamat"
         '
         'txtAlamat
@@ -418,7 +418,7 @@ Partial Class formKatalog
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(152, 78)
-        Me.txtAlamat.TabIndex = 16
+        Me.txtAlamat.TabIndex = 11
         '
         'Label9
         '
@@ -427,7 +427,7 @@ Partial Class formKatalog
         Me.Label9.Location = New System.Drawing.Point(379, 76)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(116, 15)
-        Me.Label9.TabIndex = 15
+        Me.Label9.TabIndex = 4
         Me.Label9.Text = "Deskripsi Produk"
         '
         'txtDesc
@@ -437,7 +437,7 @@ Partial Class formKatalog
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(152, 77)
-        Me.txtDesc.TabIndex = 14
+        Me.txtDesc.TabIndex = 10
         '
         'Label8
         '
@@ -446,7 +446,7 @@ Partial Class formKatalog
         Me.Label8.Location = New System.Drawing.Point(49, 281)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(95, 15)
-        Me.Label8.TabIndex = 13
+        Me.Label8.TabIndex = 4
         Me.Label8.Text = "Harga Satuan"
         '
         'txtHargaSatuan
@@ -455,7 +455,7 @@ Partial Class formKatalog
         Me.txtHargaSatuan.Location = New System.Drawing.Point(139, 278)
         Me.txtHargaSatuan.Name = "txtHargaSatuan"
         Me.txtHargaSatuan.Size = New System.Drawing.Size(152, 20)
-        Me.txtHargaSatuan.TabIndex = 12
+        Me.txtHargaSatuan.TabIndex = 9
         '
         'Label7
         '
@@ -464,7 +464,7 @@ Partial Class formKatalog
         Me.Label7.Location = New System.Drawing.Point(49, 231)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(54, 15)
-        Me.Label7.TabIndex = 11
+        Me.Label7.TabIndex = 4
         Me.Label7.Text = "Jumlah"
         '
         'txtJumlah
@@ -473,7 +473,7 @@ Partial Class formKatalog
         Me.txtJumlah.Location = New System.Drawing.Point(139, 228)
         Me.txtJumlah.Name = "txtJumlah"
         Me.txtJumlah.Size = New System.Drawing.Size(152, 20)
-        Me.txtJumlah.TabIndex = 10
+        Me.txtJumlah.TabIndex = 8
         '
         'Label6
         '
@@ -482,7 +482,7 @@ Partial Class formKatalog
         Me.Label6.Location = New System.Drawing.Point(49, 180)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 15)
-        Me.Label6.TabIndex = 9
+        Me.Label6.TabIndex = 4
         Me.Label6.Text = "Kategori"
         '
         'Label5
@@ -509,7 +509,7 @@ Partial Class formKatalog
         Me.Label3.Location = New System.Drawing.Point(49, 127)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(94, 15)
-        Me.Label3.TabIndex = 6
+        Me.Label3.TabIndex = 4
         Me.Label3.Text = "Nama Produk"
         '
         'txtNamaProduk
@@ -518,7 +518,7 @@ Partial Class formKatalog
         Me.txtNamaProduk.Location = New System.Drawing.Point(139, 124)
         Me.txtNamaProduk.Name = "txtNamaProduk"
         Me.txtNamaProduk.Size = New System.Drawing.Size(152, 20)
-        Me.txtNamaProduk.TabIndex = 5
+        Me.txtNamaProduk.TabIndex = 6
         '
         'Label2
         '
@@ -527,7 +527,7 @@ Partial Class formKatalog
         Me.Label2.Location = New System.Drawing.Point(49, 76)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 15)
-        Me.Label2.TabIndex = 1
+        Me.Label2.TabIndex = 4
         Me.Label2.Text = "Nama"
         '
         'txtNama
@@ -536,14 +536,14 @@ Partial Class formKatalog
         Me.txtNama.Location = New System.Drawing.Point(139, 73)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(152, 20)
-        Me.txtNama.TabIndex = 0
+        Me.txtNama.TabIndex = 5
         '
         'pnlSpace
         '
         Me.pnlSpace.Location = New System.Drawing.Point(33, 929)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
-        Me.pnlSpace.TabIndex = 12
+        Me.pnlSpace.TabIndex = 16
         '
         'formKatalog
         '

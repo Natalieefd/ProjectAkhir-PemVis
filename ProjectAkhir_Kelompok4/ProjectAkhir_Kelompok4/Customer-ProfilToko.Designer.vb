@@ -94,7 +94,7 @@ Partial Class formProfilTokoC
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.TabIndex = 6
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
         'btnMaximize
@@ -106,7 +106,7 @@ Partial Class formProfilTokoC
         Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMaximize.TabIndex = 1
+        Me.btnMaximize.TabIndex = 5
         Me.btnMaximize.UseVisualStyleBackColor = True
         '
         'btnClose
@@ -118,7 +118,7 @@ Partial Class formProfilTokoC
         Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
+        Me.btnClose.TabIndex = 4
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
@@ -131,7 +131,7 @@ Partial Class formProfilTokoC
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(764, 24)
-        Me.MenuStrip1.TabIndex = 53
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
@@ -162,25 +162,25 @@ Partial Class formProfilTokoC
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'BuatPesananToolStripMenuItem
         '
         Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'BatalkanPesananToolStripMenuItem
         '
         Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
@@ -193,13 +193,13 @@ Partial Class formProfilTokoC
         'LihatProfilToolStripMenuItem1
         '
         Me.LihatProfilToolStripMenuItem1.Name = "LihatProfilToolStripMenuItem1"
-        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.LihatProfilToolStripMenuItem1.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem1
         '
         Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
-        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
@@ -216,7 +216,7 @@ Partial Class formProfilTokoC
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 392)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(764, 22)
-        Me.StatusStrip1.TabIndex = 52
+        Me.StatusStrip1.TabIndex = 3
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
@@ -247,7 +247,7 @@ Partial Class formProfilTokoC
         Me.pnlProfil.Location = New System.Drawing.Point(165, 85)
         Me.pnlProfil.Name = "pnlProfil"
         Me.pnlProfil.Size = New System.Drawing.Size(417, 282)
-        Me.pnlProfil.TabIndex = 54
+        Me.pnlProfil.TabIndex = 1
         '
         'txtAlamat
         '
@@ -256,7 +256,7 @@ Partial Class formProfilTokoC
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(181, 65)
-        Me.txtAlamat.TabIndex = 29
+        Me.txtAlamat.TabIndex = 2
         '
         'txtNoTelp
         '
@@ -264,7 +264,7 @@ Partial Class formProfilTokoC
         Me.txtNoTelp.Location = New System.Drawing.Point(171, 149)
         Me.txtNoTelp.Name = "txtNoTelp"
         Me.txtNoTelp.Size = New System.Drawing.Size(181, 23)
-        Me.txtNoTelp.TabIndex = 28
+        Me.txtNoTelp.TabIndex = 2
         '
         'txtEmail
         '
@@ -272,7 +272,7 @@ Partial Class formProfilTokoC
         Me.txtEmail.Location = New System.Drawing.Point(171, 112)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(181, 23)
-        Me.txtEmail.TabIndex = 27
+        Me.txtEmail.TabIndex = 2
         '
         'txtNama
         '
@@ -280,7 +280,7 @@ Partial Class formProfilTokoC
         Me.txtNama.Location = New System.Drawing.Point(171, 73)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(181, 23)
-        Me.txtNama.TabIndex = 25
+        Me.txtNama.TabIndex = 2
         '
         'Label14
         '
@@ -289,7 +289,7 @@ Partial Class formProfilTokoC
         Me.Label14.Location = New System.Drawing.Point(144, 18)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(144, 28)
-        Me.Label14.TabIndex = 25
+        Me.Label14.TabIndex = 2
         Me.Label14.Text = "PROFIL TOKO"
         '
         'Label18
@@ -299,7 +299,7 @@ Partial Class formProfilTokoC
         Me.Label18.Location = New System.Drawing.Point(60, 75)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(40, 17)
-        Me.Label18.TabIndex = 25
+        Me.Label18.TabIndex = 2
         Me.Label18.Text = "Nama"
         '
         'Label20
@@ -309,7 +309,7 @@ Partial Class formProfilTokoC
         Me.Label20.Location = New System.Drawing.Point(60, 114)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(38, 17)
-        Me.Label20.TabIndex = 25
+        Me.Label20.TabIndex = 2
         Me.Label20.Text = "Email"
         '
         'Label22
@@ -319,7 +319,7 @@ Partial Class formProfilTokoC
         Me.Label22.Location = New System.Drawing.Point(60, 151)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(48, 17)
-        Me.Label22.TabIndex = 25
+        Me.Label22.TabIndex = 2
         Me.Label22.Text = "No Telp"
         '
         'Label24
@@ -329,7 +329,7 @@ Partial Class formProfilTokoC
         Me.Label24.Location = New System.Drawing.Point(60, 190)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(48, 17)
-        Me.Label24.TabIndex = 25
+        Me.Label24.TabIndex = 2
         Me.Label24.Text = "Alamat"
         '
         'formProfilTokoC

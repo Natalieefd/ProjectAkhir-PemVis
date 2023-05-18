@@ -94,7 +94,7 @@ Partial Class formPesananCust
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(747, 24)
-        Me.MenuStrip1.TabIndex = 53
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
@@ -203,7 +203,7 @@ Partial Class formPesananCust
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.TabIndex = 21
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
         'btnMaximize
@@ -215,7 +215,7 @@ Partial Class formPesananCust
         Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMaximize.TabIndex = 1
+        Me.btnMaximize.TabIndex = 20
         Me.btnMaximize.UseVisualStyleBackColor = True
         '
         'btnClose
@@ -227,7 +227,7 @@ Partial Class formPesananCust
         Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
+        Me.btnClose.TabIndex = 19
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'StatusStrip1
@@ -262,7 +262,7 @@ Partial Class formPesananCust
         Me.lblHeader.Location = New System.Drawing.Point(276, 82)
         Me.lblHeader.Name = "lblHeader"
         Me.lblHeader.Size = New System.Drawing.Size(216, 25)
-        Me.lblHeader.TabIndex = 55
+        Me.lblHeader.TabIndex = 1
         Me.lblHeader.Text = "DAFTAR PESANAN"
         '
         'dgvPesanan
@@ -299,7 +299,7 @@ Partial Class formPesananCust
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.dgvPesanan.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvPesanan.Size = New System.Drawing.Size(686, 230)
-        Me.dgvPesanan.TabIndex = 54
+        Me.dgvPesanan.TabIndex = 2
         '
         'pnlFormPesanan
         '
@@ -329,7 +329,7 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Location = New System.Drawing.Point(45, 413)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
         Me.pnlFormPesanan.Size = New System.Drawing.Size(686, 384)
-        Me.pnlFormPesanan.TabIndex = 56
+        Me.pnlFormPesanan.TabIndex = 4
         '
         'btnBatal
         '
@@ -337,7 +337,7 @@ Partial Class formPesananCust
         Me.btnBatal.Location = New System.Drawing.Point(515, 336)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(75, 27)
-        Me.btnBatal.TabIndex = 24
+        Me.btnBatal.TabIndex = 17
         Me.btnBatal.Text = "Batal"
         Me.btnBatal.UseVisualStyleBackColor = True
         '
@@ -348,7 +348,7 @@ Partial Class formPesananCust
         Me.Label12.Location = New System.Drawing.Point(289, 20)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(119, 25)
-        Me.Label12.TabIndex = 23
+        Me.Label12.TabIndex = 5
         Me.Label12.Text = "PESANAN"
         '
         'btnClear
@@ -357,7 +357,7 @@ Partial Class formPesananCust
         Me.btnClear.Location = New System.Drawing.Point(382, 336)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 27)
-        Me.btnClear.TabIndex = 22
+        Me.btnClear.TabIndex = 16
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
@@ -367,7 +367,7 @@ Partial Class formPesananCust
         Me.btnBatalkan.Location = New System.Drawing.Point(243, 336)
         Me.btnBatalkan.Name = "btnBatalkan"
         Me.btnBatalkan.Size = New System.Drawing.Size(75, 27)
-        Me.btnBatalkan.TabIndex = 21
+        Me.btnBatalkan.TabIndex = 15
         Me.btnBatalkan.Text = "Batalkan"
         Me.btnBatalkan.UseVisualStyleBackColor = True
         '
@@ -377,7 +377,7 @@ Partial Class formPesananCust
         Me.btnUbah.Location = New System.Drawing.Point(104, 336)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(75, 27)
-        Me.btnUbah.TabIndex = 20
+        Me.btnUbah.TabIndex = 14
         Me.btnUbah.Text = "Ubah"
         Me.btnUbah.UseVisualStyleBackColor = True
         '
@@ -388,7 +388,7 @@ Partial Class formPesananCust
         Me.Label11.Location = New System.Drawing.Point(360, 282)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(82, 15)
-        Me.Label11.TabIndex = 19
+        Me.Label11.TabIndex = 5
         Me.Label11.Text = "Harga Total"
         '
         'txtHargaTotal
@@ -397,7 +397,7 @@ Partial Class formPesananCust
         Me.txtHargaTotal.Location = New System.Drawing.Point(485, 278)
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.Size = New System.Drawing.Size(152, 20)
-        Me.txtHargaTotal.TabIndex = 18
+        Me.txtHargaTotal.TabIndex = 13
         '
         'Label10
         '
@@ -406,7 +406,7 @@ Partial Class formPesananCust
         Me.Label10.Location = New System.Drawing.Point(360, 179)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(51, 15)
-        Me.Label10.TabIndex = 17
+        Me.Label10.TabIndex = 5
         Me.Label10.Text = "Alamat"
         '
         'txtAlamat
@@ -416,7 +416,7 @@ Partial Class formPesananCust
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(152, 78)
-        Me.txtAlamat.TabIndex = 16
+        Me.txtAlamat.TabIndex = 12
         '
         'Label9
         '
@@ -425,7 +425,7 @@ Partial Class formPesananCust
         Me.Label9.Location = New System.Drawing.Point(360, 76)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(116, 15)
-        Me.Label9.TabIndex = 15
+        Me.Label9.TabIndex = 5
         Me.Label9.Text = "Deskripsi Produk"
         '
         'txtDesc
@@ -435,7 +435,7 @@ Partial Class formPesananCust
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(152, 77)
-        Me.txtDesc.TabIndex = 14
+        Me.txtDesc.TabIndex = 11
         '
         'Label8
         '
@@ -444,7 +444,7 @@ Partial Class formPesananCust
         Me.Label8.Location = New System.Drawing.Point(49, 281)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(95, 15)
-        Me.Label8.TabIndex = 13
+        Me.Label8.TabIndex = 5
         Me.Label8.Text = "Harga Satuan"
         '
         'txtHargaSatuan
@@ -453,7 +453,7 @@ Partial Class formPesananCust
         Me.txtHargaSatuan.Location = New System.Drawing.Point(160, 278)
         Me.txtHargaSatuan.Name = "txtHargaSatuan"
         Me.txtHargaSatuan.Size = New System.Drawing.Size(152, 20)
-        Me.txtHargaSatuan.TabIndex = 12
+        Me.txtHargaSatuan.TabIndex = 10
         '
         'Label7
         '
@@ -462,7 +462,7 @@ Partial Class formPesananCust
         Me.Label7.Location = New System.Drawing.Point(49, 231)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(54, 15)
-        Me.Label7.TabIndex = 11
+        Me.Label7.TabIndex = 5
         Me.Label7.Text = "Jumlah"
         '
         'txtJumlah
@@ -471,7 +471,7 @@ Partial Class formPesananCust
         Me.txtJumlah.Location = New System.Drawing.Point(160, 228)
         Me.txtJumlah.Name = "txtJumlah"
         Me.txtJumlah.Size = New System.Drawing.Size(152, 20)
-        Me.txtJumlah.TabIndex = 10
+        Me.txtJumlah.TabIndex = 9
         '
         'Label6
         '
@@ -480,7 +480,7 @@ Partial Class formPesananCust
         Me.Label6.Location = New System.Drawing.Point(49, 180)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 15)
-        Me.Label6.TabIndex = 9
+        Me.Label6.TabIndex = 5
         Me.Label6.Text = "Kategori"
         '
         'Label5
@@ -498,7 +498,7 @@ Partial Class formPesananCust
         Me.txtKategori.Location = New System.Drawing.Point(160, 177)
         Me.txtKategori.Name = "txtKategori"
         Me.txtKategori.Size = New System.Drawing.Size(152, 20)
-        Me.txtKategori.TabIndex = 7
+        Me.txtKategori.TabIndex = 8
         '
         'Label3
         '
@@ -507,7 +507,7 @@ Partial Class formPesananCust
         Me.Label3.Location = New System.Drawing.Point(49, 127)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(94, 15)
-        Me.Label3.TabIndex = 6
+        Me.Label3.TabIndex = 5
         Me.Label3.Text = "Nama Produk"
         '
         'txtNamaProduk
@@ -516,7 +516,7 @@ Partial Class formPesananCust
         Me.txtNamaProduk.Location = New System.Drawing.Point(160, 124)
         Me.txtNamaProduk.Name = "txtNamaProduk"
         Me.txtNamaProduk.Size = New System.Drawing.Size(152, 20)
-        Me.txtNamaProduk.TabIndex = 5
+        Me.txtNamaProduk.TabIndex = 7
         '
         'Label2
         '
@@ -525,7 +525,7 @@ Partial Class formPesananCust
         Me.Label2.Location = New System.Drawing.Point(49, 76)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 15)
-        Me.Label2.TabIndex = 1
+        Me.Label2.TabIndex = 5
         Me.Label2.Text = "Nama"
         '
         'txtNama
@@ -534,14 +534,14 @@ Partial Class formPesananCust
         Me.txtNama.Location = New System.Drawing.Point(160, 73)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(152, 20)
-        Me.txtNama.TabIndex = 0
+        Me.txtNama.TabIndex = 6
         '
         'pnlSpace
         '
         Me.pnlSpace.Location = New System.Drawing.Point(45, 803)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
-        Me.pnlSpace.TabIndex = 57
+        Me.pnlSpace.TabIndex = 18
         '
         'lblPS
         '
@@ -550,7 +550,7 @@ Partial Class formPesananCust
         Me.lblPS.Location = New System.Drawing.Point(51, 368)
         Me.lblPS.Name = "lblPS"
         Me.lblPS.Size = New System.Drawing.Size(414, 16)
-        Me.lblPS.TabIndex = 58
+        Me.lblPS.TabIndex = 3
         Me.lblPS.Text = "* Silahkan klik daftar pesanan untuk melakukan perubahan "
         '
         'formPesananCust

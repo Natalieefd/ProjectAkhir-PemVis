@@ -133,7 +133,7 @@ Partial Class formProfil
         Me.pnlFormUbah.Location = New System.Drawing.Point(36, 432)
         Me.pnlFormUbah.Name = "pnlFormUbah"
         Me.pnlFormUbah.Size = New System.Drawing.Size(686, 294)
-        Me.pnlFormUbah.TabIndex = 11
+        Me.pnlFormUbah.TabIndex = 9
         '
         'Label1
         '
@@ -142,7 +142,7 @@ Partial Class formProfil
         Me.Label1.Location = New System.Drawing.Point(271, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(144, 28)
-        Me.Label1.TabIndex = 24
+        Me.Label1.TabIndex = 10
         Me.Label1.Text = "UBAH PROFIL"
         '
         'btnClear
@@ -151,7 +151,7 @@ Partial Class formProfil
         Me.btnClear.Location = New System.Drawing.Point(380, 243)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 27)
-        Me.btnClear.TabIndex = 21
+        Me.btnClear.TabIndex = 17
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
@@ -161,7 +161,7 @@ Partial Class formProfil
         Me.btnUbahForm.Location = New System.Drawing.Point(235, 243)
         Me.btnUbahForm.Name = "btnUbahForm"
         Me.btnUbahForm.Size = New System.Drawing.Size(75, 27)
-        Me.btnUbahForm.TabIndex = 20
+        Me.btnUbahForm.TabIndex = 16
         Me.btnUbahForm.Text = "Ubah"
         Me.btnUbahForm.UseVisualStyleBackColor = True
         '
@@ -172,7 +172,7 @@ Partial Class formProfil
         Me.Label10.Location = New System.Drawing.Point(395, 138)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(48, 17)
-        Me.Label10.TabIndex = 17
+        Me.Label10.TabIndex = 10
         Me.Label10.Text = "Alamat"
         '
         'txtUbahAlamat
@@ -182,7 +182,7 @@ Partial Class formProfil
         Me.txtUbahAlamat.Multiline = True
         Me.txtUbahAlamat.Name = "txtUbahAlamat"
         Me.txtUbahAlamat.Size = New System.Drawing.Size(152, 78)
-        Me.txtUbahAlamat.TabIndex = 16
+        Me.txtUbahAlamat.TabIndex = 15
         '
         'Label7
         '
@@ -191,7 +191,7 @@ Partial Class formProfil
         Me.Label7.Location = New System.Drawing.Point(395, 88)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(48, 17)
-        Me.Label7.TabIndex = 11
+        Me.Label7.TabIndex = 10
         Me.Label7.Text = "No Telp"
         '
         'txtUbahNoTelp
@@ -200,7 +200,7 @@ Partial Class formProfil
         Me.txtUbahNoTelp.Location = New System.Drawing.Point(485, 85)
         Me.txtUbahNoTelp.Name = "txtUbahNoTelp"
         Me.txtUbahNoTelp.Size = New System.Drawing.Size(152, 23)
-        Me.txtUbahNoTelp.TabIndex = 10
+        Me.txtUbahNoTelp.TabIndex = 14
         '
         'Label6
         '
@@ -209,7 +209,7 @@ Partial Class formProfil
         Me.Label6.Location = New System.Drawing.Point(47, 192)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 17)
-        Me.Label6.TabIndex = 9
+        Me.Label6.TabIndex = 10
         Me.Label6.Text = "Password"
         '
         'Label5
@@ -227,7 +227,7 @@ Partial Class formProfil
         Me.txtUbahPass.Location = New System.Drawing.Point(137, 189)
         Me.txtUbahPass.Name = "txtUbahPass"
         Me.txtUbahPass.Size = New System.Drawing.Size(152, 23)
-        Me.txtUbahPass.TabIndex = 7
+        Me.txtUbahPass.TabIndex = 13
         '
         'Label3
         '
@@ -236,7 +236,7 @@ Partial Class formProfil
         Me.Label3.Location = New System.Drawing.Point(47, 139)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(64, 17)
-        Me.Label3.TabIndex = 6
+        Me.Label3.TabIndex = 10
         Me.Label3.Text = "Username"
         '
         'txtUbahUsn
@@ -245,7 +245,7 @@ Partial Class formProfil
         Me.txtUbahUsn.Location = New System.Drawing.Point(137, 136)
         Me.txtUbahUsn.Name = "txtUbahUsn"
         Me.txtUbahUsn.Size = New System.Drawing.Size(152, 23)
-        Me.txtUbahUsn.TabIndex = 5
+        Me.txtUbahUsn.TabIndex = 12
         '
         'Label2
         '
@@ -254,7 +254,7 @@ Partial Class formProfil
         Me.Label2.Location = New System.Drawing.Point(47, 88)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(40, 17)
-        Me.Label2.TabIndex = 1
+        Me.Label2.TabIndex = 10
         Me.Label2.Text = "Nama"
         '
         'txtUbahNama
@@ -263,14 +263,14 @@ Partial Class formProfil
         Me.txtUbahNama.Location = New System.Drawing.Point(137, 85)
         Me.txtUbahNama.Name = "txtUbahNama"
         Me.txtUbahNama.Size = New System.Drawing.Size(152, 23)
-        Me.txtUbahNama.TabIndex = 0
+        Me.txtUbahNama.TabIndex = 11
         '
         'pnlSpace
         '
         Me.pnlSpace.Location = New System.Drawing.Point(36, 913)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(686, 24)
-        Me.pnlSpace.TabIndex = 13
+        Me.pnlSpace.TabIndex = 18
         '
         'btnUbah
         '
@@ -278,7 +278,7 @@ Partial Class formProfil
         Me.btnUbah.Location = New System.Drawing.Point(342, 387)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(75, 27)
-        Me.btnUbah.TabIndex = 32
+        Me.btnUbah.TabIndex = 3
         Me.btnUbah.Text = "Ubah"
         Me.btnUbah.UseVisualStyleBackColor = True
         '
@@ -299,7 +299,7 @@ Partial Class formProfil
         Me.pnlProfil.Location = New System.Drawing.Point(171, 79)
         Me.pnlProfil.Name = "pnlProfil"
         Me.pnlProfil.Size = New System.Drawing.Size(417, 294)
-        Me.pnlProfil.TabIndex = 33
+        Me.pnlProfil.TabIndex = 1
         '
         'txtAlamat
         '
@@ -308,7 +308,7 @@ Partial Class formProfil
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(181, 65)
-        Me.txtAlamat.TabIndex = 29
+        Me.txtAlamat.TabIndex = 2
         '
         'txtNoTelp
         '
@@ -316,7 +316,7 @@ Partial Class formProfil
         Me.txtNoTelp.Location = New System.Drawing.Point(171, 169)
         Me.txtNoTelp.Name = "txtNoTelp"
         Me.txtNoTelp.Size = New System.Drawing.Size(181, 23)
-        Me.txtNoTelp.TabIndex = 28
+        Me.txtNoTelp.TabIndex = 2
         '
         'txtPass
         '
@@ -324,7 +324,7 @@ Partial Class formProfil
         Me.txtPass.Location = New System.Drawing.Point(171, 132)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(181, 23)
-        Me.txtPass.TabIndex = 27
+        Me.txtPass.TabIndex = 2
         '
         'txtUsn
         '
@@ -332,7 +332,7 @@ Partial Class formProfil
         Me.txtUsn.Location = New System.Drawing.Point(171, 96)
         Me.txtUsn.Name = "txtUsn"
         Me.txtUsn.Size = New System.Drawing.Size(181, 23)
-        Me.txtUsn.TabIndex = 26
+        Me.txtUsn.TabIndex = 2
         '
         'txtNama
         '
@@ -340,7 +340,7 @@ Partial Class formProfil
         Me.txtNama.Location = New System.Drawing.Point(171, 61)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(181, 23)
-        Me.txtNama.TabIndex = 25
+        Me.txtNama.TabIndex = 2
         '
         'Label14
         '
@@ -349,7 +349,7 @@ Partial Class formProfil
         Me.Label14.Location = New System.Drawing.Point(173, 13)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(83, 28)
-        Me.Label14.TabIndex = 25
+        Me.Label14.TabIndex = 2
         Me.Label14.Text = "PROFIL"
         '
         'Label16
@@ -359,7 +359,7 @@ Partial Class formProfil
         Me.Label16.Location = New System.Drawing.Point(60, 98)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(64, 17)
-        Me.Label16.TabIndex = 25
+        Me.Label16.TabIndex = 2
         Me.Label16.Text = "Username"
         '
         'Label18
@@ -369,7 +369,7 @@ Partial Class formProfil
         Me.Label18.Location = New System.Drawing.Point(60, 63)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(40, 17)
-        Me.Label18.TabIndex = 25
+        Me.Label18.TabIndex = 2
         Me.Label18.Text = "Nama"
         '
         'Label20
@@ -379,7 +379,7 @@ Partial Class formProfil
         Me.Label20.Location = New System.Drawing.Point(60, 134)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(61, 17)
-        Me.Label20.TabIndex = 25
+        Me.Label20.TabIndex = 2
         Me.Label20.Text = "Password"
         '
         'Label22
@@ -389,7 +389,7 @@ Partial Class formProfil
         Me.Label22.Location = New System.Drawing.Point(60, 171)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(48, 17)
-        Me.Label22.TabIndex = 25
+        Me.Label22.TabIndex = 2
         Me.Label22.Text = "No Telp"
         '
         'Label24
@@ -399,7 +399,7 @@ Partial Class formProfil
         Me.Label24.Location = New System.Drawing.Point(60, 210)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(48, 17)
-        Me.Label24.TabIndex = 25
+        Me.Label24.TabIndex = 2
         Me.Label24.Text = "Alamat"
         '
         'pnlTop
@@ -434,7 +434,7 @@ Partial Class formProfil
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.TabIndex = 21
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
         'btnMaximize
@@ -446,7 +446,7 @@ Partial Class formProfil
         Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMaximize.TabIndex = 1
+        Me.btnMaximize.TabIndex = 20
         Me.btnMaximize.UseVisualStyleBackColor = True
         '
         'btnClose
@@ -458,7 +458,7 @@ Partial Class formProfil
         Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
+        Me.btnClose.TabIndex = 19
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
@@ -471,7 +471,7 @@ Partial Class formProfil
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(747, 24)
-        Me.MenuStrip1.TabIndex = 51
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
@@ -554,7 +554,7 @@ Partial Class formProfil
         Me.txtKonfirmPass.Location = New System.Drawing.Point(124, 83)
         Me.txtKonfirmPass.Name = "txtKonfirmPass"
         Me.txtKonfirmPass.Size = New System.Drawing.Size(152, 23)
-        Me.txtKonfirmPass.TabIndex = 25
+        Me.txtKonfirmPass.TabIndex = 6
         '
         'Label4
         '
@@ -563,7 +563,7 @@ Partial Class formProfil
         Me.Label4.Location = New System.Drawing.Point(27, 86)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 17)
-        Me.Label4.TabIndex = 26
+        Me.Label4.TabIndex = 5
         Me.Label4.Text = "Password"
         '
         'btnSubmit
@@ -572,7 +572,7 @@ Partial Class formProfil
         Me.btnSubmit.Location = New System.Drawing.Point(55, 137)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 27)
-        Me.btnSubmit.TabIndex = 27
+        Me.btnSubmit.TabIndex = 7
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
@@ -583,7 +583,7 @@ Partial Class formProfil
         Me.Label8.Location = New System.Drawing.Point(54, 19)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(201, 26)
-        Me.Label8.TabIndex = 28
+        Me.Label8.TabIndex = 5
         Me.Label8.Text = "Konfirmasi Password"
         '
         'btnBatal
@@ -592,7 +592,7 @@ Partial Class formProfil
         Me.btnBatal.Location = New System.Drawing.Point(171, 137)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(75, 27)
-        Me.btnBatal.TabIndex = 29
+        Me.btnBatal.TabIndex = 8
         Me.btnBatal.Text = "Batal"
         Me.btnBatal.UseVisualStyleBackColor = True
         '
@@ -607,7 +607,7 @@ Partial Class formProfil
         Me.pnlPass.Location = New System.Drawing.Point(229, 733)
         Me.pnlPass.Name = "pnlPass"
         Me.pnlPass.Size = New System.Drawing.Size(306, 180)
-        Me.pnlPass.TabIndex = 36
+        Me.pnlPass.TabIndex = 4
         '
         'formProfil
         '

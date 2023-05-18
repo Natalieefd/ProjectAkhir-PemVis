@@ -83,7 +83,7 @@ Partial Class formCustomer
         Me.lblUsn.Location = New System.Drawing.Point(277, 229)
         Me.lblUsn.Name = "lblUsn"
         Me.lblUsn.Size = New System.Drawing.Size(237, 34)
-        Me.lblUsn.TabIndex = 13
+        Me.lblUsn.TabIndex = 12
         Me.lblUsn.Text = "username"
         Me.lblUsn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -97,7 +97,7 @@ Partial Class formCustomer
         Me.Label2.Location = New System.Drawing.Point(267, 173)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(261, 37)
-        Me.Label2.TabIndex = 14
+        Me.Label2.TabIndex = 1
         Me.Label2.Text = "Selamat Datang"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -133,7 +133,7 @@ Partial Class formCustomer
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.TabIndex = 5
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
         'btnMaximize
@@ -145,7 +145,7 @@ Partial Class formCustomer
         Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMaximize.Name = "btnMaximize"
         Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMaximize.TabIndex = 1
+        Me.btnMaximize.TabIndex = 4
         Me.btnMaximize.UseVisualStyleBackColor = True
         '
         'btnClose
@@ -157,7 +157,7 @@ Partial Class formCustomer
         Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
+        Me.btnClose.TabIndex = 3
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
@@ -170,7 +170,7 @@ Partial Class formCustomer
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(764, 24)
-        Me.MenuStrip1.TabIndex = 50
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ProfilTokoToolStripMenuItem
