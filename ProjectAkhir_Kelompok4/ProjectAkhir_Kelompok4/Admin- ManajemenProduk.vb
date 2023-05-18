@@ -9,23 +9,28 @@
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
-
+        ManajemenTokoAdmin.Show()
+        Me.Hide()
     End Sub
 
     Private Sub LihatAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatAkunStaffToolStripMenuItem.Click
-
+        ManajemenStaf.Show()
+        Me.Hide()
     End Sub
 
     Private Sub TambahAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahAkunStaffToolStripMenuItem.Click
-
+        ManajemenStaf.Show()
+        Me.Hide()
     End Sub
 
     Private Sub UbahAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahAkunStaffToolStripMenuItem.Click
-
+        ManajemenStaf.Show()
+        Me.Hide()
     End Sub
 
     Private Sub DeleteAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteAkunStaffToolStripMenuItem.Click
-
+        ManajemenStaf.Show()
+        Me.Hide()
     End Sub
 
     Private Sub LihatDataProdukToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatDataProdukToolStripMenuItem.Click
