@@ -24,6 +24,7 @@ Partial Class formProfilTokoS
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LihatBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,10 +34,6 @@ Partial Class formProfilTokoS
         Me.ManajemenPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlTop = New System.Windows.Forms.Panel()
-        Me.pnlControl = New System.Windows.Forms.Panel()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnMaximize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
@@ -51,12 +48,14 @@ Partial Class formProfilTokoS
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.pnlTop.SuspendLayout()
-        Me.pnlControl.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlProfil.SuspendLayout()
+        Me.pnlControl.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -67,10 +66,16 @@ Partial Class formProfilTokoS
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ProfilTokoToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.ManajemenPesananToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(3, 2, 0, 2)
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
@@ -127,58 +132,10 @@ Partial Class formProfilTokoS
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlTop.Name = "pnlTop"
         Me.pnlTop.Size = New System.Drawing.Size(800, 36)
         Me.pnlTop.TabIndex = 51
-        '
-        'pnlControl
-        '
-        Me.pnlControl.Controls.Add(Me.btnMinimize)
-        Me.pnlControl.Controls.Add(Me.btnMaximize)
-        Me.pnlControl.Controls.Add(Me.btnClose)
-        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(719, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
-        Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(81, 36)
-        Me.pnlControl.TabIndex = 48
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.minimize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(9, 11)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnMaximize
-        '
-        Me.btnMaximize.FlatAppearance.BorderSize = 0
-        Me.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMaximize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMaximize.Location = New System.Drawing.Point(34, 11)
-        Me.btnMaximize.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnMaximize.Name = "btnMaximize"
-        Me.btnMaximize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMaximize.TabIndex = 1
-        Me.btnMaximize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(58, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
         '
         'StatusStrip1
         '
@@ -188,6 +145,7 @@ Partial Class formProfilTokoS
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 428)
         Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
         Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
         Me.StatusStrip1.TabIndex = 6
         Me.StatusStrip1.Text = "StatusStrip1"
@@ -218,7 +176,7 @@ Partial Class formProfilTokoS
         Me.pnlProfil.Controls.Add(Me.Label24)
         Me.pnlProfil.Location = New System.Drawing.Point(192, 98)
         Me.pnlProfil.Name = "pnlProfil"
-        Me.pnlProfil.Size = New System.Drawing.Size(417, 282)
+        Me.pnlProfil.Size = New System.Drawing.Size(434, 277)
         Me.pnlProfil.TabIndex = 4
         '
         'txtAlamat
@@ -227,7 +185,7 @@ Partial Class formProfilTokoS
         Me.txtAlamat.Location = New System.Drawing.Point(171, 188)
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(181, 65)
+        Me.txtAlamat.Size = New System.Drawing.Size(137, 54)
         Me.txtAlamat.TabIndex = 5
         '
         'txtNoTelp
@@ -235,7 +193,7 @@ Partial Class formProfilTokoS
         Me.txtNoTelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoTelp.Location = New System.Drawing.Point(171, 149)
         Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(181, 20)
+        Me.txtNoTelp.Size = New System.Drawing.Size(137, 20)
         Me.txtNoTelp.TabIndex = 5
         '
         'txtEmail
@@ -243,7 +201,7 @@ Partial Class formProfilTokoS
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(171, 112)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(181, 20)
+        Me.txtEmail.Size = New System.Drawing.Size(137, 20)
         Me.txtEmail.TabIndex = 5
         '
         'txtNama
@@ -251,7 +209,7 @@ Partial Class formProfilTokoS
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(171, 73)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(181, 20)
+        Me.txtNama.Size = New System.Drawing.Size(137, 20)
         Me.txtNama.TabIndex = 5
         '
         'Label14
@@ -304,11 +262,40 @@ Partial Class formProfilTokoS
         Me.Label24.TabIndex = 5
         Me.Label24.Text = "Alamat"
         '
-        'HomeToolStripMenuItem
+        'pnlControl
         '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.HomeToolStripMenuItem.Text = "Home"
+        Me.pnlControl.Controls.Add(Me.btnMinimize)
+        Me.pnlControl.Controls.Add(Me.btnClose)
+        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlControl.Location = New System.Drawing.Point(746, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
+        Me.pnlControl.Name = "pnlControl"
+        Me.pnlControl.Size = New System.Drawing.Size(54, 36)
+        Me.pnlControl.TabIndex = 50
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(2, 10)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(32, 10)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(14, 15)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'formProfilTokoS
         '
@@ -329,11 +316,11 @@ Partial Class formProfilTokoS
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.pnlTop.ResumeLayout(False)
-        Me.pnlControl.ResumeLayout(False)
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.pnlProfil.ResumeLayout(False)
         Me.pnlProfil.PerformLayout()
+        Me.pnlControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -349,10 +336,6 @@ Partial Class formProfilTokoS
     Friend WithEvents ManajemenPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents pnlTop As Panel
-    Friend WithEvents pnlControl As Panel
-    Friend WithEvents btnMinimize As Button
-    Friend WithEvents btnMaximize As Button
-    Friend WithEvents btnClose As Button
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
     Friend WithEvents SlabelJam As ToolStripStatusLabel
@@ -367,5 +350,14 @@ Partial Class formProfilTokoS
     Friend WithEvents Label20 As Label
     Friend WithEvents Label22 As Label
     Friend WithEvents Label24 As Label
+<<<<<<< HEAD
     Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents pnlControl As Panel
+    Friend WithEvents btnMinimize As Button
+    Friend WithEvents btnClose As Button
+=======
+    Friend WithEvents pnlControl As Panel
+    Friend WithEvents btnMinimize As Button
+    Friend WithEvents btnClose As Button
+>>>>>>> f6a90e4cf5fa7c6069b54f60fb181ed599bdf09b
 End Class
