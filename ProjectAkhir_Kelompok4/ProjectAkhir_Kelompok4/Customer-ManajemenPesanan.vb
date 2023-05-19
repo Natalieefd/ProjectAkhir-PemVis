@@ -7,7 +7,7 @@
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
-        Me.Location = New Point(Me.Location.X, Me.Location.Y + 200)
+        Me.Location = New Point(Me.Location.X, Me.Location.Y + 100)
 
         pnlFormPesanan.Location = New Point(57, 88)
 
@@ -27,14 +27,20 @@
         dgvPesanan.DataSource = DS.Tables("tb")
         dgvPesanan.Refresh()
         AturGrid(dgvPesanan, {0, 0, 0, 340, 150,
-                              200, 0, 120, 120,
-                              120})
+                              180, 0, 100, 120,
+                              150}, False)
         ToggleData()
 
         lblPS.Show()
+        txtNama.Enabled = False
+        txtJumlah.Enabled = False
+        txtAlamat.Enabled = False
 
         Select Case Mode
             Case "Ubah"
+                txtNama.Enabled = True
+                txtJumlah.Enabled = True
+                txtAlamat.Enabled = True
                 btnUbah.Visible = True
                 btnClear.Visible = True
                 btnBatalkan.Visible = False
@@ -43,14 +49,17 @@
                 btnClear.Visible = False
                 btnBatalkan.Visible = True
             Case Else
+                btnUbah.Visible = False
+                btnClear.Visible = False
+                btnBatalkan.Visible = False
                 lblPS.Visible = False
         End Select
 
     End Sub
 
     Private Sub Reload(sender As Object)
+        Me.Location = New Point(Me.Location.X, Me.Location.Y - 100)
         formPesananCust_Load(sender, Nothing)
-        Me.Location = New Point(Me.Location.X, Me.Location.Y - 200)
     End Sub
 
     Private Sub HideData()
@@ -152,7 +161,7 @@
             Exit Sub
         End If
 
-        If Not CheckNum(txtJumlah) Then
+        If Not CheckNum(txtJumlah) Or txtJumlah.Text = "0" Then
             txtJumlah.Focus()
             Exit Sub
         End If
@@ -170,7 +179,7 @@
         'query update stok produk menjadi stokbaru dengan idproduk = DGVValue(dgvPesanan, 6)
         RD.Close()
 
-        formPesananCust_Load(sender, Nothing)
+        Reload(sender)
 
     End Sub
 
@@ -179,11 +188,18 @@
         RD.Close()
 
         MsgBox("Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
-        formPesananCust_Load(sender, Nothing)
+
+        Dim StokBaru = Stok + Val(txtJumlah.Text)
+
+        dbq("Update tbproduk set stok = '" & StokBaru & "' WHERE Id_produk = '" & DGVValue(dgvPesanan, 6) & "'")
+        'query update stok produk menjadi stokbaru dengan idproduk = DGVValue(dgvPesanan, 6)
+        RD.Close()
+
+        Reload(sender)
     End Sub
 
     Private Sub dgvPesanan_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentDoubleClick
-        dbq("Select * from tbpesanan where id_produk like '%" & DGVValue(dgvPesanan, 6) & "%'") 'query cari data produk dengan idproduk, id-> DGVValue(dgvPesanan, 6)
+        dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvPesanan, 6) & "%'") 'query cari data produk dengan idproduk, id-> DGVValue(dgvPesanan, 6)
 
         If DGVValue(dgvPesanan, 9) <> "Belum Dibayar" Then
             txtNama.Text = DGVValue(dgvPesanan, 1)
@@ -229,15 +245,13 @@
     Private Sub txtJumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtJumlah.KeyPress
         e.Handled = Numbering(e)
 
-        'If Asc(e.KeyChar) = 48 Then
-        'If txtJumlah.Text <> Nothing Then
-        'If txtJumlah.Text.First = "0" Then
-        'e.Handled = True
-        'End If
-        'End If
-        '
-        'e.Handled = True
-        'End If
+        If txtJumlah.Text = "0" Then
+            txtJumlah.Clear()
+        End If
+
+        If txtJumlah.Text <> Nothing Then
+            txtJumlah.Text = Val(txtJumlah.Text)
+        End If
     End Sub
 
     Private Sub txtJumlah_KeyUp(sender As Object, e As KeyEventArgs) Handles txtJumlah.KeyUp

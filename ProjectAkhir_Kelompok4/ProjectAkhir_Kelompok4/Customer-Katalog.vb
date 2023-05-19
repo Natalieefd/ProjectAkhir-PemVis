@@ -1,4 +1,7 @@
-﻿Public Class formKatalog
+﻿Imports System.Globalization
+Imports System.Xml.Schema
+
+Public Class formKatalog
 
     Public Stok As Integer
     Public idp As Integer
@@ -8,6 +11,7 @@
         SlabelJam.Text = TimeOfDay
         koneksi()
 
+
         dbdsq("Select id_produk, nama_produk AS 'NAMA PRODUK', 
                kategori AS 'KATEGORI', deskripsi_produk, stok AS 'STOK',
                harga AS 'HARGA' From tbproduk where stok > 0")
@@ -16,7 +20,6 @@
         dgvKatalog.Refresh()
         AturGrid(dgvKatalog, {0, 340, 150, 0, 80, 120})
         HideForm()
-
     End Sub
 
     Private Sub dgvKatalog_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKatalog.CellDoubleClick
@@ -140,41 +143,38 @@
             Exit Sub
         End If
 
-        If CheckNum(txtJumlah) Then
+        If CheckNum(txtJumlah) = False Or txtJumlah.Text = "0" Then
             txtJumlah.Focus()
             Exit Sub
         End If
 
-        dbq("Insert into tbpesanan (nama, alamat, id_customer, id_produk, stok, harga_total) 
-            Values('" & txtNama.Text & "','" & txtAlamat.Text & "','" & ActiveID & "',
-            '" & idp & "','" & txtJumlah.Text & "','" & txtHargaTotal.Text & "')
-            Where id_customer = '" & ActiveID & "' ")
-        'query simpan data yang bisa disimpan,
-        ' IDCust gunakan ActiveID
-        ' IDProduk gunakan idp
+        Dim TimeNow As DateTime = DateTime.Now
+        Dim TimeFormatSQL As String = TimeNow.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)
+
+        dbq("Insert into tbpesanan (nama, alamat, tanggal_pesanan, id_customer,
+            id_produk, stok, status, harga_total) Values('" & txtNama.Text & "','" & txtAlamat.Text &
+            "','" & TimeFormatSQL & "','" & ActiveID & "',
+            '" & idp & "','" & txtJumlah.Text & "', 'Belum Dibayar','" & txtHargaTotal.Text & "')")
+
         RD.Close()
         MsgBox("Produk Berhasil Dipesan", MsgBoxStyle.Information, "Perhatian")
 
         Dim StokBaru = Stok - Val(txtJumlah.Text)
         dbq("Update tbproduk set stok = '" & StokBaru & "' WHERE Id_produk = '" & idp & "'")
-        'query kurangi stok produk dengan IDProduk idp
 
-        HideForm()
-
+        formKatalog_Load(sender, Nothing)
     End Sub
 
     Private Sub txtJumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtJumlah.KeyPress
         e.Handled = Numbering(e)
 
-        'If Asc(e.KeyChar) = 48 Then
-        'If txtJumlah.Text <> Nothing Then
-        'If txtJumlah.Text.First = "0" Then
-        'e.Handled = True
-        'End If
-        'End If
-        '
-        'e.Handled = True
-        'End If
+        If txtJumlah.Text = "0" Then
+            txtJumlah.Clear()
+        End If
+
+        If txtJumlah.Text <> Nothing Then
+            txtJumlah.Text = Val(txtJumlah.Text)
+        End If
     End Sub
 
     Private Sub txtJumlah_KeyUp(sender As Object, e As KeyEventArgs) Handles txtJumlah.KeyUp

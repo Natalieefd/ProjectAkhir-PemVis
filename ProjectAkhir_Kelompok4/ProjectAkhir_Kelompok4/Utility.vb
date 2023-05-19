@@ -78,10 +78,12 @@ Module Utility
     End Function
 
     Sub AturGrid(Grids As DataGridView, ColumnWidth() As Integer,
+                 Optional AutoSizeLast As Boolean = True,
                  Optional HeaderBackColor As Color = Nothing,
                  Optional HeaderForeColor As Color = Nothing)
         Grids.EnableHeadersVisualStyles = False
         Grids.RowHeadersVisible = False
+        Grids.ReadOnly = True
         Grids.AllowUserToAddRows = False
         Grids.AllowUserToDeleteRows = False
         Grids.AllowUserToResizeRows = False
@@ -105,7 +107,9 @@ Module Utility
 
         Next
 
-        Grids.Columns(Grids.ColumnCount - 1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        If AutoSizeLast Then
+            Grids.Columns(Grids.ColumnCount - 1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        End If
     End Sub
 
     Function DGVValue(Dg As DataGridView, CellNum As Integer) As Object
