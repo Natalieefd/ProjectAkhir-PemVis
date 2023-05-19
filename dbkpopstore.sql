@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 18, 2023 at 09:20 AM
+-- Generation Time: May 19, 2023 at 04:59 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -63,7 +63,8 @@ CREATE TABLE `tbcustomer` (
 --
 
 INSERT INTO `tbcustomer` (`id_cust`, `nama`, `username`, `password`, `no_telp`, `alamat`) VALUES
-(1, 'Yafi', 'Viabel', '123', '081234567890', 'Jalan Kah Kita');
+(1, 'Yafi', 'Viabel', '123', '081234567890', 'Jalan Kah Kita'),
+(2, 'Wonwoo', 'Won17', '123', '081254546734', 'Jl Sakura');
 
 -- --------------------------------------------------------
 
@@ -88,6 +89,8 @@ CREATE TABLE `tbkeranjang` (
 
 CREATE TABLE `tbpesanan` (
   `id_pesanan` int(10) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
   `tanggal_pesanan` datetime NOT NULL,
   `id_customer` int(10) NOT NULL,
   `id_produk` int(10) NOT NULL,
@@ -192,7 +195,7 @@ ALTER TABLE `tbstaff`
 -- AUTO_INCREMENT for table `tbcustomer`
 --
 ALTER TABLE `tbcustomer`
-  MODIFY `id_cust` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_cust` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbkeranjang`
