@@ -153,8 +153,10 @@
         dbq("") 'query simpan data yang bisa disimpan,
         ' IDCust gunakan ActiveID
         ' IDProduk gunakan idp
+        RD.Close()
+        MsgBox("Produk Berhasil Dipesan", MsgBoxStyle.Information, "Perhatian")
 
-
+        dbq("") 'query kurangi stok produk dengan IDProduk idp
 
         HideForm()
 
@@ -163,15 +165,15 @@
     Private Sub txtJumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtJumlah.KeyPress
         e.Handled = Numbering(e)
 
-        If Asc(e.KeyChar) = 48 Then
-            If txtJumlah.Text <> Nothing Then
-                If txtJumlah.Text.First = "0" Then
-                    e.Handled = True
-                End If
-            End If
-
-            e.Handled = True
-        End If
+        'If Asc(e.KeyChar) = 48 Then
+        'If txtJumlah.Text <> Nothing Then
+        'If txtJumlah.Text.First = "0" Then
+        'e.Handled = True
+        'End If
+        'End If
+        '
+        'e.Handled = True
+        'End If
     End Sub
 
     Private Sub txtJumlah_KeyUp(sender As Object, e As KeyEventArgs) Handles txtJumlah.KeyUp
