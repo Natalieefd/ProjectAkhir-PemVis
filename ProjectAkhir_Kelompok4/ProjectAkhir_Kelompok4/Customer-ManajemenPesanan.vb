@@ -9,7 +9,27 @@
         Me.Location = New Point(Me.Location.X, Me.Location.Y + 200)
 
         pnlFormPesanan.Location = New Point(57, 88)
+
+        koneksi()
+
+        dbdsq("")
+        ' Pastikan query menampilkan data sesuai urutan di bawah ini:
+        ' ID_Pesanan, Nama, Alamat, NAMA PRODUK, TANGGAL DIPESAN, id_produk, STOK(pesanan),
+        ' HARGA TOTAL, STATUS, kategori produk, deskripsi produk, harga_satuan
+
+        ' Atribut dikapital harus ditulis persis (kapital dan spasi) sementara
+        ' atribut lainnya bebas, (pesanan) tidak perlu ditulis, hanya ngasitau
+
+        ' Hanya pesanan dengan id_cust sesuai dengan ActiveID yang akan tampil
+
+
+        dgvPesanan.DataSource = DS.Tables("tb")
+        dgvPesanan.Refresh()
+        AturGrid(dgvPesanan, {0, 0, 0, 340, 200,
+                              0, 120, 120, 120,
+                              0, 0, 0})
         ToggleData()
+
         lblPS.Show()
 
         Select Case Mode

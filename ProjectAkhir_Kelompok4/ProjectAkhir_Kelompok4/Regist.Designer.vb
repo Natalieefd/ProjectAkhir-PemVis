@@ -24,12 +24,13 @@ Partial Class formRegist
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.WarnUsn = New System.Windows.Forms.Label()
         Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.txtNoTelp = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtNama = New System.Windows.Forms.TextBox()
-        Me.Warn = New System.Windows.Forms.Label()
+        Me.WarnNo = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -57,12 +58,13 @@ Partial Class formRegist
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.GroupBox1.Controls.Add(Me.WarnUsn)
         Me.GroupBox1.Controls.Add(Me.txtAlamat)
         Me.GroupBox1.Controls.Add(Me.txtNoTelp)
         Me.GroupBox1.Controls.Add(Me.txtPassword)
         Me.GroupBox1.Controls.Add(Me.txtUsername)
         Me.GroupBox1.Controls.Add(Me.txtNama)
-        Me.GroupBox1.Controls.Add(Me.Warn)
+        Me.GroupBox1.Controls.Add(Me.WarnNo)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -75,6 +77,19 @@ Partial Class formRegist
         Me.GroupBox1.Size = New System.Drawing.Size(359, 326)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
+        '
+        'WarnUsn
+        '
+        Me.WarnUsn.AutoSize = True
+        Me.WarnUsn.BackColor = System.Drawing.Color.Red
+        Me.WarnUsn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.WarnUsn.ForeColor = System.Drawing.SystemColors.Control
+        Me.WarnUsn.Location = New System.Drawing.Point(305, 85)
+        Me.WarnUsn.Name = "WarnUsn"
+        Me.WarnUsn.Size = New System.Drawing.Size(37, 19)
+        Me.WarnUsn.TabIndex = 18
+        Me.WarnUsn.Text = "< ! >"
+        Me.WarnUsn.Visible = False
         '
         'txtAlamat
         '
@@ -121,18 +136,18 @@ Partial Class formRegist
         Me.txtNama.Size = New System.Drawing.Size(173, 23)
         Me.txtNama.TabIndex = 13
         '
-        'Warn
+        'WarnNo
         '
-        Me.Warn.AutoSize = True
-        Me.Warn.BackColor = System.Drawing.Color.Red
-        Me.Warn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Warn.ForeColor = System.Drawing.SystemColors.Control
-        Me.Warn.Location = New System.Drawing.Point(305, 178)
-        Me.Warn.Name = "Warn"
-        Me.Warn.Size = New System.Drawing.Size(37, 19)
-        Me.Warn.TabIndex = 12
-        Me.Warn.Text = "< ! >"
-        Me.Warn.Visible = False
+        Me.WarnNo.AutoSize = True
+        Me.WarnNo.BackColor = System.Drawing.Color.Red
+        Me.WarnNo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.WarnNo.ForeColor = System.Drawing.SystemColors.Control
+        Me.WarnNo.Location = New System.Drawing.Point(305, 178)
+        Me.WarnNo.Name = "WarnNo"
+        Me.WarnNo.Size = New System.Drawing.Size(37, 19)
+        Me.WarnNo.TabIndex = 12
+        Me.WarnNo.Text = "< ! >"
+        Me.WarnNo.Visible = False
         '
         'Label6
         '
@@ -208,7 +223,7 @@ Partial Class formRegist
         Me.pnlTop.Location = New System.Drawing.Point(243, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(548, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(565, 36)
         Me.pnlTop.TabIndex = 56
         '
         'pnlControl
@@ -216,7 +231,7 @@ Partial Class formRegist
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(494, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(511, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -267,7 +282,7 @@ Partial Class formRegist
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(243, 427)
+        Me.Panel1.Size = New System.Drawing.Size(243, 426)
         Me.Panel1.TabIndex = 55
         '
         'SlabelJam
@@ -289,9 +304,9 @@ Partial Class formRegist
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 427)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 426)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(791, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(808, 22)
         Me.StatusStrip1.TabIndex = 54
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -344,7 +359,7 @@ Partial Class formRegist
     Friend WithEvents SlabelTanggal As ToolStripStatusLabel
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Warn As Label
+    Friend WithEvents WarnNo As Label
     Friend WithEvents txtAlamat As TextBox
     Friend WithEvents txtNoTelp As TextBox
     Friend WithEvents txtPassword As TextBox
@@ -353,4 +368,5 @@ Partial Class formRegist
     Friend WithEvents pnlControl As Panel
     Friend WithEvents btnMinimize As Button
     Friend WithEvents btnClose As Button
+    Friend WithEvents WarnUsn As Label
 End Class

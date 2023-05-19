@@ -1,4 +1,6 @@
-﻿Public Class formRegist
+﻿Imports System.Text
+
+Public Class formRegist
     Private Sub Regist_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
@@ -17,19 +19,33 @@
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Dim Con = EmptyTB()
+        Dim UsnE = False
+        Dim NoE = False
 
         If Con IsNot Nothing Then
             Me.ActiveControl = Con
             Exit Sub
         End If
 
+        For Each c As Char In txtUsername.Text
+            If Asc(c) = 32 Then
+                UsnE = True
+                Exit For
+            End If
+        Next
+
         If Not CheckNum(txtNoTelp) Then
-            Me.ActiveControl = txtNoTelp
-            Warn.Visible = True
+            NoE = True
+        End If
+
+        If UsnE Or NoE Then
+            If UsnE Then WarnUsn.Show()
+            If NoE Then WarnNo.Show()
+            If UsnE Then txtUsername.Focus() Else txtNoTelp.Focus()
             Exit Sub
         End If
 
-        Dim stats() As String = {"admin", "staff", "customer"}
+            Dim stats() As String = {"admin", "staff", "customer"}
         Dim dup = False
 
         For Each mode In stats
@@ -80,8 +96,12 @@
     End Sub
 
     Private Sub txtUsername_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsername.KeyPress
-        If Asc(e.KeyChar) = 13 Then
+        If Asc(e.KeyChar) = 32 Then
+            e.Handled = True
+        ElseIf Asc(e.KeyChar) = 13 Then
             txtPassword.Focus()
+        Else
+            WarnUsn.Hide()
         End If
     End Sub
 
@@ -96,8 +116,7 @@
             txtAlamat.Focus()
         End If
 
-        e.Handled = Numbering(e)
-        Warn.Visible = False
+        If Numbering(e) Then e.Handled = True Else WarnNo.Hide()
     End Sub
 
     Private Sub txtAlamat_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAlamat.KeyPress

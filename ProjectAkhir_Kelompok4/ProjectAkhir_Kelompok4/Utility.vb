@@ -93,13 +93,23 @@ Module Utility
         Dim i As Integer
 
         For i = 0 To Grids.ColumnCount - 1 Step 1
-            Grids.Columns(i).Width = ColumnWidth(i)
-            Grids.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
-            Grids.Columns(i).HeaderCell.Style.BackColor = HeaderBackColor
-            Grids.Columns(i).HeaderCell.Style.ForeColor = HeaderForeColor
+            If ColumnWidth(i) <> 0 Then
+                Grids.Columns(i).Width = ColumnWidth(i)
+                Grids.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
+                Grids.Columns(i).HeaderCell.Style.BackColor = HeaderBackColor
+                Grids.Columns(i).HeaderCell.Style.ForeColor = HeaderForeColor
+            Else
+                Grids.Columns(i).Visible = False
+            End If
+
+
         Next
 
         Grids.Columns(Grids.ColumnCount - 1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
     End Sub
+
+    Function DGVValue(Dg As DataGridView, CellNum As Integer) As Object
+        Return Dg.Rows(Dg.CurrentCell.RowIndex).Cells(CellNum).Value
+    End Function
 
 End Module

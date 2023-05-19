@@ -19,24 +19,18 @@
 
         dgvKatalog.DataSource = DS.Tables("tb")
         dgvKatalog.Refresh()
-        dgvKatalog.Columns(0).Visible = False
-        dgvKatalog.Columns(3).Visible = False
-
         AturGrid(dgvKatalog, {0, 340, 150, 0, 80, 120})
-
         HideForm()
+
     End Sub
 
     Private Sub dgvKatalog_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKatalog.CellDoubleClick
-        Dim RowSelect As Integer = dgvKatalog.CurrentCell.RowIndex
-        lblPS.Text = dgvKatalog.Rows(RowSelect).Cells(1).Value.ToString
-
-        idp = dgvKatalog.Rows(RowSelect).Cells(0).Value
-        txtNamaProduk.Text = dgvKatalog.Rows(RowSelect).Cells(1).Value.ToString
-        txtKategori.Text = dgvKatalog.Rows(RowSelect).Cells(2).Value.ToString
-        txtDesc.Text = dgvKatalog.Rows(RowSelect).Cells(3).Value.ToString
-        Stok = dgvKatalog.Rows(RowSelect).Cells(4).Value
-        txtHargaSatuan.Text = dgvKatalog.Rows(RowSelect).Cells(5).Value.ToString
+        idp = DGVValue(dgvKatalog, 0)
+        txtNamaProduk.Text = DGVValue(dgvKatalog, 1).ToString
+        txtKategori.Text = DGVValue(dgvKatalog, 2).ToString
+        txtDesc.Text = DGVValue(dgvKatalog, 3).ToString
+        Stok = DGVValue(dgvKatalog, 4)
+        txtHargaSatuan.Text = DGVValue(dgvKatalog, 5).ToString
         txtHargaTotal.Text = Val(txtHargaSatuan.Text) * Val(txtJumlah.Text)
         ShowForm()
 
@@ -112,11 +106,6 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub lblPS_Click(sender As Object, e As EventArgs) Handles lblPS.Click
-        'hapus nanti
-        ShowForm()
-    End Sub
-
     Sub ShowForm()
         lblHeader.Hide()
         dgvKatalog.Hide()
@@ -146,5 +135,50 @@
 
     Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
         HideForm()
+    End Sub
+
+    Private Sub btnPesan_Click(sender As Object, e As EventArgs) Handles btnPesan.Click
+        Dim Con = EmptyTB()
+
+        If Con IsNot Nothing Then
+            Con.Focus()
+            Exit Sub
+        End If
+
+        If CheckNum(txtJumlah) Then
+            txtJumlah.Focus()
+            Exit Sub
+        End If
+
+        dbq("") 'query simpan data yang bisa disimpan,
+        ' IDCust gunakan ActiveID
+        ' IDProduk gunakan idp
+
+
+
+        HideForm()
+
+    End Sub
+
+    Private Sub txtJumlah_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtJumlah.KeyPress
+        e.Handled = Numbering(e)
+
+        If Asc(e.KeyChar) = 48 Then
+            If txtJumlah.Text <> Nothing Then
+                If txtJumlah.Text.First = "0" Then
+                    e.Handled = True
+                End If
+            End If
+
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtJumlah_KeyUp(sender As Object, e As KeyEventArgs) Handles txtJumlah.KeyUp
+        If Val(txtJumlah.Text) > Stok Then
+            txtJumlah.Text = Stok
+        End If
+
+        txtHargaTotal.Text = Val(txtJumlah.Text) * Val(txtHargaSatuan.Text)
     End Sub
 End Class
