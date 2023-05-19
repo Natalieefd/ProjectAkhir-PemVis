@@ -327,5 +327,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-cancel-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\KpopStoreWelcome.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

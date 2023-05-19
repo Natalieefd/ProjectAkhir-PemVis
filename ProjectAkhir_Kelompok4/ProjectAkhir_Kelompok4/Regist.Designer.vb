@@ -261,7 +261,7 @@ Partial Class formRegist
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Coral
+        Me.Panel1.BackColor = System.Drawing.Color.LightCoral
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
