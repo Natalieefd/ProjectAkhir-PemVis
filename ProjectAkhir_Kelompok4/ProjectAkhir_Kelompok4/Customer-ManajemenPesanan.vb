@@ -14,20 +14,20 @@
 
         dbdsq("")
         ' Pastikan query menampilkan data sesuai urutan di bawah ini:
-        ' ID_Pesanan, Nama, Alamat, NAMA PRODUK, TANGGAL DIPESAN, id_produk, STOK(pesanan),
-        ' HARGA TOTAL, STATUS, kategori produk, deskripsi produk, harga_satuan
+        ' ID_Pesanan, Nama, Alamat, NAMA PRODUK(tbproduk), KATEGORI(tbproduk),
+        ' TANGGAL DIPESAN, id_produk, STOK(tbpesanan), HARGA TOTAL, STATUS
 
         ' Atribut dikapital harus ditulis persis (kapital dan spasi) sementara
-        ' atribut lainnya bebas, (pesanan) tidak perlu ditulis, hanya ngasitau
+        ' atribut lainnya bebas, kata di dalam kurung tidak perlu ditulis, hanya konteks
 
         ' Hanya pesanan dengan id_cust sesuai dengan ActiveID yang akan tampil
 
 
         dgvPesanan.DataSource = DS.Tables("tb")
         dgvPesanan.Refresh()
-        AturGrid(dgvPesanan, {0, 0, 0, 340, 200,
-                              0, 120, 120, 120,
-                              0, 0, 0})
+        AturGrid(dgvPesanan, {0, 0, 0, 340, 150,
+                              200, 0, 120, 120,
+                              120})
         ToggleData()
 
         lblPS.Show()
@@ -45,10 +45,6 @@
                 lblPS.Visible = False
         End Select
 
-    End Sub
-
-    Private Sub dgvPesanan_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentClick
-        HideData()
     End Sub
 
     Private Sub HideData()
@@ -182,5 +178,9 @@
 
         MsgBox("Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
         formPesananCust_Load(sender, Nothing)
+    End Sub
+
+    Private Sub dgvPesanan_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentDoubleClick
+        HideData()
     End Sub
 End Class
