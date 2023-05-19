@@ -17,9 +17,7 @@ Public Class formProfil
         pnlFormUbah.Hide()
         pnlPass.Hide()
 
-        dbq("Select * from tbcustomer Where nama = '" & txtNama.Text & "',
-            username = '" & txtUsn.Text & "', password = '" & txtPass.Text & "',
-            no_telp = '" & txtNoTelp.Text & "', alamat = '" & txtAlamat.Text & "'")
+        dbq("Select * from tbcustomer Where id_cust = '" & ActiveID & "'")
 
         txtNama.Text = RD(1)
         txtUsn.Text = RD(2)
@@ -34,6 +32,8 @@ Public Class formProfil
         If Mode = "Ubah" Then
             ModeUbah()
         End If
+        RD.Close()
+
     End Sub
 
     Private Sub ModeUbah()
@@ -197,7 +197,8 @@ Public Class formProfil
 
         dbq("Update tbcustomer set nama = '" & txtUbahNama.Text & "',
             username = '" & txtUbahUsn.Text & "', password = '" & txtKonfirmPass.Text & "',
-            no_telp = '" & txtUbahNoTelp.Text & "', alamat = '" & txtUbahAlamat.Text & "'")
+            no_telp = '" & txtUbahNoTelp.Text & "', alamat = '" & txtUbahAlamat.Text & "'
+            Where id_cust = '" & ActiveID & "' ")
 
         RD.Close()
         MsgBox("Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
