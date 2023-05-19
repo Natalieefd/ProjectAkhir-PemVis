@@ -12,15 +12,14 @@
 
         koneksi()
 
-        dbdsq("")
-        ' Pastikan query menampilkan data sesuai urutan di bawah ini:
-        ' ID_Pesanan, Nama, Alamat, NAMA PRODUK(tbproduk), KATEGORI(tbproduk),
-        ' TANGGAL DIPESAN, id_produk, STOK(tbpesanan), HARGA TOTAL, STATUS
-
-        ' Atribut dikapital harus ditulis persis (kapital dan spasi) sementara
-        ' atribut lainnya bebas, kata di dalam kurung tidak perlu ditulis, hanya konteks
-
-        ' Hanya pesanan dengan id_cust sesuai dengan ActiveID yang akan tampil
+        dbdsq("Select tbpesanan.id_pesanan AS 'ID PESANAN', tbpesanan.nama AS 'NAMA',
+               tbpesanan.alamat AS 'ALAMAT', tbproduk.nama_produk AS 'NAMA PRODUK',
+               tbproduk.kategori AS 'KATEGORI', tbpesanan.tanggal_pesanan AS 'TANGGAL DIPESAN',
+               tbpesanan.id_produk AS 'ID PRODUK', tbpesanan.stok AS 'STOK', 
+               tbpesanan.harga_total AS 'HARGA TOTAL', tbpesanan.status AS 'STATUS'
+               FROM tbpesanan
+               INNER JOIN tbproduk ON tbpesanan.id_produk = tbpesanan.id_produk
+               Where id_pesanan = '" & ActiveID & "'")
 
 
         dgvPesanan.DataSource = DS.Tables("tb")
