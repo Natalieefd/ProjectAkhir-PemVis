@@ -166,13 +166,14 @@
 
         dbq("")
         'query update stok produk menjadi stokbaru dengan idproduk = DGVValue(dgvPesanan, 6)
+        RD.Close()
 
         formPesananCust_Load(sender, Nothing)
 
     End Sub
 
     Private Sub btnBatalkan_Click(sender As Object, e As EventArgs) Handles btnBatalkan.Click
-        dbq("") 'query hapus pesanan terkait
+        dbq("") 'query hapus pesanan dengan idpesanan, id-> DGVValue(dgvPesanan, 0)
         RD.Close()
 
         MsgBox("Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
@@ -180,7 +181,7 @@
     End Sub
 
     Private Sub dgvPesanan_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentDoubleClick
-        dbq("") 'Cari data produk dengan idproduk, id-> DGVValue(dgvPesanan, 6)
+        dbq("") 'query cari data produk dengan idproduk, id-> DGVValue(dgvPesanan, 6)
 
         If DGVValue(dgvPesanan, 9) <> "Belum Dibayar" Then
             txtNama.Text = DGVValue(dgvPesanan, 1)
