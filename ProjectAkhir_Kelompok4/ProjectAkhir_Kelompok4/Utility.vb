@@ -77,4 +77,29 @@ Module Utility
         Return True
     End Function
 
+    Sub AturGrid(Grids As DataGridView, ColumnWidth() As Integer,
+                 Optional HeaderBackColor As Color = Nothing,
+                 Optional HeaderForeColor As Color = Nothing)
+        Grids.EnableHeadersVisualStyles = False
+        Grids.RowHeadersVisible = False
+        Grids.AllowUserToAddRows = False
+        Grids.AllowUserToDeleteRows = False
+        Grids.AllowUserToResizeRows = False
+        Grids.AllowUserToResizeColumns = False
+
+        HeaderBackColor = If(HeaderBackColor = Nothing, Color.DarkCyan, HeaderBackColor)
+        HeaderForeColor = If(HeaderForeColor = Nothing, Color.White, HeaderForeColor)
+
+        Dim i As Integer
+
+        For i = 0 To Grids.ColumnCount - 1 Step 1
+            Grids.Columns(i).Width = ColumnWidth(i)
+            Grids.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
+            Grids.Columns(i).HeaderCell.Style.BackColor = HeaderBackColor
+            Grids.Columns(i).HeaderCell.Style.ForeColor = HeaderForeColor
+        Next
+
+        Grids.Columns(Grids.ColumnCount - 1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+    End Sub
+
 End Module

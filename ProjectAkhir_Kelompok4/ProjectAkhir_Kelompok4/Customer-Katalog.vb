@@ -1,14 +1,44 @@
 ﻿Public Class formKatalog
 
+    Public Stok As Integer
+    Public idp As Integer
+
     Private Sub formKatalog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+        koneksi()
+
+        dbdsq("")
+        'query tampil semua katalog yang stoknya lebih dari 0,
+        'tampilkan sebagai:
+        ' nama_produk -> NAMA PRODUK
+        ' kategori -> KATEGORI
+        ' stok -> STOK
+        ' harga -> HARGA
+
+
+        dgvKatalog.DataSource = DS.Tables("tb")
+        dgvKatalog.Refresh()
+        dgvKatalog.Columns(0).Visible = False
+        dgvKatalog.Columns(3).Visible = False
+
+        AturGrid(dgvKatalog, {0, 340, 150, 0, 80, 120})
 
         HideForm()
     End Sub
 
-    Private Sub dgvKatalog_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKatalog.CellContentClick
+    Private Sub dgvKatalog_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKatalog.CellDoubleClick
+        Dim RowSelect As Integer = dgvKatalog.CurrentCell.RowIndex
+        lblPS.Text = dgvKatalog.Rows(RowSelect).Cells(1).Value.ToString
 
+        idp = dgvKatalog.Rows(RowSelect).Cells(0).Value
+        txtNamaProduk.Text = dgvKatalog.Rows(RowSelect).Cells(1).Value.ToString
+        txtKategori.Text = dgvKatalog.Rows(RowSelect).Cells(2).Value.ToString
+        txtDesc.Text = dgvKatalog.Rows(RowSelect).Cells(3).Value.ToString
+        Stok = dgvKatalog.Rows(RowSelect).Cells(4).Value
+        txtHargaSatuan.Text = dgvKatalog.Rows(RowSelect).Cells(5).Value.ToString
+        txtHargaTotal.Text = Val(txtHargaSatuan.Text) * Val(txtJumlah.Text)
+        ShowForm()
 
         'harga total otomatis kehitung klo jumlahnya berubah
 
@@ -109,8 +139,8 @@
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         txtNama.Clear()
-        txtJumlah.Clear()
-        txtHargaTotal.Clear()
+        txtJumlah.Text = "1"
+        txtHargaTotal.Text = Val(txtJumlah.Text) * Val(txtHargaSatuan.Text)
         txtAlamat.Clear()
     End Sub
 

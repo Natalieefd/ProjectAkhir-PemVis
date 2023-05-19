@@ -23,10 +23,10 @@ Partial Class formKatalog
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.SlabelTanggal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
@@ -107,37 +107,45 @@ Partial Class formKatalog
         '
         'dgvKatalog
         '
+        Me.dgvKatalog.AllowUserToAddRows = False
+        Me.dgvKatalog.AllowUserToDeleteRows = False
+        Me.dgvKatalog.AllowUserToOrderColumns = True
+        Me.dgvKatalog.AllowUserToResizeColumns = False
+        Me.dgvKatalog.AllowUserToResizeRows = False
         Me.dgvKatalog.BackgroundColor = System.Drawing.Color.CadetBlue
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvKatalog.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkCyan
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvKatalog.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvKatalog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvKatalog.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvKatalog.DefaultCellStyle = DataGridViewCellStyle10
         Me.dgvKatalog.Location = New System.Drawing.Point(33, 136)
+        Me.dgvKatalog.MultiSelect = False
         Me.dgvKatalog.Name = "dgvKatalog"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvKatalog.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvKatalog.ReadOnly = True
+        Me.dgvKatalog.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ActiveCaption
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.InactiveBorder
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvKatalog.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
         Me.dgvKatalog.RowHeadersWidth = 51
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.dgvKatalog.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.dgvKatalog.RowsDefaultCellStyle = DataGridViewCellStyle12
         Me.dgvKatalog.Size = New System.Drawing.Size(686, 230)
         Me.dgvKatalog.TabIndex = 9
         '
@@ -216,33 +224,33 @@ Partial Class formKatalog
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(727, 26)
+        Me.MenuStrip1.Size = New System.Drawing.Size(727, 25)
         Me.MenuStrip1.TabIndex = 60
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 22)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 22)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'KatalogToolStripMenuItem
         '
         Me.KatalogToolStripMenuItem.Name = "KatalogToolStripMenuItem"
-        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(70, 22)
+        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(70, 21)
         Me.KatalogToolStripMenuItem.Text = "Katalog"
         '
         'PesananToolStripMenuItem
         '
         Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
-        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 22)
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'LihatPesananToolStripMenuItem
@@ -267,25 +275,25 @@ Partial Class formKatalog
         '
         Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProfilToolStripMenuItem, Me.UbahProfilToolStripMenuItem})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
-        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(54, 22)
+        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(54, 21)
         Me.ProfilToolStripMenuItem.Text = "Profil"
         '
         'LihatProfilToolStripMenuItem
         '
         Me.LihatProfilToolStripMenuItem.Name = "LihatProfilToolStripMenuItem"
-        Me.LihatProfilToolStripMenuItem.Size = New System.Drawing.Size(206, 24)
+        Me.LihatProfilToolStripMenuItem.Size = New System.Drawing.Size(154, 24)
         Me.LihatProfilToolStripMenuItem.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem
         '
         Me.UbahProfilToolStripMenuItem.Name = "UbahProfilToolStripMenuItem"
-        Me.UbahProfilToolStripMenuItem.Size = New System.Drawing.Size(206, 24)
+        Me.UbahProfilToolStripMenuItem.Size = New System.Drawing.Size(154, 24)
         Me.UbahProfilToolStripMenuItem.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'pnlFormPesanan
@@ -375,9 +383,11 @@ Partial Class formKatalog
         '
         'txtHargaTotal
         '
+        Me.txtHargaTotal.Enabled = False
         Me.txtHargaTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaTotal.Location = New System.Drawing.Point(485, 278)
         Me.txtHargaTotal.Name = "txtHargaTotal"
+        Me.txtHargaTotal.ReadOnly = True
         Me.txtHargaTotal.Size = New System.Drawing.Size(152, 22)
         Me.txtHargaTotal.TabIndex = 18
         '
@@ -456,6 +466,7 @@ Partial Class formKatalog
         Me.txtJumlah.Name = "txtJumlah"
         Me.txtJumlah.Size = New System.Drawing.Size(152, 22)
         Me.txtJumlah.TabIndex = 10
+        Me.txtJumlah.Text = "1"
         '
         'Label6
         '

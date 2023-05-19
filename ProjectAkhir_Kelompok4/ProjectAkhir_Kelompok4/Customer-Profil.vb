@@ -17,7 +17,7 @@ Public Class formProfil
         pnlFormUbah.Hide()
         pnlPass.Hide()
 
-        dbq("Select * from tbcustomer Where id_cust = '" & ActiveID & "'")
+        AkunSeqID("customer")
 
         txtNama.Text = RD(1)
         txtUsn.Text = RD(2)
@@ -57,37 +57,46 @@ Public Class formProfil
     End Sub
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formCustomer.Show()
         Me.Close()
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formProfilTokoC.Show()
         Me.Close()
     End Sub
 
     Private Sub KatalogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KatalogToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formKatalog.Show()
         Me.Close()
     End Sub
-
     Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Lihat"
         formPesananCust.Show()
         Me.Close()
     End Sub
 
-    Private Sub BuatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuatPesananToolStripMenuItem.Click
-        formKatalog.Show()
-        Me.Close()
-    End Sub
-
     Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Ubah"
         formPesananCust.Show()
         Me.Close()
     End Sub
 
     Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        formPesananCust.Mode = "Hapus"
         formPesananCust.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        Home.Show()
         Me.Close()
     End Sub
 
@@ -126,12 +135,6 @@ Public Class formProfil
                                         MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
         RD.Close()
-    End Sub
-
-    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
-        Me.ActiveControl = MenuStrip1
-        Home.Show()
-        Me.Close()
     End Sub
 
     Private Sub formProfil_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

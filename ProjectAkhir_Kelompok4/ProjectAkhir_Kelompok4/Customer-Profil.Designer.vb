@@ -45,11 +45,13 @@ Partial Class formProfil
         Me.pnlProfil = New System.Windows.Forms.Panel()
         Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.txtNoTelp = New System.Windows.Forms.TextBox()
+        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.txtUsn = New System.Windows.Forms.TextBox()
         Me.txtNama = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.pnlTop = New System.Windows.Forms.Panel()
@@ -62,7 +64,6 @@ Partial Class formProfil
         Me.KatalogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LihatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BuatPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UbahPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BatalkanPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -74,8 +75,6 @@ Partial Class formProfil
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.pnlPass = New System.Windows.Forms.Panel()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.txtPass = New System.Windows.Forms.TextBox()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlFormUbah.SuspendLayout()
         Me.pnlProfil.SuspendLayout()
@@ -93,7 +92,7 @@ Partial Class formProfil
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 1022)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(799, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(837, 22)
         Me.StatusStrip1.TabIndex = 9
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -309,6 +308,16 @@ Partial Class formProfil
         Me.txtNoTelp.Size = New System.Drawing.Size(181, 22)
         Me.txtNoTelp.TabIndex = 2
         '
+        'txtPass
+        '
+        Me.txtPass.Enabled = False
+        Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.Location = New System.Drawing.Point(171, 132)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPass.Size = New System.Drawing.Size(181, 22)
+        Me.txtPass.TabIndex = 2
+        '
         'txtUsn
         '
         Me.txtUsn.Enabled = False
@@ -357,6 +366,16 @@ Partial Class formProfil
         Me.Label18.TabIndex = 2
         Me.Label18.Text = "Nama"
         '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(60, 134)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(77, 17)
+        Me.Label20.TabIndex = 2
+        Me.Label20.Text = "Password"
+        '
         'Label22
         '
         Me.Label22.AutoSize = True
@@ -385,7 +404,7 @@ Partial Class formProfil
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(799, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(837, 36)
         Me.pnlTop.TabIndex = 50
         '
         'pnlControl
@@ -393,7 +412,7 @@ Partial Class formProfil
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(745, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(783, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -432,82 +451,76 @@ Partial Class formProfil
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(799, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(837, 26)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 22)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 22)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'KatalogToolStripMenuItem
         '
         Me.KatalogToolStripMenuItem.Name = "KatalogToolStripMenuItem"
-        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(70, 21)
+        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(70, 22)
         Me.KatalogToolStripMenuItem.Text = "Katalog"
         '
         'PesananToolStripMenuItem
         '
-        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.BuatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
+        Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
-        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 22)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(206, 24)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
-        '
-        'BuatPesananToolStripMenuItem
-        '
-        Me.BuatPesananToolStripMenuItem.Name = "BuatPesananToolStripMenuItem"
-        Me.BuatPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
-        Me.BuatPesananToolStripMenuItem.Text = "Buat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(206, 24)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'BatalkanPesananToolStripMenuItem
         '
         Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(206, 24)
         Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
         '
         Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProfilToolStripMenuItem1, Me.UbahProfilToolStripMenuItem1})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
-        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(54, 21)
+        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(54, 22)
         Me.ProfilToolStripMenuItem.Text = "Profil"
         '
         'LihatProfilToolStripMenuItem1
         '
         Me.LihatProfilToolStripMenuItem1.Name = "LihatProfilToolStripMenuItem1"
-        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(154, 24)
+        Me.LihatProfilToolStripMenuItem1.Size = New System.Drawing.Size(206, 24)
         Me.LihatProfilToolStripMenuItem1.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem1
         '
         Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
-        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(154, 24)
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(206, 24)
         Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'txtKonfirmPass
@@ -563,33 +576,13 @@ Partial Class formProfil
         Me.pnlPass.Size = New System.Drawing.Size(306, 216)
         Me.pnlPass.TabIndex = 4
         '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(60, 134)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(77, 17)
-        Me.Label20.TabIndex = 2
-        Me.Label20.Text = "Password"
-        '
-        'txtPass
-        '
-        Me.txtPass.Enabled = False
-        Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(171, 132)
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPass.Size = New System.Drawing.Size(181, 22)
-        Me.txtPass.TabIndex = 2
-        '
         'formProfil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.LightCyan
-        Me.ClientSize = New System.Drawing.Size(818, 528)
+        Me.ClientSize = New System.Drawing.Size(856, 528)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlPass)
@@ -653,7 +646,6 @@ Partial Class formProfil
     Friend WithEvents KatalogToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LihatPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BuatPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UbahPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BatalkanPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProfilToolStripMenuItem As ToolStripMenuItem

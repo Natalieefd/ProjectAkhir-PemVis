@@ -26,6 +26,18 @@ Module Database
         RD.Read()
     End Sub
 
+    Sub AkunSeqID(mode As String)
+        Dim tabel = If(mode = "customer", "cust", "staff")
+
+        dbq("Select * from tb" & mode & " where id_" & tabel & "='" & ActiveID & "'")
+    End Sub
+
+    Sub dbdsq(query As String)
+        DA = New MySqlDataAdapter(query, CONN)
+        DS = New DataSet
+        DS.Clear()
+        DA.Fill(DS, "tb")
+    End Sub
 
 End Module
 
