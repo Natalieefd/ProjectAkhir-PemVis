@@ -8,14 +8,9 @@
         SlabelJam.Text = TimeOfDay
         koneksi()
 
-        dbdsq("")
-        'query tampil semua katalog yang stoknya lebih dari 0,
-        'tampilkan sebagai:
-        ' nama_produk -> NAMA PRODUK
-        ' kategori -> KATEGORI
-        ' stok -> STOK
-        ' harga -> HARGA
-
+        dbdsq("Select id_produk, nama_produk AS 'NAMA PRODUK', 
+               kategori AS 'KATEGORI', deskripsi_produk, stok AS 'STOK',
+               harga AS 'HARGA' From tbproduk where stok > 0")
 
         dgvKatalog.DataSource = DS.Tables("tb")
         dgvKatalog.Refresh()
@@ -150,13 +145,19 @@
             Exit Sub
         End If
 
-        dbq("") 'query simpan data yang bisa disimpan,
+        dbq("Insert into tbpesanan (nama, alamat, id_customer, id_produk, stok, harga_total) 
+            Values('" & txtNama.Text & "','" & txtAlamat.Text & "','" & ActiveID & "',
+            '" & idp & "','" & txtJumlah.Text & "','" & txtHargaTotal.Text & "')
+            Where id_customer = '" & ActiveID & "' ")
+        'query simpan data yang bisa disimpan,
         ' IDCust gunakan ActiveID
         ' IDProduk gunakan idp
         RD.Close()
         MsgBox("Produk Berhasil Dipesan", MsgBoxStyle.Information, "Perhatian")
 
-        dbq("") 'query kurangi stok produk dengan IDProduk idp
+        Dim StokBaru = Stok - Val(txtJumlah.Text)
+        dbq("Update tbproduk set stok = '" & StokBaru & "' WHERE Id_produk = '" & idp & "'")
+        'query kurangi stok produk dengan IDProduk idp
 
         HideForm()
 
