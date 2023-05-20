@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ManajemenStaf
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class ManajemenStaf
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -79,23 +79,23 @@ Partial Class ManajemenStaf
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 942)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1472)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1091, 24)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(2, 0, 28, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1634, 39)
         Me.StatusStrip1.TabIndex = 16
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 18)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(120, 29)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
-        Me.SlabelJam.Size = New System.Drawing.Size(49, 18)
+        Me.SlabelJam.Size = New System.Drawing.Size(76, 29)
         Me.SlabelJam.Text = "Jam : "
         '
         'pmlSpace
@@ -103,17 +103,17 @@ Partial Class ManajemenStaf
         Me.pmlSpace.Location = New System.Drawing.Point(71, 913)
         Me.pmlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pmlSpace.Name = "pmlSpace"
-        Me.pmlSpace.Size = New System.Drawing.Size(915, 29)
+        Me.pmlSpace.Size = New System.Drawing.Size(1372, 45)
         Me.pmlSpace.TabIndex = 15
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(391, 108)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(586, 169)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(300, 31)
+        Me.Label4.Size = New System.Drawing.Size(450, 48)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "DAFTAR AKUN STAF"
         '
@@ -134,7 +134,7 @@ Partial Class ManajemenStaf
         Me.pnlFormAkun.Location = New System.Drawing.Point(136, 515)
         Me.pnlFormAkun.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormAkun.Name = "pnlFormAkun"
-        Me.pnlFormAkun.Size = New System.Drawing.Size(773, 392)
+        Me.pnlFormAkun.Size = New System.Drawing.Size(1160, 612)
         Me.pnlFormAkun.TabIndex = 6
         '
         'btnClear
@@ -193,10 +193,10 @@ Partial Class ManajemenStaf
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(212, 32)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Location = New System.Drawing.Point(318, 50)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(363, 31)
+        Me.Label12.Size = New System.Drawing.Size(548, 48)
         Me.Label12.TabIndex = 7
         Me.Label12.Text = "MANAJEMEN AKUN STAF"
         '
@@ -204,10 +204,10 @@ Partial Class ManajemenStaf
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(161, 243)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(242, 380)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 18)
+        Me.Label6.Size = New System.Drawing.Size(128, 29)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "Password"
         '
@@ -217,17 +217,17 @@ Partial Class ManajemenStaf
         Me.txtPass.Location = New System.Drawing.Point(281, 240)
         Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(244, 23)
+        Me.txtPass.Size = New System.Drawing.Size(364, 32)
         Me.txtPass.TabIndex = 10
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(161, 179)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(242, 280)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(85, 18)
+        Me.Label3.Size = New System.Drawing.Size(132, 29)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Username"
         '
@@ -237,17 +237,17 @@ Partial Class ManajemenStaf
         Me.txtUsn.Location = New System.Drawing.Point(281, 175)
         Me.txtUsn.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsn.Name = "txtUsn"
-        Me.txtUsn.Size = New System.Drawing.Size(244, 23)
+        Me.txtUsn.Size = New System.Drawing.Size(364, 32)
         Me.txtUsn.TabIndex = 9
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(161, 115)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(242, 180)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(52, 18)
+        Me.Label2.Size = New System.Drawing.Size(81, 29)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Nama"
         '
@@ -257,7 +257,7 @@ Partial Class ManajemenStaf
         Me.txtNama.Location = New System.Drawing.Point(281, 112)
         Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(244, 23)
+        Me.txtNama.Size = New System.Drawing.Size(364, 32)
         Me.txtNama.TabIndex = 8
         '
         'dgvAkunStaf
@@ -294,7 +294,7 @@ Partial Class ManajemenStaf
         Me.dgvAkunStaf.RowHeadersWidth = 82
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.dgvAkunStaf.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvAkunStaf.Size = New System.Drawing.Size(915, 296)
+        Me.dgvAkunStaf.Size = New System.Drawing.Size(1372, 462)
         Me.dgvAkunStaf.TabIndex = 5
         '
         'pnlTop
@@ -303,8 +303,9 @@ Partial Class ManajemenStaf
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1091, 44)
+        Me.pnlTop.Size = New System.Drawing.Size(1634, 69)
         Me.pnlTop.TabIndex = 59
         '
         'pnlControl
@@ -312,9 +313,10 @@ Partial Class ManajemenStaf
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(1019, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(1526, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
+        Me.pnlControl.Size = New System.Drawing.Size(108, 69)
         Me.pnlControl.TabIndex = 49
         '
         'btnMinimize
@@ -322,9 +324,10 @@ Partial Class ManajemenStaf
         Me.btnMinimize.FlatAppearance.BorderSize = 0
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
+        Me.btnMinimize.Location = New System.Drawing.Point(4, 19)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(19, 19)
+        Me.btnMinimize.Size = New System.Drawing.Size(28, 30)
         Me.btnMinimize.TabIndex = 2
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
@@ -333,9 +336,10 @@ Partial Class ManajemenStaf
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(43, 12)
+        Me.btnClose.Location = New System.Drawing.Point(64, 19)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(19, 19)
+        Me.btnClose.Size = New System.Drawing.Size(28, 30)
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
@@ -343,108 +347,109 @@ Partial Class ManajemenStaf
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.SandyBrown
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ProfilTokoToolStripMenuItem, Me.ManajemenStaffToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 44)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 69)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 3, 0, 3)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1091, 28)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 5, 0, 5)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1634, 43)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(63, 22)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(98, 33)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(95, 22)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(151, 33)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenStaffToolStripMenuItem
         '
         Me.ManajemenStaffToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatAkunStaffToolStripMenuItem, Me.TambahAkunStaffToolStripMenuItem, Me.UbahAkunStaffToolStripMenuItem, Me.DeleteAkunStaffToolStripMenuItem})
         Me.ManajemenStaffToolStripMenuItem.Name = "ManajemenStaffToolStripMenuItem"
-        Me.ManajemenStaffToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
+        Me.ManajemenStaffToolStripMenuItem.Size = New System.Drawing.Size(212, 33)
         Me.ManajemenStaffToolStripMenuItem.Text = "Manajemen Staff"
         '
         'LihatAkunStaffToolStripMenuItem
         '
         Me.LihatAkunStaffToolStripMenuItem.Name = "LihatAkunStaffToolStripMenuItem"
-        Me.LihatAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
+        Me.LihatAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(346, 44)
         Me.LihatAkunStaffToolStripMenuItem.Text = "Lihat Akun Staff"
         '
         'TambahAkunStaffToolStripMenuItem
         '
         Me.TambahAkunStaffToolStripMenuItem.Name = "TambahAkunStaffToolStripMenuItem"
-        Me.TambahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
+        Me.TambahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(346, 44)
         Me.TambahAkunStaffToolStripMenuItem.Text = "Tambah Akun Staff"
         '
         'UbahAkunStaffToolStripMenuItem
         '
         Me.UbahAkunStaffToolStripMenuItem.Name = "UbahAkunStaffToolStripMenuItem"
-        Me.UbahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
+        Me.UbahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(346, 44)
         Me.UbahAkunStaffToolStripMenuItem.Text = "Ubah Akun Staff"
         '
         'DeleteAkunStaffToolStripMenuItem
         '
         Me.DeleteAkunStaffToolStripMenuItem.Name = "DeleteAkunStaffToolStripMenuItem"
-        Me.DeleteAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(215, 26)
+        Me.DeleteAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(346, 44)
         Me.DeleteAkunStaffToolStripMenuItem.Text = "Hapus Akun Staff"
         '
         'ManajemenBarangToolStripMenuItem
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatDataProdukToolStripMenuItem, Me.TambahDataProdukToolStripMenuItem, Me.UbahDataProdukToolStripMenuItem, Me.HapusDataProdukToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(242, 33)
         Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatDataProdukToolStripMenuItem
         '
         Me.LihatDataProdukToolStripMenuItem.Name = "LihatDataProdukToolStripMenuItem"
-        Me.LihatDataProdukToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
+        Me.LihatDataProdukToolStripMenuItem.Size = New System.Drawing.Size(372, 44)
         Me.LihatDataProdukToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahDataProdukToolStripMenuItem
         '
         Me.TambahDataProdukToolStripMenuItem.Name = "TambahDataProdukToolStripMenuItem"
-        Me.TambahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
+        Me.TambahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(372, 44)
         Me.TambahDataProdukToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahDataProdukToolStripMenuItem
         '
         Me.UbahDataProdukToolStripMenuItem.Name = "UbahDataProdukToolStripMenuItem"
-        Me.UbahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
+        Me.UbahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(372, 44)
         Me.UbahDataProdukToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusDataProdukToolStripMenuItem
         '
         Me.HapusDataProdukToolStripMenuItem.Name = "HapusDataProdukToolStripMenuItem"
-        Me.HapusDataProdukToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
+        Me.HapusDataProdukToolStripMenuItem.Size = New System.Drawing.Size(372, 44)
         Me.HapusDataProdukToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'PesananToolStripMenuItem
         '
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
-        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(80, 22)
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(127, 33)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(72, 33)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ManajemenStaf
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
-        Me.ClientSize = New System.Drawing.Size(1112, 554)
+        Me.ClientSize = New System.Drawing.Size(1668, 866)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pmlSpace)
