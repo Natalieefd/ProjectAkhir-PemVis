@@ -149,7 +149,7 @@
         txtAlamat.Clear()
     End Sub
 
-    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs)
         Reload(sender)
     End Sub
 

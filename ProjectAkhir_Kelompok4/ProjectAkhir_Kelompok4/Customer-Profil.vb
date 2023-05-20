@@ -50,12 +50,6 @@ Public Class formProfil
         Call checkPass()
     End Sub
 
-    Private Sub btnBatal_Click(sender As Object, e As EventArgs)
-        pnlProfil.Show()
-        pnlPass.Hide()
-        pnlFormUbah.Hide()
-    End Sub
-
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
         formCustomer.Show()
@@ -209,5 +203,11 @@ Public Class formProfil
 
     Private Sub txtUbahNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUbahNoTelp.KeyPress
         e.Handled = Numbering(e)
+    End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        pnlProfil.Show()
+        pnlPass.Hide()
+        pnlFormUbah.Hide()
     End Sub
 End Class

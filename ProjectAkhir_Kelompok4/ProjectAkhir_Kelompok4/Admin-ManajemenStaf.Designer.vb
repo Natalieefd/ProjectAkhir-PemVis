@@ -34,6 +34,10 @@ Partial Class ManajemenStaf
         Me.pmlSpace = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.pnlFormAkun = New System.Windows.Forms.Panel()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnUbah = New System.Windows.Forms.Button()
+        Me.btnHapus = New System.Windows.Forms.Button()
+        Me.btnTambah = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtPass = New System.Windows.Forms.TextBox()
@@ -61,10 +65,6 @@ Partial Class ManajemenStaf
         Me.HapusDataProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnClear = New System.Windows.Forms.Button()
-        Me.btnUbah = New System.Windows.Forms.Button()
-        Me.btnHapus = New System.Windows.Forms.Button()
-        Me.btnTambah = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlFormAkun.SuspendLayout()
         CType(Me.dgvAkunStaf, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,7 +101,7 @@ Partial Class ManajemenStaf
         'pmlSpace
         '
         Me.pmlSpace.Location = New System.Drawing.Point(71, 913)
-        Me.pmlSpace.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pmlSpace.Margin = New System.Windows.Forms.Padding(4)
         Me.pmlSpace.Name = "pmlSpace"
         Me.pmlSpace.Size = New System.Drawing.Size(915, 29)
         Me.pmlSpace.TabIndex = 15
@@ -132,10 +132,62 @@ Partial Class ManajemenStaf
         Me.pnlFormAkun.Controls.Add(Me.Label2)
         Me.pnlFormAkun.Controls.Add(Me.txtNama)
         Me.pnlFormAkun.Location = New System.Drawing.Point(136, 515)
-        Me.pnlFormAkun.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlFormAkun.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormAkun.Name = "pnlFormAkun"
         Me.pnlFormAkun.Size = New System.Drawing.Size(773, 392)
         Me.pnlFormAkun.TabIndex = 6
+        '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
+        Me.btnClear.Location = New System.Drawing.Point(565, 300)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(100, 79)
+        Me.btnClear.TabIndex = 22
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnUbah
+        '
+        Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
+        Me.btnUbah.Location = New System.Drawing.Point(262, 300)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUbah.Name = "btnUbah"
+        Me.btnUbah.Size = New System.Drawing.Size(100, 79)
+        Me.btnUbah.TabIndex = 21
+        Me.btnUbah.Text = "Ubah"
+        Me.btnUbah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnUbah.UseVisualStyleBackColor = True
+        '
+        'btnHapus
+        '
+        Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHapus.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_remove_50
+        Me.btnHapus.Location = New System.Drawing.Point(414, 300)
+        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnHapus.Name = "btnHapus"
+        Me.btnHapus.Size = New System.Drawing.Size(100, 79)
+        Me.btnHapus.TabIndex = 20
+        Me.btnHapus.Text = "Hapus"
+        Me.btnHapus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnHapus.UseVisualStyleBackColor = True
+        '
+        'btnTambah
+        '
+        Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTambah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_add_new_50
+        Me.btnTambah.Location = New System.Drawing.Point(107, 300)
+        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnTambah.Name = "btnTambah"
+        Me.btnTambah.Size = New System.Drawing.Size(100, 79)
+        Me.btnTambah.TabIndex = 19
+        Me.btnTambah.Text = "Tambah"
+        Me.btnTambah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnTambah.UseVisualStyleBackColor = True
         '
         'Label12
         '
@@ -163,7 +215,7 @@ Partial Class ManajemenStaf
         '
         Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPass.Location = New System.Drawing.Point(281, 240)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(244, 23)
         Me.txtPass.TabIndex = 10
@@ -183,7 +235,7 @@ Partial Class ManajemenStaf
         '
         Me.txtUsn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsn.Location = New System.Drawing.Point(281, 175)
-        Me.txtUsn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUsn.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsn.Name = "txtUsn"
         Me.txtUsn.Size = New System.Drawing.Size(244, 23)
         Me.txtUsn.TabIndex = 9
@@ -203,7 +255,7 @@ Partial Class ManajemenStaf
         '
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(281, 112)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(244, 23)
         Me.txtNama.TabIndex = 8
@@ -229,7 +281,7 @@ Partial Class ManajemenStaf
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvAkunStaf.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvAkunStaf.Location = New System.Drawing.Point(73, 181)
-        Me.dgvAkunStaf.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvAkunStaf.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvAkunStaf.Name = "dgvAkunStaf"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -386,58 +438,6 @@ Partial Class ManajemenStaf
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'btnClear
-        '
-        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
-        Me.btnClear.Location = New System.Drawing.Point(565, 300)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(100, 79)
-        Me.btnClear.TabIndex = 22
-        Me.btnClear.Text = "Clear"
-        Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnClear.UseVisualStyleBackColor = True
-        '
-        'btnUbah
-        '
-        Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
-        Me.btnUbah.Location = New System.Drawing.Point(262, 300)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnUbah.Name = "btnUbah"
-        Me.btnUbah.Size = New System.Drawing.Size(100, 79)
-        Me.btnUbah.TabIndex = 21
-        Me.btnUbah.Text = "Ubah"
-        Me.btnUbah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnUbah.UseVisualStyleBackColor = True
-        '
-        'btnHapus
-        '
-        Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHapus.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_remove_50
-        Me.btnHapus.Location = New System.Drawing.Point(414, 300)
-        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnHapus.Name = "btnHapus"
-        Me.btnHapus.Size = New System.Drawing.Size(100, 79)
-        Me.btnHapus.TabIndex = 20
-        Me.btnHapus.Text = "Hapus"
-        Me.btnHapus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnHapus.UseVisualStyleBackColor = True
-        '
-        'btnTambah
-        '
-        Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTambah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_add_new_50
-        Me.btnTambah.Location = New System.Drawing.Point(107, 300)
-        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnTambah.Name = "btnTambah"
-        Me.btnTambah.Size = New System.Drawing.Size(100, 79)
-        Me.btnTambah.TabIndex = 19
-        Me.btnTambah.Text = "Tambah"
-        Me.btnTambah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnTambah.UseVisualStyleBackColor = True
-        '
         'ManajemenStaf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -453,7 +453,7 @@ Partial Class ManajemenStaf
         Me.Controls.Add(Me.dgvAkunStaf)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ManajemenStaf"
