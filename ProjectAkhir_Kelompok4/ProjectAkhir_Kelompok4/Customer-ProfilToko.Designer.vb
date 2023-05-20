@@ -233,37 +233,37 @@ Partial Class formProfilTokoC
         '
         Me.txtAlamat.Enabled = False
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAlamat.Location = New System.Drawing.Point(171, 188)
+        Me.txtAlamat.Location = New System.Drawing.Point(149, 188)
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(181, 65)
+        Me.txtAlamat.Size = New System.Drawing.Size(230, 65)
         Me.txtAlamat.TabIndex = 2
         '
         'txtNoTelp
         '
         Me.txtNoTelp.Enabled = False
         Me.txtNoTelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNoTelp.Location = New System.Drawing.Point(171, 149)
+        Me.txtNoTelp.Location = New System.Drawing.Point(149, 149)
         Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(181, 22)
+        Me.txtNoTelp.Size = New System.Drawing.Size(230, 22)
         Me.txtNoTelp.TabIndex = 2
         '
         'txtEmail
         '
         Me.txtEmail.Enabled = False
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(171, 112)
+        Me.txtEmail.Location = New System.Drawing.Point(149, 112)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(181, 22)
+        Me.txtEmail.Size = New System.Drawing.Size(230, 22)
         Me.txtEmail.TabIndex = 2
         '
         'txtNama
         '
         Me.txtNama.Enabled = False
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNama.Location = New System.Drawing.Point(171, 73)
+        Me.txtNama.Location = New System.Drawing.Point(149, 73)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(181, 22)
+        Me.txtNama.Size = New System.Drawing.Size(230, 22)
         Me.txtNama.TabIndex = 2
         '
         'Label14

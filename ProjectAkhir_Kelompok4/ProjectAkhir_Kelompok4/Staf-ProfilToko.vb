@@ -1,66 +1,94 @@
 ﻿Public Class formProfilTokoS
 
-    '-- INI DIBACA, KLO DAH DIKERJAIN APUS LISTNYA --
-
-    '   (yg blom)
-    '-------------------------------------------------
-    '-- 
-    '-- SISANYA BISA CEK" LAGI MASING" KLI AJA AKU ADA YG KETINGGALAN NGE-CEK 🙏
-
     Private Sub formProfilTokoS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         koneksi()
 
-        'dbq("") 'query buat ambil data sebiji data tbadmin
-        'txtNama.Text = RD(2)
-        'txtNoTelp.Text = RD(3)
-        'txtEmail.Text = RD(4)
-        'txtAlamat.Text = RD(5)
-        'RD.Close()
+        dbq("Select nama_toko, no_telp, email, alamat from tbAdmin")
+
+        txtNama.Text = RD(0)
+        txtNoTelp.Text = RD(1)
+        txtEmail.Text = RD(2)
+        txtAlamat.Text = RD(3)
+        RD.Close()
     End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
+
+    '>-- Home
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         formStaff.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub formProfilTokoS_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem.Owner)
-    End Sub
+    '>-- Profil Toko
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
-        Me.Show()
+        formProfilTokoS_Load(sender, e)
     End Sub
 
-    Private Sub LihatBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatBarangToolStripMenuItem.Click
-        ManajemenProdukStaf.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub TambahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahBarangToolStripMenuItem.Click
-        ManajemenProdukStaf.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub UbahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahBarangToolStripMenuItem.Click
-        ManajemenProdukStaf.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub HapusBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusBarangToolStripMenuItem.Click
-        ManajemenProdukStaf.Show()
-        Me.Hide()
-    End Sub
+    '>-- Pesanan
 
     Private Sub ManajemenPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManajemenPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         DaftarPesananStaf.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
+    '>-- Exit
+
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
-        Me.ActiveControl = sender.Owner
+        Me.ActiveControl = MenuStrip1
         Home.Show()
         Me.Close()
     End Sub
+
+
+    ' >-- Manajemen Produk
+
+    Private Sub LihatBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatBarangToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub TambahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahBarangToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub UbahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahBarangToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub HapusBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusBarangToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub formStaff_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        CloseForm(sender, ExitToolStripMenuItem.Owner)
+    End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
+
 End Class
