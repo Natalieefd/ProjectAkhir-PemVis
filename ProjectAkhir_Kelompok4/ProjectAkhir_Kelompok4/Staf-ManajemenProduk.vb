@@ -9,7 +9,14 @@
 
         ShowForm(False)
 
-        dbdsq("") 'query lihat semua produk
+        dbdsq("Select id_produk AS 'ID PRODUK', nama_produk AS 'NAMA PRODUK',
+               kategori AS 'KATEGORI', deskripsi_produk AS 'DESKRIPSI_PRODUK',
+               stok AS 'STOK', harga AS 'HARGA' from tbproduk Where id_produk > 0  ")
+
+        dgvDaftarProduk.DataSource = DS.Tables("tb")
+        dgvDaftarProduk.Refresh()
+        'AturGrid(dgvDaftarProduk, {0, 340, 150, 0, 80, 120})
+
 
         Select Case Mode
             Case "Tambah"
@@ -92,7 +99,8 @@
             Exit Sub
         End If
 
-        dbq("") 'query cek produk dengan nama itu udh ada atau ngga
+        dbq("SELECT * FROM `tbproduk` WHERE nama_produk = '" & txtNama.Text & "'")
+        'query cek produk dengan nama itu udh ada atau ngga
 
         If RD.HasRows Then
             If MsgBox("Produk Tersebut sudah ada, ubah stok saja?",
@@ -100,7 +108,8 @@
                 Dim DupeID = RD(0)
                 RD.Close()
 
-                dbq("") 'query ubah stok Barang dengan ID DupeID
+                dbq("Update tbproduk set stok = '" & txtStok.Text & "' WHERE Id_produk = '" & idp & "'")
+                'query ubah stok Barang dengan ID DupeID
                 RD.Close()
                 MsgBox("Stok Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
             Else
@@ -108,7 +117,9 @@
                 Exit Sub
             End If
         Else
-            dbq("") 'query tambah produk
+            dbq("Insert Into tbproduk (nama_produk, kategori, deskripsi_produk, stok, harga)
+                values('" & txtNama.Text & "','" & cmbKategori.Text & "','" & txtDecs.Text & "',
+                '" & txtStok.Text & "','" & txtHarga.Text & "'")
             RD.Close()
             MsgBox("Produk Berhasil Ditambahkan!", MsgBoxStyle.Information, "Perhatian")
         End If
