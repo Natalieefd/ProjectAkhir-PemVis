@@ -78,7 +78,7 @@ Partial Class formLogin
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(38, 112)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 17)
+        Me.Label3.Size = New System.Drawing.Size(61, 15)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Password"
         '
@@ -87,15 +87,15 @@ Partial Class formLogin
         Me.txtPassword.Location = New System.Drawing.Point(122, 109)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(192, 23)
-        Me.txtPassword.TabIndex = 4
+        Me.txtPassword.Size = New System.Drawing.Size(192, 21)
+        Me.txtPassword.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(38, 54)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 17)
+        Me.Label2.Size = New System.Drawing.Size(65, 15)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Username"
         '
@@ -105,7 +105,7 @@ Partial Class formLogin
         Me.btnSubmit.Location = New System.Drawing.Point(25, 172)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(310, 29)
-        Me.btnSubmit.TabIndex = 0
+        Me.btnSubmit.TabIndex = 3
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
@@ -113,7 +113,7 @@ Partial Class formLogin
         '
         Me.txtUsername.Location = New System.Drawing.Point(122, 51)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(192, 23)
+        Me.txtUsername.Size = New System.Drawing.Size(192, 21)
         Me.txtUsername.TabIndex = 1
         '
         'StatusStrip1
@@ -131,14 +131,14 @@ Partial Class formLogin
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'Panel1
@@ -160,7 +160,7 @@ Partial Class formLogin
         Me.Label1.Location = New System.Drawing.Point(48, 166)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(169, 55)
+        Me.Label1.Size = New System.Drawing.Size(145, 48)
         Me.Label1.TabIndex = 51
         Me.Label1.Text = "LOGIN"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -196,7 +196,7 @@ Partial Class formLogin
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.TabIndex = 5
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
         'btnClose

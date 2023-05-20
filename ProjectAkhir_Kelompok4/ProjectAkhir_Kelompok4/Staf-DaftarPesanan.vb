@@ -99,6 +99,10 @@
         CloseForm(sender, ExitToolStripMenuItem.Owner)
     End Sub
 
+    Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
+        laporanPesananStaf.Show()
+    End Sub
+
     '-------------------------------------------------------------------------------------------------------'
     '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
     '-------------------------------------------------------------------------------------------------------'

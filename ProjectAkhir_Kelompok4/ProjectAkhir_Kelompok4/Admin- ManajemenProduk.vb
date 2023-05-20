@@ -15,7 +15,6 @@
 
         Me.Size = New Point(Me.Size.Width, 430)
         dgvProduk.Show()
-        Label4.Location = New Point(278, 100)
         dgvProduk.Location = New Point(52, 165)
         pnlFormProduk.Hide()
 
@@ -39,8 +38,8 @@
                 txtStok.Enabled = True
                 txtHarga.Enabled = True
                 txtDesc.Enabled = True
-                btnTambah.Location = New Point(220, 248)
-                btnClear.Location = New Point(350, 248)
+                btnTambah.Location = New Point(250, 248)
+                btnClear.Location = New Point(380, 248)
 
             Case "Ubah"
                 ShowForm(True)
@@ -53,8 +52,8 @@
                 txtStok.Enabled = True
                 txtHarga.Enabled = True
                 txtDesc.Enabled = True
-                btnUbah.Location = New Point(220, 248)
-                btnClear.Location = New Point(350, 248)
+                btnUbah.Location = New Point(250, 248)
+                btnClear.Location = New Point(380, 248)
 
             Case "Hapus"
                 ShowForm(True)
@@ -67,7 +66,7 @@
                 txtStok.Enabled = False
                 txtHarga.Enabled = False
                 txtDesc.Enabled = False
-                btnHapus.Location = New Point(220, 248)
+                btnHapus.Location = New Point(320, 248)
 
             Case Else
                 btnTambah.Hide()
@@ -84,7 +83,9 @@
     End Sub
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
-        ManajemenProdukAdmin_Load(sender, e)
+        Me.ActiveControl = MenuStrip1
+        formAdmin.Show()
+        Me.Close()
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
@@ -94,28 +95,28 @@
     End Sub
 
     Private Sub LihatAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatAkunStaffToolStripMenuItem.Click
-        Mode = ""
+        ManajemenStaf.Mode = ""
         Me.ActiveControl = MenuStrip1
         ManajemenStaf.Show()
         Me.Close()
     End Sub
 
     Private Sub TambahAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahAkunStaffToolStripMenuItem.Click
-        Mode = "Tambah"
+        ManajemenStaf.Mode = "Tambah"
         Me.ActiveControl = MenuStrip1
         ManajemenStaf.Show()
         Me.Close()
     End Sub
 
     Private Sub UbahAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahAkunStaffToolStripMenuItem.Click
-        Mode = "Ubah"
+        ManajemenStaf.Mode = "Ubah"
         Me.ActiveControl = MenuStrip1
         ManajemenStaf.Show()
         Me.Close()
     End Sub
 
     Private Sub DeleteAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteAkunStaffToolStripMenuItem.Click
-        Mode = "Hapus"
+        ManajemenStaf.Mode = "Hapus"
         Me.ActiveControl = MenuStrip1
         ManajemenStaf.Show()
         Me.Close()

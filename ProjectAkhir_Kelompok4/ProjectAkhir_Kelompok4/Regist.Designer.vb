@@ -86,8 +86,8 @@ Partial Class formRegist
         Me.WarnUsn.ForeColor = System.Drawing.SystemColors.Control
         Me.WarnUsn.Location = New System.Drawing.Point(305, 85)
         Me.WarnUsn.Name = "WarnUsn"
-        Me.WarnUsn.Size = New System.Drawing.Size(37, 19)
-        Me.WarnUsn.TabIndex = 18
+        Me.WarnUsn.Size = New System.Drawing.Size(32, 17)
+        Me.WarnUsn.TabIndex = 8
         Me.WarnUsn.Text = "< ! >"
         Me.WarnUsn.Visible = False
         '
@@ -97,8 +97,8 @@ Partial Class formRegist
         Me.txtAlamat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAlamat.MaxLength = 50
         Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(173, 23)
-        Me.txtAlamat.TabIndex = 17
+        Me.txtAlamat.Size = New System.Drawing.Size(173, 21)
+        Me.txtAlamat.TabIndex = 5
         '
         'txtNoTelp
         '
@@ -106,8 +106,8 @@ Partial Class formRegist
         Me.txtNoTelp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoTelp.MaxLength = 15
         Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(173, 23)
-        Me.txtNoTelp.TabIndex = 16
+        Me.txtNoTelp.Size = New System.Drawing.Size(173, 21)
+        Me.txtNoTelp.TabIndex = 4
         '
         'txtPassword
         '
@@ -115,8 +115,8 @@ Partial Class formRegist
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPassword.MaxLength = 50
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(173, 23)
-        Me.txtPassword.TabIndex = 15
+        Me.txtPassword.Size = New System.Drawing.Size(173, 21)
+        Me.txtPassword.TabIndex = 3
         '
         'txtUsername
         '
@@ -124,8 +124,8 @@ Partial Class formRegist
         Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.MaxLength = 50
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(173, 23)
-        Me.txtUsername.TabIndex = 14
+        Me.txtUsername.Size = New System.Drawing.Size(173, 21)
+        Me.txtUsername.TabIndex = 2
         '
         'txtNama
         '
@@ -133,8 +133,8 @@ Partial Class formRegist
         Me.txtNama.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(173, 23)
-        Me.txtNama.TabIndex = 13
+        Me.txtNama.Size = New System.Drawing.Size(173, 21)
+        Me.txtNama.TabIndex = 1
         '
         'WarnNo
         '
@@ -144,8 +144,8 @@ Partial Class formRegist
         Me.WarnNo.ForeColor = System.Drawing.SystemColors.Control
         Me.WarnNo.Location = New System.Drawing.Point(305, 178)
         Me.WarnNo.Name = "WarnNo"
-        Me.WarnNo.Size = New System.Drawing.Size(37, 19)
-        Me.WarnNo.TabIndex = 12
+        Me.WarnNo.Size = New System.Drawing.Size(32, 17)
+        Me.WarnNo.TabIndex = 9
         Me.WarnNo.Text = "< ! >"
         Me.WarnNo.Visible = False
         '
@@ -154,7 +154,7 @@ Partial Class formRegist
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(42, 223)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(51, 17)
+        Me.Label6.Size = New System.Drawing.Size(45, 15)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Alamat"
         '
@@ -163,7 +163,7 @@ Partial Class formRegist
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(42, 178)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 17)
+        Me.Label5.Size = New System.Drawing.Size(50, 15)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "No Telp"
         '
@@ -172,7 +172,7 @@ Partial Class formRegist
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(42, 37)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(45, 17)
+        Me.Label4.Size = New System.Drawing.Size(41, 15)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Nama"
         '
@@ -181,7 +181,7 @@ Partial Class formRegist
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(42, 132)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 17)
+        Me.Label3.Size = New System.Drawing.Size(61, 15)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Password"
         '
@@ -190,7 +190,7 @@ Partial Class formRegist
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(42, 85)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 17)
+        Me.Label2.Size = New System.Drawing.Size(65, 15)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Username"
         '
@@ -200,7 +200,7 @@ Partial Class formRegist
         Me.btnSubmit.Location = New System.Drawing.Point(23, 273)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(310, 29)
-        Me.btnSubmit.TabIndex = 0
+        Me.btnSubmit.TabIndex = 6
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
@@ -211,7 +211,7 @@ Partial Class formRegist
         Me.btnBack.Location = New System.Drawing.Point(716, 398)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(75, 29)
-        Me.btnBack.TabIndex = 6
+        Me.btnBack.TabIndex = 7
         Me.btnBack.Text = "Back"
         Me.btnBack.UseVisualStyleBackColor = False
         '
@@ -223,7 +223,7 @@ Partial Class formRegist
         Me.pnlTop.Location = New System.Drawing.Point(243, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(565, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(548, 36)
         Me.pnlTop.TabIndex = 56
         '
         'pnlControl
@@ -231,7 +231,7 @@ Partial Class formRegist
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(511, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(494, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -246,7 +246,7 @@ Partial Class formRegist
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.TabIndex = 10
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
         'btnClose
@@ -269,7 +269,7 @@ Partial Class formRegist
         Me.Label7.Location = New System.Drawing.Point(-3, 183)
         Me.Label7.Name = "Label7"
         Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label7.Size = New System.Drawing.Size(256, 55)
+        Me.Label7.Size = New System.Drawing.Size(220, 48)
         Me.Label7.TabIndex = 51
         Me.Label7.Text = "REGISTER"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -282,20 +282,20 @@ Partial Class formRegist
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(243, 426)
+        Me.Panel1.Size = New System.Drawing.Size(243, 427)
         Me.Panel1.TabIndex = 55
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'StatusStrip1
@@ -304,9 +304,9 @@ Partial Class formRegist
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 426)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 427)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(808, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(791, 22)
         Me.StatusStrip1.TabIndex = 54
         Me.StatusStrip1.Text = "StatusStrip1"
         '

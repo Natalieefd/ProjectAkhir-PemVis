@@ -48,6 +48,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="mysql.data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Downloads\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
@@ -56,6 +60,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -112,6 +118,18 @@
       <DependentUpon>Customer-ManajemenPesanan.vb</DependentUpon>
     </Compile>
     <Compile Include="Customer-ManajemenPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin-LaporanPesanan.Designer.vb">
+      <DependentUpon>Admin-LaporanPesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin-LaporanPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staf-LaporanPesanan.Designer.vb">
+      <DependentUpon>Staf-LaporanPesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staf-LaporanPesanan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Staf-ProfilToko.Designer.vb">
@@ -217,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer-ManajemenPesanan.resx">
       <DependentUpon>Customer-ManajemenPesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin-LaporanPesanan.resx">
+      <DependentUpon>Admin-LaporanPesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staf-LaporanPesanan.resx">
+      <DependentUpon>Staf-LaporanPesanan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staf-ProfilToko.resx">
       <DependentUpon>Staf-ProfilToko.vb</DependentUpon>
