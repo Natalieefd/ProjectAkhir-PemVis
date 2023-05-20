@@ -30,6 +30,9 @@ Partial Class formAdmin
         Me.SlabelJam = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.pnlTop = New System.Windows.Forms.Panel()
+        Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenStaffToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,13 +47,10 @@ Partial Class formAdmin
         Me.HapusDataBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.pnlControl = New System.Windows.Forms.Panel()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlTop.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         Me.pnlControl.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -81,7 +81,7 @@ Partial Class formAdmin
         '
         'StatusStrip1
         '
-        Me.StatusStrip1.BackColor = System.Drawing.Color.Cornsilk
+        Me.StatusStrip1.BackColor = System.Drawing.Color.SandyBrown
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
@@ -118,16 +118,51 @@ Partial Class formAdmin
         Me.pnlTop.Size = New System.Drawing.Size(1019, 44)
         Me.pnlTop.TabIndex = 50
         '
+        'pnlControl
+        '
+        Me.pnlControl.Controls.Add(Me.btnMinimize)
+        Me.pnlControl.Controls.Add(Me.btnClose)
+        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.pnlControl.Location = New System.Drawing.Point(947, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pnlControl.Name = "pnlControl"
+        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
+        Me.pnlControl.TabIndex = 49
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(43, 12)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(19, 18)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
+        '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.Cornsilk
+        Me.MenuStrip1.BackColor = System.Drawing.Color.SandyBrown
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProfilTokoToolStripMenuItem, Me.ManajemenStaffToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 44)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1019, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1019, 26)
         Me.MenuStrip1.TabIndex = 51
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -211,46 +246,11 @@ Partial Class formAdmin
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'pnlControl
-        '
-        Me.pnlControl.Controls.Add(Me.btnMinimize)
-        Me.pnlControl.Controls.Add(Me.btnClose)
-        Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(947, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(72, 44)
-        Me.pnlControl.TabIndex = 49
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(3, 12)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(19, 18)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(43, 12)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(19, 18)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
         'formAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(1019, 510)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
@@ -258,7 +258,7 @@ Partial Class formAdmin
         Me.Controls.Add(Me.lblUsn)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "formAdmin"
@@ -267,9 +267,9 @@ Partial Class formAdmin
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.pnlTop.ResumeLayout(False)
+        Me.pnlControl.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.pnlControl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
