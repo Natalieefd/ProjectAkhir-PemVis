@@ -142,17 +142,20 @@
             Exit Sub
         End If
 
-        If CheckNum(txtHarga) Or txtHarga.Text = Nothing Then
+        If Not CheckNum(txtHarga) Or txtHarga.Text = Nothing Then
             txtHarga.Focus()
             Exit Sub
         End If
 
-        If CheckNum(txtStok) Then
+        If Not CheckNum(txtStok) Then
             txtStok.Focus()
             Exit Sub
         End If
 
-        dbq("") 'query edit produk dengan id idp
+        dbq("Update tbproduk set nama_produk = '" & txtNama.Text & "', 
+            kategori =  '" & cmbKategori.Text & "', deskripsi_produk =  '" & txtDecs.Text & "',
+            stok =  '" & txtStok.Text & "',  harga =  '" & txtHarga.Text & "'
+            Where id_produk =  '" & idp & "'") 'query edit produk dengan id idp
         RD.Close()
 
         MsgBox("Data Produk Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
@@ -168,7 +171,8 @@
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        dbq("") 'query cari idproduk ini di tbpesanan dengan status 'Belum Dikirim'
+        dbq("Select * from tbpesanan where id_produk = '" & idp & "' AND status = 'Belum Dikirim'")
+        'query cari idproduk ini di tbpesanan dengan status 'Belum Dikirim'
 
         If RD.HasRows Then
             MsgBox("Terdapat pesanan belum dikirim dengan produk ini!
@@ -179,7 +183,8 @@
         End If
         RD.Close()
 
-        dbq("") 'Hapus Produk ini
+        dbq("Delete From tbproduk Where id_produk = '" & idp & "'") 'Hapus Produk ini
+        RD.Close()
         MsgBox("Data Produk Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
         HapusBarangToolStripMenuItem_Click(sender, Nothing)
     End Sub
