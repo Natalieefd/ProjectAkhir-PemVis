@@ -52,24 +52,28 @@
 
     Private Sub LihatBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatProdukToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Mode = ""
         ManajemenProdukStaf.Show()
         Me.Close()
     End Sub
 
     Private Sub TambahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahProdukToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Mode = "Tambah"
         ManajemenProdukStaf.Show()
         Me.Close()
     End Sub
 
     Private Sub UbahBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahProdukToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Mode = "Ubah"
         ManajemenProdukStaf.Show()
         Me.Close()
     End Sub
 
     Private Sub HapusBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusProdukToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
+        ManajemenProdukStaf.Mode = "Hapus"
         ManajemenProdukStaf.Show()
         Me.Close()
     End Sub
