@@ -20,14 +20,18 @@ Module Utility
                     Return control
                 End If
 
-            ElseIf control.GetType Is GetType(GroupBox) Then
-                For Each control2 In control.Controls
-                    If control2.Text = Nothing Then
-                        Return control2
-                    End If
-                Next
-            End If
+            ElseIf control.GetType Is GetType(ComboBox) Then
+                If control.Text = Nothing Then
+                    Return control
+                End If
 
+            ElseIf control.GetType Is GetType(GroupBox) Then
+                Dim control2 = EmptyTB(control)
+                If control2 IsNot Nothing Then
+                    Return control2
+                End If
+
+            End If
         Next
 
         Return Nothing

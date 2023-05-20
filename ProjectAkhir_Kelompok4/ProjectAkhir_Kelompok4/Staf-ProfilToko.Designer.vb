@@ -27,10 +27,10 @@ Partial Class formProfilTokoS
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LihatBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TambahBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HapusBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LihatProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TambahProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UbahProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HapusProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManajemenPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlTop = New System.Windows.Forms.Panel()
@@ -67,63 +67,63 @@ Partial Class formProfilTokoS
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(3, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 26)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 22)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 22)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenBarangToolStripMenuItem
         '
-        Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatBarangToolStripMenuItem, Me.TambahBarangToolStripMenuItem, Me.UbahBarangToolStripMenuItem, Me.HapusBarangToolStripMenuItem})
+        Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProdukToolStripMenuItem, Me.TambahProdukToolStripMenuItem, Me.UbahProdukToolStripMenuItem, Me.HapusProdukToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(144, 21)
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
-        'LihatBarangToolStripMenuItem
+        'LihatProdukToolStripMenuItem
         '
-        Me.LihatBarangToolStripMenuItem.Name = "LihatBarangToolStripMenuItem"
-        Me.LihatBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.LihatBarangToolStripMenuItem.Text = "Lihat Data Produk"
+        Me.LihatProdukToolStripMenuItem.Name = "LihatProdukToolStripMenuItem"
+        Me.LihatProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.LihatProdukToolStripMenuItem.Text = "Lihat Data Produk"
         '
-        'TambahBarangToolStripMenuItem
+        'TambahProdukToolStripMenuItem
         '
-        Me.TambahBarangToolStripMenuItem.Name = "TambahBarangToolStripMenuItem"
-        Me.TambahBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.TambahBarangToolStripMenuItem.Text = "Tambah Data Produk"
+        Me.TambahProdukToolStripMenuItem.Name = "TambahProdukToolStripMenuItem"
+        Me.TambahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.TambahProdukToolStripMenuItem.Text = "Tambah Data Produk"
         '
-        'UbahBarangToolStripMenuItem
+        'UbahProdukToolStripMenuItem
         '
-        Me.UbahBarangToolStripMenuItem.Name = "UbahBarangToolStripMenuItem"
-        Me.UbahBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.UbahBarangToolStripMenuItem.Text = "Ubah Data Produk"
+        Me.UbahProdukToolStripMenuItem.Name = "UbahProdukToolStripMenuItem"
+        Me.UbahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.UbahProdukToolStripMenuItem.Text = "Ubah Data Produk"
         '
-        'HapusBarangToolStripMenuItem
+        'HapusProdukToolStripMenuItem
         '
-        Me.HapusBarangToolStripMenuItem.Name = "HapusBarangToolStripMenuItem"
-        Me.HapusBarangToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.HapusBarangToolStripMenuItem.Text = "Hapus Data Produk"
+        Me.HapusProdukToolStripMenuItem.Name = "HapusProdukToolStripMenuItem"
+        Me.HapusProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.HapusProdukToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'ManajemenPesananToolStripMenuItem
         '
         Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
+        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(78, 22)
         Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'pnlTop
@@ -334,10 +334,10 @@ Partial Class formProfilTokoS
     Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProfilTokoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TambahBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UbahBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HapusBarangToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LihatProdukToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TambahProdukToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UbahProdukToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HapusProdukToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ManajemenPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents pnlTop As Panel
