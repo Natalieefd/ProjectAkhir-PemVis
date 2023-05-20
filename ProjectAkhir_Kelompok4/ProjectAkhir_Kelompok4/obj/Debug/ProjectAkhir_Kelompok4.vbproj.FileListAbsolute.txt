@@ -136,3 +136,4 @@ C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhi
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.exe
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.xml
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.pdb
+D:\Dokumen\Doc Kuliah\PRATIKUM\SEMESTER 4\PBO\REPOSITORY\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.ManajemenStaf.resources
