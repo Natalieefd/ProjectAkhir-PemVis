@@ -44,6 +44,7 @@ Partial Class formProfil
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtUbahNama = New System.Windows.Forms.TextBox()
         Me.pnlProfil = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtAlamat = New System.Windows.Forms.TextBox()
         Me.txtNoTelp = New System.Windows.Forms.TextBox()
         Me.txtPass = New System.Windows.Forms.TextBox()
@@ -73,12 +74,13 @@ Partial Class formProfil
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.txtKonfirmPass = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.btnSubmit = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.pnlPass = New System.Windows.Forms.Panel()
+        Me.btnSubmit = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         Me.pnlFormUbah.SuspendLayout()
         Me.pnlProfil.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -94,7 +96,7 @@ Partial Class formProfil
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 1258)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1141, 24)
+        Me.StatusStrip1.Size = New System.Drawing.Size(1183, 24)
         Me.StatusStrip1.TabIndex = 9
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -140,13 +142,12 @@ Partial Class formProfil
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnCancel.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
-        Me.btnCancel.Location = New System.Drawing.Point(832, 19)
+        Me.btnCancel.Location = New System.Drawing.Point(853, 19)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(53, 53)
+        Me.btnCancel.Size = New System.Drawing.Size(46, 38)
         Me.btnCancel.TabIndex = 18
         Me.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.btnCancel.UseVisualStyleBackColor = True
         '
         'Label1
@@ -305,6 +306,7 @@ Partial Class formProfil
         'pnlProfil
         '
         Me.pnlProfil.BackColor = System.Drawing.Color.CadetBlue
+        Me.pnlProfil.Controls.Add(Me.PictureBox1)
         Me.pnlProfil.Controls.Add(Me.txtAlamat)
         Me.pnlProfil.Controls.Add(Me.txtNoTelp)
         Me.pnlProfil.Controls.Add(Me.txtPass)
@@ -319,14 +321,25 @@ Partial Class formProfil
         Me.pnlProfil.Location = New System.Drawing.Point(228, 97)
         Me.pnlProfil.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlProfil.Name = "pnlProfil"
-        Me.pnlProfil.Size = New System.Drawing.Size(556, 362)
+        Me.pnlProfil.Size = New System.Drawing.Size(556, 438)
         Me.pnlProfil.TabIndex = 1
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.PictureBox1.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_customer_100
+        Me.PictureBox1.Location = New System.Drawing.Point(237, 61)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(96, 87)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 51
+        Me.PictureBox1.TabStop = False
         '
         'txtAlamat
         '
         Me.txtAlamat.Enabled = False
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAlamat.Location = New System.Drawing.Point(228, 256)
+        Me.txtAlamat.Location = New System.Drawing.Point(237, 346)
         Me.txtAlamat.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
@@ -337,7 +350,7 @@ Partial Class formProfil
         '
         Me.txtNoTelp.Enabled = False
         Me.txtNoTelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNoTelp.Location = New System.Drawing.Point(228, 208)
+        Me.txtNoTelp.Location = New System.Drawing.Point(237, 298)
         Me.txtNoTelp.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNoTelp.Name = "txtNoTelp"
         Me.txtNoTelp.Size = New System.Drawing.Size(240, 23)
@@ -347,7 +360,7 @@ Partial Class formProfil
         '
         Me.txtPass.Enabled = False
         Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(228, 162)
+        Me.txtPass.Location = New System.Drawing.Point(237, 252)
         Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -358,7 +371,7 @@ Partial Class formProfil
         '
         Me.txtUsn.Enabled = False
         Me.txtUsn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsn.Location = New System.Drawing.Point(228, 118)
+        Me.txtUsn.Location = New System.Drawing.Point(237, 208)
         Me.txtUsn.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsn.Name = "txtUsn"
         Me.txtUsn.Size = New System.Drawing.Size(240, 23)
@@ -368,7 +381,7 @@ Partial Class formProfil
         '
         Me.txtNama.Enabled = False
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNama.Location = New System.Drawing.Point(228, 75)
+        Me.txtNama.Location = New System.Drawing.Point(237, 165)
         Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(240, 23)
@@ -389,7 +402,7 @@ Partial Class formProfil
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(80, 121)
+        Me.Label16.Location = New System.Drawing.Point(89, 211)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(85, 18)
@@ -400,7 +413,7 @@ Partial Class formProfil
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(80, 78)
+        Me.Label18.Location = New System.Drawing.Point(89, 168)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(52, 18)
@@ -411,7 +424,7 @@ Partial Class formProfil
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(80, 165)
+        Me.Label20.Location = New System.Drawing.Point(89, 255)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(83, 18)
@@ -422,7 +435,7 @@ Partial Class formProfil
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(80, 210)
+        Me.Label22.Location = New System.Drawing.Point(89, 300)
         Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(67, 18)
@@ -433,7 +446,7 @@ Partial Class formProfil
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(80, 258)
+        Me.Label24.Location = New System.Drawing.Point(89, 348)
         Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(59, 18)
@@ -448,7 +461,7 @@ Partial Class formProfil
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1141, 44)
+        Me.pnlTop.Size = New System.Drawing.Size(1183, 44)
         Me.pnlTop.TabIndex = 50
         '
         'pnlControl
@@ -456,7 +469,7 @@ Partial Class formProfil
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(1069, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(1111, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(72, 44)
@@ -495,7 +508,7 @@ Partial Class formProfil
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 44)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1141, 26)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1183, 26)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -588,19 +601,6 @@ Partial Class formProfil
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Password"
         '
-        'btnSubmit
-        '
-        Me.btnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSubmit.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
-        Me.btnSubmit.Location = New System.Drawing.Point(165, 169)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(100, 81)
-        Me.btnSubmit.TabIndex = 7
-        Me.btnSubmit.Text = "Submit"
-        Me.btnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.btnSubmit.UseVisualStyleBackColor = True
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -625,13 +625,26 @@ Partial Class formProfil
         Me.pnlPass.Size = New System.Drawing.Size(408, 266)
         Me.pnlPass.TabIndex = 4
         '
+        'btnSubmit
+        '
+        Me.btnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
+        Me.btnSubmit.Location = New System.Drawing.Point(165, 169)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(100, 81)
+        Me.btnSubmit.TabIndex = 7
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnSubmit.UseVisualStyleBackColor = True
+        '
         'formProfil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.LightCyan
-        Me.ClientSize = New System.Drawing.Size(1162, 650)
+        Me.ClientSize = New System.Drawing.Size(1204, 650)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlPass)
@@ -651,6 +664,7 @@ Partial Class formProfil
         Me.pnlFormUbah.PerformLayout()
         Me.pnlProfil.ResumeLayout(False)
         Me.pnlProfil.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlTop.ResumeLayout(False)
         Me.pnlControl.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
@@ -714,4 +728,5 @@ Partial Class formProfil
     Friend WithEvents txtPass As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents btnCancel As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

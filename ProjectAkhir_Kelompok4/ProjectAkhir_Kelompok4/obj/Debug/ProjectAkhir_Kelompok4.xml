@@ -47,6 +47,16 @@ ProjectAkhir_Kelompok4
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_avatar_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_avatar_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -72,6 +82,11 @@ ProjectAkhir_Kelompok4
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_customer_100">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_enter_50">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -88,6 +103,11 @@ ProjectAkhir_Kelompok4
 </summary>
 </member>
 <member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_store">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

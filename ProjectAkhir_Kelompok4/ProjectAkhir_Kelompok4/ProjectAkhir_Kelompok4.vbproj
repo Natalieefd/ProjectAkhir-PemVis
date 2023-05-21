@@ -363,5 +363,17 @@
   <ItemGroup>
     <None Include="Resources\Bahan\content icon\admin.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-avatar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-avatar-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-store.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
