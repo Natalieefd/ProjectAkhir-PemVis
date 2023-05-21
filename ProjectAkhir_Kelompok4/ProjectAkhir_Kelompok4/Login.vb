@@ -1,6 +1,7 @@
 ﻿Public Class formLogin
     Private Sub formlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
+        SlabelJam.Text = TimeOfDay
         koneksi()
         Me.ActiveControl = txtUsername
     End Sub
