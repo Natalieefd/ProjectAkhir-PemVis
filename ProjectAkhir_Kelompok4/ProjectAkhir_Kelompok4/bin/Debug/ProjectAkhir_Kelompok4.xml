@@ -67,6 +67,11 @@ ProjectAkhir_Kelompok4
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_fill_and_sign_50">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_remove_50">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
