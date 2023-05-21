@@ -48,11 +48,17 @@ Partial Class DaftarPesananStaf
         Me.ManajemenPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnLaporan = New System.Windows.Forms.Button()
+        Me.pnlUbahStatus = New System.Windows.Forms.Panel()
+        Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnSubmit = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.dgvDaftarPesanan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
+        Me.pnlUbahStatus.SuspendLayout()
         Me.SuspendLayout()
         '
         'StatusStrip1
@@ -61,9 +67,9 @@ Partial Class DaftarPesananStaf
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 428)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 622)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(783, 22)
         Me.StatusStrip1.TabIndex = 6
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -133,7 +139,7 @@ Partial Class DaftarPesananStaf
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(800, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(783, 36)
         Me.pnlTop.TabIndex = 53
         '
         'pnlControl
@@ -141,7 +147,7 @@ Partial Class DaftarPesananStaf
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(746, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(729, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -180,7 +186,7 @@ Partial Class DaftarPesananStaf
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(783, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -248,6 +254,59 @@ Partial Class DaftarPesananStaf
         Me.btnLaporan.Text = "Laporan"
         Me.btnLaporan.UseVisualStyleBackColor = True
         '
+        'pnlUbahStatus
+        '
+        Me.pnlUbahStatus.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pnlUbahStatus.Controls.Add(Me.cmbStatus)
+        Me.pnlUbahStatus.Controls.Add(Me.Label2)
+        Me.pnlUbahStatus.Controls.Add(Me.btnSubmit)
+        Me.pnlUbahStatus.Controls.Add(Me.Label3)
+        Me.pnlUbahStatus.Location = New System.Drawing.Point(212, 406)
+        Me.pnlUbahStatus.Name = "pnlUbahStatus"
+        Me.pnlUbahStatus.Size = New System.Drawing.Size(359, 216)
+        Me.pnlUbahStatus.TabIndex = 62
+        '
+        'cmbStatus
+        '
+        Me.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.Location = New System.Drawing.Point(162, 82)
+        Me.cmbStatus.Name = "cmbStatus"
+        Me.cmbStatus.Size = New System.Drawing.Size(147, 21)
+        Me.cmbStatus.TabIndex = 8
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(74, 19)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(208, 24)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Ubah Status Pesanan"
+        '
+        'btnSubmit
+        '
+        Me.btnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
+        Me.btnSubmit.Location = New System.Drawing.Point(144, 137)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 66)
+        Me.btnSubmit.TabIndex = 7
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnSubmit.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(39, 83)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(107, 15)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Status Pesanan"
+        '
         'DaftarPesananStaf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -255,6 +314,7 @@ Partial Class DaftarPesananStaf
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.DarkSalmon
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.pnlUbahStatus)
         Me.Controls.Add(Me.btnLaporan)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
@@ -274,6 +334,8 @@ Partial Class DaftarPesananStaf
         Me.pnlControl.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.pnlUbahStatus.ResumeLayout(False)
+        Me.pnlUbahStatus.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -300,4 +362,9 @@ Partial Class DaftarPesananStaf
     Friend WithEvents btnMinimize As Button
     Friend WithEvents btnClose As Button
     Friend WithEvents btnLaporan As Button
+    Friend WithEvents pnlUbahStatus As Panel
+    Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnSubmit As Button
+    Friend WithEvents Label3 As Label
 End Class

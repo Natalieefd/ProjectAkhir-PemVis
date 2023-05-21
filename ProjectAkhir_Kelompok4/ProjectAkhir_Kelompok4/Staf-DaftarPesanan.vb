@@ -1,7 +1,17 @@
 ﻿Public Class DaftarPesananStaf
+
+    Private Sub ShowForm(Optional State = True)
+        Label4.Hide()
+        dgvDaftarPesanan.Hide()
+        btnLaporan.Hide()
+        pnlUbahStatus.Show()
+        pnlUbahStatus.Location = New Point(212, 137)
+    End Sub
+
     Private Sub DaftarPesananStaf_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+        pnlUbahStatus.Hide()
 
         koneksi()
 
@@ -101,6 +111,12 @@
 
     Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
         laporanPesananStaf.Show()
+    End Sub
+
+    Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
+        ShowForm(True)
+
+        'query update status only
     End Sub
 
     '-------------------------------------------------------------------------------------------------------'

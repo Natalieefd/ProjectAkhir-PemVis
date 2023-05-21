@@ -1,7 +1,17 @@
 ﻿Public Class DaftarPesananAdmin
+
+    Private Sub ShowForm(Optional State = True)
+        Label4.Hide()
+        dgvDaftarPesanan.Hide()
+        btnLaporan.Hide()
+        pnlUbahStatus.Show()
+        pnlUbahStatus.Location = New Point(212, 137)
+    End Sub
+
     Private Sub DaftarPesananAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+        pnlUbahStatus.Hide()
     End Sub
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
@@ -96,5 +106,9 @@
 
     Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
         laporanPesananAdmin.Show()
+    End Sub
+
+    Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
+        ShowForm(True)
     End Sub
 End Class
