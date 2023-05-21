@@ -357,5 +357,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-fill-and-sign-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\content icon\white\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\content icon\admin.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
