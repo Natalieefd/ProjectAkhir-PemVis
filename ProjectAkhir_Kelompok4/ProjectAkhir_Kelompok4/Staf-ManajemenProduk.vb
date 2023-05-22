@@ -18,6 +18,7 @@
         dgvDaftarProduk.Refresh()
         AturGrid(dgvDaftarProduk, {0, 340, 150, 0, 80, 120})
         btnClear_Click(sender, Nothing)
+        btnCancel.Show()
 
 
         Select Case Mode
@@ -27,6 +28,7 @@
                 btnUbah.Hide()
                 btnHapus.Hide()
                 btnClear.Show()
+                btnCancel.Hide()
                 txtNama.Enabled = True
                 cmbKategori.Enabled = True
                 txtHarga.Enabled = True
@@ -43,6 +45,7 @@
                 txtHarga.Enabled = True
                 txtDecs.Enabled = True
                 txtStok.Enabled = True
+
 
             Case "Hapus"
                 btnTambah.Hide()
@@ -103,6 +106,16 @@
             Exit Sub
         End If
 
+        If Not CheckNum(txtHarga) Then
+            txtHarga.Focus()
+            Exit Sub
+        End If
+
+        If Not CheckNum(txtStok) Then
+            txtStok.Focus()
+            Exit Sub
+        End If
+
         dbq("SELECT * FROM tbproduk WHERE nama_produk = '" & txtNama.Text & "'")
         'query cek produk dengan nama itu udh ada atau ngga
 
@@ -142,7 +155,7 @@
             Exit Sub
         End If
 
-        If Not CheckNum(txtHarga) Or txtHarga.Text = Nothing Then
+        If Not CheckNum(txtHarga) Then
             txtHarga.Focus()
             Exit Sub
         End If

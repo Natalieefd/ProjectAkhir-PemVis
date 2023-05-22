@@ -1,31 +1,121 @@
 ﻿Public Class ManajemenTokoAdmin
 
-    Private Sub ModeUbah()
-        pnlProfil.Hide()
-        pnlFormUbah.Hide()
-
-        txtKonfirmPass.Clear()
-        pnlPass.Show()
-        pnlPass.Location = New Point(247, 125)
-    End Sub
-
     Private Sub ManajemenTokoAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
-        pnlProfil.Show()
-        pnlPass.Hide()
-        pnlFormUbah.Hide()
+        Tripart("Profil")
+
+        dbq("") 'query cari data admin
+
+        txtNama.Text = RD(2)
+        txtNoTelp.Text = RD(3)
+        txtEmail.Text = RD(4)
+        txtAlamat.Text = RD(5)
+        RD.Close()
+
     End Sub
+
+    Private Sub Tripart(Part As String)
+        Select Case Part
+            Case "Profil"
+                Size = New Point(Size.Width, 460)
+                pnlProfil.Show()
+                pnlPass.Hide()
+                pnlFormUbah.Hide()
+            Case "Pass"
+
+                Size = New Point(Size.Width, 350)
+                pnlPass.Location = New Point(pnlPass.Location.X, 10)
+                txtKonfirmPass.Clear()
+                pnlProfil.Hide()
+                pnlPass.Show()
+                pnlFormUbah.Hide()
+
+            Case "Ubah"
+                Size = New Point(Size.Width, 500)
+                pnlFormUbah.Location = New Point(pnlFormUbah.Location.X, 80)
+
+                pnlProfil.Hide()
+                pnlPass.Hide()
+                pnlFormUbah.Show()
+        End Select
+    End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        ManajemenTokoAdmin_Load(sender, Nothing)
+    End Sub
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+        Dim Con = EmptyTB(pnlPass)
+
+        If Con IsNot Nothing Then
+            Con.Focus()
+            Exit Sub
+        End If
+
+        dbq("") 'query tbAdmin where pass = textBlabla
+
+        If RD.HasRows Then
+            txtUbahUsn.Text = RD(0)
+            txtUbahPass.Text = "(Password Lama)"
+            txtUbahNama.Text = RD(2)
+            txtUbahNoTelp.Text = RD(3)
+            txtUbahEmail.Text = RD(4)
+            txtUbahAlamat.Text = RD(5)
+
+            RD.Close()
+            Tripart("Ubah")
+            Exit Sub
+        End If
+
+        RD.Close()
+        MessageBox.Show("Password yang Anda masukkan salah!", "Perhatian",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning)
+
+    End Sub
+
+    Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
+        Tripart("Pass")
+    End Sub
+
+    Private Sub btnUbahForm_Click(sender As Object, e As EventArgs) Handles btnUbahForm.Click
+        Dim Con = EmptyTB(pnlFormUbah)
+
+        If Con IsNot Nothing Then
+            Con.Focus()
+            Exit Sub
+        End If
+
+        If Not CheckNum(txtUbahNoTelp) Then
+            txtUbahNoTelp.Focus()
+            Exit Sub
+        End If
+
+        Dim Password = txtUbahPass.Text
+        Password = If(Password = "(Password Lama)", txtKonfirmPass.Text, Password)
+
+        dbq("") 'query ubah data admin, password gunakan variable password
+        RD.Close()
+
+        MessageBox.Show("Berhasil ubah password!", "Perhatian",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+    End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
         formAdmin.Show()
         Me.Close()
+
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
-        ManajemenTokoAdmin_Load(sender, e)
+        ManajemenTokoAdmin_Load(sender, Nothing)
     End Sub
 
     Private Sub LihatAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatAkunStaffToolStripMenuItem.Click
@@ -56,28 +146,28 @@
         Me.Close()
     End Sub
 
-    Private Sub LihatDataProdukToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatDataProdukToolStripMenuItem.Click
+    Private Sub LihatDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = ""
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
         Me.Close()
     End Sub
 
-    Private Sub TambahDataProdukToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahDataProdukToolStripMenuItem.Click
+    Private Sub TambahDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = "Tambah"
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
         Me.Close()
     End Sub
 
-    Private Sub UbahDataProdukToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahDataProdukToolStripMenuItem.Click
+    Private Sub UbahDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = "Ubah"
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
         Me.Close()
     End Sub
 
-    Private Sub HapusDataProdukToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusDataProdukToolStripMenuItem.Click
+    Private Sub HapusDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = "Hapus"
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
@@ -96,9 +186,13 @@
         Me.Close()
     End Sub
 
-    Private Sub ManajemenTokoAdmin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem.Owner)
+    Private Sub formAdmin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        CloseForm(sender, MenuStrip1)
     End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
@@ -108,32 +202,12 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
-        ModeUbah()
-    End Sub
-
-    Sub checkPass()
-
-        'klo pass true
-        pnlProfil.Hide()
-        pnlPass.Hide()
-
-        pnlFormUbah.Show()
-        pnlFormUbah.Location = New Point(57, 76)
-    End Sub
-
-    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        pnlProfil.Show()
-        pnlPass.Hide()
-        pnlFormUbah.Hide()
-    End Sub
-
-    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-
-
-        'klo pass sesuai
-        pnlProfil.Hide()
-        pnlPass.Hide()
-        pnlFormUbah.Show()
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtUbahNama.Clear()
+        txtUbahNoTelp.Clear()
+        txtUbahEmail.Clear()
+        txtUbahAlamat.Clear()
+        txtUbahUsn.Clear()
+        txtUbahPass.Text = "(Password Lama)"
     End Sub
 End Class

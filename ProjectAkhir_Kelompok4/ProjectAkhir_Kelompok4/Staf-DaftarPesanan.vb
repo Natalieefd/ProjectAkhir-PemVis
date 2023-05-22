@@ -40,6 +40,16 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
+        laporanPesananStaf.Show()
+    End Sub
+
+    Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
+        ShowForm(True)
+
+        'query update status only
+    End Sub
+
     '-------------------------------------------------------------------------------------------------------'
     '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
     '-------------------------------------------------------------------------------------------------------'
@@ -107,16 +117,6 @@
 
     Private Sub formStaff_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, ExitToolStripMenuItem.Owner)
-    End Sub
-
-    Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
-        laporanPesananStaf.Show()
-    End Sub
-
-    Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
-        ShowForm(True)
-
-        'query update status only
     End Sub
 
     '-------------------------------------------------------------------------------------------------------'

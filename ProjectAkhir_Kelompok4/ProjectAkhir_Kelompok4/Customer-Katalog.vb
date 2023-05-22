@@ -37,7 +37,7 @@ Public Class formKatalog
     End Sub
 
     Private Sub btnAutofill_Click(sender As Object, e As EventArgs) Handles btnAutofill.Click
-        AkunSeqID(ActiveID)
+        AkunSeqID("customer")
 
         txtNama.Text = RD(1)
         txtAlamat.Text = RD(5)

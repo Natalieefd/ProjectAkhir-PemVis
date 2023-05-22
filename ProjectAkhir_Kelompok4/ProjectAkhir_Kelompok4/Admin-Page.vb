@@ -1,6 +1,4 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-
-Public Class formAdmin
+﻿Public Class formAdmin
 
     Private Sub formAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
@@ -14,6 +12,14 @@ Public Class formAdmin
 
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
+
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        formAdmin_Load(sender, Nothing)
     End Sub
 
     Private Sub ProfilTokoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfilTokoToolStripMenuItem.Click
@@ -50,28 +56,28 @@ Public Class formAdmin
         Me.Close()
     End Sub
 
-    Private Sub LihatDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatDataBarangToolStripMenuItem.Click
+    Private Sub LihatDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = ""
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
         Me.Close()
     End Sub
 
-    Private Sub TambahDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahDataBarangToolStripMenuItem.Click
+    Private Sub TambahDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = "Tambah"
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
         Me.Close()
     End Sub
 
-    Private Sub UbahDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahDataBarangToolStripMenuItem.Click
+    Private Sub UbahDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = "Ubah"
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
         Me.Close()
     End Sub
 
-    Private Sub HapusDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusDataBarangToolStripMenuItem.Click
+    Private Sub HapusDataBarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HapusDataProdukToolStripMenuItem.Click
         ManajemenProdukAdmin.Mode = "Hapus"
         Me.ActiveControl = MenuStrip1
         ManajemenProdukAdmin.Show()
@@ -91,6 +97,11 @@ Public Class formAdmin
     End Sub
 
     Private Sub formAdmin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem.Owner)
+        CloseForm(sender, MenuStrip1)
     End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
+
 End Class
