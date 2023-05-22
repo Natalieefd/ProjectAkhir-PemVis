@@ -72,4 +72,5 @@
     Private Sub formCustomer_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, MenuStrip1)
     End Sub
+
 End Class

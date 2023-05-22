@@ -32,6 +32,11 @@ ProjectAkhir_Kelompok4
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.bgPageCust">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ProjectAkhir_Kelompok4.My.Resources.Resources.close">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
