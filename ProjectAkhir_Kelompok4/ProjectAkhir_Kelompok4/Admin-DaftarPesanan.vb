@@ -2,10 +2,10 @@
 
     Private Sub ShowForm(Optional State = True)
         Label4.Hide()
-        dgvDaftarPesanan.Hide()
         btnLaporan.Hide()
+        dgvDaftarPesanan.Hide()
         pnlUbahStatus.Show()
-        pnlUbahStatus.Location = New Point(212, 137)
+        pnlUbahStatus.Location = New Point(212, 127)
     End Sub
 
     Private Sub DaftarPesananAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -112,7 +112,7 @@
         ShowForm(True)
     End Sub
 
-    Private Sub pnlUbahStatus_Paint(sender As Object, e As PaintEventArgs) Handles pnlUbahStatus.Paint
-
+    Private Sub dgvDaftarPesanan_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDaftarPesanan.CellDoubleClick
+        ShowForm(True)
     End Sub
 End Class

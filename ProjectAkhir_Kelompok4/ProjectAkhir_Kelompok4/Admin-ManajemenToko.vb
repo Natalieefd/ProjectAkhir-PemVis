@@ -121,4 +121,19 @@
         pnlFormUbah.Show()
         pnlFormUbah.Location = New Point(57, 76)
     End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        pnlProfil.Show()
+        pnlPass.Hide()
+        pnlFormUbah.Hide()
+    End Sub
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+
+
+        'klo pass sesuai
+        pnlProfil.Hide()
+        pnlPass.Hide()
+        pnlFormUbah.Show()
+    End Sub
 End Class

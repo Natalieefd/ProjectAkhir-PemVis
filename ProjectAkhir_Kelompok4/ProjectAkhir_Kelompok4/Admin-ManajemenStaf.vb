@@ -65,7 +65,6 @@
                 btnHapus.Location = New Point(217, 259)
 
             Case Else
-                Label4.Hide()
                 btnTambah.Hide()
                 btnUbah.Hide()
                 btnHapus.Hide()
