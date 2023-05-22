@@ -111,4 +111,8 @@
     Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
         ShowForm(True)
     End Sub
+
+    Private Sub pnlUbahStatus_Paint(sender As Object, e As PaintEventArgs) Handles pnlUbahStatus.Paint
+
+    End Sub
 End Class

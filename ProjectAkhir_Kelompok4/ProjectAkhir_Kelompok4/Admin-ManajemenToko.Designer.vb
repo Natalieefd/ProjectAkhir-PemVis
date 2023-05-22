@@ -88,7 +88,7 @@ Partial Class ManajemenTokoAdmin
         '
         'pnlProfil
         '
-        Me.pnlProfil.BackColor = System.Drawing.Color.Coral
+        Me.pnlProfil.BackColor = System.Drawing.Color.MediumTurquoise
         Me.pnlProfil.Controls.Add(Me.txtAlamat)
         Me.pnlProfil.Controls.Add(Me.txtNoTelp)
         Me.pnlProfil.Controls.Add(Me.txtEmail)
