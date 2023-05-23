@@ -83,7 +83,7 @@
     End Sub
 
     Private Sub formStaff_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem.Owner)
+        CloseForm(sender, MenuStrip1)
     End Sub
 
     '-------------------------------------------------------------------------------------------------------'

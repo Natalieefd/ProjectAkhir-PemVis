@@ -232,14 +232,14 @@
 
             dbq("Update tbpesanan set nama = '" & txtNama.Text & "', alamat = '" & txtAlamat.Text & "', 
                 stok = '" & txtJumlah.Text & "', harga_total = '" & txtHargaTotal.Text & "' 
-                Where id_customer = '" & ActiveID & "'")
+                Where id_customer = '" & DGVValue(dgvPesanan, 0) & "'")
             RD.Close()
             HideData()
 
         Else
             MsgBox("Produk Dari Pesanan Ini Tidak Ditemukan", MsgBoxStyle.Information, "Perhatian")
             RD.Close()
-            dbq("Delete From tbpesanan Where id_customer = '" & ActiveID & "' ") 'Query hapus pesanan ini dari daftar pesanan'
+            dbq("Delete From tbpesanan Where id_pesanan = '" & DGVValue(dgvPesanan, 0) & "' ") 'Query hapus pesanan ini dari daftar pesanan'
             RD.Close()
             Reload(sender)
             Exit Sub

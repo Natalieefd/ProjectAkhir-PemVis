@@ -35,6 +35,8 @@ Partial Class DaftarPesananStaf
         Me.dgvDaftarPesanan = New System.Windows.Forms.DataGridView()
         Me.pnlTop = New System.Windows.Forms.Panel()
         Me.pnlControl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -50,8 +52,10 @@ Partial Class DaftarPesananStaf
         Me.pnlUbahStatus = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbStatus = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.btnSubmit = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtHargaTotal = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -70,10 +74,6 @@ Partial Class DaftarPesananStaf
         Me.Label14 = New System.Windows.Forms.Label()
         Me.txtNama = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.btnBatal = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnMinimize = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.dgvDaftarPesanan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlTop.SuspendLayout()
@@ -90,7 +90,7 @@ Partial Class DaftarPesananStaf
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 869)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(819, 22)
         Me.StatusStrip1.TabIndex = 6
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -158,9 +158,9 @@ Partial Class DaftarPesananStaf
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(800, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(819, 36)
         Me.pnlTop.TabIndex = 53
         '
         'pnlControl
@@ -168,11 +168,35 @@ Partial Class DaftarPesananStaf
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(746, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlControl.Location = New System.Drawing.Point(765, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
         Me.pnlControl.TabIndex = 50
+        '
+        'btnMinimize
+        '
+        Me.btnMinimize.FlatAppearance.BorderSize = 0
+        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
+        Me.btnMinimize.Location = New System.Drawing.Point(2, 10)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
+        Me.btnMinimize.TabIndex = 2
+        Me.btnMinimize.UseVisualStyleBackColor = True
+        '
+        'btnClose
+        '
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
+        Me.btnClose.Location = New System.Drawing.Point(32, 10)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(14, 15)
+        Me.btnClose.TabIndex = 0
+        Me.btnClose.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -183,7 +207,7 @@ Partial Class DaftarPesananStaf
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(819, 25)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -263,10 +287,10 @@ Partial Class DaftarPesananStaf
         Me.pnlUbahStatus.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.pnlUbahStatus.Controls.Add(Me.Label1)
         Me.pnlUbahStatus.Controls.Add(Me.txtUsername)
-        Me.pnlUbahStatus.Controls.Add(Me.ComboBox1)
+        Me.pnlUbahStatus.Controls.Add(Me.cmbStatus)
         Me.pnlUbahStatus.Controls.Add(Me.Label5)
         Me.pnlUbahStatus.Controls.Add(Me.btnBatal)
-        Me.pnlUbahStatus.Controls.Add(Me.Button1)
+        Me.pnlUbahStatus.Controls.Add(Me.btnSubmit)
         Me.pnlUbahStatus.Controls.Add(Me.Label11)
         Me.pnlUbahStatus.Controls.Add(Me.txtHargaTotal)
         Me.pnlUbahStatus.Controls.Add(Me.Label10)
@@ -309,14 +333,15 @@ Partial Class DaftarPesananStaf
         Me.txtUsername.Size = New System.Drawing.Size(152, 22)
         Me.txtUsername.TabIndex = 28
         '
-        'ComboBox1
+        'cmbStatus
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(508, 287)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(152, 21)
-        Me.ComboBox1.TabIndex = 8
+        Me.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.Items.AddRange(New Object() {"Belum Dibayar", "Belum Dikirim", "Sudah Dikirim"})
+        Me.cmbStatus.Location = New System.Drawing.Point(508, 287)
+        Me.cmbStatus.Name = "cmbStatus"
+        Me.cmbStatus.Size = New System.Drawing.Size(152, 21)
+        Me.cmbStatus.TabIndex = 8
         '
         'Label5
         '
@@ -327,6 +352,30 @@ Partial Class DaftarPesananStaf
         Me.Label5.Size = New System.Drawing.Size(122, 17)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Status Pesanan"
+        '
+        'btnBatal
+        '
+        Me.btnBatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBatal.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btnBatal.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
+        Me.btnBatal.Location = New System.Drawing.Point(672, 14)
+        Me.btnBatal.Name = "btnBatal"
+        Me.btnBatal.Size = New System.Drawing.Size(35, 32)
+        Me.btnBatal.TabIndex = 26
+        Me.btnBatal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnBatal.UseVisualStyleBackColor = True
+        '
+        'btnSubmit
+        '
+        Me.btnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSubmit.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
+        Me.btnSubmit.Location = New System.Drawing.Point(324, 367)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 66)
+        Me.btnSubmit.TabIndex = 7
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnSubmit.UseVisualStyleBackColor = True
         '
         'Label11
         '
@@ -505,61 +554,13 @@ Partial Class DaftarPesananStaf
         Me.Label15.TabIndex = 9
         Me.Label15.Text = "UBAH STATUS PESANAN"
         '
-        'btnBatal
-        '
-        Me.btnBatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBatal.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnBatal.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
-        Me.btnBatal.Location = New System.Drawing.Point(672, 14)
-        Me.btnBatal.Name = "btnBatal"
-        Me.btnBatal.Size = New System.Drawing.Size(35, 32)
-        Me.btnBatal.TabIndex = 26
-        Me.btnBatal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnBatal.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
-        Me.Button1.Location = New System.Drawing.Point(324, 367)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 66)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Submit"
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'btnMinimize
-        '
-        Me.btnMinimize.FlatAppearance.BorderSize = 0
-        Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(2, 10)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
-        Me.btnMinimize.TabIndex = 2
-        Me.btnMinimize.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(32, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(14, 15)
-        Me.btnClose.TabIndex = 0
-        Me.btnClose.UseVisualStyleBackColor = True
-        '
         'DaftarPesananStaf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.DarkSalmon
-        Me.ClientSize = New System.Drawing.Size(819, 450)
+        Me.ClientSize = New System.Drawing.Size(838, 450)
         Me.Controls.Add(Me.pnlSpace)
         Me.Controls.Add(Me.pnlUbahStatus)
         Me.Controls.Add(Me.btnLaporan)
@@ -613,10 +614,10 @@ Partial Class DaftarPesananStaf
     Friend WithEvents pnlUbahStatus As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents txtUsername As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbStatus As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents btnBatal As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnSubmit As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents txtHargaTotal As TextBox
     Friend WithEvents Label10 As Label

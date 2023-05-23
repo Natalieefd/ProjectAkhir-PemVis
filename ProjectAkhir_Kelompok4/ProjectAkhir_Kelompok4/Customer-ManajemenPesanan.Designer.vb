@@ -85,82 +85,81 @@ Partial Class formPesananCust
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.LightSkyBlue
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ProfilTokoToolStripMenuItem, Me.KatalogToolStripMenuItem, Me.PesananToolStripMenuItem, Me.ProfilToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 69)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 3, 0, 3)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1606, 39)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(820, 25)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(98, 33)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(151, 33)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'KatalogToolStripMenuItem
         '
         Me.KatalogToolStripMenuItem.Name = "KatalogToolStripMenuItem"
-        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(115, 33)
+        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(70, 21)
         Me.KatalogToolStripMenuItem.Text = "Katalog"
         '
         'PesananToolStripMenuItem
         '
         Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
-        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(127, 33)
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(337, 44)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(337, 44)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'BatalkanPesananToolStripMenuItem
         '
         Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(337, 44)
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
         Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
         '
         Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem1, Me.UbahProfilToolStripMenuItem1})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
-        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(89, 33)
+        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(54, 21)
         Me.ProfilToolStripMenuItem.Text = "Profil"
         '
         'LihatPesananToolStripMenuItem1
         '
         Me.LihatPesananToolStripMenuItem1.Name = "LihatPesananToolStripMenuItem1"
-        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(264, 44)
+        Me.LihatPesananToolStripMenuItem1.Size = New System.Drawing.Size(154, 24)
         Me.LihatPesananToolStripMenuItem1.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem1
         '
         Me.UbahProfilToolStripMenuItem1.Name = "UbahProfilToolStripMenuItem1"
-        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(264, 44)
+        Me.UbahProfilToolStripMenuItem1.Size = New System.Drawing.Size(154, 24)
         Me.UbahProfilToolStripMenuItem1.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(72, 33)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'pnlTop
@@ -169,9 +168,9 @@ Partial Class formPesananCust
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1606, 69)
+        Me.pnlTop.Size = New System.Drawing.Size(820, 36)
         Me.pnlTop.TabIndex = 52
         '
         'pnlControl
@@ -179,10 +178,10 @@ Partial Class formPesananCust
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(1498, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.pnlControl.Location = New System.Drawing.Point(766, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
-        Me.pnlControl.Size = New System.Drawing.Size(108, 69)
+        Me.pnlControl.Size = New System.Drawing.Size(54, 36)
         Me.pnlControl.TabIndex = 49
         '
         'btnMinimize
@@ -190,10 +189,10 @@ Partial Class formPesananCust
         Me.btnMinimize.FlatAppearance.BorderSize = 0
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
-        Me.btnMinimize.Location = New System.Drawing.Point(4, 19)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnMinimize.Location = New System.Drawing.Point(2, 10)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(28, 28)
+        Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
         Me.btnMinimize.UseVisualStyleBackColor = True
         '
@@ -202,10 +201,10 @@ Partial Class formPesananCust
         Me.btnClose.FlatAppearance.BorderSize = 0
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
-        Me.btnClose.Location = New System.Drawing.Point(64, 19)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.btnClose.Location = New System.Drawing.Point(32, 10)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(28, 28)
+        Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
@@ -215,34 +214,32 @@ Partial Class formPesananCust
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 1563)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 813)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(2, 0, 28, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(1606, 39)
+        Me.StatusStrip1.Size = New System.Drawing.Size(820, 22)
         Me.StatusStrip1.TabIndex = 51
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(120, 29)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(76, 29)
+        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'lblHeader
         '
         Me.lblHeader.AutoSize = True
         Me.lblHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeader.Location = New System.Drawing.Point(552, 158)
-        Me.lblHeader.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.lblHeader.Location = New System.Drawing.Point(276, 82)
         Me.lblHeader.Name = "lblHeader"
-        Me.lblHeader.Size = New System.Drawing.Size(413, 48)
+        Me.lblHeader.Size = New System.Drawing.Size(255, 29)
         Me.lblHeader.TabIndex = 1
         Me.lblHeader.Text = "DAFTAR PESANAN"
         '
@@ -266,8 +263,7 @@ Partial Class formPesananCust
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvPesanan.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvPesanan.Location = New System.Drawing.Point(90, 250)
-        Me.dgvPesanan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dgvPesanan.Location = New System.Drawing.Point(45, 130)
         Me.dgvPesanan.MultiSelect = False
         Me.dgvPesanan.Name = "dgvPesanan"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
@@ -281,7 +277,7 @@ Partial Class formPesananCust
         Me.dgvPesanan.RowHeadersWidth = 47
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.dgvPesanan.RowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.dgvPesanan.Size = New System.Drawing.Size(1442, 442)
+        Me.dgvPesanan.Size = New System.Drawing.Size(721, 230)
         Me.dgvPesanan.TabIndex = 2
         '
         'pnlFormPesanan
@@ -309,10 +305,9 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Controls.Add(Me.txtNamaProduk)
         Me.pnlFormPesanan.Controls.Add(Me.Label2)
         Me.pnlFormPesanan.Controls.Add(Me.txtNama)
-        Me.pnlFormPesanan.Location = New System.Drawing.Point(90, 794)
-        Me.pnlFormPesanan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.pnlFormPesanan.Location = New System.Drawing.Point(45, 413)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
-        Me.pnlFormPesanan.Size = New System.Drawing.Size(1442, 769)
+        Me.pnlFormPesanan.Size = New System.Drawing.Size(721, 400)
         Me.pnlFormPesanan.TabIndex = 4
         '
         'btnBatal
@@ -320,10 +315,9 @@ Partial Class formPesananCust
         Me.btnBatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatal.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnBatal.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
-        Me.btnBatal.Location = New System.Drawing.Point(1344, 27)
-        Me.btnBatal.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnBatal.Location = New System.Drawing.Point(672, 14)
         Me.btnBatal.Name = "btnBatal"
-        Me.btnBatal.Size = New System.Drawing.Size(70, 61)
+        Me.btnBatal.Size = New System.Drawing.Size(35, 32)
         Me.btnBatal.TabIndex = 26
         Me.btnBatal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnBatal.UseVisualStyleBackColor = True
@@ -332,10 +326,9 @@ Partial Class formPesananCust
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(578, 39)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label12.Location = New System.Drawing.Point(289, 20)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(227, 48)
+        Me.Label12.Size = New System.Drawing.Size(141, 29)
         Me.Label12.TabIndex = 5
         Me.Label12.Text = "PESANAN"
         '
@@ -343,10 +336,9 @@ Partial Class formPesananCust
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
-        Me.btnClear.Location = New System.Drawing.Point(816, 606)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnClear.Location = New System.Drawing.Point(408, 315)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(150, 123)
+        Me.btnClear.Size = New System.Drawing.Size(75, 64)
         Me.btnClear.TabIndex = 16
         Me.btnClear.Text = "Clear"
         Me.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -356,10 +348,9 @@ Partial Class formPesananCust
         '
         Me.btnBatalkan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatalkan.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_remove_50
-        Me.btnBatalkan.Location = New System.Drawing.Point(654, 606)
-        Me.btnBatalkan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnBatalkan.Location = New System.Drawing.Point(327, 315)
         Me.btnBatalkan.Name = "btnBatalkan"
-        Me.btnBatalkan.Size = New System.Drawing.Size(150, 123)
+        Me.btnBatalkan.Size = New System.Drawing.Size(75, 64)
         Me.btnBatalkan.TabIndex = 15
         Me.btnBatalkan.Text = "Batalkan"
         Me.btnBatalkan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -369,10 +360,9 @@ Partial Class formPesananCust
         '
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
-        Me.btnUbah.Location = New System.Drawing.Point(492, 606)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnUbah.Location = New System.Drawing.Point(246, 315)
         Me.btnUbah.Name = "btnUbah"
-        Me.btnUbah.Size = New System.Drawing.Size(150, 123)
+        Me.btnUbah.Size = New System.Drawing.Size(75, 64)
         Me.btnUbah.TabIndex = 14
         Me.btnUbah.Text = "Ubah"
         Me.btnUbah.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
@@ -382,10 +372,9 @@ Partial Class formPesananCust
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(696, 541)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label11.Location = New System.Drawing.Point(348, 281)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(150, 29)
+        Me.Label11.Size = New System.Drawing.Size(94, 17)
         Me.Label11.TabIndex = 5
         Me.Label11.Text = "Harga Total"
         '
@@ -393,42 +382,38 @@ Partial Class formPesananCust
         '
         Me.txtHargaTotal.Enabled = False
         Me.txtHargaTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtHargaTotal.Location = New System.Drawing.Point(992, 534)
-        Me.txtHargaTotal.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtHargaTotal.Location = New System.Drawing.Point(496, 278)
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.ReadOnly = True
-        Me.txtHargaTotal.Size = New System.Drawing.Size(300, 32)
+        Me.txtHargaTotal.Size = New System.Drawing.Size(152, 22)
         Me.txtHargaTotal.TabIndex = 13
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(696, 344)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label10.Location = New System.Drawing.Point(348, 179)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(92, 29)
+        Me.Label10.Size = New System.Drawing.Size(57, 17)
         Me.Label10.TabIndex = 5
         Me.Label10.Text = "Alamat"
         '
         'txtAlamat
         '
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAlamat.Location = New System.Drawing.Point(992, 331)
-        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAlamat.Location = New System.Drawing.Point(496, 172)
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
-        Me.txtAlamat.Size = New System.Drawing.Size(300, 146)
+        Me.txtAlamat.Size = New System.Drawing.Size(152, 78)
         Me.txtAlamat.TabIndex = 12
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(696, 139)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label9.Location = New System.Drawing.Point(348, 72)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(213, 29)
+        Me.Label9.Size = New System.Drawing.Size(131, 17)
         Me.Label9.TabIndex = 5
         Me.Label9.Text = "Deskripsi Produk"
         '
@@ -436,21 +421,19 @@ Partial Class formPesananCust
         '
         Me.txtDesc.Enabled = False
         Me.txtDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDesc.Location = New System.Drawing.Point(992, 134)
-        Me.txtDesc.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDesc.Location = New System.Drawing.Point(496, 70)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
-        Me.txtDesc.Size = New System.Drawing.Size(300, 145)
+        Me.txtDesc.Size = New System.Drawing.Size(152, 77)
         Me.txtDesc.TabIndex = 11
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(98, 541)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label8.Location = New System.Drawing.Point(49, 281)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(170, 29)
+        Me.Label8.Size = New System.Drawing.Size(108, 17)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "Harga Satuan"
         '
@@ -458,42 +441,38 @@ Partial Class formPesananCust
         '
         Me.txtHargaSatuan.Enabled = False
         Me.txtHargaSatuan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtHargaSatuan.Location = New System.Drawing.Point(320, 534)
-        Me.txtHargaSatuan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtHargaSatuan.Location = New System.Drawing.Point(160, 278)
         Me.txtHargaSatuan.Name = "txtHargaSatuan"
         Me.txtHargaSatuan.ReadOnly = True
-        Me.txtHargaSatuan.Size = New System.Drawing.Size(300, 32)
+        Me.txtHargaSatuan.Size = New System.Drawing.Size(152, 22)
         Me.txtHargaSatuan.TabIndex = 10
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(98, 444)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label7.Location = New System.Drawing.Point(49, 231)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(96, 29)
+        Me.Label7.Size = New System.Drawing.Size(59, 17)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Jumlah"
         '
         'txtJumlah
         '
         Me.txtJumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtJumlah.Location = New System.Drawing.Point(320, 439)
-        Me.txtJumlah.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtJumlah.Location = New System.Drawing.Point(160, 228)
         Me.txtJumlah.MaxLength = 4
         Me.txtJumlah.Name = "txtJumlah"
-        Me.txtJumlah.Size = New System.Drawing.Size(300, 32)
+        Me.txtJumlah.Size = New System.Drawing.Size(152, 22)
         Me.txtJumlah.TabIndex = 9
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(98, 347)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label6.Location = New System.Drawing.Point(49, 180)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(112, 29)
+        Me.Label6.Size = New System.Drawing.Size(69, 17)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Kategori"
         '
@@ -501,30 +480,27 @@ Partial Class formPesananCust
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(98, 347)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label5.Location = New System.Drawing.Point(49, 180)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 29)
+        Me.Label5.Size = New System.Drawing.Size(0, 17)
         Me.Label5.TabIndex = 8
         '
         'txtKategori
         '
         Me.txtKategori.Enabled = False
         Me.txtKategori.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtKategori.Location = New System.Drawing.Point(320, 341)
-        Me.txtKategori.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtKategori.Location = New System.Drawing.Point(160, 177)
         Me.txtKategori.Name = "txtKategori"
-        Me.txtKategori.Size = New System.Drawing.Size(300, 32)
+        Me.txtKategori.Size = New System.Drawing.Size(152, 22)
         Me.txtKategori.TabIndex = 8
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(98, 244)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Location = New System.Drawing.Point(49, 127)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(171, 29)
+        Me.Label3.Size = New System.Drawing.Size(105, 17)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Nama Produk"
         '
@@ -532,50 +508,46 @@ Partial Class formPesananCust
         '
         Me.txtNamaProduk.Enabled = False
         Me.txtNamaProduk.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNamaProduk.Location = New System.Drawing.Point(320, 239)
-        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNamaProduk.Location = New System.Drawing.Point(160, 124)
         Me.txtNamaProduk.Name = "txtNamaProduk"
-        Me.txtNamaProduk.Size = New System.Drawing.Size(300, 32)
+        Me.txtNamaProduk.Size = New System.Drawing.Size(152, 22)
         Me.txtNamaProduk.TabIndex = 7
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(98, 147)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label2.Location = New System.Drawing.Point(49, 76)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 29)
+        Me.Label2.Size = New System.Drawing.Size(49, 17)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Nama"
         '
         'txtNama
         '
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNama.Location = New System.Drawing.Point(320, 141)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNama.Location = New System.Drawing.Point(160, 73)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(300, 32)
+        Me.txtNama.Size = New System.Drawing.Size(152, 22)
         Me.txtNama.TabIndex = 6
         '
         'lblPS
         '
         Me.lblPS.AutoSize = True
         Me.lblPS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPS.Location = New System.Drawing.Point(102, 708)
-        Me.lblPS.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.lblPS.Location = New System.Drawing.Point(51, 368)
         Me.lblPS.Name = "lblPS"
-        Me.lblPS.Size = New System.Drawing.Size(741, 30)
+        Me.lblPS.Size = New System.Drawing.Size(451, 18)
         Me.lblPS.TabIndex = 3
         Me.lblPS.Text = "* Silahkan klik daftar pesanan untuk melakukan perubahan "
         '
         'formPesananCust
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.LightCyan
-        Me.ClientSize = New System.Drawing.Size(1640, 1102)
+        Me.ClientSize = New System.Drawing.Size(839, 573)
         Me.Controls.Add(Me.lblPS)
         Me.Controls.Add(Me.pnlFormPesanan)
         Me.Controls.Add(Me.lblHeader)
@@ -584,7 +556,6 @@ Partial Class formPesananCust
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "formPesananCust"

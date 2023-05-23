@@ -1,20 +1,9 @@
 ﻿Public Class DaftarPesananStaf
-
-    Private Sub ShowForm(Optional State = True)
-        Label4.Hide()
-        dgvDaftarPesanan.Hide()
-        btnLaporan.Hide()
-        pnlUbahStatus.Show()
-        pnlUbahStatus.Location = New Point(40, 85)
-        pnlSpace.Show()
-        pnlSpace.Location = New Point(40, 530)
-    End Sub
-
     Private Sub DaftarPesananStaf_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
-        pnlUbahStatus.Hide()
-        pnlSpace.Hide()
+
+        ShowForm(False)
 
         koneksi()
 
@@ -22,15 +11,16 @@
                e.alamat AS 'ALAMAT', r.nama_produk AS 'NAMA PRODUK',
                r.kategori AS 'KATEGORI', e.tanggal_pesanan AS 'TANGGAL DIPESAN',
                e.id_produk AS 'ID PRODUK', e.stok AS 'JUMLAH', 
-               e.harga_total AS 'HARGA TOTAL', e.status AS 'STATUS'
-               FROM tbpesanan e
-               INNER JOIN tbproduk r ON e.id_produk = r.id_produk")
+               e.harga_total AS 'HARGA TOTAL', e.status AS 'STATUS', c.username
+               FROM tbproduk r
+               INNER JOIN tbpesanan e ON e.id_produk = r.id_produk
+               INNER JOIN tbcustomer c on e.id_customer = c.id_cust")
 
         dgvDaftarPesanan.DataSource = DS.Tables("tb")
         dgvDaftarPesanan.Refresh()
         AturGrid(dgvDaftarPesanan, {0, 0, 0, 340, 150,
                               180, 0, 100, 120,
-                              150}, False)
+                              150, 0}, False)
 
     End Sub
 
@@ -46,17 +36,113 @@
     End Sub
 
     Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
-        laporanPesananStaf.Show()
+        LaporanPesananStaf.Show()
+    End Sub
+
+    Private Sub ShowForm(Optional State = True)
+        If State Then
+            Size = New Point(Size.Width, 600)
+            Label4.Hide()
+            dgvDaftarPesanan.Hide()
+            btnLaporan.Hide()
+            pnlUbahStatus.Show()
+            pnlUbahStatus.Location = New Point(40, 85)
+            pnlSpace.Show()
+            pnlSpace.Location = New Point(40, 530)
+        Else
+            Size = New Point(Size.Width, 442)
+            Label4.Show()
+            dgvDaftarPesanan.Show()
+            btnLaporan.Show()
+            pnlUbahStatus.Hide()
+            pnlUbahStatus.Location = New Point(40, 85)
+            pnlSpace.Hide()
+        End If
+
     End Sub
 
     Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
-        ShowForm(True)
+        ShowForm()
+        dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvDaftarPesanan, 6) & "%'")
 
-        'query update status only
+        If DGVValue(dgvDaftarPesanan, 9) <> "Belum Dibayar" Then
+            txtNama.Text = DGVValue(dgvDaftarPesanan, 1)
+            txtAlamat.Text = DGVValue(dgvDaftarPesanan, 2)
+            txtNamaProduk.Text = DGVValue(dgvDaftarPesanan, 3)
+            txtKategori.Text = DGVValue(dgvDaftarPesanan, 4)
+            txtDesc.Text = If(RD.HasRows, RD(3), "Deskripsi Produk Hilang")
+            txtJumlah.Text = DGVValue(dgvDaftarPesanan, 7)
+            txtHargaTotal.Text = DGVValue(dgvDaftarPesanan, 8)
+            txtUsername.Text = DGVValue(dgvDaftarPesanan, 10)
+            txtTanggalPesan.Text = DGVValue(dgvDaftarPesanan, 5)
+            Select Case DGVValue(dgvDaftarPesanan, 9)
+                Case "Belum Dibayar"
+                    cmbStatus.SelectedIndex = 0
+                Case "Belum Dikirim"
+                    cmbStatus.SelectedIndex = 1
+                Case "Sudah Dikirim"
+                    cmbStatus.SelectedIndex = 2
+            End Select
+            RD.Close()
+            ShowForm()
+
+        ElseIf RD.HasRows Then
+            txtNama.Text = DGVValue(dgvDaftarPesanan, 1)
+            txtAlamat.Text = DGVValue(dgvDaftarPesanan, 2)
+            txtNamaProduk.Text = RD(1)
+            txtKategori.Text = RD(2)
+            txtDesc.Text = RD(3)
+            txtJumlah.Text = DGVValue(dgvDaftarPesanan, 7)
+            txtHargaTotal.Text = Val(txtJumlah.Text) * Val(RD(5))
+            txtTanggalPesan.Text = DGVValue(dgvDaftarPesanan, 5)
+            Select Case DGVValue(dgvDaftarPesanan, 9)
+                Case "Belum Dibayar"
+                    cmbStatus.SelectedIndex = 0
+                Case "Belum Dikirim"
+                    cmbStatus.SelectedIndex = 1
+                Case "Sudah Dikirim"
+                    cmbStatus.SelectedIndex = 2
+            End Select
+            txtUsername.Text = DGVValue(dgvDaftarPesanan, 10)
+            RD.Close()
+
+            dbq("Update tbpesanan set nama = '" & txtNama.Text & "', alamat = '" & txtAlamat.Text & "', 
+                stok = '" & txtJumlah.Text & "', harga_total = '" & txtHargaTotal.Text & "' 
+                Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 1) & "'")
+            RD.Close()
+            ShowForm()
+
+        Else
+            MsgBox("Produk Dari Pesanan Ini Tidak Ditemukan", MsgBoxStyle.Information, "Perhatian")
+            RD.Close()
+            dbq("Delete From tbpesanan Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "' ") 'Query hapus pesanan ini dari daftar pesanan'
+            RD.Close()
+            ShowForm(False)
+            Exit Sub
+        End If
     End Sub
 
     Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
         ShowForm(False)
+    End Sub
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+        Dim Status
+        Select Case cmbStatus.SelectedIndex
+            Case 0
+                Status = "Belum Dibayar"
+            Case 1
+                Status = "Belum Dikirim"
+            Case 2
+                Status = "Sudah Dikirim"
+        End Select
+
+        dbq("") 'query ubah STATUS pesanan dengan id DGVValue(dgvDaftarPesanan, 0)
+        RD.Close()
+
+        MsgBox("Status Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
+        ShowForm(False)
+
     End Sub
 
 
@@ -128,7 +214,7 @@
     End Sub
 
     Private Sub formStaff_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        CloseForm(sender, ExitToolStripMenuItem.Owner)
+        CloseForm(sender, MenuStrip1)
     End Sub
 
     '-------------------------------------------------------------------------------------------------------'
