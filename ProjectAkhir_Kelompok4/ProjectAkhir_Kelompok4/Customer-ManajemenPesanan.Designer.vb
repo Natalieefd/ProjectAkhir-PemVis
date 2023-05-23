@@ -266,7 +266,7 @@ Partial Class formPesananCust
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvPesanan.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvPesanan.Location = New System.Drawing.Point(60, 160)
-        Me.dgvPesanan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvPesanan.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvPesanan.MultiSelect = False
         Me.dgvPesanan.Name = "dgvPesanan"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
@@ -309,7 +309,7 @@ Partial Class formPesananCust
         Me.pnlFormPesanan.Controls.Add(Me.Label2)
         Me.pnlFormPesanan.Controls.Add(Me.txtNama)
         Me.pnlFormPesanan.Location = New System.Drawing.Point(60, 508)
-        Me.pnlFormPesanan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlFormPesanan.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormPesanan.Name = "pnlFormPesanan"
         Me.pnlFormPesanan.Size = New System.Drawing.Size(961, 492)
         Me.pnlFormPesanan.TabIndex = 4
@@ -320,7 +320,7 @@ Partial Class formPesananCust
         Me.btnBatal.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnBatal.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
         Me.btnBatal.Location = New System.Drawing.Point(896, 17)
-        Me.btnBatal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBatal.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(47, 39)
         Me.btnBatal.TabIndex = 26
@@ -343,7 +343,7 @@ Partial Class formPesananCust
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
         Me.btnClear.Location = New System.Drawing.Point(544, 388)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(100, 79)
         Me.btnClear.TabIndex = 16
@@ -356,7 +356,7 @@ Partial Class formPesananCust
         Me.btnBatalkan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBatalkan.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_remove_50
         Me.btnBatalkan.Location = New System.Drawing.Point(436, 388)
-        Me.btnBatalkan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnBatalkan.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBatalkan.Name = "btnBatalkan"
         Me.btnBatalkan.Size = New System.Drawing.Size(100, 79)
         Me.btnBatalkan.TabIndex = 15
@@ -369,7 +369,7 @@ Partial Class formPesananCust
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
         Me.btnUbah.Location = New System.Drawing.Point(328, 388)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(100, 79)
         Me.btnUbah.TabIndex = 14
@@ -393,7 +393,7 @@ Partial Class formPesananCust
         Me.txtHargaTotal.Enabled = False
         Me.txtHargaTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaTotal.Location = New System.Drawing.Point(661, 342)
-        Me.txtHargaTotal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHargaTotal.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.ReadOnly = True
         Me.txtHargaTotal.Size = New System.Drawing.Size(201, 23)
@@ -414,7 +414,7 @@ Partial Class formPesananCust
         '
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlamat.Location = New System.Drawing.Point(661, 212)
-        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(201, 95)
@@ -436,7 +436,7 @@ Partial Class formPesananCust
         Me.txtDesc.Enabled = False
         Me.txtDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDesc.Location = New System.Drawing.Point(661, 86)
-        Me.txtDesc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDesc.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(201, 94)
@@ -458,7 +458,7 @@ Partial Class formPesananCust
         Me.txtHargaSatuan.Enabled = False
         Me.txtHargaSatuan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaSatuan.Location = New System.Drawing.Point(213, 342)
-        Me.txtHargaSatuan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHargaSatuan.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHargaSatuan.Name = "txtHargaSatuan"
         Me.txtHargaSatuan.ReadOnly = True
         Me.txtHargaSatuan.Size = New System.Drawing.Size(201, 23)
@@ -479,7 +479,7 @@ Partial Class formPesananCust
         '
         Me.txtJumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtJumlah.Location = New System.Drawing.Point(213, 281)
-        Me.txtJumlah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtJumlah.Margin = New System.Windows.Forms.Padding(4)
         Me.txtJumlah.MaxLength = 4
         Me.txtJumlah.Name = "txtJumlah"
         Me.txtJumlah.Size = New System.Drawing.Size(201, 23)
@@ -511,7 +511,7 @@ Partial Class formPesananCust
         Me.txtKategori.Enabled = False
         Me.txtKategori.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKategori.Location = New System.Drawing.Point(213, 218)
-        Me.txtKategori.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtKategori.Margin = New System.Windows.Forms.Padding(4)
         Me.txtKategori.Name = "txtKategori"
         Me.txtKategori.Size = New System.Drawing.Size(201, 23)
         Me.txtKategori.TabIndex = 8
@@ -532,7 +532,7 @@ Partial Class formPesananCust
         Me.txtNamaProduk.Enabled = False
         Me.txtNamaProduk.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNamaProduk.Location = New System.Drawing.Point(213, 153)
-        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNamaProduk.Name = "txtNamaProduk"
         Me.txtNamaProduk.Size = New System.Drawing.Size(201, 23)
         Me.txtNamaProduk.TabIndex = 7
@@ -552,7 +552,7 @@ Partial Class formPesananCust
         '
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(213, 90)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(201, 23)
         Me.txtNama.TabIndex = 6
@@ -583,7 +583,7 @@ Partial Class formPesananCust
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "formPesananCust"

@@ -236,7 +236,7 @@ Partial Class formProfilTokoC
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_store
+        Me.PictureBox1.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.output_onlinegiftools
         Me.PictureBox1.Location = New System.Drawing.Point(198, 63)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(163, 116)

@@ -378,5 +378,8 @@
   <ItemGroup>
     <None Include="Resources\Bahan\bgPageCust.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
