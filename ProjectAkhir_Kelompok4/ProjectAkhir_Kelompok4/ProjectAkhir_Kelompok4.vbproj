@@ -95,6 +95,12 @@
     <Compile Include="Admin-DaftarPesanan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin-LaporanPesanan.Designer.vb">
+      <DependentUpon>Admin-LaporanPesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin-LaporanPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin-ManajemenStaf.Designer.vb">
       <DependentUpon>Admin-ManajemenStaf.vb</DependentUpon>
     </Compile>
@@ -118,6 +124,12 @@
       <DependentUpon>Customer-ManajemenPesanan.vb</DependentUpon>
     </Compile>
     <Compile Include="Customer-ManajemenPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staf-LaporanPesan.Designer.vb">
+      <DependentUpon>Staf-LaporanPesan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staf-LaporanPesan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Staf-LaporanPesanan.vb">
@@ -218,6 +230,9 @@
     <EmbeddedResource Include="Admin-DaftarPesanan.resx">
       <DependentUpon>Admin-DaftarPesanan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin-LaporanPesanan.resx">
+      <DependentUpon>Admin-LaporanPesanan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin-ManajemenStaf.resx">
       <DependentUpon>Admin-ManajemenStaf.vb</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer-ManajemenPesanan.resx">
       <DependentUpon>Customer-ManajemenPesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staf-LaporanPesan.resx">
+      <DependentUpon>Staf-LaporanPesan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staf-LaporanPesanan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -375,6 +393,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\bgPageAdmin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bahan\bgPageStaf.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

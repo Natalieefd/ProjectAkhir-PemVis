@@ -1,10 +1,4 @@
-﻿'-- INI DIBACA, KLO DAH DIKERJAIN APUS LISTNYA --
-
-'   (yg blom)
-'-------------------------------------------------
-'-- SISANYA BISA CEK" LAGI MASING" KLI AJA AKU ADA YG KETINGGALAN NGE-CEK 🙏
-
-Public Class formProfil
+﻿Public Class formProfil
 
     Public Shared Mode As String = ""
 
@@ -27,7 +21,7 @@ Public Class formProfil
 
 
         StatusStrip1.Location = New Point(0, 428)
-        Me.Size = New Point(Me.Size.Width, 410)
+        Me.Size = New Point(Me.Size.Width, 480)
 
         If Mode = "Ubah" Then
             ModeUbah()

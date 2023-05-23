@@ -192,7 +192,6 @@ C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\stdole.dll
-C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.laporanPesananAdmin.resources
 C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.laporanPesananStaf.resources
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\CrystalDecisions.ReportSource.dll
@@ -213,3 +212,4 @@ C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhi
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\bin\Debug\stdole.dll
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.laporanPesananStaf.resources
 C:\Users\ASUS VivoBook\OneDrive\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.LporanPesanAdmin.resources
+C:\Users\MSi-GAMING\Documents\GitHub\ProjectAkhir-PemVis\ProjectAkhir_Kelompok4\ProjectAkhir_Kelompok4\obj\Debug\ProjectAkhir_Kelompok4.laporanPesananAdmin.resources
