@@ -5,13 +5,16 @@
         dgvDaftarPesanan.Hide()
         btnLaporan.Hide()
         pnlUbahStatus.Show()
-        pnlUbahStatus.Location = New Point(212, 137)
+        pnlUbahStatus.Location = New Point(40, 85)
+        pnlSpace.Show()
+        pnlSpace.Location = New Point(40, 530)
     End Sub
 
     Private Sub DaftarPesananStaf_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         pnlUbahStatus.Hide()
+        pnlSpace.Hide()
 
         koneksi()
 
@@ -51,6 +54,11 @@
 
         'query update status only
     End Sub
+
+    Private Sub btnBatal_Click(sender As Object, e As EventArgs) Handles btnBatal.Click
+        ShowForm(False)
+    End Sub
+
 
     '-------------------------------------------------------------------------------------------------------'
     '--------------------------------------- ToolStripMenuItem ---------------------------------------------'

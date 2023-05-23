@@ -5,14 +5,21 @@
         btnLaporan.Hide()
         dgvDaftarPesanan.Hide()
         pnlUbahStatus.Show()
-        pnlUbahStatus.Location = New Point(212, 127)
+        pnlUbahStatus.Location = New Point(40, 85)
+        pnlSpace.Show()
+        pnlSpace.Location = New Point(40, 530)
     End Sub
 
     Private Sub DaftarPesananAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         pnlUbahStatus.Hide()
+        pnlSpace.Hide()
     End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
@@ -97,6 +104,10 @@
     Private Sub DaftarPesananAdmin_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, ExitToolStripMenuItem.Owner)
     End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         If MsgBox("Apakah Anda yakin ingin keluar dari program?", vbQuestion + vbYesNo, "Konfirmasi Keluar") = vbYes Then

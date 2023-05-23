@@ -78,6 +78,21 @@
 
     End Sub
 
+    Private Sub dgvAkunStaf_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAkunStaf.CellDoubleClick
+
+
+        ShowForm(True)
+    End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        dgvAkunStaf.Refresh()
+        ShowForm(False)
+    End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
+
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
         formAdmin.Show()
@@ -91,21 +106,25 @@
     End Sub
 
     Private Sub LihatAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatAkunStaffToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         Mode = ""
         ManajemenStaff_Load(sender, Nothing)
     End Sub
 
     Private Sub TambahAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahAkunStaffToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         Mode = "Tambah"
         ManajemenStaff_Load(sender, Nothing)
     End Sub
 
     Private Sub UbahAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahAkunStaffToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         Mode = "Ubah"
         ManajemenStaff_Load(sender, Nothing)
     End Sub
 
     Private Sub DeleteAkunStaffToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteAkunStaffToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         Mode = "Hapus"
         ManajemenStaff_Load(sender, Nothing)
     End Sub
@@ -155,6 +174,10 @@
     Private Sub ManajemenStaf_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, ExitToolStripMenuItem.Owner)
     End Sub
+
+    '-------------------------------------------------------------------------------------------------------'
+    '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
+    '-------------------------------------------------------------------------------------------------------'
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         If MsgBox("Apakah Anda yakin ingin keluar dari program?", vbQuestion + vbYesNo, "Konfirmasi Keluar") = vbYes Then
