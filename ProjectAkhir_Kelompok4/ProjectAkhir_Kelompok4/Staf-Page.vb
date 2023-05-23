@@ -45,8 +45,10 @@
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.ActiveControl = MenuStrip1
-        Home.Show()
-        Me.Close()
+        If MsgBox("Apakah Anda yakin ingin logout ?", vbQuestion + vbYesNo, "Konfirmasi Logout") = vbYes Then
+            Home.Show()
+            Me.Close()
+        End If
     End Sub
 
 
