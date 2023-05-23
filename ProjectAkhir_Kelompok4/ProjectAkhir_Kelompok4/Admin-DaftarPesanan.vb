@@ -120,7 +120,7 @@
     End Sub
 
     Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
-        laporanPesananAdmin.Show()
+        'Admin-LaporanPesanan.Show() 
     End Sub
 
     Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
