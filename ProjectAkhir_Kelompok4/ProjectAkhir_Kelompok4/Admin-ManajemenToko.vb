@@ -6,12 +6,12 @@
 
         Tripart("Profil")
 
-        dbq("") 'query cari data admin
+        dbq("Select nama_toko, no_telp, email, alamat from tbAdmin") 'query cari data admin
 
-        txtNama.Text = RD(2)
-        txtNoTelp.Text = RD(3)
-        txtEmail.Text = RD(4)
-        txtAlamat.Text = RD(5)
+        txtNama.Text = RD(0)
+        txtNoTelp.Text = RD(1)
+        txtEmail.Text = RD(2)
+        txtAlamat.Text = RD(3)
         RD.Close()
 
     End Sub
@@ -54,7 +54,8 @@
             Exit Sub
         End If
 
-        dbq("") 'query tbAdmin where pass = textBlabla
+        dbq("SELECT * From tbadmin where password='" & txtKonfirmPass.Text & "'")
+        'query tbAdmin where pass = textBlabla
 
         If RD.HasRows Then
             txtUbahUsn.Text = RD(0)
@@ -95,7 +96,11 @@
         Dim Password = txtUbahPass.Text
         Password = If(Password = "(Password Lama)", txtKonfirmPass.Text, Password)
 
-        dbq("") 'query ubah data admin, password gunakan variable password
+        dbq("Update tbAdmin set username = '" & txtUbahUsn.Text & "', 
+            password = '" & Password & "', nama_toko = '" & txtUbahNama.Text & "',
+            no_telp = '" & txtUbahNoTelp.Text & "', alamat = '" & txtUbahAlamat.Text & "'
+            Where password = '" & Password & "'")
+        'query ubah data admin, password gunakan variable password
         RD.Close()
 
         MessageBox.Show("Berhasil ubah password!", "Perhatian",
