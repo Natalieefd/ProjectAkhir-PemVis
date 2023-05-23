@@ -120,17 +120,11 @@
     <Compile Include="Customer-ManajemenPesanan.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin-LaporanPesanan.Designer.vb">
-      <DependentUpon>Admin-LaporanPesanan.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Admin-LaporanPesanan.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Staf-LaporanPesanan.Designer.vb">
-      <DependentUpon>Staf-LaporanPesanan.vb</DependentUpon>
-    </Compile>
     <Compile Include="Staf-LaporanPesanan.vb">
-      <SubType>Form</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Staf-LaporanPesanan.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Staf-ProfilToko.Designer.vb">
       <DependentUpon>Staf-ProfilToko.vb</DependentUpon>
@@ -236,11 +230,9 @@
     <EmbeddedResource Include="Customer-ManajemenPesanan.resx">
       <DependentUpon>Customer-ManajemenPesanan.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin-LaporanPesanan.resx">
-      <DependentUpon>Admin-LaporanPesanan.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Staf-LaporanPesanan.resx">
-      <DependentUpon>Staf-LaporanPesanan.vb</DependentUpon>
+    <EmbeddedResource Include="Staf-LaporanPesanan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Staf-LaporanPesanan.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Staf-ProfilToko.resx">
       <DependentUpon>Staf-ProfilToko.vb</DependentUpon>
@@ -380,6 +372,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\output-onlinegiftools.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

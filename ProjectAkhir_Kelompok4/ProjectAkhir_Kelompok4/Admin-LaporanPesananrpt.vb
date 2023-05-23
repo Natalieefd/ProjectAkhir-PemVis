@@ -18,7 +18,7 @@ Imports System
 Imports System.ComponentModel
 
 
-Public Class Staf_LaporanPesanan
+Public Class Admin_LaporanPesananrpt
     Inherits ReportClass
     
     Public Sub New()
@@ -27,7 +27,7 @@ Public Class Staf_LaporanPesanan
     
     Public Overrides Property ResourceName() As String
         Get
-            Return "Staf-LaporanPesanan.rpt"
+            Return "Admin-LaporanPesananrpt.rpt"
         End Get
         Set
             'Do nothing
@@ -45,7 +45,7 @@ Public Class Staf_LaporanPesanan
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "ProjectAkhir_Kelompok4.Staf-LaporanPesanan.rpt"
+            Return "ProjectAkhir_Kelompok4.Admin-LaporanPesananrpt.rpt"
         End Get
         Set
             'Do nothing
@@ -94,7 +94,7 @@ Public Class Staf_LaporanPesanan
 End Class
 
 <System.Drawing.ToolboxBitmapAttribute(GetType(CrystalDecisions.[Shared].ExportOptions), "report.bmp")>  _
-Public Class CachedStaf_LaporanPesanan
+Public Class CachedAdmin_LaporanPesananrpt
     Inherits Component
     Implements ICachedReport
     
@@ -136,7 +136,7 @@ Public Class CachedStaf_LaporanPesanan
     End Property
     
     Public Overridable Function CreateReport() As CrystalDecisions.CrystalReports.Engine.ReportDocument Implements CrystalDecisions.ReportSource.ICachedReport.CreateReport
-        Dim rpt As Staf_LaporanPesanan = New Staf_LaporanPesanan()
+        Dim rpt As Admin_LaporanPesananrpt = New Admin_LaporanPesananrpt()
         rpt.Site = Me.Site
         Return rpt
     End Function

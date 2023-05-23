@@ -125,7 +125,7 @@ Partial Class ManajemenStaf
         Me.pnlFormAkun.Controls.Add(Me.Label2)
         Me.pnlFormAkun.Controls.Add(Me.txtNama)
         Me.pnlFormAkun.Location = New System.Drawing.Point(294, 777)
-        Me.pnlFormAkun.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlFormAkun.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlFormAkun.Name = "pnlFormAkun"
         Me.pnlFormAkun.Size = New System.Drawing.Size(1012, 667)
         Me.pnlFormAkun.TabIndex = 6
@@ -136,7 +136,7 @@ Partial Class ManajemenStaf
         Me.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnCancel.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
         Me.btnCancel.Location = New System.Drawing.Point(928, 25)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(62, 62)
         Me.btnCancel.TabIndex = 60
@@ -148,7 +148,7 @@ Partial Class ManajemenStaf
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_broom_50
         Me.btnClear.Location = New System.Drawing.Point(668, 498)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(140, 131)
         Me.btnClear.TabIndex = 22
@@ -161,7 +161,7 @@ Partial Class ManajemenStaf
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
         Me.btnUbah.Location = New System.Drawing.Point(366, 498)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(140, 131)
         Me.btnUbah.TabIndex = 21
@@ -174,7 +174,7 @@ Partial Class ManajemenStaf
         Me.btnHapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHapus.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_remove_50
         Me.btnHapus.Location = New System.Drawing.Point(518, 498)
-        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnHapus.Margin = New System.Windows.Forms.Padding(4)
         Me.btnHapus.Name = "btnHapus"
         Me.btnHapus.Size = New System.Drawing.Size(140, 131)
         Me.btnHapus.TabIndex = 20
@@ -187,7 +187,7 @@ Partial Class ManajemenStaf
         Me.btnTambah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTambah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_add_new_50
         Me.btnTambah.Location = New System.Drawing.Point(212, 498)
-        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnTambah.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTambah.Name = "btnTambah"
         Me.btnTambah.Size = New System.Drawing.Size(140, 131)
         Me.btnTambah.TabIndex = 19
@@ -221,7 +221,7 @@ Partial Class ManajemenStaf
         '
         Me.txtPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPass.Location = New System.Drawing.Point(430, 385)
-        Me.txtPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.Size = New System.Drawing.Size(364, 32)
         Me.txtPass.TabIndex = 10
@@ -241,7 +241,7 @@ Partial Class ManajemenStaf
         '
         Me.txtUsn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsn.Location = New System.Drawing.Point(430, 285)
-        Me.txtUsn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUsn.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsn.Name = "txtUsn"
         Me.txtUsn.Size = New System.Drawing.Size(364, 32)
         Me.txtUsn.TabIndex = 9
@@ -261,7 +261,7 @@ Partial Class ManajemenStaf
         '
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(430, 185)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(364, 32)
         Me.txtNama.TabIndex = 8
@@ -287,7 +287,7 @@ Partial Class ManajemenStaf
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvAkunStaf.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvAkunStaf.Location = New System.Drawing.Point(210, 267)
-        Me.dgvAkunStaf.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvAkunStaf.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvAkunStaf.Name = "dgvAkunStaf"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -463,7 +463,7 @@ Partial Class ManajemenStaf
         Me.Controls.Add(Me.dgvAkunStaf)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ManajemenStaf"
