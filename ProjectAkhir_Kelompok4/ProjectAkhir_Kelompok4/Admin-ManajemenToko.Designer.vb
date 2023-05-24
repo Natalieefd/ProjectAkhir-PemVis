@@ -128,7 +128,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtNoTelp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoTelp.MaxLength = 15
         Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(231, 20)
+        Me.txtNoTelp.Size = New System.Drawing.Size(231, 22)
         Me.txtNoTelp.TabIndex = 8
         '
         'txtEmail
@@ -139,7 +139,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmail.MaxLength = 50
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(231, 20)
+        Me.txtEmail.Size = New System.Drawing.Size(231, 22)
         Me.txtEmail.TabIndex = 7
         '
         'txtNama
@@ -150,7 +150,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtNama.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(231, 20)
+        Me.txtNama.Size = New System.Drawing.Size(231, 22)
         Me.txtNama.TabIndex = 6
         '
         'btnUbah
@@ -172,7 +172,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(136, 18)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(163, 25)
+        Me.Label14.Size = New System.Drawing.Size(190, 29)
         Me.Label14.TabIndex = 5
         Me.Label14.Text = "PROFIL TOKO"
         '
@@ -182,7 +182,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.Location = New System.Drawing.Point(58, 75)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(45, 15)
+        Me.Label18.Size = New System.Drawing.Size(49, 17)
         Me.Label18.TabIndex = 5
         Me.Label18.Text = "Nama"
         '
@@ -192,7 +192,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.Location = New System.Drawing.Point(58, 114)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(44, 15)
+        Me.Label20.Size = New System.Drawing.Size(47, 17)
         Me.Label20.TabIndex = 5
         Me.Label20.Text = "Email"
         '
@@ -202,7 +202,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.Location = New System.Drawing.Point(58, 151)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(57, 15)
+        Me.Label22.Size = New System.Drawing.Size(65, 17)
         Me.Label22.TabIndex = 5
         Me.Label22.Text = "No Telp"
         '
@@ -212,7 +212,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.Location = New System.Drawing.Point(58, 190)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(51, 15)
+        Me.Label24.Size = New System.Drawing.Size(57, 17)
         Me.Label24.TabIndex = 5
         Me.Label24.Text = "Alamat"
         '
@@ -222,7 +222,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(232, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(232, 25)
+        Me.Label1.Size = New System.Drawing.Size(272, 29)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "UBAH PROFIL TOKO"
         '
@@ -259,7 +259,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label10.Location = New System.Drawing.Point(374, 174)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(51, 15)
+        Me.Label10.Size = New System.Drawing.Size(57, 17)
         Me.Label10.TabIndex = 17
         Me.Label10.Text = "Alamat"
         '
@@ -280,7 +280,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(45, 200)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(57, 15)
+        Me.Label7.Size = New System.Drawing.Size(65, 17)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "No Telp"
         '
@@ -291,7 +291,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtUbahNoTelp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahNoTelp.MaxLength = 15
         Me.txtUbahNoTelp.Name = "txtUbahNoTelp"
-        Me.txtUbahNoTelp.Size = New System.Drawing.Size(152, 20)
+        Me.txtUbahNoTelp.Size = New System.Drawing.Size(152, 22)
         Me.txtUbahNoTelp.TabIndex = 20
         '
         'Label6
@@ -300,7 +300,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(45, 148)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 15)
+        Me.Label6.Size = New System.Drawing.Size(47, 17)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Email"
         '
@@ -323,7 +323,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(43, 21)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(203, 24)
+        Me.Label8.Size = New System.Drawing.Size(237, 26)
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Konfirmasi Password"
         '
@@ -346,7 +346,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(34, 69)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 15)
+        Me.Label4.Size = New System.Drawing.Size(77, 17)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Password"
         '
@@ -358,7 +358,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtKonfirmPass.MaxLength = 50
         Me.txtKonfirmPass.Name = "txtKonfirmPass"
         Me.txtKonfirmPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtKonfirmPass.Size = New System.Drawing.Size(152, 20)
+        Me.txtKonfirmPass.Size = New System.Drawing.Size(152, 22)
         Me.txtKonfirmPass.TabIndex = 13
         '
         'Label5
@@ -367,7 +367,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(45, 202)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 15)
+        Me.Label5.Size = New System.Drawing.Size(0, 17)
         Me.Label5.TabIndex = 8
         '
         'StatusStrip1
@@ -378,21 +378,21 @@ Partial Class ManajemenTokoAdmin
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 1026)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(783, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(819, 22)
         Me.StatusStrip1.TabIndex = 25
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'pnlFormUbah
@@ -428,7 +428,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label3.Location = New System.Drawing.Point(350, 127)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 15)
+        Me.Label3.Size = New System.Drawing.Size(77, 17)
         Me.Label3.TabIndex = 63
         Me.Label3.Text = "Password"
         '
@@ -439,7 +439,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label11.Location = New System.Drawing.Point(350, 80)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(73, 15)
+        Me.Label11.Size = New System.Drawing.Size(81, 17)
         Me.Label11.TabIndex = 62
         Me.Label11.Text = "Username"
         '
@@ -451,7 +451,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtUbahPass.MaxLength = 50
         Me.txtUbahPass.Name = "txtUbahPass"
         Me.txtUbahPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtUbahPass.Size = New System.Drawing.Size(152, 20)
+        Me.txtUbahPass.Size = New System.Drawing.Size(152, 22)
         Me.txtUbahPass.TabIndex = 61
         '
         'txtUbahUsn
@@ -461,7 +461,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtUbahUsn.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahUsn.MaxLength = 50
         Me.txtUbahUsn.Name = "txtUbahUsn"
-        Me.txtUbahUsn.Size = New System.Drawing.Size(152, 20)
+        Me.txtUbahUsn.Size = New System.Drawing.Size(152, 22)
         Me.txtUbahUsn.TabIndex = 60
         '
         'btnCancel
@@ -484,7 +484,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtUbahEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahEmail.MaxLength = 50
         Me.txtUbahEmail.Name = "txtUbahEmail"
-        Me.txtUbahEmail.Size = New System.Drawing.Size(152, 20)
+        Me.txtUbahEmail.Size = New System.Drawing.Size(152, 22)
         Me.txtUbahEmail.TabIndex = 19
         '
         'Label2
@@ -493,7 +493,7 @@ Partial Class ManajemenTokoAdmin
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(45, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 15)
+        Me.Label2.Size = New System.Drawing.Size(49, 17)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Nama"
         '
@@ -504,7 +504,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtUbahNama.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahNama.MaxLength = 50
         Me.txtUbahNama.Name = "txtUbahNama"
-        Me.txtUbahNama.Size = New System.Drawing.Size(152, 20)
+        Me.txtUbahNama.Size = New System.Drawing.Size(152, 22)
         Me.txtUbahNama.TabIndex = 18
         '
         'pnlTop
@@ -515,7 +515,7 @@ Partial Class ManajemenTokoAdmin
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(783, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(819, 36)
         Me.pnlTop.TabIndex = 58
         '
         'pnlControl
@@ -523,7 +523,7 @@ Partial Class ManajemenTokoAdmin
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(729, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(765, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -562,94 +562,94 @@ Partial Class ManajemenTokoAdmin
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(783, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(819, 25)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenStaffToolStripMenuItem
         '
         Me.ManajemenStaffToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatAkunStaffToolStripMenuItem, Me.TambahAkunStaffToolStripMenuItem, Me.UbahAkunStaffToolStripMenuItem, Me.DeleteAkunStaffToolStripMenuItem})
         Me.ManajemenStaffToolStripMenuItem.Name = "ManajemenStaffToolStripMenuItem"
-        Me.ManajemenStaffToolStripMenuItem.Size = New System.Drawing.Size(113, 20)
+        Me.ManajemenStaffToolStripMenuItem.Size = New System.Drawing.Size(128, 21)
         Me.ManajemenStaffToolStripMenuItem.Text = "Manajemen Staff"
         '
         'LihatAkunStaffToolStripMenuItem
         '
         Me.LihatAkunStaffToolStripMenuItem.Name = "LihatAkunStaffToolStripMenuItem"
-        Me.LihatAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.LihatAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(205, 24)
         Me.LihatAkunStaffToolStripMenuItem.Text = "Lihat Akun Staff"
         '
         'TambahAkunStaffToolStripMenuItem
         '
         Me.TambahAkunStaffToolStripMenuItem.Name = "TambahAkunStaffToolStripMenuItem"
-        Me.TambahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.TambahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(205, 24)
         Me.TambahAkunStaffToolStripMenuItem.Text = "Tambah Akun Staff"
         '
         'UbahAkunStaffToolStripMenuItem
         '
         Me.UbahAkunStaffToolStripMenuItem.Name = "UbahAkunStaffToolStripMenuItem"
-        Me.UbahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.UbahAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(205, 24)
         Me.UbahAkunStaffToolStripMenuItem.Text = "Ubah Akun Staff"
         '
         'DeleteAkunStaffToolStripMenuItem
         '
         Me.DeleteAkunStaffToolStripMenuItem.Name = "DeleteAkunStaffToolStripMenuItem"
-        Me.DeleteAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.DeleteAkunStaffToolStripMenuItem.Size = New System.Drawing.Size(205, 24)
         Me.DeleteAkunStaffToolStripMenuItem.Text = "Hapus Akun Staff"
         '
         'ManajemenBarangToolStripMenuItem
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatDataProdukToolStripMenuItem, Me.TambahDataProdukToolStripMenuItem, Me.UbahDataProdukToolStripMenuItem, Me.HapusDataProdukToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(128, 20)
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(144, 21)
         Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatDataProdukToolStripMenuItem
         '
         Me.LihatDataProdukToolStripMenuItem.Name = "LihatDataProdukToolStripMenuItem"
-        Me.LihatDataProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.LihatDataProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.LihatDataProdukToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahDataProdukToolStripMenuItem
         '
         Me.TambahDataProdukToolStripMenuItem.Name = "TambahDataProdukToolStripMenuItem"
-        Me.TambahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.TambahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.TambahDataProdukToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahDataProdukToolStripMenuItem
         '
         Me.UbahDataProdukToolStripMenuItem.Name = "UbahDataProdukToolStripMenuItem"
-        Me.UbahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.UbahDataProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.UbahDataProdukToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusDataProdukToolStripMenuItem
         '
         Me.HapusDataProdukToolStripMenuItem.Name = "HapusDataProdukToolStripMenuItem"
-        Me.HapusDataProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.HapusDataProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
         Me.HapusDataProdukToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'PesananToolStripMenuItem
         '
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
-        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ManajemenTokoAdmin
@@ -658,7 +658,7 @@ Partial Class ManajemenTokoAdmin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
-        Me.ClientSize = New System.Drawing.Size(800, 410)
+        Me.ClientSize = New System.Drawing.Size(838, 410)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.pnlProfil)

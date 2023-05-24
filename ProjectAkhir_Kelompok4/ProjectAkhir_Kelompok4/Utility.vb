@@ -68,7 +68,16 @@ Module Utility
         End If
 
         Return False
+    End Function
 
+    Function Spacing(e As KeyPressEventArgs) As Boolean
+        Dim eChar As Char = e.KeyChar
+
+        If Asc(eChar) = 32 Then
+            Return True
+        End If
+
+        Return False
     End Function
 
     Function CheckNum(TextControl As TextBox) As Boolean

@@ -40,6 +40,10 @@
         pnlPass.Location = New Point(239, 80)
     End Sub
 
+    Private Sub txtUbahUsn_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUbahUsn.KeyPress
+        e.Handled = Spacing(e)
+    End Sub
+
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Call checkPass()
     End Sub
@@ -153,6 +157,11 @@
 
         If Con IsNot Nothing Then
             Con.Focus()
+            Exit Sub
+        End If
+
+        If Not CheckSpace(txtUbahUsn) Then
+            txtUbahUsn.Focus()
             Exit Sub
         End If
 

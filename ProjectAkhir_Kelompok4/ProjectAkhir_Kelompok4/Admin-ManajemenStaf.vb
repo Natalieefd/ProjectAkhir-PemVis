@@ -66,8 +66,6 @@
                 txtNama.Enabled = False
                 txtUsn.Enabled = False
                 txtPass.Enabled = False
-
-
         End Select
 
     End Sub
@@ -106,6 +104,12 @@
     End Sub
 
     Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+        Dim Con = EmptyTB()
+
+        If Con IsNot Nothing Then
+            Con.Focus()
+            Exit Sub
+        End If
 
         If Not CheckSpace(txtUsn) Then
             txtUsn.Focus()
@@ -169,7 +173,7 @@
             password = '" & txtPass.Text & "' Where id_staff = '" & DGVValue(dgvAkunStaf, 0) & "'")
         'update data tbstaff dengan id DGVValue(namaGridview, 0)
         RD.Close()
-        MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
+        MsgBox("Data Akun Berhasil Diubah", MsgBoxStyle.Information, "Perhatian")
         UbahAkunStaffToolStripMenuItem_Click(sender, Nothing)
     End Sub
 
@@ -187,6 +191,9 @@
         txtNama.Clear()
         txtUsn.Clear()
         txtPass.Clear()
+    End Sub
+    Private Sub txtUsn_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsn.KeyPress
+        e.Handled = Spacing(e)
     End Sub
 
     '-------------------------------------------------------------------------------------------------------'

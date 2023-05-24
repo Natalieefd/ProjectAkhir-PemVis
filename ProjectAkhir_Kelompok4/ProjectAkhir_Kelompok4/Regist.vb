@@ -84,7 +84,7 @@ Public Class formRegist
     End Sub
 
     Private Sub txtUsername_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsername.KeyPress
-        If Asc(e.KeyChar) = 32 Then
+        If Spacing(e) Then
             e.Handled = True
         ElseIf Asc(e.KeyChar) = 13 Then
             txtPassword.Focus()

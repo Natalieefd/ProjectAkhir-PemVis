@@ -113,7 +113,7 @@
             txtUsername.Text = DGVValue(dgvDaftarPesanan, 10)
             RD.Close()
 
-            dbq("Update harga_total = '" & txtHargaTotal.Text & "' 
+            dbq("Update tbpesanan set harga_total = '" & txtHargaTotal.Text & "' 
                 Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 1) & "'")
             RD.Close()
             ShowForm()

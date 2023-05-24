@@ -227,6 +227,14 @@
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    Private Sub txtStok_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtStok.KeyPress
+        e.Handled = Numbering(e)
+    End Sub
+
+    Private Sub txtHarga_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtHarga.KeyPress
+        e.Handled = Numbering(e)
+    End Sub
+
     '-------------------------------------------------------------------------------------------------------'
     '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
     '-------------------------------------------------------------------------------------------------------'
@@ -290,6 +298,7 @@
     Private Sub formStaff_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         CloseForm(sender, MenuStrip1)
     End Sub
+
 
     '-------------------------------------------------------------------------------------------------------'
     '--------------------------------------- ToolStripMenuItem ---------------------------------------------'

@@ -91,6 +91,11 @@
             Exit Sub
         End If
 
+        If Not CheckSpace(txtUbahUsn) Then
+            txtUbahUsn.Focus()
+            Exit Sub
+        End If
+
         If Not CheckNum(txtUbahNoTelp) Then
             txtUbahNoTelp.Focus()
             Exit Sub
@@ -109,6 +114,13 @@
         MessageBox.Show("Data Toko Berhasil Diubah!", "Perhatian",
                             MessageBoxButtons.OK, MessageBoxIcon.Information)
 
+    End Sub
+
+    Private Sub txtUbahNoTelp_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUbahNoTelp.KeyPress
+        e.Handled = Numbering(e)
+    End Sub
+    Private Sub txtUbahUsn_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUbahUsn.KeyPress
+        e.Handled = Spacing(e)
     End Sub
 
     '-------------------------------------------------------------------------------------------------------'
@@ -222,4 +234,5 @@
         txtUbahUsn.Clear()
         txtUbahPass.Text = "(Password Lama)"
     End Sub
+
 End Class
