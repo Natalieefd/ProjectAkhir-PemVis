@@ -59,11 +59,13 @@
             pnlUbahStatus.Location = New Point(40, 85)
             pnlSpace.Hide()
         End If
+        dgvDaftarPesanan.Refresh()
 
     End Sub
 
     Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
         ShowForm()
+
         dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvDaftarPesanan, 6) & "%'")
 
         If DGVValue(dgvDaftarPesanan, 9) <> "Belum Dibayar" Then
@@ -138,7 +140,9 @@
                 Status = "Sudah Dikirim"
         End Select
 
-        dbq("") 'query ubah STATUS pesanan dengan id DGVValue(dgvDaftarPesanan, 0)
+        dbq("Update tbpesanan set status = '" & cmbStatus.Text & "'
+             Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "' ")
+        'query ubah STATUS pesanan dengan id DGVValue(dgvDaftarPesanan, 0)
         RD.Close()
 
         MsgBox("Status Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")

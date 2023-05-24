@@ -7,7 +7,7 @@
         SlabelJam.Text = TimeOfDay
 
 
-        dbdsq("") 'query lihat smw akun staff
+        dbdsq("SELECT * FROM tbstaff WHERE id_staff > 0 ") 'query lihat smw akun staff
 
         AturGrid(dgvAkunStaf, {0, 0, 50, 0})
 
@@ -105,7 +105,10 @@
             Exit Sub
         End If
 
-        dbq("") 'select smw username di tbuser(semua), gunakan keyword union
+        dbq("SELECT username from tbadmin 
+            UNION SELECT username from tbcustomer 
+            UNION SELECT username from tbstaff")
+        'select smw username di tbuser(semua), gunakan keyword union
 
         If RD.HasRows Then
             MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
@@ -115,7 +118,9 @@
 
         RD.Close()
 
-        dbq("") 'insert data ke tbstaff'
+        dbq("Insert Into tbstaff (nama, username, password)Values
+            ('" & txtNama.Text & "','" & txtUsn.Text & "','" & txtPass.Text & ")")
+        'insert data ke tbstaff'
         RD.Close()
         MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
         LihatAkunStaffToolStripMenuItem_Click(sender, Nothing)
@@ -128,7 +133,9 @@
             Exit Sub
         End If
 
-        dbq("") 'query lihat smw username di tbstaff yang id bukan DGVValue(namaGridview, 0) dan username = txtUsn
+        dbq("Select username from tbstaff Where 
+            id_staff <> '" & DGVValue(dgvAkunStaf, 0) & "' and username = '" & txtUsn.Text & "'")
+        'query lihat smw username di tbstaff yang id bukan DGVValue(namaGridview, 0) dan username = txtUsn
 
         If RD.HasRows Then
             MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
@@ -136,7 +143,9 @@
             Exit Sub
         Else
             RD.Close()
-            dbq("") 'query lihat smw username di tbadmin dan tbcust yang usnnya blabla, pakai union
+            dbq("Select username From tbadmin 
+                Union Select username From tbcustomer")
+            'query lihat smw username di tbadmin dan tbcust yang usnnya blabla, pakai union
 
             If RD.HasRows Then
                 MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
@@ -149,14 +158,17 @@
 
         RD.Close()
 
-        dbq("") 'update data tbstaff dengan id DGVValue(namaGridview, 0)
+        dbq("Update set nama = '" & txtNama.Text & "', username = '" & txtUsn.Text & "',
+            password = '" & txtPass.Text & "' Where id_staff = '" & DGVValue(dgvAkunStaf, 0).Text & "'")
+        'update data tbstaff dengan id DGVValue(namaGridview, 0)
         RD.Close()
         MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
         UbahAkunStaffToolStripMenuItem_Click(sender, Nothing)
     End Sub
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
-        dbq("") 'hapus data staf dengan id DGVValue(namaGridview, 0)
+        dbq("Delete From tbstaff Where id_staff = '" & DGVValue(dgvAkunStaf, 0) & "' ")
+        'hapus data staf dengan id DGVValue(namaGridview, 0)
 
         MsgBox("Akun Staf berhasil dihapus", MsgBoxStyle.Information, "Perhatian")
         RD.Close()
@@ -269,4 +281,5 @@
     Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
+
 End Class
