@@ -183,7 +183,7 @@
 
         Dim StokBaru = Stok - Val(txtJumlah.Text)
 
-        dbq("Update tbproduk set stok = '" & StokBaru & "' WHERE Id_produk = '" & DGVValue(dgvPesanan, 6) & "'")
+        dbq("Update tbproduk set stok = '" & StokBaru & "' WHERE id_produk = '" & DGVValue(dgvPesanan, 6) & "'")
         'query update stok produk menjadi stokbaru dengan idproduk = DGVValue(dgvPesanan, 6)
         RD.Close()
 

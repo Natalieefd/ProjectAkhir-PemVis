@@ -109,9 +109,9 @@
             Exit Sub
         End If
 
-        dbq("SELECT username from tbadmin 
-            UNION SELECT username from tbcustomer 
-            UNION SELECT username from tbstaff")
+        dbq("SELECT username FROM tbcustomer WHERE username = '" & txtUsn.Text & "'
+            UNION SELECT username FROM tbadmin WHERE username = '" & txtUsn.Text & "'
+            UNION SELECT username FROM tbstaff WHERE username = '" & txtUsn.Text & "'")
         'select smw username di tbuser(semua), gunakan keyword union
 
         If RD.HasRows Then
@@ -123,7 +123,7 @@
         RD.Close()
 
         dbq("Insert Into tbstaff (nama, username, password)Values
-            ('" & txtNama.Text & "','" & txtUsn.Text & "','" & txtPass.Text & ")")
+            ('" & txtNama.Text & "','" & txtUsn.Text & "','" & txtPass.Text & "')")
         'insert data ke tbstaff'
         RD.Close()
         MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
@@ -147,8 +147,8 @@
             Exit Sub
         Else
             RD.Close()
-            dbq("Select username From tbadmin 
-                Union Select username From tbcustomer")
+            dbq("SELECT username FROM tbcustomer WHERE username = '" & txtUsn.Text & "'
+                 UNION SELECT username FROM tbadmin WHERE username = '" & txtUsn.Text & "'")
             'query lihat smw username di tbadmin dan tbcust yang usnnya blabla, pakai union
 
             If RD.HasRows Then
@@ -162,8 +162,8 @@
 
         RD.Close()
 
-        dbq("Update set nama = '" & txtNama.Text & "', username = '" & txtUsn.Text & "',
-            password = '" & txtPass.Text & "' Where id_staff = '" & DGVValue(dgvAkunStaf, 0).Text & "'")
+        dbq("Update tbstaff set nama = '" & txtNama.Text & "', username = '" & txtUsn.Text & "',
+            password = '" & txtPass.Text & "' Where id_staff = '" & DGVValue(dgvAkunStaf, 0) & "'")
         'update data tbstaff dengan id DGVValue(namaGridview, 0)
         RD.Close()
         MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
