@@ -53,6 +53,7 @@ Partial Class formLogin
         '
         Me.btnBack.BackColor = System.Drawing.Color.DarkGoldenrod
         Me.btnBack.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnBack.Location = New System.Drawing.Point(905, 446)
         Me.btnBack.Margin = New System.Windows.Forms.Padding(4)
         Me.btnBack.Name = "btnBack"
@@ -110,6 +111,7 @@ Partial Class formLogin
         'btnSubmit
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnSubmit.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnSubmit.Location = New System.Drawing.Point(33, 212)
         Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSubmit.Name = "btnSubmit"
@@ -181,6 +183,7 @@ Partial Class formLogin
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.LightCoral
         Me.Label1.Font = New System.Drawing.Font("MS PGothic", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label1.Location = New System.Drawing.Point(44, 318)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
