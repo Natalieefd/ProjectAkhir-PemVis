@@ -27,12 +27,9 @@ Public Class formRegist
             Exit Sub
         End If
 
-        For Each c As Char In txtUsername.Text
-            If Asc(c) = 32 Then
-                UsnE = True
-                Exit For
-            End If
-        Next
+        If Not CheckSpace(txtUsername) Then
+            UsnE = True
+        End If
 
         If Not CheckNum(txtNoTelp) Then
             NoE = True
@@ -45,24 +42,11 @@ Public Class formRegist
             Exit Sub
         End If
 
-            Dim stats() As String = {"admin", "staff", "customer"}
-        Dim dup = False
+        dbq("SELECT username FROM tbcustomer WHERE username = '" & txtUsername.Text & "'
+            UNION SELECT username FROM tbadmin WHERE username = " & txtUsername.Text & "'
+            UNION SELECT username FROM tbstaff WHERE username = " & txtUsername.Text & "'")
 
-        For Each mode In stats
-            If dup Then
-                Exit For
-            End If
-
-            dbq("Select * from tb" & mode & " where username='" & txtUsername.Text & "'")
-
-            If RD.HasRows Then
-                dup = True
-            End If
-
-            RD.Close()
-        Next
-
-        If dup Then
+        If RD.HasRows Then
             MsgBox("Username sudah dipakai", MsgBoxStyle.Information, "Perhatian")
             txtUsername.Focus()
             Exit Sub

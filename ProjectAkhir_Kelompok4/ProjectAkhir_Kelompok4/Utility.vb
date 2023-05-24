@@ -81,6 +81,18 @@ Module Utility
         Return True
     End Function
 
+    Function CheckSpace(TextControl As TextBox) As Boolean
+        For Each c As Char In TextControl.Text
+            If Asc(c) = 32 Then
+                Return False
+                Exit For
+            End If
+        Next
+
+        Return True
+    End Function
+
+
     Sub AturGrid(Grids As DataGridView, ColumnWidth() As Integer,
                  Optional AutoSizeLast As Boolean = True,
                  Optional HeaderBackColor As Color = Nothing,

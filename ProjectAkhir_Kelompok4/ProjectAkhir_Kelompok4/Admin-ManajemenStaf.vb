@@ -2,32 +2,20 @@
 
     Public Shared Mode As String
 
-
-    Private Sub ShowForm(Optional State = True)
-        If State Then
-            dgvAkunStaf.Hide()
-            pnlFormAkun.Location = New Point(147, 108)
-            pnlFormAkun.Show()
-            Me.Size = New Point(Me.Size.Width, 530)
-            Exit Sub
-
-        End If
-
-        Me.Size = New Point(Me.Size.Width, 430)
-        dgvAkunStaf.Show()
-        pnlFormAkun.Hide()
-
-    End Sub
-
     Private Sub ManajemenStaff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
+
+
+        dbdsq("") 'query lihat smw akun staff
+
+        AturGrid(dgvAkunStaf, {0, 0, 50, 0})
 
         ShowForm(False)
 
         Select Case Mode
             Case "Tambah"
-                ShowForm(True)
+                ShowForm()
                 Label4.Hide()
                 btnTambah.Show()
                 btnUbah.Hide()
@@ -36,11 +24,14 @@
                 txtNama.Enabled = True
                 txtUsn.Enabled = True
                 txtPass.Enabled = True
+                txtNama.Clear()
+                txtUsn.Clear()
+                txtPass.Clear()
                 btnTambah.Location = New Point(150, 259)
                 btnClear.Location = New Point(297, 259)
 
             Case "Ubah"
-                ShowForm(True)
+                ShowForm(False)
                 Label4.Hide()
                 btnTambah.Hide()
                 btnUbah.Show()
@@ -53,7 +44,7 @@
                 btnClear.Location = New Point(297, 259)
 
             Case "Hapus"
-                ShowForm(True)
+                ShowForm(False)
                 Label4.Hide()
                 btnTambah.Hide()
                 btnUbah.Hide()
@@ -78,15 +69,105 @@
 
     End Sub
 
+    Private Sub ShowForm(Optional State = True)
+        If State Then
+            dgvAkunStaf.Hide()
+            pnlFormAkun.Location = New Point(147, 108)
+            pnlFormAkun.Show()
+            Me.Size = New Point(Me.Size.Width, 530)
+            Exit Sub
+
+        End If
+
+        Me.Size = New Point(Me.Size.Width, 430)
+        dgvAkunStaf.Show()
+        pnlFormAkun.Hide()
+
+    End Sub
+
     Private Sub dgvAkunStaf_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAkunStaf.CellDoubleClick
+        txtNama.Text = DGVValue(dgvAkunStaf, 1)
+        txtUsn.Text = DGVValue(dgvAkunStaf, 2)
+        txtPass.Text = DGVValue(dgvAkunStaf, 3)
 
-
-        ShowForm(True)
+        ShowForm()
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         dgvAkunStaf.Refresh()
         ShowForm(False)
+    End Sub
+
+    Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click
+
+        If Not CheckSpace(txtUsn) Then
+            txtUsn.Focus()
+            Exit Sub
+        End If
+
+        dbq("") 'select smw username di tbuser(semua), gunakan keyword union
+
+        If RD.HasRows Then
+            MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
+            RD.Close()
+            Exit Sub
+        End If
+
+        RD.Close()
+
+        dbq("") 'insert data ke tbstaff'
+        RD.Close()
+        MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
+        LihatAkunStaffToolStripMenuItem_Click(sender, Nothing)
+
+    End Sub
+
+    Private Sub btnUbah_Click(sender As Object, e As EventArgs) Handles btnUbah.Click
+        If Not CheckSpace(txtUsn) Then
+            txtUsn.Focus()
+            Exit Sub
+        End If
+
+        dbq("") 'query lihat smw username di tbstaff yang id bukan DGVValue(namaGridview, 0) dan username = txtUsn
+
+        If RD.HasRows Then
+            MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
+            RD.Close()
+            Exit Sub
+        Else
+            RD.Close()
+            dbq("") 'query lihat smw username di tbadmin dan tbcust yang usnnya blabla
+
+            If RD.HasRows Then
+                MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
+                RD.Close()
+                Exit Sub
+            End If
+
+            RD.Close()
+        End If
+
+        RD.Close()
+
+        dbq("") 'update data tbstaff dengan id DGVValue(namaGridview, 0)
+        RD.Close()
+        MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
+        UbahAkunStaffToolStripMenuItem_Click(sender, Nothing)
+    End Sub
+
+    Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
+        dbq("") 'hapus data staf dengan id DGVValue(namaGridview, 0)
+
+        MsgBox("Akun Staf berhasil dihapus", MsgBoxStyle.Information, "Perhatian")
+        RD.Close()
+        DeleteAkunStaffToolStripMenuItem_Click(sender, Nothing)
+        Exit Sub
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtNama.Clear()
+        txtUsn.Clear()
+        txtPass.Clear()
     End Sub
 
     '-------------------------------------------------------------------------------------------------------'

@@ -103,7 +103,7 @@
         'query ubah data admin, password gunakan variable password
         RD.Close()
 
-        MessageBox.Show("Berhasil ubah password!", "Perhatian",
+        MessageBox.Show("Data Toko Berhasil Diubah!", "Perhatian",
                             MessageBoxButtons.OK, MessageBoxIcon.Information)
 
     End Sub
