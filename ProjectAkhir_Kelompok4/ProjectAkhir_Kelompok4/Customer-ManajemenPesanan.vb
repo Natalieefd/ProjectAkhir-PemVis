@@ -177,7 +177,7 @@
 
         dbq("Update tbpesanan set nama = '" & txtNama.Text & "', alamat = '" & txtAlamat.Text & "', 
             stok = '" & txtJumlah.Text & "', harga_total = '" & txtHargaTotal.Text & "' 
-            Where id_customer = '" & DGVValue(dgvPesanan, 6) & "'")
+            Where id_pesanan = '" & DGVValue(dgvPesanan, 0) & "'")
         RD.Close()
 
         MsgBox("Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")

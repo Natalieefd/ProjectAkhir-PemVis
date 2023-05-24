@@ -145,7 +145,7 @@
 
         dbq("Update tbpesanan set status = '" & Status & "'
              Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "' ")
-        'query ubah STATUS pesanan dengan id DGVValue(dgvDaftarPesanan, 0)
+
         RD.Close()
 
         MsgBox("Status Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")

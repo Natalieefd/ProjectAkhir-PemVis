@@ -139,7 +139,7 @@ Partial Class DaftarPesananStaf
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDaftarPesanan.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvDaftarPesanan.Location = New System.Drawing.Point(112, 273)
-        Me.dgvDaftarPesanan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.dgvDaftarPesanan.Margin = New System.Windows.Forms.Padding(6)
         Me.dgvDaftarPesanan.Name = "dgvDaftarPesanan"
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
@@ -161,7 +161,7 @@ Partial Class DaftarPesananStaf
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlTop.Name = "pnlTop"
         Me.pnlTop.Size = New System.Drawing.Size(1586, 69)
         Me.pnlTop.TabIndex = 53
@@ -172,7 +172,7 @@ Partial Class DaftarPesananStaf
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
         Me.pnlControl.Location = New System.Drawing.Point(1478, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(108, 69)
         Me.pnlControl.TabIndex = 50
@@ -183,7 +183,7 @@ Partial Class DaftarPesananStaf
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
         Me.btnMinimize.Location = New System.Drawing.Point(4, 19)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(28, 29)
         Me.btnMinimize.TabIndex = 2
@@ -195,7 +195,7 @@ Partial Class DaftarPesananStaf
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
         Me.btnClose.Location = New System.Drawing.Point(64, 19)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(28, 29)
         Me.btnClose.TabIndex = 0
@@ -273,7 +273,7 @@ Partial Class DaftarPesananStaf
         'btnLaporan
         '
         Me.btnLaporan.Location = New System.Drawing.Point(1312, 171)
-        Me.btnLaporan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnLaporan.Margin = New System.Windows.Forms.Padding(6)
         Me.btnLaporan.Name = "btnLaporan"
         Me.btnLaporan.Size = New System.Drawing.Size(150, 44)
         Me.btnLaporan.TabIndex = 60
@@ -283,7 +283,7 @@ Partial Class DaftarPesananStaf
         'pnlSpace
         '
         Me.pnlSpace.Location = New System.Drawing.Point(68, 1621)
-        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.pnlSpace.Margin = New System.Windows.Forms.Padding(6)
         Me.pnlSpace.Name = "pnlSpace"
         Me.pnlSpace.Size = New System.Drawing.Size(1442, 50)
         Me.pnlSpace.TabIndex = 69
@@ -316,7 +316,7 @@ Partial Class DaftarPesananStaf
         Me.pnlUbahStatus.Controls.Add(Me.txtNama)
         Me.pnlUbahStatus.Controls.Add(Me.Label15)
         Me.pnlUbahStatus.Location = New System.Drawing.Point(68, 767)
-        Me.pnlUbahStatus.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.pnlUbahStatus.Margin = New System.Windows.Forms.Padding(6)
         Me.pnlUbahStatus.Name = "pnlUbahStatus"
         Me.pnlUbahStatus.Size = New System.Drawing.Size(1442, 854)
         Me.pnlUbahStatus.TabIndex = 68
@@ -337,7 +337,7 @@ Partial Class DaftarPesananStaf
         Me.txtUsername.Enabled = False
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.Location = New System.Drawing.Point(372, 165)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(6)
         Me.txtUsername.MaxLength = 50
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(300, 32)
@@ -349,7 +349,7 @@ Partial Class DaftarPesananStaf
         Me.cmbStatus.FormattingEnabled = True
         Me.cmbStatus.Items.AddRange(New Object() {"Belum Dibayar", "Belum Dikirim", "Sudah Dikirim"})
         Me.cmbStatus.Location = New System.Drawing.Point(1016, 552)
-        Me.cmbStatus.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.cmbStatus.Margin = New System.Windows.Forms.Padding(6)
         Me.cmbStatus.Name = "cmbStatus"
         Me.cmbStatus.Size = New System.Drawing.Size(300, 33)
         Me.cmbStatus.TabIndex = 8
@@ -371,7 +371,7 @@ Partial Class DaftarPesananStaf
         Me.btnBatal.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnBatal.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
         Me.btnBatal.Location = New System.Drawing.Point(1344, 27)
-        Me.btnBatal.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnBatal.Margin = New System.Windows.Forms.Padding(6)
         Me.btnBatal.Name = "btnBatal"
         Me.btnBatal.Size = New System.Drawing.Size(70, 62)
         Me.btnBatal.TabIndex = 26
@@ -383,7 +383,7 @@ Partial Class DaftarPesananStaf
         Me.btnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
         Me.btnSubmit.Location = New System.Drawing.Point(648, 706)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(6)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(150, 127)
         Me.btnSubmit.TabIndex = 7
@@ -407,7 +407,7 @@ Partial Class DaftarPesananStaf
         Me.txtHargaTotal.Enabled = False
         Me.txtHargaTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaTotal.Location = New System.Drawing.Point(1016, 629)
-        Me.txtHargaTotal.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtHargaTotal.Margin = New System.Windows.Forms.Padding(6)
         Me.txtHargaTotal.MaxLength = 10
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.ReadOnly = True
@@ -430,7 +430,7 @@ Partial Class DaftarPesananStaf
         Me.txtAlamat.Enabled = False
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlamat.Location = New System.Drawing.Point(1016, 358)
-        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(6)
         Me.txtAlamat.MaxLength = 50
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
@@ -453,7 +453,7 @@ Partial Class DaftarPesananStaf
         Me.txtDesc.Enabled = False
         Me.txtDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDesc.Location = New System.Drawing.Point(1016, 165)
-        Me.txtDesc.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtDesc.Margin = New System.Windows.Forms.Padding(6)
         Me.txtDesc.MaxLength = 50
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
@@ -477,7 +477,7 @@ Partial Class DaftarPesananStaf
         Me.txtTanggalPesan.Enabled = False
         Me.txtTanggalPesan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTanggalPesan.Location = New System.Drawing.Point(372, 621)
-        Me.txtTanggalPesan.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtTanggalPesan.Margin = New System.Windows.Forms.Padding(6)
         Me.txtTanggalPesan.MaxLength = 50
         Me.txtTanggalPesan.Name = "txtTanggalPesan"
         Me.txtTanggalPesan.ReadOnly = True
@@ -500,7 +500,7 @@ Partial Class DaftarPesananStaf
         Me.txtJumlah.Enabled = False
         Me.txtJumlah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtJumlah.Location = New System.Drawing.Point(372, 531)
-        Me.txtJumlah.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtJumlah.Margin = New System.Windows.Forms.Padding(6)
         Me.txtJumlah.MaxLength = 4
         Me.txtJumlah.Name = "txtJumlah"
         Me.txtJumlah.Size = New System.Drawing.Size(300, 32)
@@ -532,7 +532,7 @@ Partial Class DaftarPesananStaf
         Me.txtKategori.Enabled = False
         Me.txtKategori.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKategori.Location = New System.Drawing.Point(372, 437)
-        Me.txtKategori.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtKategori.Margin = New System.Windows.Forms.Padding(6)
         Me.txtKategori.MaxLength = 50
         Me.txtKategori.Name = "txtKategori"
         Me.txtKategori.Size = New System.Drawing.Size(300, 32)
@@ -554,7 +554,7 @@ Partial Class DaftarPesananStaf
         Me.txtNamaProduk.Enabled = False
         Me.txtNamaProduk.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNamaProduk.Location = New System.Drawing.Point(372, 344)
-        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNamaProduk.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNamaProduk.MaxLength = 50
         Me.txtNamaProduk.Name = "txtNamaProduk"
         Me.txtNamaProduk.Size = New System.Drawing.Size(300, 32)
@@ -576,7 +576,7 @@ Partial Class DaftarPesananStaf
         Me.txtNama.Enabled = False
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(372, 250)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(6)
         Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(300, 32)
@@ -609,7 +609,7 @@ Partial Class DaftarPesananStaf
         Me.Controls.Add(Me.dgvDaftarPesanan)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Margin = New System.Windows.Forms.Padding(6)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "DaftarPesananStaf"

@@ -133,7 +133,7 @@
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        Dim Status
+        Dim Status = ""
         Select Case cmbStatus.SelectedIndex
             Case 0
                 Status = "Belum Dibayar"
@@ -148,7 +148,7 @@
         RD.Close()
 
         MsgBox("Status Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
-        ShowForm(False)
+        DaftarPesananStaf_Load(sender, Nothing)
 
     End Sub
 
