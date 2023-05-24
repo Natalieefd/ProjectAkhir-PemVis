@@ -89,21 +89,21 @@ Partial Class formKatalog
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 921)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(783, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(781, 22)
         Me.StatusStrip1.TabIndex = 7
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'dgvKatalog
@@ -156,7 +156,7 @@ Partial Class formKatalog
         Me.lblHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeader.Location = New System.Drawing.Point(260, 102)
         Me.lblHeader.Name = "lblHeader"
-        Me.lblHeader.Size = New System.Drawing.Size(271, 25)
+        Me.lblHeader.Size = New System.Drawing.Size(319, 29)
         Me.lblHeader.TabIndex = 11
         Me.lblHeader.Text = "KATALOG KPOP STORE"
         '
@@ -166,7 +166,7 @@ Partial Class formKatalog
         Me.lblPS.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPS.Location = New System.Drawing.Point(52, 391)
         Me.lblPS.Name = "lblPS"
-        Me.lblPS.Size = New System.Drawing.Size(413, 16)
+        Me.lblPS.Size = New System.Drawing.Size(451, 18)
         Me.lblPS.TabIndex = 13
         Me.lblPS.Text = "* Silahkan klik daftar katalog untuk melakukan pemesanan "
         '
@@ -176,9 +176,9 @@ Partial Class formKatalog
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(783, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(781, 36)
         Me.pnlTop.TabIndex = 59
         '
         'pnlControl
@@ -186,8 +186,8 @@ Partial Class formKatalog
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(729, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlControl.Location = New System.Drawing.Point(727, 0)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
         Me.pnlControl.TabIndex = 48
@@ -198,7 +198,7 @@ Partial Class formKatalog
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
         Me.btnMinimize.Location = New System.Drawing.Point(2, 10)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
@@ -210,7 +210,7 @@ Partial Class formKatalog
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
         Me.btnClose.Location = New System.Drawing.Point(32, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
@@ -225,76 +225,76 @@ Partial Class formKatalog
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(783, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(781, 25)
         Me.MenuStrip1.TabIndex = 60
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'KatalogToolStripMenuItem
         '
         Me.KatalogToolStripMenuItem.Name = "KatalogToolStripMenuItem"
-        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.KatalogToolStripMenuItem.Size = New System.Drawing.Size(70, 21)
         Me.KatalogToolStripMenuItem.Text = "Katalog"
         '
         'PesananToolStripMenuItem
         '
         Me.PesananToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatPesananToolStripMenuItem, Me.UbahPesananToolStripMenuItem, Me.BatalkanPesananToolStripMenuItem})
         Me.PesananToolStripMenuItem.Name = "PesananToolStripMenuItem"
-        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
+        Me.PesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
         Me.PesananToolStripMenuItem.Text = "Pesanan"
         '
         'LihatPesananToolStripMenuItem
         '
         Me.LihatPesananToolStripMenuItem.Name = "LihatPesananToolStripMenuItem"
-        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.LihatPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
         Me.LihatPesananToolStripMenuItem.Text = "Lihat Pesanan"
         '
         'UbahPesananToolStripMenuItem
         '
         Me.UbahPesananToolStripMenuItem.Name = "UbahPesananToolStripMenuItem"
-        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.UbahPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
         Me.UbahPesananToolStripMenuItem.Text = "Ubah Pesanan"
         '
         'BatalkanPesananToolStripMenuItem
         '
         Me.BatalkanPesananToolStripMenuItem.Name = "BatalkanPesananToolStripMenuItem"
-        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(174, 22)
+        Me.BatalkanPesananToolStripMenuItem.Size = New System.Drawing.Size(199, 24)
         Me.BatalkanPesananToolStripMenuItem.Text = "Batalkan Pesanan"
         '
         'ProfilToolStripMenuItem
         '
         Me.ProfilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProfilToolStripMenuItem, Me.UbahProfilToolStripMenuItem})
         Me.ProfilToolStripMenuItem.Name = "ProfilToolStripMenuItem"
-        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
+        Me.ProfilToolStripMenuItem.Size = New System.Drawing.Size(54, 21)
         Me.ProfilToolStripMenuItem.Text = "Profil"
         '
         'LihatProfilToolStripMenuItem
         '
         Me.LihatProfilToolStripMenuItem.Name = "LihatProfilToolStripMenuItem"
-        Me.LihatProfilToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.LihatProfilToolStripMenuItem.Size = New System.Drawing.Size(154, 24)
         Me.LihatProfilToolStripMenuItem.Text = "Lihat Profil"
         '
         'UbahProfilToolStripMenuItem
         '
         Me.UbahProfilToolStripMenuItem.Name = "UbahProfilToolStripMenuItem"
-        Me.UbahProfilToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.UbahProfilToolStripMenuItem.Size = New System.Drawing.Size(154, 24)
         Me.UbahProfilToolStripMenuItem.Text = "Ubah Profil"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'pnlFormPesanan
@@ -368,7 +368,7 @@ Partial Class formKatalog
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(289, 20)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(119, 25)
+        Me.Label12.Size = New System.Drawing.Size(141, 29)
         Me.Label12.TabIndex = 23
         Me.Label12.Text = "PESANAN"
         '
@@ -390,7 +390,7 @@ Partial Class formKatalog
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(348, 283)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(82, 15)
+        Me.Label11.Size = New System.Drawing.Size(94, 17)
         Me.Label11.TabIndex = 19
         Me.Label11.Text = "Harga Total"
         '
@@ -402,7 +402,7 @@ Partial Class formKatalog
         Me.txtHargaTotal.MaxLength = 50
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.ReadOnly = True
-        Me.txtHargaTotal.Size = New System.Drawing.Size(152, 20)
+        Me.txtHargaTotal.Size = New System.Drawing.Size(152, 22)
         Me.txtHargaTotal.TabIndex = 18
         '
         'Label10
@@ -411,7 +411,7 @@ Partial Class formKatalog
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(348, 182)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(51, 15)
+        Me.Label10.Size = New System.Drawing.Size(57, 17)
         Me.Label10.TabIndex = 17
         Me.Label10.Text = "Alamat"
         '
@@ -431,7 +431,7 @@ Partial Class formKatalog
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(348, 75)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(116, 15)
+        Me.Label9.Size = New System.Drawing.Size(131, 17)
         Me.Label9.TabIndex = 15
         Me.Label9.Text = "Deskripsi Produk"
         '
@@ -453,7 +453,7 @@ Partial Class formKatalog
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(25, 283)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 15)
+        Me.Label8.Size = New System.Drawing.Size(108, 17)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Harga Satuan"
         '
@@ -464,7 +464,7 @@ Partial Class formKatalog
         Me.txtHargaSatuan.Location = New System.Drawing.Point(139, 278)
         Me.txtHargaSatuan.MaxLength = 50
         Me.txtHargaSatuan.Name = "txtHargaSatuan"
-        Me.txtHargaSatuan.Size = New System.Drawing.Size(152, 20)
+        Me.txtHargaSatuan.Size = New System.Drawing.Size(152, 22)
         Me.txtHargaSatuan.TabIndex = 12
         '
         'Label7
@@ -473,7 +473,7 @@ Partial Class formKatalog
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(28, 230)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 15)
+        Me.Label7.Size = New System.Drawing.Size(59, 17)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Jumlah"
         '
@@ -483,7 +483,7 @@ Partial Class formKatalog
         Me.txtJumlah.Location = New System.Drawing.Point(139, 228)
         Me.txtJumlah.MaxLength = 4
         Me.txtJumlah.Name = "txtJumlah"
-        Me.txtJumlah.Size = New System.Drawing.Size(152, 20)
+        Me.txtJumlah.Size = New System.Drawing.Size(152, 22)
         Me.txtJumlah.TabIndex = 10
         Me.txtJumlah.Text = "1"
         '
@@ -493,7 +493,7 @@ Partial Class formKatalog
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(28, 179)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 15)
+        Me.Label6.Size = New System.Drawing.Size(69, 17)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Kategori"
         '
@@ -503,7 +503,7 @@ Partial Class formKatalog
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(49, 180)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 15)
+        Me.Label5.Size = New System.Drawing.Size(0, 17)
         Me.Label5.TabIndex = 8
         '
         'txtKategori
@@ -513,7 +513,7 @@ Partial Class formKatalog
         Me.txtKategori.Location = New System.Drawing.Point(139, 177)
         Me.txtKategori.MaxLength = 50
         Me.txtKategori.Name = "txtKategori"
-        Me.txtKategori.Size = New System.Drawing.Size(152, 20)
+        Me.txtKategori.Size = New System.Drawing.Size(152, 22)
         Me.txtKategori.TabIndex = 7
         '
         'Label3
@@ -522,7 +522,7 @@ Partial Class formKatalog
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(28, 126)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(94, 15)
+        Me.Label3.Size = New System.Drawing.Size(105, 17)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Nama Produk"
         '
@@ -533,7 +533,7 @@ Partial Class formKatalog
         Me.txtNamaProduk.Location = New System.Drawing.Point(139, 124)
         Me.txtNamaProduk.MaxLength = 50
         Me.txtNamaProduk.Name = "txtNamaProduk"
-        Me.txtNamaProduk.Size = New System.Drawing.Size(152, 20)
+        Me.txtNamaProduk.Size = New System.Drawing.Size(152, 22)
         Me.txtNamaProduk.TabIndex = 5
         '
         'Label2
@@ -542,7 +542,7 @@ Partial Class formKatalog
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(28, 75)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 15)
+        Me.Label2.Size = New System.Drawing.Size(49, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Nama"
         '
@@ -552,7 +552,7 @@ Partial Class formKatalog
         Me.txtNama.Location = New System.Drawing.Point(139, 73)
         Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(152, 20)
+        Me.txtNama.Size = New System.Drawing.Size(152, 22)
         Me.txtNama.TabIndex = 0
         '
         'formKatalog

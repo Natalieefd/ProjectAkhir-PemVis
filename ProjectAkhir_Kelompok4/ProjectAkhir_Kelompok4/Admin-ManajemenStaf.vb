@@ -136,7 +136,7 @@
             Exit Sub
         Else
             RD.Close()
-            dbq("") 'query lihat smw username di tbadmin dan tbcust yang usnnya blabla
+            dbq("") 'query lihat smw username di tbadmin dan tbcust yang usnnya blabla, pakai union
 
             If RD.HasRows Then
                 MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
