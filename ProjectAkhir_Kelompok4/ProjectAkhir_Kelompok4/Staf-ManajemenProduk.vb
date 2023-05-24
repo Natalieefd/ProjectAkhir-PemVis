@@ -198,7 +198,7 @@
 
         dbq("Delete From tbproduk Where id_produk = '" & idp & "'") 'Hapus Produk ini
         RD.Close()
-        dbq("") 'Delete semua data di tbpesanan yang idproduk = idp, dan statusnya belum dibayar
+        dbq("Delete From tbpesanan Where id_produk = '" & idp & "' And status = 'belum dibayar'") 'Delete semua data di tbpesanan yang idproduk = idp, dan statusnya belum dibayar
         RD.Close()
         MsgBox("Data Produk Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
         HapusBarangToolStripMenuItem_Click(sender, Nothing)
