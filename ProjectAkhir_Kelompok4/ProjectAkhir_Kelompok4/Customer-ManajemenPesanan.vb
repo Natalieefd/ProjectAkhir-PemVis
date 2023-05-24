@@ -99,16 +99,19 @@
     End Sub
 
     Private Sub UbahPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UbahPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         Mode = "Ubah"
         Reload(sender)
     End Sub
 
     Private Sub LihatPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         Mode = "Lihat"
         Reload(sender)
     End Sub
 
     Private Sub BatalkanPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BatalkanPesananToolStripMenuItem.Click
+        Me.ActiveControl = MenuStrip1
         Mode = "Batal"
         Reload(sender)
     End Sub

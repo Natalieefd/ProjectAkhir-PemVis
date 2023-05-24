@@ -81,21 +81,21 @@ Partial Class ManajemenProdukStaf
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 760)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(799, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(801, 22)
         Me.StatusStrip1.TabIndex = 18
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
         Me.SlabelJam.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'Label4
@@ -104,7 +104,7 @@ Partial Class ManajemenProdukStaf
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(281, 91)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(302, 29)
+        Me.Label4.Size = New System.Drawing.Size(256, 25)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "MANAJEMEN PRODUK"
         '
@@ -178,7 +178,7 @@ Partial Class ManajemenProdukStaf
         Me.cmbKategori.Items.AddRange(New Object() {"Album", "Lightstick", "Custom"})
         Me.cmbKategori.Location = New System.Drawing.Point(139, 135)
         Me.cmbKategori.Name = "cmbKategori"
-        Me.cmbKategori.Size = New System.Drawing.Size(152, 24)
+        Me.cmbKategori.Size = New System.Drawing.Size(152, 21)
         Me.cmbKategori.TabIndex = 9
         '
         'Label12
@@ -187,7 +187,7 @@ Partial Class ManajemenProdukStaf
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(294, 20)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(126, 29)
+        Me.Label12.Size = New System.Drawing.Size(107, 25)
         Me.Label12.TabIndex = 7
         Me.Label12.Text = "PRODUK"
         '
@@ -209,7 +209,7 @@ Partial Class ManajemenProdukStaf
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(345, 136)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(131, 17)
+        Me.Label9.Size = New System.Drawing.Size(116, 15)
         Me.Label9.TabIndex = 7
         Me.Label9.Text = "Deskripsi Produk"
         '
@@ -229,7 +229,7 @@ Partial Class ManajemenProdukStaf
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(345, 83)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(52, 17)
+        Me.Label8.Size = New System.Drawing.Size(46, 15)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "Harga"
         '
@@ -239,7 +239,7 @@ Partial Class ManajemenProdukStaf
         Me.txtHarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHarga.Location = New System.Drawing.Point(482, 81)
         Me.txtHarga.Name = "txtHarga"
-        Me.txtHarga.Size = New System.Drawing.Size(152, 22)
+        Me.txtHarga.Size = New System.Drawing.Size(152, 20)
         Me.txtHarga.TabIndex = 11
         '
         'Label7
@@ -248,7 +248,7 @@ Partial Class ManajemenProdukStaf
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(28, 187)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(40, 17)
+        Me.Label7.Size = New System.Drawing.Size(35, 15)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Stok"
         '
@@ -258,7 +258,7 @@ Partial Class ManajemenProdukStaf
         Me.txtStok.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtStok.Location = New System.Drawing.Point(139, 185)
         Me.txtStok.Name = "txtStok"
-        Me.txtStok.Size = New System.Drawing.Size(152, 22)
+        Me.txtStok.Size = New System.Drawing.Size(152, 20)
         Me.txtStok.TabIndex = 10
         '
         'Label6
@@ -267,7 +267,7 @@ Partial Class ManajemenProdukStaf
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(28, 136)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(69, 17)
+        Me.Label6.Size = New System.Drawing.Size(61, 15)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "Kategori"
         '
@@ -277,7 +277,7 @@ Partial Class ManajemenProdukStaf
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(49, 180)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 17)
+        Me.Label5.Size = New System.Drawing.Size(0, 15)
         Me.Label5.TabIndex = 8
         '
         'Label3
@@ -286,7 +286,7 @@ Partial Class ManajemenProdukStaf
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(28, 83)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(105, 17)
+        Me.Label3.Size = New System.Drawing.Size(94, 15)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Nama Produk"
         '
@@ -296,7 +296,7 @@ Partial Class ManajemenProdukStaf
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(139, 81)
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(152, 22)
+        Me.txtNama.Size = New System.Drawing.Size(152, 20)
         Me.txtNama.TabIndex = 8
         '
         'btnTambah
@@ -355,7 +355,7 @@ Partial Class ManajemenProdukStaf
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(799, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(801, 36)
         Me.pnlTop.TabIndex = 52
         '
         'pnlControl
@@ -363,7 +363,7 @@ Partial Class ManajemenProdukStaf
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(745, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(747, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -402,63 +402,63 @@ Partial Class ManajemenProdukStaf
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(799, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(801, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenBarangToolStripMenuItem
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProdukToolStripMenuItem, Me.TambahProdukToolStripMenuItem, Me.UbahProdukToolStripMenuItem, Me.HapusProdukToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(144, 21)
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(128, 20)
         Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatProdukToolStripMenuItem
         '
         Me.LihatProdukToolStripMenuItem.Name = "LihatProdukToolStripMenuItem"
-        Me.LihatProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.LihatProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.LihatProdukToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahProdukToolStripMenuItem
         '
         Me.TambahProdukToolStripMenuItem.Name = "TambahProdukToolStripMenuItem"
-        Me.TambahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.TambahProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.TambahProdukToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahProdukToolStripMenuItem
         '
         Me.UbahProdukToolStripMenuItem.Name = "UbahProdukToolStripMenuItem"
-        Me.UbahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.UbahProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.UbahProdukToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusProdukToolStripMenuItem
         '
         Me.HapusProdukToolStripMenuItem.Name = "HapusProdukToolStripMenuItem"
-        Me.HapusProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.HapusProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.HapusProdukToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'ManajemenPesananToolStripMenuItem
         '
         Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
+        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
         Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ManajemenProdukStaf

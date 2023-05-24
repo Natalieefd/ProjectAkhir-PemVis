@@ -225,7 +225,9 @@
     '>-- Home
 
     Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
-        ManajemenProdukStaf_Load(sender, e)
+        Me.ActiveControl = MenuStrip1
+        formStaff.Show()
+        Me.Close()
     End Sub
 
     '>-- Profil Toko

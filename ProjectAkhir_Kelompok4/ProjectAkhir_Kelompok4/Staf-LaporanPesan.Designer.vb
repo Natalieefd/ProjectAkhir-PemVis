@@ -24,16 +24,6 @@ Partial Class LaporanPesananStaf
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProfilTokoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ManajemenBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LihatProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TambahProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UbahProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HapusProdukToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ManajemenPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlTop = New System.Windows.Forms.Panel()
         Me.pnlControl = New System.Windows.Forms.Panel()
         Me.btnMinimize = New System.Windows.Forms.Button()
@@ -48,79 +38,10 @@ Partial Class LaporanPesananStaf
         Me.Staf_LaporanPesanan1 = New ProjectAkhir_Kelompok4.Staf_LaporanPesanan()
         Me.Staf_LaporanPesanan2 = New ProjectAkhir_Kelompok4.Staf_LaporanPesanan()
         Me.Staf_LaporanPesanan4 = New ProjectAkhir_Kelompok4.Staf_LaporanPesanan()
-        Me.MenuStrip1.SuspendLayout()
         Me.pnlTop.SuspendLayout()
         Me.pnlControl.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.Cornsilk
-        Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem, Me.ProfilTokoToolStripMenuItem, Me.ManajemenBarangToolStripMenuItem, Me.ManajemenPesananToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1101, 28)
-        Me.MenuStrip1.TabIndex = 54
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 24)
-        Me.HomeToolStripMenuItem.Text = "Home"
-        '
-        'ProfilTokoToolStripMenuItem
-        '
-        Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 24)
-        Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
-        '
-        'ManajemenBarangToolStripMenuItem
-        '
-        Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProdukToolStripMenuItem, Me.TambahProdukToolStripMenuItem, Me.UbahProdukToolStripMenuItem, Me.HapusProdukToolStripMenuItem})
-        Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(144, 24)
-        Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
-        '
-        'LihatProdukToolStripMenuItem
-        '
-        Me.LihatProdukToolStripMenuItem.Name = "LihatProdukToolStripMenuItem"
-        Me.LihatProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.LihatProdukToolStripMenuItem.Text = "Lihat Data Produk"
-        '
-        'TambahProdukToolStripMenuItem
-        '
-        Me.TambahProdukToolStripMenuItem.Name = "TambahProdukToolStripMenuItem"
-        Me.TambahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.TambahProdukToolStripMenuItem.Text = "Tambah Data Produk"
-        '
-        'UbahProdukToolStripMenuItem
-        '
-        Me.UbahProdukToolStripMenuItem.Name = "UbahProdukToolStripMenuItem"
-        Me.UbahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.UbahProdukToolStripMenuItem.Text = "Ubah Data Produk"
-        '
-        'HapusProdukToolStripMenuItem
-        '
-        Me.HapusProdukToolStripMenuItem.Name = "HapusProdukToolStripMenuItem"
-        Me.HapusProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
-        Me.HapusProdukToolStripMenuItem.Text = "Hapus Data Produk"
-        '
-        'ManajemenPesananToolStripMenuItem
-        '
-        Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(78, 24)
-        Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
-        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'pnlTop
         '
@@ -168,6 +89,9 @@ Partial Class LaporanPesananStaf
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'Timer2
+        '
+        '
         'StatusStrip1
         '
         Me.StatusStrip1.BackColor = System.Drawing.Color.Cornsilk
@@ -183,13 +107,13 @@ Partial Class LaporanPesananStaf
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
-        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'CrystalReportViewer1
@@ -198,11 +122,11 @@ Partial Class LaporanPesananStaf
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 64)
+        Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 36)
         Me.CrystalReportViewer1.Margin = New System.Windows.Forms.Padding(2)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.Staf_LaporanPesanan5
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(1101, 381)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(1101, 409)
         Me.CrystalReportViewer1.TabIndex = 57
         Me.CrystalReportViewer1.ToolPanelWidth = 100
         '
@@ -212,7 +136,6 @@ Partial Class LaporanPesananStaf
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1101, 467)
         Me.Controls.Add(Me.CrystalReportViewer1)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.StatusStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -222,8 +145,6 @@ Partial Class LaporanPesananStaf
         Me.Name = "LaporanPesananStaf"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "KPOP Store"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.pnlTop.ResumeLayout(False)
         Me.pnlControl.ResumeLayout(False)
         Me.StatusStrip1.ResumeLayout(False)
@@ -234,16 +155,6 @@ Partial Class LaporanPesananStaf
     End Sub
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Staf_LaporanPesanan1 As Staf_LaporanPesanan
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ProfilTokoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ManajemenBarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LihatProdukToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TambahProdukToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UbahProdukToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HapusProdukToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ManajemenPesananToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents pnlTop As Panel
     Friend WithEvents pnlControl As Panel
     Friend WithEvents btnMinimize As Button
