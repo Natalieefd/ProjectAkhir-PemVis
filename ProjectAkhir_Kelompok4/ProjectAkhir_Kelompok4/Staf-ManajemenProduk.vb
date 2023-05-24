@@ -6,6 +6,7 @@
 
     Private Sub ManajemenProdukStaf_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Size = New Point(800, 470)
+        Me.Location = New Point(280, 179)
 
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
@@ -79,7 +80,7 @@
     End Sub
 
     Private Sub dgvDaftarProduk_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDaftarProduk.CellContentDoubleClick
-        Me.Location = New Point(Me.Location.X, 110)
+        Me.Location = New Point(280, 110)
 
         idp = DGVValue(dgvDaftarProduk, 0)
         txtNama.Text = DGVValue(dgvDaftarProduk, 1)
@@ -205,7 +206,7 @@
         End If
         RD.Close()
 
-        dbq("Delete From tbproduk Where id_produk = '" & idp & "'") 
+        dbq("Delete From tbproduk Where id_produk = '" & idp & "'")
         RD.Close()
         dbq("Delete From tbpesanan Where id_produk = '" & idp & "' And status = 'belum dibayar'")
         RD.Close()

@@ -9,7 +9,7 @@
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
-        Me.Location = New Point(Me.Location.X, 179)
+        Me.Location = New Point(280, 179)
 
         pnlFormPesanan.Location = New Point(57, 88)
 
@@ -60,7 +60,7 @@
     End Sub
 
     Private Sub Reload(sender As Object)
-        Me.Location = New Point(Me.Location.X, Me.Location.Y - 100)
+        Me.Location = New Point(Me.Location.X - 56, Me.Location.Y - 100)
         formPesananCust_Load(sender, Nothing)
     End Sub
 
@@ -208,7 +208,7 @@
     End Sub
 
     Private Sub dgvPesanan_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentDoubleClick
-        Me.Location = New Point(Me.Location.X, 110)
+        Me.Location = New Point(280, 120)
 
         dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvPesanan, 6) & "%'")
 
