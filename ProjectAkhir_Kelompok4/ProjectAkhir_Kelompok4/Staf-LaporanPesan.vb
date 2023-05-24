@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
-        If MsgBox("Apakah Anda yakin ingin keluar dari program?", vbQuestion + vbYesNo, "Konfirmasi Keluar") = vbYes Then
+        If MsgBox("Apakah Anda ingin kembali ke menu utama ?", vbQuestion + vbYesNo, "Konfirmasi Keluar") = vbYes Then
             Me.Close()
         End If
     End Sub
