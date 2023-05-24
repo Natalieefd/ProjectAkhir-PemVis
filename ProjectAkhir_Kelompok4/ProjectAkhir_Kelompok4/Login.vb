@@ -76,6 +76,7 @@
     End Sub
 
     Private Sub txtUsername_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtUsername.KeyPress
+        e.Handled = Spacing(e)
         If Asc(e.KeyChar) = 13 Then
             txtPassword.Focus()
         End If

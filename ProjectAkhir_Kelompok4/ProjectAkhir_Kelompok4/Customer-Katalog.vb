@@ -82,7 +82,12 @@ Public Class formKatalog
     End Sub
 
     Private Sub btnPesan_Click(sender As Object, e As EventArgs) Handles btnPesan.Click
-        Dim Con = EmptyTB()
+        Dim Con = EmptyTB(pnlFormPesanan)
+
+        If Con IsNot Nothing Then
+            Con.Focus()
+            Exit Sub
+        End If
 
         If Con IsNot Nothing Then
             Con.Focus()
