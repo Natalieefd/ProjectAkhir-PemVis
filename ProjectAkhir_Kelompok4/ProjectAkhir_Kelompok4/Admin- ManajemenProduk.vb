@@ -118,7 +118,7 @@
         End If
 
         dbq("SELECT * FROM tbproduk WHERE nama_produk = '" & txtNama.Text & "'")
-        'query cek produk dengan nama itu udh ada atau ngga
+
 
         If RD.HasRows Then
             If MsgBox("Produk Tersebut sudah ada, ubah stok saja?",
@@ -127,7 +127,7 @@
                 RD.Close()
 
                 dbq("Update tbproduk set stok = '" & txtStok.Text & "' WHERE Id_produk = '" & DupeID & "'")
-                'query ubah stok Barang dengan ID DupeID
+
                 RD.Close()
                 MsgBox("Stok Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
             Else
@@ -151,7 +151,7 @@
         dbq("Update tbproduk set nama_produk = '" & txtNama.Text & "', 
             kategori =  '" & cmbKategori.Text & "', deskripsi_produk =  '" & txtDesc.Text & "',
             stok =  '" & txtStok.Text & "',  harga =  '" & txtHarga.Text & "'
-            Where id_produk =  '" & idp & "'") 'query edit produk dengan id idp
+            Where id_produk =  '" & idp & "'")
         RD.Close()
 
         MsgBox("Data Produk Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
@@ -182,7 +182,7 @@
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
         dbq("Select * from tbpesanan where id_produk = '" & idp & "' AND status = 'Belum Dikirim'")
-        'query cari idproduk ini di tbpesanan dengan status 'Belum Dikirim'
+
 
         If RD.HasRows Then
             MsgBox("Terdapat pesanan belum dikirim dengan produk ini!
@@ -193,10 +193,10 @@
         End If
         RD.Close()
 
-        dbq("Delete From tbproduk Where id_produk = '" & idp & "'") 'Hapus Produk ini
+        dbq("Delete From tbproduk Where id_produk = '" & idp & "'")
         RD.Close()
         dbq("Delete From tbpesanan Where id_produk = '" & idp & "' And status = 'belum dibayar' ")
-        'Delete semua data di tbpesanan yang idproduk = idp, dan statusnya belum dibayar
+
         RD.Close()
         MsgBox("Data Produk Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
         HapusDataProdukToolStripMenuItem_Click(sender, Nothing)

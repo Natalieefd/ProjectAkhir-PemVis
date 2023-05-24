@@ -10,7 +10,7 @@
         SlabelJam.Text = TimeOfDay
 
 
-        dbdsq("SELECT * FROM tbstaff") 'query lihat smw akun staff
+        dbdsq("SELECT * FROM tbstaff")
 
         dgvAkunStaf.DataSource = DS.Tables("tb")
         dgvAkunStaf.Refresh()
@@ -119,7 +119,7 @@
         dbq("SELECT username FROM tbcustomer WHERE username = '" & txtUsn.Text & "'
             UNION SELECT username FROM tbadmin WHERE username = '" & txtUsn.Text & "'
             UNION SELECT username FROM tbstaff WHERE username = '" & txtUsn.Text & "'")
-        'select smw username di tbuser(semua), gunakan keyword union
+
 
         If RD.HasRows Then
             MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
@@ -131,7 +131,7 @@
 
         dbq("Insert Into tbstaff (nama, username, password)Values
             ('" & txtNama.Text & "','" & txtUsn.Text & "','" & txtPass.Text & "')")
-        'insert data ke tbstaff'
+
         RD.Close()
         MsgBox("Akun Berhasil Ditambahkan", MsgBoxStyle.Information, "Perhatian")
         LihatAkunStaffToolStripMenuItem_Click(sender, Nothing)
@@ -146,7 +146,7 @@
 
         dbq("Select username from tbstaff Where 
             id_staff <> '" & DGVValue(dgvAkunStaf, 0) & "' and username = '" & txtUsn.Text & "'")
-        'query lihat smw username di tbstaff yang id bukan DGVValue(namaGridview, 0) dan username = txtUsn
+
 
         If RD.HasRows Then
             MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
@@ -156,7 +156,7 @@
             RD.Close()
             dbq("SELECT username FROM tbcustomer WHERE username = '" & txtUsn.Text & "'
                  UNION SELECT username FROM tbadmin WHERE username = '" & txtUsn.Text & "'")
-            'query lihat smw username di tbadmin dan tbcust yang usnnya blabla, pakai union
+
 
             If RD.HasRows Then
                 MsgBox("Username Sudah Dipakai", MsgBoxStyle.Exclamation, "Perhatian")
@@ -171,7 +171,7 @@
 
         dbq("Update tbstaff set nama = '" & txtNama.Text & "', username = '" & txtUsn.Text & "',
             password = '" & txtPass.Text & "' Where id_staff = '" & DGVValue(dgvAkunStaf, 0) & "'")
-        'update data tbstaff dengan id DGVValue(namaGridview, 0)
+
         RD.Close()
         MsgBox("Data Akun Berhasil Diubah", MsgBoxStyle.Information, "Perhatian")
         UbahAkunStaffToolStripMenuItem_Click(sender, Nothing)
@@ -179,7 +179,7 @@
 
     Private Sub btnHapus_Click(sender As Object, e As EventArgs) Handles btnHapus.Click
         dbq("Delete From tbstaff Where id_staff = '" & DGVValue(dgvAkunStaf, 0) & "' ")
-        'hapus data staf dengan id DGVValue(namaGridview, 0)
+
 
         MsgBox("Akun Staf berhasil dihapus", MsgBoxStyle.Information, "Perhatian")
         RD.Close()

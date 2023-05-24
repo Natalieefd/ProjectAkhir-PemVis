@@ -177,7 +177,7 @@
 
         dbq("Update tbpesanan set nama = '" & txtNama.Text & "', alamat = '" & txtAlamat.Text & "', 
             stok = '" & txtJumlah.Text & "', harga_total = '" & txtHargaTotal.Text & "' 
-            Where id_customer = '" & ActiveID & "'")
+            Where id_customer = '" & DGVValue(dgvPesanan, 6) & "'")
         RD.Close()
 
         MsgBox("Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
@@ -185,7 +185,7 @@
         Dim StokBaru = Stok - Val(txtJumlah.Text)
 
         dbq("Update tbproduk set stok = '" & StokBaru & "' WHERE id_produk = '" & DGVValue(dgvPesanan, 6) & "'")
-        'query update stok produk menjadi stokbaru dengan idproduk = DGVValue(dgvPesanan, 6)
+
         RD.Close()
 
         Reload(sender)
@@ -193,7 +193,7 @@
     End Sub
 
     Private Sub btnBatalkan_Click(sender As Object, e As EventArgs) Handles btnBatalkan.Click
-        dbq("DELETE FROM tbpesanan WHERE id_pesanan = '" & DGVValue(dgvPesanan, 0) & "'") 'query hapus pesanan dengan idpesanan, id-> DGVValue(dgvPesanan, 0)
+        dbq("DELETE FROM tbpesanan WHERE id_pesanan = '" & DGVValue(dgvPesanan, 0) & "'")
         RD.Close()
 
         MsgBox("Berhasil Dihapus!", MsgBoxStyle.Information, "Perhatian")
@@ -201,7 +201,7 @@
         Dim StokBaru = Stok + Val(txtJumlah.Text)
 
         dbq("Update tbproduk set stok = '" & StokBaru & "' WHERE Id_produk = '" & DGVValue(dgvPesanan, 6) & "'")
-        'query update stok produk menjadi stokbaru dengan idproduk = DGVValue(dgvPesanan, 6)
+
         RD.Close()
 
         Reload(sender)
@@ -210,7 +210,7 @@
     Private Sub dgvPesanan_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentDoubleClick
         Me.Location = New Point(Me.Location.X, 110)
 
-        dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvPesanan, 6) & "%'") 'query cari data produk dengan idproduk, id-> DGVValue(dgvPesanan, 6)
+        dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvPesanan, 6) & "%'")
 
         If DGVValue(dgvPesanan, 9) <> "Belum Dibayar" Then
             txtNama.Text = DGVValue(dgvPesanan, 1)
@@ -246,7 +246,7 @@
         Else
             MsgBox("Produk Dari Pesanan Ini Tidak Ditemukan", MsgBoxStyle.Information, "Perhatian")
             RD.Close()
-            dbq("Delete From tbpesanan Where id_pesanan = '" & DGVValue(dgvPesanan, 0) & "' ") 'Query hapus pesanan ini dari daftar pesanan'
+            dbq("Delete From tbpesanan Where id_pesanan = '" & DGVValue(dgvPesanan, 0) & "' ")
             RD.Close()
             Reload(sender)
             Exit Sub

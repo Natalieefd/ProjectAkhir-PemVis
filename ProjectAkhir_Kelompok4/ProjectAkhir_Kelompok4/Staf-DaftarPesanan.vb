@@ -113,14 +113,14 @@
 
             dbq("Update tbpesanan set nama = '" & txtNama.Text & "', alamat = '" & txtAlamat.Text & "', 
                 stok = '" & txtJumlah.Text & "', harga_total = '" & txtHargaTotal.Text & "' 
-                Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 1) & "'")
+                Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "'")
             RD.Close()
             ShowForm()
 
         Else
             MsgBox("Produk Dari Pesanan Ini Tidak Ditemukan", MsgBoxStyle.Information, "Perhatian")
             RD.Close()
-            dbq("Delete From tbpesanan Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "' ") 'Query hapus pesanan ini dari daftar pesanan'
+            dbq("Delete From tbpesanan Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "' ")
             RD.Close()
             ShowForm(False)
             Exit Sub
@@ -142,7 +142,8 @@
                 Status = "Sudah Dikirim"
         End Select
 
-        dbq("") 'query ubah STATUS pesanan dengan id DGVValue(dgvDaftarPesanan, 0)
+        dbq("Update tbpesanan set status = '" & Status & "'
+             Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "' ")
         RD.Close()
 
         MsgBox("Status Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")

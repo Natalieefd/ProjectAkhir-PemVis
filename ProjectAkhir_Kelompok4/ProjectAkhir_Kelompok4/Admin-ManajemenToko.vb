@@ -8,7 +8,7 @@
 
         Tripart("Profil")
 
-        dbq("Select nama_toko, no_telp, email, alamat from tbAdmin") 'query cari data admin
+        dbq("Select nama_toko, no_telp, email, alamat from tbAdmin")
 
         txtNama.Text = RD(0)
         txtNoTelp.Text = RD(1)
@@ -57,7 +57,7 @@
         End If
 
         dbq("SELECT * From tbadmin where password='" & txtKonfirmPass.Text & "'")
-        'query tbAdmin where pass = textBlabla
+
 
         If RD.HasRows Then
             txtUbahUsn.Text = RD(0)
@@ -108,7 +108,7 @@
             password = '" & Password & "', nama_toko = '" & txtUbahNama.Text & "',
             no_telp = '" & txtUbahNoTelp.Text & "', alamat = '" & txtUbahAlamat.Text & "'
             Where password = '" & Password & "'")
-        'query ubah data admin, password gunakan variable password
+
         RD.Close()
 
         MessageBox.Show("Data Toko Berhasil Diubah!", "Perhatian",
