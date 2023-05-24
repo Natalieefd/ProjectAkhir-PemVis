@@ -59,7 +59,6 @@
             pnlUbahStatus.Location = New Point(40, 85)
             pnlSpace.Hide()
         End If
-        dgvDaftarPesanan.Refresh()
 
     End Sub
 
@@ -109,8 +108,7 @@
             txtUsername.Text = DGVValue(dgvDaftarPesanan, 10)
             RD.Close()
 
-            dbq("Update tbpesanan set nama = '" & txtNama.Text & "', alamat = '" & txtAlamat.Text & "', 
-                stok = '" & txtJumlah.Text & "', harga_total = '" & txtHargaTotal.Text & "' 
+            dbq("Update harga_total = '" & txtHargaTotal.Text & "' 
                 Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 1) & "'")
             RD.Close()
             ShowForm()
@@ -130,7 +128,7 @@
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        Dim Status
+        Dim Status = ""
         Select Case cmbStatus.SelectedIndex
             Case 0
                 Status = "Belum Dibayar"
@@ -140,13 +138,13 @@
                 Status = "Sudah Dikirim"
         End Select
 
-        dbq("Update tbpesanan set status = '" & cmbStatus.Text & "'
+        dbq("Update tbpesanan set status = '" & Status & "'
              Where id_pesanan = '" & DGVValue(dgvDaftarPesanan, 0) & "' ")
         'query ubah STATUS pesanan dengan id DGVValue(dgvDaftarPesanan, 0)
         RD.Close()
 
         MsgBox("Status Pesanan Berhasil Diubah!", MsgBoxStyle.Information, "Perhatian")
-        ShowForm(False)
+        DaftarPesananAdmin_Load(sender, Nothing)
 
     End Sub
 

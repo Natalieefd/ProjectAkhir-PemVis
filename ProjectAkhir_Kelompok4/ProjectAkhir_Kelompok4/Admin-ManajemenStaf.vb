@@ -7,9 +7,11 @@
         SlabelJam.Text = TimeOfDay
 
 
-        dbdsq("SELECT * FROM tbstaff WHERE id_staff > 0 ") 'query lihat smw akun staff
+        dbdsq("SELECT * FROM tbstaff") 'query lihat smw akun staff
 
-        AturGrid(dgvAkunStaf, {0, 0, 50, 0})
+        dgvAkunStaf.DataSource = DS.Tables("tb")
+        dgvAkunStaf.Refresh()
+        AturGrid(dgvAkunStaf, {0, 0, 100, 0})
 
         ShowForm(False)
 
@@ -71,6 +73,7 @@
 
     Private Sub ShowForm(Optional State = True)
         If State Then
+            Label4.Hide()
             dgvAkunStaf.Hide()
             pnlFormAkun.Location = New Point(147, 108)
             pnlFormAkun.Show()
@@ -79,6 +82,7 @@
 
         End If
 
+        Label4.Show()
         Me.Size = New Point(Me.Size.Width, 430)
         dgvAkunStaf.Show()
         pnlFormAkun.Hide()

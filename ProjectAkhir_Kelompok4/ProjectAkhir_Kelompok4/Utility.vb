@@ -109,6 +109,7 @@ Module Utility
         HeaderForeColor = If(HeaderForeColor = Nothing, Color.White, HeaderForeColor)
 
         Dim i As Integer
+        Dim LastVisibleRow = -1
 
         For i = 0 To Grids.ColumnCount - 1 Step 1
             If ColumnWidth(i) <> 0 Then
@@ -116,6 +117,7 @@ Module Utility
                 Grids.Columns(i).SortMode = DataGridViewColumnSortMode.NotSortable
                 Grids.Columns(i).HeaderCell.Style.BackColor = HeaderBackColor
                 Grids.Columns(i).HeaderCell.Style.ForeColor = HeaderForeColor
+                LastVisibleRow = i
             Else
                 Grids.Columns(i).Visible = False
             End If
@@ -124,7 +126,7 @@ Module Utility
         Next
 
         If AutoSizeLast Then
-            Grids.Columns(Grids.ColumnCount - 1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            Grids.Columns(LastVisibleRow).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         End If
     End Sub
 
