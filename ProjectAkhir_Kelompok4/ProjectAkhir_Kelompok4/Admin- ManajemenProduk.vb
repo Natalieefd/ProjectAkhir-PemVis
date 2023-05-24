@@ -5,6 +5,7 @@
 
     Private Sub ManajemenProdukAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Size = New Point(800, 410)
+        Me.Location = New Point(Me.Location.X, 179)
 
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
@@ -36,6 +37,7 @@
                 txtDesc.Enabled = True
                 btnTambah.Location = New Point(250, 248)
                 btnClear.Location = New Point(380, 248)
+                Me.Location = New Point(Me.Location.X, 130)
                 ShowForm()
 
             Case "Ubah"
@@ -94,6 +96,8 @@
     End Sub
 
     Private Sub dgvProduk_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvProduk.CellDoubleClick
+        Me.Location = New Point(Me.Location.X, 130)
+
         idp = DGVValue(dgvProduk, 0)
         txtNama.Text = DGVValue(dgvProduk, 1)
         cmbKategori.Text = DGVValue(dgvProduk, 2)

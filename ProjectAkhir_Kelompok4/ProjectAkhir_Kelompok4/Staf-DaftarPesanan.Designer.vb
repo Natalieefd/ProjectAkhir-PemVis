@@ -284,7 +284,7 @@ Partial Class DaftarPesananStaf
         '
         'pnlUbahStatus
         '
-        Me.pnlUbahStatus.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pnlUbahStatus.BackColor = System.Drawing.Color.PaleTurquoise
         Me.pnlUbahStatus.Controls.Add(Me.Label1)
         Me.pnlUbahStatus.Controls.Add(Me.txtUsername)
         Me.pnlUbahStatus.Controls.Add(Me.cmbStatus)

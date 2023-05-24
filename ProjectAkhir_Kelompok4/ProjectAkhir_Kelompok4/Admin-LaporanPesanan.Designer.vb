@@ -108,9 +108,6 @@ Partial Class laporanPesananAdmin
         Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
-        'Timer1
-        '
-        '
         'CrystalReportViewer1
         '
         Me.CrystalReportViewer1.ActiveViewIndex = 0
@@ -136,7 +133,7 @@ Partial Class laporanPesananAdmin
         Me.MinimizeBox = False
         Me.Name = "laporanPesananAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "KPOP Store"
+        Me.Text = "th"
         Me.pnlTop.ResumeLayout(False)
         Me.pnlControl.ResumeLayout(False)
         Me.StatusStrip1.ResumeLayout(False)

@@ -281,7 +281,7 @@ Partial Class ManajemenStaf
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(729, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(763, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -319,7 +319,7 @@ Partial Class ManajemenStaf
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(783, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(817, 36)
         Me.pnlTop.TabIndex = 62
         '
         'HomeToolStripMenuItem
@@ -417,7 +417,7 @@ Partial Class ManajemenStaf
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 3, 0, 3)
-        Me.MenuStrip1.Size = New System.Drawing.Size(783, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(817, 25)
         Me.MenuStrip1.TabIndex = 60
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -441,7 +441,7 @@ Partial Class ManajemenStaf
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 751)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(783, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(817, 22)
         Me.StatusStrip1.TabIndex = 61
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -451,7 +451,7 @@ Partial Class ManajemenStaf
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
-        Me.ClientSize = New System.Drawing.Size(800, 410)
+        Me.ClientSize = New System.Drawing.Size(834, 410)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.StatusStrip1)

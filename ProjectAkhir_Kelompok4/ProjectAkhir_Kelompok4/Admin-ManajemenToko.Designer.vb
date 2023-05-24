@@ -103,7 +103,7 @@ Partial Class ManajemenTokoAdmin
         Me.pnlProfil.Controls.Add(Me.Label22)
         Me.pnlProfil.Controls.Add(Me.Label24)
         Me.pnlProfil.Location = New System.Drawing.Point(194, 73)
-        Me.pnlProfil.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlProfil.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlProfil.Name = "pnlProfil"
         Me.pnlProfil.Size = New System.Drawing.Size(417, 349)
         Me.pnlProfil.TabIndex = 4
@@ -113,7 +113,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtAlamat.Enabled = False
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlamat.Location = New System.Drawing.Point(141, 189)
-        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtAlamat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtAlamat.MaxLength = 50
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
@@ -125,7 +125,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtNoTelp.Enabled = False
         Me.txtNoTelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoTelp.Location = New System.Drawing.Point(141, 146)
-        Me.txtNoTelp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNoTelp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNoTelp.MaxLength = 15
         Me.txtNoTelp.Name = "txtNoTelp"
         Me.txtNoTelp.Size = New System.Drawing.Size(231, 20)
@@ -136,7 +136,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtEmail.Enabled = False
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(141, 113)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtEmail.MaxLength = 50
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(231, 20)
@@ -147,7 +147,7 @@ Partial Class ManajemenTokoAdmin
         Me.txtNama.Enabled = False
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(141, 74)
-        Me.txtNama.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtNama.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(231, 20)
@@ -158,7 +158,7 @@ Partial Class ManajemenTokoAdmin
         Me.btnUbah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbah.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
         Me.btnUbah.Location = New System.Drawing.Point(176, 273)
-        Me.btnUbah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnUbah.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUbah.Name = "btnUbah"
         Me.btnUbah.Size = New System.Drawing.Size(75, 64)
         Me.btnUbah.TabIndex = 10
@@ -231,7 +231,7 @@ Partial Class ManajemenTokoAdmin
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_trash_50
         Me.btnClear.Location = New System.Drawing.Point(367, 270)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 73)
         Me.btnClear.TabIndex = 23
@@ -244,7 +244,7 @@ Partial Class ManajemenTokoAdmin
         Me.btnUbahForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUbahForm.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_sync_50
         Me.btnUbahForm.Location = New System.Drawing.Point(270, 270)
-        Me.btnUbahForm.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnUbahForm.Margin = New System.Windows.Forms.Padding(2)
         Me.btnUbahForm.Name = "btnUbahForm"
         Me.btnUbahForm.Size = New System.Drawing.Size(75, 73)
         Me.btnUbahForm.TabIndex = 22
@@ -267,7 +267,7 @@ Partial Class ManajemenTokoAdmin
         '
         Me.txtUbahAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUbahAlamat.Location = New System.Drawing.Point(448, 172)
-        Me.txtUbahAlamat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUbahAlamat.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahAlamat.MaxLength = 50
         Me.txtUbahAlamat.Multiline = True
         Me.txtUbahAlamat.Name = "txtUbahAlamat"
@@ -288,7 +288,7 @@ Partial Class ManajemenTokoAdmin
         '
         Me.txtUbahNoTelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUbahNoTelp.Location = New System.Drawing.Point(115, 198)
-        Me.txtUbahNoTelp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUbahNoTelp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahNoTelp.MaxLength = 15
         Me.txtUbahNoTelp.Name = "txtUbahNoTelp"
         Me.txtUbahNoTelp.Size = New System.Drawing.Size(152, 20)
@@ -312,7 +312,7 @@ Partial Class ManajemenTokoAdmin
         Me.pnlPass.Controls.Add(Me.Label4)
         Me.pnlPass.Controls.Add(Me.txtKonfirmPass)
         Me.pnlPass.Location = New System.Drawing.Point(255, 826)
-        Me.pnlPass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlPass.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlPass.Name = "pnlPass"
         Me.pnlPass.Size = New System.Drawing.Size(306, 200)
         Me.pnlPass.TabIndex = 11
@@ -332,7 +332,7 @@ Partial Class ManajemenTokoAdmin
         Me.btnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_send_50
         Me.btnSubmit.Location = New System.Drawing.Point(116, 118)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 73)
         Me.btnSubmit.TabIndex = 14
@@ -354,7 +354,7 @@ Partial Class ManajemenTokoAdmin
         '
         Me.txtKonfirmPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKonfirmPass.Location = New System.Drawing.Point(113, 68)
-        Me.txtKonfirmPass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtKonfirmPass.Margin = New System.Windows.Forms.Padding(2)
         Me.txtKonfirmPass.MaxLength = 50
         Me.txtKonfirmPass.Name = "txtKonfirmPass"
         Me.txtKonfirmPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -416,7 +416,7 @@ Partial Class ManajemenTokoAdmin
         Me.pnlFormUbah.Controls.Add(Me.Label2)
         Me.pnlFormUbah.Controls.Add(Me.txtUbahNama)
         Me.pnlFormUbah.Location = New System.Drawing.Point(50, 437)
-        Me.pnlFormUbah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlFormUbah.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlFormUbah.Name = "pnlFormUbah"
         Me.pnlFormUbah.Size = New System.Drawing.Size(686, 374)
         Me.pnlFormUbah.TabIndex = 16
@@ -447,7 +447,7 @@ Partial Class ManajemenTokoAdmin
         '
         Me.txtUbahPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUbahPass.Location = New System.Drawing.Point(448, 122)
-        Me.txtUbahPass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUbahPass.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahPass.MaxLength = 50
         Me.txtUbahPass.Name = "txtUbahPass"
         Me.txtUbahPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -458,7 +458,7 @@ Partial Class ManajemenTokoAdmin
         '
         Me.txtUbahUsn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUbahUsn.Location = New System.Drawing.Point(448, 78)
-        Me.txtUbahUsn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUbahUsn.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahUsn.MaxLength = 50
         Me.txtUbahUsn.Name = "txtUbahUsn"
         Me.txtUbahUsn.Size = New System.Drawing.Size(152, 20)
@@ -470,7 +470,7 @@ Partial Class ManajemenTokoAdmin
         Me.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnCancel.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.icons8_close_window_50
         Me.btnCancel.Location = New System.Drawing.Point(637, 17)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(34, 34)
         Me.btnCancel.TabIndex = 59
@@ -481,7 +481,7 @@ Partial Class ManajemenTokoAdmin
         '
         Me.txtUbahEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUbahEmail.Location = New System.Drawing.Point(115, 146)
-        Me.txtUbahEmail.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUbahEmail.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahEmail.MaxLength = 50
         Me.txtUbahEmail.Name = "txtUbahEmail"
         Me.txtUbahEmail.Size = New System.Drawing.Size(152, 20)
@@ -501,7 +501,7 @@ Partial Class ManajemenTokoAdmin
         '
         Me.txtUbahNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUbahNama.Location = New System.Drawing.Point(115, 97)
-        Me.txtUbahNama.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUbahNama.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUbahNama.MaxLength = 50
         Me.txtUbahNama.Name = "txtUbahNama"
         Me.txtUbahNama.Size = New System.Drawing.Size(152, 20)
@@ -513,7 +513,7 @@ Partial Class ManajemenTokoAdmin
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
         Me.pnlTop.Size = New System.Drawing.Size(783, 36)
         Me.pnlTop.TabIndex = 58
@@ -524,7 +524,7 @@ Partial Class ManajemenTokoAdmin
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
         Me.pnlControl.Location = New System.Drawing.Point(729, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
         Me.pnlControl.TabIndex = 49
@@ -535,7 +535,7 @@ Partial Class ManajemenTokoAdmin
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
         Me.btnMinimize.Location = New System.Drawing.Point(2, 10)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
@@ -547,7 +547,7 @@ Partial Class ManajemenTokoAdmin
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
         Me.btnClose.Location = New System.Drawing.Point(32, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
@@ -666,7 +666,7 @@ Partial Class ManajemenTokoAdmin
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.pnlFormUbah)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ManajemenTokoAdmin"

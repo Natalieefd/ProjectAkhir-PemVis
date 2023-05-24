@@ -9,7 +9,7 @@
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
-        Me.Location = New Point(Me.Location.X, Me.Location.Y + 100)
+        Me.Location = New Point(Me.Location.X, 179)
 
         pnlFormPesanan.Location = New Point(57, 88)
 
@@ -208,6 +208,8 @@
     End Sub
 
     Private Sub dgvPesanan_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPesanan.CellContentDoubleClick
+        Me.Location = New Point(Me.Location.X, 110)
+
         dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvPesanan, 6) & "%'") 'query cari data produk dengan idproduk, id-> DGVValue(dgvPesanan, 6)
 
         If DGVValue(dgvPesanan, 9) <> "Belum Dibayar" Then

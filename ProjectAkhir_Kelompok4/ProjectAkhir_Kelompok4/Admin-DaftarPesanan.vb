@@ -2,6 +2,7 @@
 
     Private Sub DaftarPesananAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Size = New Point(800, 430)
+        Me.Location = New Point(Me.Location.X, 179)
 
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
@@ -66,6 +67,8 @@
 
     Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
         ShowForm()
+
+        Me.Location = New Point(Me.Location.X, 90)
 
         dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvDaftarPesanan, 6) & "%'")
 

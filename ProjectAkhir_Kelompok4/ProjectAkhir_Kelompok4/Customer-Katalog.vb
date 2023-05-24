@@ -25,6 +25,8 @@ Public Class formKatalog
     End Sub
 
     Private Sub dgvKatalog_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvKatalog.CellDoubleClick
+        Me.Location = New Point(Me.Location.X, 110)
+
         idp = DGVValue(dgvKatalog, 0)
         txtNamaProduk.Text = DGVValue(dgvKatalog, 1).ToString
         txtKategori.Text = DGVValue(dgvKatalog, 2).ToString

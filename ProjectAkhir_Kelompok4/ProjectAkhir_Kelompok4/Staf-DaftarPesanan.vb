@@ -65,6 +65,9 @@
 
     Private Sub dgvDaftarPesanan_DoubleClick(sender As Object, e As EventArgs) Handles dgvDaftarPesanan.DoubleClick
         ShowForm()
+
+        Me.Location = New Point(Me.Location.X, 90)
+
         dbq("Select * from tbproduk where id_produk like '%" & DGVValue(dgvDaftarPesanan, 6) & "%'")
 
         If DGVValue(dgvDaftarPesanan, 9) <> "Belum Dibayar" Then

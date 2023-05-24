@@ -4,6 +4,7 @@
 
     Private Sub ManajemenStaff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Size = New Point(800, 430)
+        Me.Location = New Point(Me.Location.X, 179)
 
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
@@ -20,7 +21,6 @@
         Select Case Mode
             Case "Tambah"
                 ShowForm()
-                Label4.Hide()
                 btnTambah.Show()
                 btnUbah.Hide()
                 btnHapus.Hide()
@@ -33,10 +33,10 @@
                 txtPass.Clear()
                 btnTambah.Location = New Point(150, 259)
                 btnClear.Location = New Point(297, 259)
+                Me.Location = New Point(Me.Location.X, 130)
 
             Case "Ubah"
                 ShowForm(False)
-                Label4.Hide()
                 btnTambah.Hide()
                 btnUbah.Show()
                 btnHapus.Hide()
@@ -49,7 +49,6 @@
 
             Case "Hapus"
                 ShowForm(False)
-                Label4.Hide()
                 btnTambah.Hide()
                 btnUbah.Hide()
                 btnHapus.Show()
@@ -92,6 +91,8 @@
     End Sub
 
     Private Sub dgvAkunStaf_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAkunStaf.CellDoubleClick
+        Me.Location = New Point(Me.Location.X, 130)
+
         txtNama.Text = DGVValue(dgvAkunStaf, 1)
         txtUsn.Text = DGVValue(dgvAkunStaf, 2)
         txtPass.Text = DGVValue(dgvAkunStaf, 3)
@@ -278,13 +279,13 @@
     '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
     '-------------------------------------------------------------------------------------------------------'
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs)
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
         If MsgBox("Apakah Anda yakin ingin keluar dari program?", vbQuestion + vbYesNo, "Konfirmasi Keluar") = vbYes Then
             Me.Close()
         End If
     End Sub
 
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs)
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 

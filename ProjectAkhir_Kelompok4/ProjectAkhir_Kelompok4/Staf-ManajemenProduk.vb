@@ -26,6 +26,7 @@
         Select Case Mode
             Case "Tambah"
                 ShowForm(True)
+                pnlFormProduk.Size = New Size(686, 300)
                 btnTambah.Show()
                 btnUbah.Hide()
                 btnHapus.Hide()
@@ -38,6 +39,7 @@
                 txtStok.Enabled = True
 
             Case "Ubah"
+                pnlFormProduk.Size = New Size(686, 300)
                 btnTambah.Hide()
                 btnUbah.Show()
                 btnHapus.Hide()
@@ -50,6 +52,7 @@
 
 
             Case "Hapus"
+                pnlFormProduk.Size = New Size(686, 300)
                 btnTambah.Hide()
                 btnUbah.Hide()
                 btnHapus.Show()
@@ -70,10 +73,14 @@
                 txtHarga.Enabled = False
                 txtDecs.Enabled = False
                 txtStok.Enabled = False
+                pnlFormProduk.Size = New Size(686, 235)
+                pnlFormProduk.Location = New Point(48, 130)
         End Select
     End Sub
 
     Private Sub dgvDaftarProduk_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDaftarProduk.CellContentDoubleClick
+        Me.Location = New Point(Me.Location.X, 110)
+
         idp = DGVValue(dgvDaftarProduk, 0)
         txtNama.Text = DGVValue(dgvDaftarProduk, 1)
         cmbKategori.Text = DGVValue(dgvDaftarProduk, 2)

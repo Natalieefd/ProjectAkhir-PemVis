@@ -320,7 +320,7 @@ Partial Class DaftarPesananAdmin
         '
         'pnlUbahStatus
         '
-        Me.pnlUbahStatus.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.pnlUbahStatus.BackColor = System.Drawing.Color.LightSkyBlue
         Me.pnlUbahStatus.Controls.Add(Me.Label1)
         Me.pnlUbahStatus.Controls.Add(Me.txtUsername)
         Me.pnlUbahStatus.Controls.Add(Me.cmbStatus)

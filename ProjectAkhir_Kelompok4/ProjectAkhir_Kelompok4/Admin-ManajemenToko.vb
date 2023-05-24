@@ -68,6 +68,7 @@
             txtUbahAlamat.Text = RD(5)
 
             RD.Close()
+            Me.Location = New Point(Me.Location.X, 130)
             Tripart("Ubah")
             Exit Sub
         End If
