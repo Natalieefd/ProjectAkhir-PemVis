@@ -5,6 +5,8 @@
 
 
     Private Sub ManajemenProdukStaf_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 470)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 

@@ -1,6 +1,8 @@
 ﻿Public Class ManajemenTokoAdmin
 
     Private Sub ManajemenTokoAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 460)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 

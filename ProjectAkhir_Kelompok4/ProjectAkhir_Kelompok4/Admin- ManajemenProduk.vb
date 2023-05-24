@@ -4,6 +4,8 @@
     Public idp As Integer
 
     Private Sub ManajemenProdukAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 410)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
@@ -28,6 +30,7 @@
                 btnClear_Click(sender, Nothing)
                 txtNama.Enabled = True
                 cmbKategori.Enabled = True
+                cmbKategori.SelectedIndex = -1
                 txtStok.Enabled = True
                 txtHarga.Enabled = True
                 txtDesc.Enabled = True

@@ -51,7 +51,7 @@ Partial Class LaporanPesananStaf
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1101, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(995, 36)
         Me.pnlTop.TabIndex = 56
         '
         'pnlControl
@@ -59,7 +59,7 @@ Partial Class LaporanPesananStaf
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(1047, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(941, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -89,9 +89,6 @@ Partial Class LaporanPesananStaf
         Me.btnClose.TabIndex = 0
         Me.btnClose.UseVisualStyleBackColor = True
         '
-        'Timer2
-        '
-        '
         'StatusStrip1
         '
         Me.StatusStrip1.BackColor = System.Drawing.Color.Cornsilk
@@ -100,7 +97,7 @@ Partial Class LaporanPesananStaf
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 445)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(1101, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(995, 22)
         Me.StatusStrip1.TabIndex = 55
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -126,7 +123,7 @@ Partial Class LaporanPesananStaf
         Me.CrystalReportViewer1.Margin = New System.Windows.Forms.Padding(2)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.Staf_LaporanPesanan5
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(1101, 409)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(995, 409)
         Me.CrystalReportViewer1.TabIndex = 57
         Me.CrystalReportViewer1.ToolPanelWidth = 100
         '
@@ -134,7 +131,7 @@ Partial Class LaporanPesananStaf
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1101, 467)
+        Me.ClientSize = New System.Drawing.Size(995, 467)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.pnlTop)
         Me.Controls.Add(Me.StatusStrip1)

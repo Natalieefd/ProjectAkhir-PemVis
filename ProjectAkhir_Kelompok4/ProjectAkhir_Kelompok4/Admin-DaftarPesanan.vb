@@ -1,6 +1,8 @@
 ﻿Public Class DaftarPesananAdmin
 
     Private Sub DaftarPesananAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 430)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 

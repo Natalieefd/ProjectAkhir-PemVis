@@ -1,5 +1,7 @@
 ﻿Public Class formStaff
     Private Sub formStaff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Size(796, 425)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         lblUsn.Text = ActiveUsername

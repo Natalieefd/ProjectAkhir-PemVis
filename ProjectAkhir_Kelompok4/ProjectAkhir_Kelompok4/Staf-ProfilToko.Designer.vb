@@ -69,63 +69,63 @@ Partial Class formProfilTokoS
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(3, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'HomeToolStripMenuItem
         '
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(59, 21)
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.HomeToolStripMenuItem.Text = "Home"
         '
         'ProfilTokoToolStripMenuItem
         '
         Me.ProfilTokoToolStripMenuItem.Name = "ProfilTokoToolStripMenuItem"
-        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(90, 21)
+        Me.ProfilTokoToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
         Me.ProfilTokoToolStripMenuItem.Text = "Profil Toko"
         '
         'ManajemenBarangToolStripMenuItem
         '
         Me.ManajemenBarangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LihatProdukToolStripMenuItem, Me.TambahProdukToolStripMenuItem, Me.UbahProdukToolStripMenuItem, Me.HapusProdukToolStripMenuItem})
         Me.ManajemenBarangToolStripMenuItem.Name = "ManajemenBarangToolStripMenuItem"
-        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(144, 21)
+        Me.ManajemenBarangToolStripMenuItem.Size = New System.Drawing.Size(128, 20)
         Me.ManajemenBarangToolStripMenuItem.Text = "Manajemen Produk"
         '
         'LihatProdukToolStripMenuItem
         '
         Me.LihatProdukToolStripMenuItem.Name = "LihatProdukToolStripMenuItem"
-        Me.LihatProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.LihatProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.LihatProdukToolStripMenuItem.Text = "Lihat Data Produk"
         '
         'TambahProdukToolStripMenuItem
         '
         Me.TambahProdukToolStripMenuItem.Name = "TambahProdukToolStripMenuItem"
-        Me.TambahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.TambahProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.TambahProdukToolStripMenuItem.Text = "Tambah Data Produk"
         '
         'UbahProdukToolStripMenuItem
         '
         Me.UbahProdukToolStripMenuItem.Name = "UbahProdukToolStripMenuItem"
-        Me.UbahProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.UbahProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.UbahProdukToolStripMenuItem.Text = "Ubah Data Produk"
         '
         'HapusProdukToolStripMenuItem
         '
         Me.HapusProdukToolStripMenuItem.Name = "HapusProdukToolStripMenuItem"
-        Me.HapusProdukToolStripMenuItem.Size = New System.Drawing.Size(219, 24)
+        Me.HapusProdukToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
         Me.HapusProdukToolStripMenuItem.Text = "Hapus Data Produk"
         '
         'ManajemenPesananToolStripMenuItem
         '
         Me.ManajemenPesananToolStripMenuItem.Name = "ManajemenPesananToolStripMenuItem"
-        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(78, 21)
+        Me.ManajemenPesananToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
         Me.ManajemenPesananToolStripMenuItem.Text = "Pesanan"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(44, 21)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'pnlTop
@@ -134,7 +134,7 @@ Partial Class formProfilTokoS
         Me.pnlTop.Controls.Add(Me.pnlControl)
         Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
         Me.pnlTop.Size = New System.Drawing.Size(800, 36)
         Me.pnlTop.TabIndex = 51
@@ -145,7 +145,7 @@ Partial Class formProfilTokoS
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
         Me.pnlControl.Location = New System.Drawing.Point(746, 0)
-        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
         Me.pnlControl.TabIndex = 50
@@ -156,7 +156,7 @@ Partial Class formProfilTokoS
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.maximize15px
         Me.btnMinimize.Location = New System.Drawing.Point(2, 10)
-        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(2)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(14, 15)
         Me.btnMinimize.TabIndex = 2
@@ -168,7 +168,7 @@ Partial Class formProfilTokoS
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.close15px
         Me.btnClose.Location = New System.Drawing.Point(32, 10)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(2)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(14, 15)
         Me.btnClose.TabIndex = 0
@@ -190,13 +190,13 @@ Partial Class formProfilTokoS
         'SlabelTanggal
         '
         Me.SlabelTanggal.Name = "SlabelTanggal"
-        Me.SlabelTanggal.Size = New System.Drawing.Size(72, 17)
+        Me.SlabelTanggal.Size = New System.Drawing.Size(61, 17)
         Me.SlabelTanggal.Text = "Tanggal : "
         '
         'SlabelJam
         '
         Me.SlabelJam.Name = "SlabelJam"
-        Me.SlabelJam.Size = New System.Drawing.Size(46, 17)
+        Me.SlabelJam.Size = New System.Drawing.Size(40, 17)
         Me.SlabelJam.Text = "Jam : "
         '
         'pnlProfil
@@ -212,7 +212,7 @@ Partial Class formProfilTokoS
         Me.pnlProfil.Controls.Add(Me.Label20)
         Me.pnlProfil.Controls.Add(Me.Label22)
         Me.pnlProfil.Controls.Add(Me.Label24)
-        Me.pnlProfil.Location = New System.Drawing.Point(192, 98)
+        Me.pnlProfil.Location = New System.Drawing.Point(192, 88)
         Me.pnlProfil.Name = "pnlProfil"
         Me.pnlProfil.Size = New System.Drawing.Size(434, 353)
         Me.pnlProfil.TabIndex = 4
@@ -222,7 +222,7 @@ Partial Class formProfilTokoS
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.ProjectAkhir_Kelompok4.My.Resources.Resources.output_onlinegiftools
         Me.PictureBox1.Location = New System.Drawing.Point(162, 55)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(122, 94)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -234,6 +234,7 @@ Partial Class formProfilTokoS
         Me.txtAlamat.Enabled = False
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlamat.Location = New System.Drawing.Point(148, 278)
+        Me.txtAlamat.MaxLength = 50
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(247, 65)
@@ -244,8 +245,9 @@ Partial Class formProfilTokoS
         Me.txtNoTelp.Enabled = False
         Me.txtNoTelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNoTelp.Location = New System.Drawing.Point(148, 239)
+        Me.txtNoTelp.MaxLength = 15
         Me.txtNoTelp.Name = "txtNoTelp"
-        Me.txtNoTelp.Size = New System.Drawing.Size(247, 22)
+        Me.txtNoTelp.Size = New System.Drawing.Size(247, 20)
         Me.txtNoTelp.TabIndex = 5
         '
         'txtEmail
@@ -253,8 +255,9 @@ Partial Class formProfilTokoS
         Me.txtEmail.Enabled = False
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(148, 202)
+        Me.txtEmail.MaxLength = 50
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(247, 22)
+        Me.txtEmail.Size = New System.Drawing.Size(247, 20)
         Me.txtEmail.TabIndex = 5
         '
         'txtNama
@@ -262,8 +265,9 @@ Partial Class formProfilTokoS
         Me.txtNama.Enabled = False
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(148, 163)
+        Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
-        Me.txtNama.Size = New System.Drawing.Size(247, 22)
+        Me.txtNama.Size = New System.Drawing.Size(247, 20)
         Me.txtNama.TabIndex = 5
         '
         'Label14
@@ -272,7 +276,7 @@ Partial Class formProfilTokoS
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(144, 18)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(190, 29)
+        Me.Label14.Size = New System.Drawing.Size(163, 25)
         Me.Label14.TabIndex = 5
         Me.Label14.Text = "PROFIL TOKO"
         '
@@ -282,7 +286,7 @@ Partial Class formProfilTokoS
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.Location = New System.Drawing.Point(59, 165)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(49, 17)
+        Me.Label18.Size = New System.Drawing.Size(45, 15)
         Me.Label18.TabIndex = 5
         Me.Label18.Text = "Nama"
         '
@@ -292,7 +296,7 @@ Partial Class formProfilTokoS
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.Location = New System.Drawing.Point(59, 204)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(47, 17)
+        Me.Label20.Size = New System.Drawing.Size(44, 15)
         Me.Label20.TabIndex = 5
         Me.Label20.Text = "Email"
         '
@@ -302,7 +306,7 @@ Partial Class formProfilTokoS
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.Location = New System.Drawing.Point(59, 241)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(65, 17)
+        Me.Label22.Size = New System.Drawing.Size(57, 15)
         Me.Label22.TabIndex = 5
         Me.Label22.Text = "No Telp"
         '
@@ -312,7 +316,7 @@ Partial Class formProfilTokoS
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.Location = New System.Drawing.Point(59, 280)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(57, 17)
+        Me.Label24.Size = New System.Drawing.Size(51, 15)
         Me.Label24.TabIndex = 5
         Me.Label24.Text = "Alamat"
         '

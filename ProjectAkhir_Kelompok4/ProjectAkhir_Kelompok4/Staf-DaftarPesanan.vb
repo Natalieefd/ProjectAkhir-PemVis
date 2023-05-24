@@ -1,5 +1,7 @@
 ﻿Public Class DaftarPesananStaf
     Private Sub DaftarPesananStaf_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Size(810, 450)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 

@@ -1,6 +1,8 @@
 ﻿Public Class formAdmin
 
     Private Sub formAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(805, 423)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         lblUsn.Text = ActiveUsername

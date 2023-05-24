@@ -2,6 +2,8 @@
 
 Public Class formRegist
     Private Sub Regist_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Size(808, 448)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         koneksi()

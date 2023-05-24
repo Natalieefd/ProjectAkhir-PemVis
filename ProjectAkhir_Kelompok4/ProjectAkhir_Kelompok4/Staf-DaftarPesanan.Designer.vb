@@ -90,7 +90,7 @@ Partial Class DaftarPesananStaf
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SlabelTanggal, Me.SlabelJam})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 869)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(821, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(793, 22)
         Me.StatusStrip1.TabIndex = 6
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -160,7 +160,7 @@ Partial Class DaftarPesananStaf
         Me.pnlTop.Location = New System.Drawing.Point(0, 0)
         Me.pnlTop.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(821, 36)
+        Me.pnlTop.Size = New System.Drawing.Size(793, 36)
         Me.pnlTop.TabIndex = 53
         '
         'pnlControl
@@ -168,7 +168,7 @@ Partial Class DaftarPesananStaf
         Me.pnlControl.Controls.Add(Me.btnMinimize)
         Me.pnlControl.Controls.Add(Me.btnClose)
         Me.pnlControl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlControl.Location = New System.Drawing.Point(767, 0)
+        Me.pnlControl.Location = New System.Drawing.Point(739, 0)
         Me.pnlControl.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlControl.Name = "pnlControl"
         Me.pnlControl.Size = New System.Drawing.Size(54, 36)
@@ -207,7 +207,7 @@ Partial Class DaftarPesananStaf
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 36)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(821, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(793, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -329,6 +329,7 @@ Partial Class DaftarPesananStaf
         Me.txtUsername.Enabled = False
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.Location = New System.Drawing.Point(186, 86)
+        Me.txtUsername.MaxLength = 50
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(152, 20)
         Me.txtUsername.TabIndex = 28
@@ -392,6 +393,7 @@ Partial Class DaftarPesananStaf
         Me.txtHargaTotal.Enabled = False
         Me.txtHargaTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHargaTotal.Location = New System.Drawing.Point(508, 327)
+        Me.txtHargaTotal.MaxLength = 10
         Me.txtHargaTotal.Name = "txtHargaTotal"
         Me.txtHargaTotal.ReadOnly = True
         Me.txtHargaTotal.Size = New System.Drawing.Size(152, 20)
@@ -412,6 +414,7 @@ Partial Class DaftarPesananStaf
         Me.txtAlamat.Enabled = False
         Me.txtAlamat.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAlamat.Location = New System.Drawing.Point(508, 186)
+        Me.txtAlamat.MaxLength = 50
         Me.txtAlamat.Multiline = True
         Me.txtAlamat.Name = "txtAlamat"
         Me.txtAlamat.Size = New System.Drawing.Size(152, 80)
@@ -432,6 +435,7 @@ Partial Class DaftarPesananStaf
         Me.txtDesc.Enabled = False
         Me.txtDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDesc.Location = New System.Drawing.Point(508, 86)
+        Me.txtDesc.MaxLength = 50
         Me.txtDesc.Multiline = True
         Me.txtDesc.Name = "txtDesc"
         Me.txtDesc.Size = New System.Drawing.Size(152, 80)
@@ -453,6 +457,7 @@ Partial Class DaftarPesananStaf
         Me.txtTanggalPesan.Enabled = False
         Me.txtTanggalPesan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTanggalPesan.Location = New System.Drawing.Point(186, 323)
+        Me.txtTanggalPesan.MaxLength = 50
         Me.txtTanggalPesan.Name = "txtTanggalPesan"
         Me.txtTanggalPesan.ReadOnly = True
         Me.txtTanggalPesan.Size = New System.Drawing.Size(152, 20)
@@ -502,6 +507,7 @@ Partial Class DaftarPesananStaf
         Me.txtKategori.Enabled = False
         Me.txtKategori.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKategori.Location = New System.Drawing.Point(186, 227)
+        Me.txtKategori.MaxLength = 50
         Me.txtKategori.Name = "txtKategori"
         Me.txtKategori.Size = New System.Drawing.Size(152, 20)
         Me.txtKategori.TabIndex = 8
@@ -521,6 +527,7 @@ Partial Class DaftarPesananStaf
         Me.txtNamaProduk.Enabled = False
         Me.txtNamaProduk.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNamaProduk.Location = New System.Drawing.Point(186, 179)
+        Me.txtNamaProduk.MaxLength = 50
         Me.txtNamaProduk.Name = "txtNamaProduk"
         Me.txtNamaProduk.Size = New System.Drawing.Size(152, 20)
         Me.txtNamaProduk.TabIndex = 7
@@ -540,6 +547,7 @@ Partial Class DaftarPesananStaf
         Me.txtNama.Enabled = False
         Me.txtNama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.249999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNama.Location = New System.Drawing.Point(186, 130)
+        Me.txtNama.MaxLength = 50
         Me.txtNama.Name = "txtNama"
         Me.txtNama.Size = New System.Drawing.Size(152, 20)
         Me.txtNama.TabIndex = 6
@@ -560,7 +568,7 @@ Partial Class DaftarPesananStaf
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.DarkSalmon
-        Me.ClientSize = New System.Drawing.Size(838, 450)
+        Me.ClientSize = New System.Drawing.Size(810, 450)
         Me.Controls.Add(Me.pnlSpace)
         Me.Controls.Add(Me.pnlUbahStatus)
         Me.Controls.Add(Me.btnLaporan)

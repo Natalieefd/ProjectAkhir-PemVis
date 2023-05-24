@@ -3,6 +3,8 @@
     Public Shared Mode As String
 
     Private Sub ManajemenStaff_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 430)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
@@ -276,13 +278,13 @@
     '--------------------------------------- ToolStripMenuItem ---------------------------------------------'
     '-------------------------------------------------------------------------------------------------------'
 
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+    Private Sub btnClose_Click(sender As Object, e As EventArgs)
         If MsgBox("Apakah Anda yakin ingin keluar dari program?", vbQuestion + vbYesNo, "Konfirmasi Keluar") = vbYes Then
             Me.Close()
         End If
     End Sub
 
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
