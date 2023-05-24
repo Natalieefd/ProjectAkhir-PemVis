@@ -49,7 +49,7 @@ Partial Class Home
         Me.btnLogin.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnLogin.Location = New System.Drawing.Point(0, 400)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(403, 29)
+        Me.btnLogin.Size = New System.Drawing.Size(402, 29)
         Me.btnLogin.TabIndex = 1
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
@@ -62,7 +62,7 @@ Partial Class Home
         Me.btnRegist.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.btnRegist.Location = New System.Drawing.Point(0, 429)
         Me.btnRegist.Name = "btnRegist"
-        Me.btnRegist.Size = New System.Drawing.Size(403, 25)
+        Me.btnRegist.Size = New System.Drawing.Size(402, 25)
         Me.btnRegist.TabIndex = 2
         Me.btnRegist.Text = "Register"
         Me.btnRegist.UseVisualStyleBackColor = False
@@ -149,7 +149,7 @@ Partial Class Home
         Me.pnlContent1.Location = New System.Drawing.Point(0, 36)
         Me.pnlContent1.Margin = New System.Windows.Forms.Padding(2)
         Me.pnlContent1.Name = "pnlContent1"
-        Me.pnlContent1.Size = New System.Drawing.Size(403, 454)
+        Me.pnlContent1.Size = New System.Drawing.Size(402, 454)
         Me.pnlContent1.TabIndex = 48
         '
         'Panel1
@@ -159,7 +159,7 @@ Partial Class Home
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(401, 401)
+        Me.Panel1.Size = New System.Drawing.Size(402, 401)
         Me.Panel1.TabIndex = 3
         '
         'Home

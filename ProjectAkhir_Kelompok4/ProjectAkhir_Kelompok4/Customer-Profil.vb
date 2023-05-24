@@ -21,7 +21,7 @@
 
 
         StatusStrip1.Location = New Point(0, 428)
-        Me.Size = New Point(Me.Size.Width, 480)
+        Me.Size = New Point(800, 480)
 
         If Mode = "Ubah" Then
             ModeUbah()
@@ -33,7 +33,7 @@
     Private Sub ModeUbah()
         pnlProfil.Hide()
         pnlFormUbah.Hide()
-        Me.Size = New Point(Me.Size.Width, 341)
+        Me.Size = New Point(800, 341)
 
         txtKonfirmPass.Clear()
         pnlPass.Show()

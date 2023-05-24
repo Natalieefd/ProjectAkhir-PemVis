@@ -7,6 +7,8 @@ Public Class formKatalog
     Public idp As Integer
 
     Private Sub formKatalog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 420)
+
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         koneksi()

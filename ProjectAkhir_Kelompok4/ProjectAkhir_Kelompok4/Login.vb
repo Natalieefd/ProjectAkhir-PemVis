@@ -1,5 +1,6 @@
 ﻿Public Class formLogin
     Private Sub formlogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(764, 414)
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
         koneksi()

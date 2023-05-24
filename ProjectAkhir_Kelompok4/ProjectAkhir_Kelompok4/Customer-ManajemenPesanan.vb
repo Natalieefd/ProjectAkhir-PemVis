@@ -4,6 +4,7 @@
     Public Stok As Integer
 
     Private Sub formPesananCust_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 425)
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 

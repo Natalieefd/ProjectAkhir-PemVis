@@ -1,5 +1,6 @@
 ﻿Public Class Home
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(402, 513)
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
     End Sub

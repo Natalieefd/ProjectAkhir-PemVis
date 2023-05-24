@@ -1,6 +1,7 @@
 ﻿Public Class formProfilTokoC
 
     Private Sub formProfilTokoC_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Size = New Point(800, 477)
         SlabelTanggal.Text = Today
         SlabelJam.Text = TimeOfDay
 
